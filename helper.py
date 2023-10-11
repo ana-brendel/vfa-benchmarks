@@ -11,7 +11,7 @@ def write_content(file, content):
 
 testFolders = []
 for t in os.listdir(main):
-    if t != "vfa-full" and t != "helper.py" and not t.startswith(".") and t != "README.md":
+    if t != "vfa-full" and t != "helper.py" and not t.startswith(".") and t != "README.md" and t != "Preface":
         testFolders.append(t)
 
 for t in testFolders:
