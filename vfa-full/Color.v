@@ -285,7 +285,10 @@ Abort.  (* Before we prove that, there is some preliminary work to do. *)
 Lemma Proper_eq_eq:
   forall f, Proper (E.eq ==> @eq bool) f.
 Proof.
-unfold Proper. unfold respectful.
+  unfold Proper. unfold respectful.
+  intro. intros.
+  f_equal. unfold E.eq in H. assumption.
+Qed.
 (* FILL IN HERE *) Admitted.
 
 Lemma Sremove_elements:  forall (i: E.t) (s: S.t), 
