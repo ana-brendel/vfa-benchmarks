@@ -54,17 +54,6 @@ Proof.
   apply iff_reflect. symmetry. apply Nat.leb_le.
 Qed.
 
-
-
-(* ================================================================= *)
-(** ** Linear Integer Inequalities *)
-
-(** In our proofs about searching and sorting algorithms, we
-    sometimes have to reason about the consequences of
-    less-than and greater-than.  Here's a contrived example. *)
-
-Module Exploration1.
-
 Definition maybe_swap (al: list nat) : list nat :=
   match al with
   | a :: b :: ar => if a >? b then b::a::ar else a::b::ar
@@ -188,7 +177,10 @@ Theorem maybe_swap_correct: forall al,
 Proof.
   intros.
   split.
-  apply maybe_swap_perm.
+  lfind_debug.
+  Admitted.
+
+  (* apply maybe_swap_perm.
   destruct al as [ | a al].
   simpl. auto.
   destruct al as [ | b al].
@@ -199,20 +191,6 @@ Proof.
   omega.
   simpl.
   omega.
-Qed.
+Qed. *)
 
-End Exploration1.
 
-Theorem Forall_perm: forall {A} (f: A -> Prop) al bl,
-  Permutation al bl ->
-  Forall f al -> Forall f bl.
-Proof. intros.
-  induction H.
-  * assumption.
-  * inversion H0; subst.
-    auto. 
-  * inversion H0; subst.
-    inversion H3; subst.
-    auto.
-  * auto.
-Qed.

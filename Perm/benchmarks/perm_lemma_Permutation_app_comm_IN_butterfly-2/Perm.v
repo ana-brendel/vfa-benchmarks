@@ -54,17 +54,6 @@ Proof.
   apply iff_reflect. symmetry. apply Nat.leb_le.
 Qed.
 
-
-
-(* ================================================================= *)
-(** ** Linear Integer Inequalities *)
-
-(** In our proofs about searching and sorting algorithms, we
-    sometimes have to reason about the consequences of
-    less-than and greater-than.  Here's a contrived example. *)
-
-Module Exploration1.
-
 Definition maybe_swap (al: list nat) : list nat :=
   match al with
   | a :: b :: ar => if a >? b then b::a::ar else a::b::ar
@@ -127,7 +116,10 @@ Proof.
   rewrite (app_assoc utter [f;l;y]).
   apply Permutation_app_comm.
   eapply perm_trans.
-  2: apply Permutation_app_comm.
+  lfind_debug.
+  Admitted.
+
+  (* 2: apply Permutation_app_comm.
     rewrite <- app_assoc.
   apply Permutation_app_head.
   eapply perm_trans.
@@ -136,83 +128,4 @@ Proof.
   apply perm_skip.
   apply perm_skip.
   apply perm_swap.
-Qed.
-
-(* Helper Lemma = Permutation_app_comm : ∀ (A : Type) (l l' : list A), Permutation (l ++ l') (l' ++ l) *)
-(* Helper Lemma = Permutation_refl : ∀ (A : Type) (l : list A), Permutation l l *)
-(* Helper Lemma = app_assoc : ∀ (A : Type) (l m n : list A), l ++ m ++ n = (l ++ m) ++ n *)
-(* Inductive Constructors = perm_trans, perm_skip *)
-Example permut_example: forall (a b: list nat),
-  Permutation (5::6::a++b) ((5::b)++(6::a++[])).
-Proof. intros.
-  simpl. apply perm_skip.
-  eapply perm_trans.
-  2: { apply Permutation_app_comm. }
-  simpl. apply perm_skip. rewrite <- app_assoc. simpl. 
-  apply Permutation_refl.
-Qed.
-
-(* Helper Lemmas used in the hypotheses *)
-Example not_a_permutation:
-  ~ Permutation [1;1] [1;2].
-Proof. intro. apply Permutation_cons_inv in H.
-  apply Permutation_length_1_inv in H. 
-  inversion H.
-Qed.
-
-(* Helper Lemma = Permutation_refl : ∀ (A : Type) (l : list A), Permutation l l *)
-(* Inductive Constructors = perm_swap *)
-Theorem maybe_swap_perm: forall al,
-  Permutation al (maybe_swap al).
-Proof.
-  intros.
-  destruct al as [ | a al].
-  simpl. apply Permutation_refl.
-  destruct al as [ | b al].
-  simpl. apply Permutation_refl.
-  simpl.
-  bdestruct (a>?b).
-  apply perm_swap.
-  apply Permutation_refl.
-Qed.
-
-Definition first_le_second (al: list nat) : Prop :=
-  match al with
-  | a::b::_ => a <= b
-  | _ => True
-  end.
-
-(* Helper Lemma = maybe_swap_perm : ∀ al : list nat, Permutation al (maybe_swap al) *)
-Theorem maybe_swap_correct: forall al,
-    Permutation al (maybe_swap al) /\ first_le_second (maybe_swap al).
-Proof.
-  intros.
-  split.
-  apply maybe_swap_perm.
-  destruct al as [ | a al].
-  simpl. auto.
-  destruct al as [ | b al].
-  simpl. auto.
-  simpl.
-  bdestruct (b <? a).
-  simpl.
-  omega.
-  simpl.
-  omega.
-Qed.
-
-End Exploration1.
-
-Theorem Forall_perm: forall {A} (f: A -> Prop) al bl,
-  Permutation al bl ->
-  Forall f al -> Forall f bl.
-Proof. intros.
-  induction H.
-  * assumption.
-  * inversion H0; subst.
-    auto. 
-  * inversion H0; subst.
-    inversion H3; subst.
-    auto.
-  * auto.
-Qed.
+Qed. *)

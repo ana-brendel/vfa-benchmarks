@@ -16,4 +16,15 @@ for t in os.listdir(main):
 
 for t in testFolders:
     path = os.path.join(main,t)
-    os.system(f"cd {path} && make")
+    cmd = f"cd {path} && make"
+    # os.system(cmd)
+
+benches = "/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks"
+
+src = "/home/anabrendel/lfind/vfa-benchmarks/Perm/Perm.v"
+p = "/home/anabrendel/lfind/vfa-benchmarks/Perm/_CoqProject"
+
+for t in os.listdir(benches):
+    folder = os.path.join(benches,t)
+    cmd = f"cd {folder} && make"
+    os.system(cmd)

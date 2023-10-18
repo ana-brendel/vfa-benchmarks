@@ -54,17 +54,6 @@ Proof.
   apply iff_reflect. symmetry. apply Nat.leb_le.
 Qed.
 
-
-
-(* ================================================================= *)
-(** ** Linear Integer Inequalities *)
-
-(** In our proofs about searching and sorting algorithms, we
-    sometimes have to reason about the consequences of
-    less-than and greater-than.  Here's a contrived example. *)
-
-Module Exploration1.
-
 Definition maybe_swap (al: list nat) : list nat :=
   match al with
   | a :: b :: ar => if a >? b then b::a::ar else a::b::ar
@@ -167,52 +156,15 @@ Theorem maybe_swap_perm: forall al,
 Proof.
   intros.
   destruct al as [ | a al].
-  simpl. apply Permutation_refl.
+  simpl. 
+  lfind_debug.
+  Admitted.
+
+  (* apply Permutation_refl.
   destruct al as [ | b al].
   simpl. apply Permutation_refl.
   simpl.
   bdestruct (a>?b).
   apply perm_swap.
   apply Permutation_refl.
-Qed.
-
-Definition first_le_second (al: list nat) : Prop :=
-  match al with
-  | a::b::_ => a <= b
-  | _ => True
-  end.
-
-(* Helper Lemma = maybe_swap_perm : ∀ al : list nat, Permutation al (maybe_swap al) *)
-Theorem maybe_swap_correct: forall al,
-    Permutation al (maybe_swap al) /\ first_le_second (maybe_swap al).
-Proof.
-  intros.
-  split.
-  apply maybe_swap_perm.
-  destruct al as [ | a al].
-  simpl. auto.
-  destruct al as [ | b al].
-  simpl. auto.
-  simpl.
-  bdestruct (b <? a).
-  simpl.
-  omega.
-  simpl.
-  omega.
-Qed.
-
-End Exploration1.
-
-Theorem Forall_perm: forall {A} (f: A -> Prop) al bl,
-  Permutation al bl ->
-  Forall f al -> Forall f bl.
-Proof. intros.
-  induction H.
-  * assumption.
-  * inversion H0; subst.
-    auto. 
-  * inversion H0; subst.
-    inversion H3; subst.
-    auto.
-  * auto.
-Qed.
+Qed. *)

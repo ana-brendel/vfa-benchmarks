@@ -1,0 +1,93 @@
+File Information
+- File name: Perm
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/perm_lemma_app_assoc_IN_butterfly-1
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/_lfind_perm_lemma_app_assoc_IN_butterfly-1
+- Namespace: vfa_benchmark
+- Proof name: butterfly
+- Theorem: Theorem butterfly: forall b0 u0 t0 e0 r0 f0 l0 y0 : nat,
+@Permutation nat
+  (@app nat
+     (@cons nat b0
+        (@cons nat u0
+           (@cons nat t0
+              (@cons nat t0 (@cons nat e0 (@cons nat r0 (@nil nat)))))))
+     (@cons nat f0 (@cons nat l0 (@cons nat y0 (@nil nat)))))
+  (@app nat
+     (@cons nat f0
+        (@cons nat l0
+           (@cons nat u0
+              (@cons nat t0
+                 (@cons nat t0 (@cons nat e0 (@cons nat r0 (@nil nat))))))))
+     (@cons nat b0 (@cons nat y0 (@nil nat)))).
+- Declarations: 
+From lfind Require Import LFind.
+Require Import Coq.Strings.String.
+
+Proof Context
+* Goal State: @Permutation nat
+  (@app nat (@app nat (@cons nat b (@nil nat)) utter)
+     (@cons nat f (@cons nat l (@cons nat y (@nil nat)))))
+  (@app nat (@app nat (@cons nat f (@cons nat l (@nil nat))) utter)
+     (@cons nat b (@cons nat y (@nil nat))))
+
+* Hypothesis:
+r : nat
+utter : list nat
+y : nat
+b : nat
+e : nat
+t : nat
+f : nat
+l : nat
+u : nat
+
+* Types:
+Set
+Prop
+nat
+list nat
+
+* Polymorphic Types:
+list nat
+
+* Variables:
+utter : list nat
+y : nat
+b : nat
+f : nat
+l : nat
+
+* Terms:
+list nat : Set
+@cons nat f (@cons nat l (@cons nat y (@nil nat))) : list nat
+utter : list nat
+@Permutation nat
+  (@app nat (@app nat (@cons nat b (@nil nat)) utter)
+     (@cons nat f (@cons nat l (@cons nat y (@nil nat)))))
+  (@app nat (@app nat (@cons nat f (@cons nat l (@nil nat))) utter)
+     (@cons nat b (@cons nat y (@nil nat)))) : Prop
+@app nat (@cons nat b (@nil nat)) utter : list nat
+y : nat
+@cons nat y (@nil nat) : list nat
+@app nat (@app nat (@cons nat f (@cons nat l (@nil nat))) utter)
+  (@cons nat b (@cons nat y (@nil nat))) : list nat
+f : nat
+l : nat
+@cons nat l (@cons nat y (@nil nat)) : list nat
+@cons nat b (@nil nat) : list nat
+nat : Set
+@cons nat l (@nil nat) : list nat
+@cons nat f (@cons nat l (@nil nat)) : list nat
+@cons nat b (@cons nat y (@nil nat)) : list nat
+b : nat
+@app nat (@app nat (@cons nat b (@nil nat)) utter)
+  (@cons nat f (@cons nat l (@cons nat y (@nil nat)))) : list nat
+@app nat (@cons nat f (@cons nat l (@nil nat))) utter : list nat
+@nil nat : list nat
+
+* Functions:
+app  : forall (A : Type) (_ : list A) (_ : list A), list A
+list  : forall _ : Type, Type
+@nil  : forall A : Type, list A
+@cons  : forall (A : Type) (_ : A) (_ : list A), list A
+Permutation  : forall (A : Type) (_ : list A) (_ : list A), Prop
