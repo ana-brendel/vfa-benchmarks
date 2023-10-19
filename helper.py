@@ -19,12 +19,27 @@ for t in testFolders:
     cmd = f"cd {path} && make"
     # os.system(cmd)
 
-benches = "/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks"
+m = [
+    'maps_lemma_beq_nat_refl_IN_t_update_eq',
+    'maps_lemma_beq_nat_refl_IN_eqb_eq',
+    'maps_lemma_eqb_eq_IN_t_update_same',
+    'maps_lemma_iff_reflect_IN_beq_idP',
+    'maps_lemma_eqb_eq_IN_beq_idP',
+    'maps_lemma_t_apply_empty_IN_apply_empty',
+    'maps_lemma_t_update_eq_IN_update_eq',
+    'maps_lemma_t_update_neq_IN_update_neg',
+    'maps_lemma_t_update_shadow_IN_updat_shadow',
+    'maps_lemma_t_update_same_IN_update_same',
+    'maps_lemma_t_update_permute_IN_update_permute'
+]
 
-src = "/home/anabrendel/lfind/vfa-benchmarks/Perm/Perm.v"
-p = "/home/anabrendel/lfind/vfa-benchmarks/Perm/_CoqProject"
+benches = "/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks"
 
-for t in os.listdir(benches):
+src = "/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/Maps.v"
+p = "/home/anabrendel/lfind/vfa-benchmarks/Maps/_CoqProject"
+
+for t in m:
     folder = os.path.join(benches,t)
+    # cmd = f"cd {folder} && coq_makefile -f _CoqProject -o Makefile"
     cmd = f"cd {folder} && make"
     os.system(cmd)
