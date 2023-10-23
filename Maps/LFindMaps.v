@@ -1,13 +1,9 @@
-Load LFindLoad.
-From lfind Require Import LFind.
-Unset Printing Notations.
-Set Printing Implicit.
-
 From QuickChick Require Import QuickChick.
 Require Export Coq.Arith.Arith.
-From Coq Require Import Bool.Bool.
-From Coq Require Import Logic.FunctionalExtensionality.
-From VFA Require Import Perm.
+Require Export Coq.Bool.Bool.
+
+Notation "a :: b"  := (cons a b).
+Notation "[]"  := (nil).
 
 (* Definition total_map {A} : Type := nat -> A. *)
 
@@ -33,8 +29,12 @@ end.
 Definition t_update {A : Type} (m : total_map A) (x : nat) (val :A) : total_map A := 
   match m with | (f,v) => ((update_helper x val f),v) end.
 
+(* Lemma t_apply_empty:  forall A x v, @t_empty A v x = v.
+Proof. intros. unfold t_empty. reflexivity. Qed. *)
+
 Lemma t_apply_empty {T} (x : nat) (v : T) : (find (t_empty v) x) = v.
 Proof. intros. unfold t_empty. reflexivity. Qed.
+
 
 Lemma t_incr_update {T} (x n : nat) (v t : T) (l : list (nat * T)) : n <> x ->
     (n,t) :: (update_helper x v l) = (update_helper x v ((n, t) :: l)).
@@ -44,7 +44,6 @@ Proof.
   - replace (n =? x) with false. induction l. auto. auto. symmetry. rewrite Nat.eqb_neq. auto.
 Qed.
 
-(* Helper Lemma = t_incr_update : ∀ (T : Type) (x n : nat) (v t : T) (l : list (nat * T)), n ≠ x → (n, t) :: update_helper x v l = update_helper x v ((n, t) :: l) *)
 Lemma t_update_eq {T} (m: total_map T) (x : nat) (v : T) : find (t_update m x v) x = v.
 Proof. 
   intros. destruct m. induction l.
@@ -63,7 +62,6 @@ Proof.
   - intros. rewrite H. symmetry. apply beq_nat_refl.
 Qed.
 
-(* Helper Lemma = t_incr_update : ∀ (T : Type) (x n : nat) (v t : T) (l : list (nat * T)), n ≠ x → (n, t) :: update_helper x v l = update_helper x v ((n, t) :: l) *)
 Theorem t_update_neq {T} (x1 x2 : nat) (v : T) (m : total_map T) : x1 <> x2 -> find (t_update m x1 v) x2 = find m x2.
 Proof.
   destruct m. intros. unfold t_update. 
@@ -102,8 +100,6 @@ Proof.
       replace (n0 =? n) with false. apply IHl. symmetry; apply Nat.eqb_neq; auto. symmetry; apply Nat.eqb_neq; auto.
 Qed.
 
-(* Helper Lemma = iff_reflect : ∀ (P : Prop) (b : bool), P ↔ b = true → reflect P b *)
-(* Helper Lemma = eqb_eq : ∀ n m : nat, (n =? m) = true ↔ n = m *)
 Lemma beq_idP : forall x y, reflect (x = y) (Nat.eqb x y).
 Proof. intros. apply iff_reflect. rewrite eqb_eq. split. auto. auto. Qed.
 
@@ -133,21 +129,25 @@ Definition empty {A : Type} : partial_map A := t_empty None.
 
 Definition update {A : Type} (m : partial_map A) (x : nat) (v : A) : partial_map A := t_update m x (Some v).
 
-(* Helper Lemma = t_update_eq :  ∀ (T : Type) (m : total_map T) (x : nat) (v : T), find (t_update m x v) x = v *)
+
+(* Lemma apply_empty {A} (x : nat) : find empty x = None.
+Proof.
+  intros. unfold empty. rewrite t_apply_empty.
+  reflexivity.
+Qed. *)
+
 Lemma update_eq {A} (m : partial_map A) (x : nat) (v : A) : find (update m x v) x = Some v.
 Proof. 
   intros. 
   unfold update. rewrite t_update_eq. reflexivity.
 Qed.
 
-(* Helper Lemma = t_update_neq : ∀ (T : Type) (x1 x2 : nat) (v : T) (m : total_map T), x1 ≠ x2 → find (t_update m x1 v) x2 = find m x2 *)
 Theorem update_neq {X} (v : X) (x1 x2 : nat) (m : partial_map X) : x2 <> x1 ->find (update m x2 v) x1 = find m x1.
 Proof.
   intros.
   unfold update. rewrite t_update_neq. reflexivity. auto.
 Qed.
 
-(* Helper Lemma = t_update_shadow : ∀ (A : Type) (m : total_map A) (v1 v2 : A) (x : nat), t_update (t_update m x v1) x v2 = t_update m x v2 *)
 Lemma update_shadow {A} (m: partial_map A) (v1 v2 : A) (x : nat) : update (update m x v1) x v2 = update m x v2.
 Proof.
   intros. unfold update. rewrite t_update_shadow.
@@ -166,14 +166,10 @@ Proof.
       symmetry; apply Nat.eqb_neq; auto. symmetry; apply Nat.eqb_neq; auto. symmetry; apply Nat.eqb_neq; auto.
 Qed.
 
-(* Helper Lemma = t_update_permute : ∀ (T : Type) (H : Dec_Eq T) (n : nat) (v1 v2 : T) (x1 x2 : nat) (m : total_map T), x2 ≠ x1 → 
-                        TotalMapEqual n (t_update (t_update m x2 v2) x1 v1) (t_update (t_update m x1 v1) x2 v2) *)
+
 Theorem update_permute {X} `{ _ : Dec_Eq X} (n : nat) (v1 v2 : X) (x1 x2 : nat) (m : partial_map X) : x2 <> x1 -> 
     TotalMapEqual n (update (update m x2 v2) x1 v1) (update (update m x1 v1) x2 v2).
 Proof.
   intros. unfold update.
-  lfind_debug.
-  Admitted.
-
-  (* apply t_update_permute. auto.
-Qed. *)
+  apply t_update_permute. auto.
+Qed.

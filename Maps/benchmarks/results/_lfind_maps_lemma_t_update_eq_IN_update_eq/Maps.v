@@ -137,43 +137,9 @@ Definition update {A : Type} (m : partial_map A) (x : nat) (v : A) : partial_map
 Lemma update_eq {A} (m : partial_map A) (x : nat) (v : A) : find (update m x v) x = Some v.
 Proof. 
   intros. 
-  unfold update. rewrite t_update_eq. reflexivity.
-Qed.
-
-(* Helper Lemma = t_update_neq : ∀ (T : Type) (x1 x2 : nat) (v : T) (m : total_map T), x1 ≠ x2 → find (t_update m x1 v) x2 = find m x2 *)
-Theorem update_neq {X} (v : X) (x1 x2 : nat) (m : partial_map X) : x2 <> x1 ->find (update m x2 v) x1 = find m x1.
-Proof.
-  intros.
-  unfold update. rewrite t_update_neq. reflexivity. auto.
-Qed.
-
-(* Helper Lemma = t_update_shadow : ∀ (A : Type) (m : total_map A) (v1 v2 : A) (x : nat), t_update (t_update m x v1) x v2 = t_update m x v2 *)
-Lemma update_shadow {A} (m: partial_map A) (v1 v2 : A) (x : nat) : update (update m x v1) x v2 = update m x v2.
-Proof.
-  intros. unfold update. rewrite t_update_shadow.
-  reflexivity.
-Qed.
-
-Theorem update_same {X} `{ _ : Dec_Eq X} (n : nat) (v : X) (x : nat) (m : partial_map X): find m x = Some v -> TotalMapEqual n (update m x v) m.
-Proof.
-  intros. unfold update. rewrite <- H0.
-  destruct m. simpl. unfold TotalMapEqual. unfold TotalMapEqualHelper. intros. simpl. induction l.
-  - simpl. destruct (x =? n). reflexivity. reflexivity.
-  - destruct a. simpl. destruct (eq_nat_dec n0 x).
-    * rewrite e. replace (x =? x) with true. simpl. reflexivity. apply beq_nat_refl.
-    * replace (n0 =? x) with false. simpl. destruct (eq_nat_dec n0 n). rewrite e; replace (n =? n) with true. reflexivity. apply beq_nat_refl.
-      replace (n0 =? n) with false. apply IHl. inversion H0. replace (n0 =? x) with false. unfold find. reflexivity. 
-      symmetry; apply Nat.eqb_neq; auto. symmetry; apply Nat.eqb_neq; auto. symmetry; apply Nat.eqb_neq; auto.
-Qed.
-
-(* Helper Lemma = t_update_permute : ∀ (T : Type) (H : Dec_Eq T) (n : nat) (v1 v2 : T) (x1 x2 : nat) (m : total_map T), x2 ≠ x1 → 
-                        TotalMapEqual n (t_update (t_update m x2 v2) x1 v1) (t_update (t_update m x1 v1) x2 v2) *)
-Theorem update_permute {X} `{ _ : Dec_Eq X} (n : nat) (v1 v2 : X) (x1 x2 : nat) (m : partial_map X) : x2 <> x1 -> 
-    TotalMapEqual n (update (update m x2 v2) x1 v1) (update (update m x1 v1) x2 v2).
-Proof.
-  intros. unfold update.
+  unfold update. 
   lfind_debug.
   Admitted.
-
-  (* apply t_update_permute. auto.
+  
+  (* rewrite t_update_eq. reflexivity.
 Qed. *)

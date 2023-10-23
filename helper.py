@@ -20,23 +20,22 @@ for t in testFolders:
     # os.system(cmd)
 
 m = [
-    'maps_lemma_beq_nat_refl_IN_t_update_eq',
-    'maps_lemma_beq_nat_refl_IN_eqb_eq',
-    'maps_lemma_eqb_eq_IN_t_update_same',
-    'maps_lemma_iff_reflect_IN_beq_idP',
-    'maps_lemma_eqb_eq_IN_beq_idP',
-    'maps_lemma_t_apply_empty_IN_apply_empty',
-    'maps_lemma_t_update_eq_IN_update_eq',
-    'maps_lemma_t_update_neq_IN_update_neg',
-    'maps_lemma_t_update_shadow_IN_updat_shadow',
-    'maps_lemma_t_update_same_IN_update_same',
-    'maps_lemma_t_update_permute_IN_update_permute'
+    "maps_lemma_t_incr_update_IN_t_update_eq",
+    "maps_lemma_t_incr_update_IN_t_update_neq",
+    "maps_lemma_iff_reflect_IN_beq_idP",
+    "maps_lemma_eqb_eq_IN_beq_idP",
+    "maps_lemma_t_update_eq_IN_update_eq",
+    "maps_lemma_t_update_neq_IN_update_neq",
+    "maps_lemma_t_update_shadow_IN_update_shadow",
+    "maps_lemma_t_update_permute_IN_update_permute"
 ]
 
 benches = "/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks"
 
 src = "/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/Maps.v"
 p = "/home/anabrendel/lfind/vfa-benchmarks/Maps/_CoqProject"
+
+g = "/home/anabrendel/lfind/vfa-benchmarks/Maps/show_prod.v"
 
 for t in m:
     folder = os.path.join(benches,t)

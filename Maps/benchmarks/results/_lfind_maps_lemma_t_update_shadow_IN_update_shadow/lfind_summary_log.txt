@@ -1,0 +1,51 @@
+LFind Results
+LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_shadow_IN_update_shadow
+
+Number of Lemmas: 52
+Number of Lemmas (after duplicates removed): 30
+Number of Lemmas (after QuickChick used to filter): 30
+* Number of Candidate Lemmas: 23
+
+Time until ranking: 1572
+Time to complete: 2873
+
+Stuck state true independent of hypotheses: true
+
+Category 1:
+Count = 0
+
+
+Category 2:
+Count = 3
+
+Lemma candidate_4: forall {A} (lf4 : option A) (m : partial_map A) (x : nat) (lf5 : option A), @eq (partial_map A)   (@t_update (option A) (@t_update (option A) m x lf5) x lf4)   (@t_update (option A) m x lf4).
+Lemma candidate_3: forall {A} (v1 : A) (lf4 : option A) (m : partial_map A) (x : nat), @eq (partial_map A)   (@t_update (option A) (@t_update (option A) m x (@Some A v1)) x lf4)   (@t_update (option A) m x lf4).
+Lemma candidate_2: forall {A} (m : partial_map A) (x : nat) (lf5 : option A) (v2 : A), @eq (partial_map A)   (@t_update (option A) (@t_update (option A) m x lf5) x (@Some A v2))   (@t_update (option A) m x (@Some A v2)).
+
+Category 3 (provable):
+Count = 0
+
+
+Category 3 (not provable):
+Count = 20
+
+Lemma candidate_15: forall {A} (lf3 : total_map (option A)) (lf4 : option A) (x : nat), @eq (partial_map A) (@t_update (option A) lf3 x lf4)   (@t_update (option A) (@t_update (option A) lf3 x lf4) x lf4).
+Lemma candidate_16: forall {A} (lf3 : total_map (option A)) (lf4 : option A) (x : nat), @eq (partial_map A) (@t_update (option A) lf3 x lf4)   (@t_update (option A) (@t_update (option A) lf3 x (@None A)) x lf4).
+Lemma candidate_9: forall {A} (lf3 : total_map (option A)) (lf4 : option A) (x : nat), @eq (total_map (option A)) (@t_update (option A) lf3 x lf4)   (@t_update (option A) (@t_update (option A) lf3 x lf4) x lf4).
+Lemma candidate_10: forall {A} (lf3 : total_map (option A)) (lf4 : option A) (x : nat), @eq (total_map (option A)) (@t_update (option A) lf3 x lf4)   (@t_update (option A) (@t_update (option A) lf3 x (@None A)) x lf4).
+Lemma candidate_36: forall {A} (lf3 : total_map (option A)) (x : nat) (v2 : A), @eq (partial_map A) (@t_update (option A) lf3 x (@Some A v2))   (@t_update (option A) (@t_update (option A) lf3 x (@None A)) x (@Some A v2)).
+Lemma candidate_35: forall {A} (lf3 : total_map (option A)) (x : nat) (v2 : A), @eq (partial_map A) (@t_update (option A) lf3 x (@Some A v2))   (@t_update (option A) (@t_update (option A) lf3 x (@Some A v2)) x (@Some A v2)).
+Lemma candidate_29: forall {A} (lf3 : total_map (option A)) (x : nat) (v2 : A), @eq (total_map (option A)) (@t_update (option A) lf3 x (@Some A v2))   (@t_update (option A) (@t_update (option A) lf3 x (@None A)) x (@Some A v2)).
+Lemma candidate_28: forall {A} (lf3 : total_map (option A)) (x : nat) (v2 : A), @eq (total_map (option A)) (@t_update (option A) lf3 x (@Some A v2))   (@t_update (option A) (@t_update (option A) lf3 x (@Some A v2)) x (@Some A v2)).
+Lemma candidate_13: forall {A} (lf3 : total_map (option A)) (lf4 : option A) (x : nat), @eq (partial_map A) (@t_update (option A) lf3 x lf4)   (@t_update (option A) (@t_update (option A) (@t_update (option A) lf3 x lf4) x (@None A)) x lf4).
+Lemma candidate_12: forall {A} (lf3 : total_map (option A)) (lf4 : option A) (x : nat), @eq (partial_map A) (@t_update (option A) lf3 x lf4)   (@t_update (option A) (@t_update (option A) (@t_update (option A) lf3 x (@None A)) x lf4) x lf4).
+Lemma candidate_14: forall {A} (lf3 : total_map (option A)) (lf4 : option A) (x : nat), @eq (partial_map A) (@t_update (option A) lf3 x lf4)   (@t_update (option A) (@t_update (option A) (@t_update (option A) lf3 x (@None A)) x (@None A)) x lf4).
+Lemma candidate_7: forall {A} (lf3 : total_map (option A)) (lf4 : option A) (x : nat), @eq (total_map (option A)) (@t_update (option A) lf3 x lf4)   (@t_update (option A) (@t_update (option A) (@t_update (option A) lf3 x lf4) x (@None A)) x lf4).
+Lemma candidate_6: forall {A} (lf3 : total_map (option A)) (lf4 : option A) (x : nat), @eq (total_map (option A)) (@t_update (option A) lf3 x lf4)   (@t_update (option A) (@t_update (option A) (@t_update (option A) lf3 x (@None A)) x lf4) x lf4).
+Lemma candidate_8: forall {A} (lf3 : total_map (option A)) (lf4 : option A) (x : nat), @eq (total_map (option A)) (@t_update (option A) lf3 x lf4)   (@t_update (option A) (@t_update (option A) (@t_update (option A) lf3 x (@None A)) x (@None A)) x lf4).
+Lemma candidate_34: forall {A} (lf3 : total_map (option A)) (x : nat) (v2 : A), @eq (partial_map A) (@t_update (option A) lf3 x (@Some A v2))   (@t_update (option A) (@t_update (option A) (@t_update (option A) lf3 x (@None A)) x (@None A)) x (@Some A v2)).
+Lemma candidate_33: forall {A} (lf3 : total_map (option A)) (x : nat) (v2 : A), @eq (partial_map A) (@t_update (option A) lf3 x (@Some A v2))   (@t_update (option A) (@t_update (option A) (@t_update (option A) lf3 x (@Some A v2)) x (@None A)) x (@Some A v2)).
+Lemma candidate_32: forall {A} (lf3 : total_map (option A)) (x : nat) (v2 : A), @eq (partial_map A) (@t_update (option A) lf3 x (@Some A v2))   (@t_update (option A) (@t_update (option A) (@t_update (option A) lf3 x (@None A)) x (@Some A v2)) x (@Some A v2)).
+Lemma candidate_27: forall {A} (lf3 : total_map (option A)) (x : nat) (v2 : A), @eq (total_map (option A)) (@t_update (option A) lf3 x (@Some A v2))   (@t_update (option A) (@t_update (option A) (@t_update (option A) lf3 x (@None A)) x (@None A)) x (@Some A v2)).
+Lemma candidate_26: forall {A} (lf3 : total_map (option A)) (x : nat) (v2 : A), @eq (total_map (option A)) (@t_update (option A) lf3 x (@Some A v2))   (@t_update (option A) (@t_update (option A) (@t_update (option A) lf3 x (@Some A v2)) x (@None A)) x (@Some A v2)).
+Lemma candidate_25: forall {A} (lf3 : total_map (option A)) (x : nat) (v2 : A), @eq (total_map (option A)) (@t_update (option A) lf3 x (@Some A v2))   (@t_update (option A) (@t_update (option A) (@t_update (option A) lf3 x (@None A)) x (@Some A v2)) x (@Some A v2)).

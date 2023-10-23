@@ -1,0 +1,29 @@
+LFind Results
+LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_incr_update_IN_t_update_neq
+
+Number of Lemmas: 191
+Number of Lemmas (after duplicates removed): 95
+Number of Lemmas (after QuickChick used to filter): 5
+* Number of Candidate Lemmas: 1
+
+Time until ranking: 499
+Time to complete: 579
+
+Stuck state true independent of hypotheses: false
+
+Category 1:
+Count = 0
+
+
+Category 2:
+Count = 0
+
+
+Category 3 (provable):
+Count = 0
+
+
+Category 3 (not provable):
+Count = 1
+
+Lemma candidate_1: forall {T} (n : nat) (l : list (prod nat T)) (x1 : nat) (t0 : T) (v : T), not (not (@eq nat n x1)) \/ (@eq (list (prod nat T))   (@cons (prod nat T) (@pair nat T n t0) (@update_helper T x1 v l))   (@update_helper T x1 v (@cons (prod nat T) (@pair nat T n t0) l))).

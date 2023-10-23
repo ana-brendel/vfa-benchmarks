@@ -1,0 +1,103 @@
+File Information
+- File name: Maps
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/maps_lemma_t_update_permute_IN_update_permute
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_permute_IN_update_permute
+- Namespace: vfa_benchmark
+- Proof name: update_permute
+- Theorem: Theorem update_permute: forall (X0 : Type) (H1 : Dec_Eq X0) (n0 : nat) (v0 v3 : X0) 
+  (x0 x3 : nat) (m0 : partial_map X0) (_ : not (@eq nat x3 x0)),
+@TotalMapEqual (option X0) (@Dec_eq_opt X0 H1) n0
+  (@update X0 (@update X0 m0 x3 v3) x0 v0)
+  (@update X0 (@update X0 m0 x0 v0) x3 v3).
+- Declarations: 
+From lfind Require Import LFind.
+From Coq Require Import Bool.Bool.
+From Coq Require Import Logic.FunctionalExtensionality.
+From VFA Require Import Perm.
+
+Proof Context
+* Goal State: @TotalMapEqual (option X) (@Dec_eq_opt X H) n
+  (@t_update (option X) (@t_update (option X) m x2 (@Some X v2)) x1
+     (@Some X v1))
+  (@t_update (option X) (@t_update (option X) m x1 (@Some X v1)) x2
+     (@Some X v2))
+
+* Hypothesis:
+v2 : X
+H0 : not (@eq nat x2 x1)
+m : partial_map X
+H : Dec_Eq X
+x1 : nat
+x2 : nat
+v1 : X
+n : nat
+X : Type
+
+* Types:
+Set
+partial_map X
+X
+Prop
+Dec_Eq X
+Type
+Dec_Eq (option X)
+nat
+total_map (option X)
+option X
+
+* Polymorphic Types:
+option X
+Dec_Eq (option X)
+Dec_Eq X
+partial_map X
+
+* Variables:
+v2 : X
+m : partial_map X
+H : Dec_Eq X
+x1 : nat
+X : Type
+x2 : nat
+v1 : X
+n : nat
+
+* Terms:
+@eq nat x2 x1 : Prop
+m : partial_map X
+Dec_Eq X : Type
+partial_map X : Type
+option X : Type
+@t_update (option X) m x1 (@Some X v1) : total_map (option X)
+v2 : X
+@Some X v1 : option X
+@TotalMapEqual (option X) (@Dec_eq_opt X H) n
+  (@t_update (option X) (@t_update (option X) m x2 (@Some X v2)) x1
+     (@Some X v1))
+  (@t_update (option X) (@t_update (option X) m x1 (@Some X v1)) x2
+     (@Some X v2)) : Prop
+nat : Set
+@t_update (option X) (@t_update (option X) m x2 (@Some X v2)) x1 (@Some X v1) : total_map (option X)
+H : Dec_Eq X
+@Dec_eq_opt X H : Dec_Eq (option X)
+@t_update (option X) m x2 (@Some X v2) : total_map (option X)
+x1 : nat
+@Some X v2 : option X
+Type : Type
+X : Type
+x2 : nat
+v1 : X
+n : nat
+not (@eq nat x2 x1) : Prop
+@t_update (option X) (@t_update (option X) m x1 (@Some X v1)) x2 (@Some X v2) : total_map (option X)
+
+* Functions:
+@TotalMapEqual (option X) : forall (T : Type) (_ : Dec_Eq T) (_ : nat) (_ : total_map T)
+  (_ : total_map T), Prop
+@Some (X) : forall (A : Type) (_ : A), option A
+Dec_Eq (X) : forall _ : Type, Type
+option (X) : forall _ : Type, Type
+not  : forall _ : Prop, Prop
+@eq  : forall (A : Type) (_ : A) (_ : A), Prop
+Dec_eq_opt (X) : forall (A : Type) (_ : Dec_Eq A), Dec_Eq (option A)
+partial_map (X) : forall _ : Type, Type
+@t_update (option X) : forall (A : Type) (_ : total_map A) (_ : nat) (_ : A), total_map A
