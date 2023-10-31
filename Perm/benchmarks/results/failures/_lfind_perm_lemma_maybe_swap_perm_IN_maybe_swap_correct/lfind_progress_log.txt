@@ -1,0 +1,101 @@
+File Information
+- File name: Perm
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/perm_lemma_maybe_swap_perm_IN_maybe_swap_correct
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct
+- Namespace: vfa_benchmark
+- Proof name: maybe_swap_correct
+- Theorem: Theorem maybe_swap_correct: forall al0 : list nat,
+and (@Permutation nat al0 (maybe_swap al0))
+  (first_le_second (maybe_swap al0)).
+- Declarations: 
+From lfind Require Import LFind.
+Require Import Coq.Strings.String.
+
+Proof Context
+* Goal State: @Permutation nat al (maybe_swap al)
+
+* Hypothesis:
+al : list nat
+
+* Types:
+Set
+Prop
+nat
+list nat
+
+* Polymorphic Types:
+list nat
+
+* Variables:
+al : list nat
+
+* Terms:
+list nat : Set
+nat : Set
+@Permutation nat al (maybe_swap al) : Prop
+al : list nat
+maybe_swap al : list nat
+
+* Functions:
+maybe_swap  : forall _ : list nat, list nat
+list  : forall _ : Type, Type
+Permutation  : forall (A : Type) (_ : list A) (_ : list A), Prop
+
+<---GENERALIZATION--->
+Time elapsed: 2 seconds
+Generalized Variables:
+lf1 : list nat = maybe_swap al
+
+Generalizations:
+Lemma conj1: forall (lf1 : list nat) (al : list nat), @Permutation nat al lf1.
+Lemma conj2: forall (al : list nat), @Permutation nat al (maybe_swap al).
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 15 seconds
+Valid:
+Lemma conj2: forall (al : list nat), @Permutation nat al (maybe_swap al).
+
+Invalid:
+Lemma conj1: forall (lf1 : list nat) (al : list nat), @Permutation nat al lf1.
+
+<---ADD IMPLICATIONS--->
+Time elapsed: 15 seconds
+Generalizations:
+Lemma conj1: forall (lf1 : list nat) (al : list nat), @Permutation nat al lf1.
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 18 seconds
+Valid:
+
+Invalid:
+Lemma conj1: forall (lf1 : list nat) (al : list nat), @Permutation nat al lf1.
+
+
+<---CREATE SKETCHES--->
+Time elapsed: 18 seconds
+Sketches:
+
+
+<---CREATE SYNTHESIS PROBLEMS--->
+Time elapsed: 18 seconds
+Problems per Sketch:
+
+
+<--- SYNTHESIS PROBLEM RESULTS--->
+Time elapsed: 18 seconds
+
+<---INITIAL CANDIDATE LEMMAS--->
+Time elapsed: 18 seconds
+Lemmas:
+Lemma candidate_1: forall (al : list nat), @Permutation nat al (maybe_swap al).
+
+<---FILTERED CANDIDATE LEMMAS--->
+Time elapsed: 19 seconds
+Duplicates removed: 1
+Filtered by Quickchick: 0
+Filtered by script: 0
+Remaining: 0
+
+Lemmas: 

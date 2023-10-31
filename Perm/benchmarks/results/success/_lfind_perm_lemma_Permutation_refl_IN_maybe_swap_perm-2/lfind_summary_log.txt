@@ -1,0 +1,31 @@
+LFind Results
+LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/_lfind_perm_lemma_Permutation_refl_IN_maybe_swap_perm-2
+
+Number of Lemmas: 24
+Number of Lemmas (after duplicates removed): 17
+Number of Lemmas (after QuickChick used to filter): 11
+* Number of Candidate Lemmas: 4
+
+Time until ranking: 125
+Time to complete: 275
+
+Stuck state true independent of hypotheses: true
+
+Category 1:
+Count = 1
+
+Lemma candidate_7: forall (lf1 : list nat), @Permutation nat (maybe_swap (maybe_swap lf1)) lf1.
+
+Category 2:
+Count = 3
+
+Lemma candidate_6: forall (lf1 : list nat), @Permutation nat (maybe_swap (maybe_swap (maybe_swap lf1))) lf1.
+Lemma candidate_5: forall (lf1 : list nat), @Permutation nat (maybe_swap (maybe_swap (maybe_swap (maybe_swap lf1)))) lf1.
+Lemma candidate_4: forall (lf1 : list nat), @Permutation nat   (maybe_swap (maybe_swap (maybe_swap (maybe_swap (maybe_swap lf1))))) lf1.
+
+Category 3 (provable):
+Count = 0
+
+
+Category 3 (not provable):
+Count = 0

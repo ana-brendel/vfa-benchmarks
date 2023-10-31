@@ -1,0 +1,59 @@
+File Information
+- File name: Perm
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/perm_lemma_Permutation_app_comm_IN_permut_example
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/_lfind_perm_lemma_Permutation_app_comm_IN_permut_example
+- Namespace: vfa_benchmark
+- Proof name: permut_example
+- Theorem: Theorem permut_example: forall a0 b0 : list nat,
+@Permutation nat
+  (@cons nat (S (S (S (S (S O)))))
+     (@cons nat (S (S (S (S (S (S O)))))) (@app nat a0 b0)))
+  (@app nat (@cons nat (S (S (S (S (S O))))) b0)
+     (@cons nat (S (S (S (S (S (S O)))))) (@app nat a0 (@nil nat)))).
+- Declarations: 
+From lfind Require Import LFind.
+Require Import Coq.Strings.String.
+
+Proof Context
+* Goal State: @Permutation nat (@cons nat (S (S (S (S (S (S O)))))) (@app nat a b)) ?l'
+
+* Hypothesis:
+b : list nat
+a : list nat
+
+* Types:
+Set
+Prop
+nat
+list nat
+
+* Polymorphic Types:
+list nat
+
+* Variables:
+b : list nat
+a : list nat
+
+* Terms:
+list nat : Set
+S O : nat
+nat : Set
+@Permutation nat (@cons nat (S (S (S (S (S (S O)))))) (@app nat a b)) ?l' : Prop
+@cons nat (S (S (S (S (S (S O)))))) (@app nat a b) : list nat
+@app nat a b : list nat
+S (S O) : nat
+b : list nat
+S (S (S (S (S (S O))))) : nat
+S (S (S (S (S O)))) : nat
+?l' : list nat
+S (S (S (S O))) : nat
+S (S (S O)) : nat
+a : list nat
+O : nat
+
+* Functions:
+app  : forall (A : Type) (_ : list A) (_ : list A), list A
+list  : forall _ : Type, Type
+S  : forall _ : nat, nat
+@cons  : forall (A : Type) (_ : A) (_ : list A), list A
+Permutation  : forall (A : Type) (_ : list A) (_ : list A), Prop

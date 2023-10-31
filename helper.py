@@ -19,26 +19,24 @@ for t in testFolders:
     cmd = f"cd {path} && make"
     # os.system(cmd)
 
-m = [
-    "maps_lemma_t_incr_update_IN_t_update_eq",
-    "maps_lemma_t_incr_update_IN_t_update_neq",
-    "maps_lemma_iff_reflect_IN_beq_idP",
-    "maps_lemma_eqb_eq_IN_beq_idP",
-    "maps_lemma_t_update_eq_IN_update_eq",
-    "maps_lemma_t_update_neq_IN_update_neq",
-    "maps_lemma_t_update_shadow_IN_update_shadow",
-    "maps_lemma_t_update_permute_IN_update_permute"
-]
 
 benches = "/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks"
+perm_benches = "/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks"
 
 src = "/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/Maps.v"
 p = "/home/anabrendel/lfind/vfa-benchmarks/Maps/_CoqProject"
 
-g = "/home/anabrendel/lfind/vfa-benchmarks/Maps/show_prod.v"
+l = "/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/perm_lemma_app_assoc_IN_butterfly-1/show_list.v"
+n = "/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/perm_lemma_app_assoc_IN_butterfly-1/show_nat.v"
 
-for t in m:
-    folder = os.path.join(benches,t)
-    # cmd = f"cd {folder} && coq_makefile -f _CoqProject -o Makefile"
-    cmd = f"cd {folder} && make"
-    os.system(cmd)
+# for t in m:
+#     folder = os.path.join(benches,t)
+#     # cmd = f"cd {folder} && coq_makefile -f _CoqProject -o Makefile"
+#     cmd = f"cd {folder} && make"
+#     os.system(cmd)
+
+for t in os.listdir(perm_benches):
+    if "butterfly" not in t:
+        full = os.path.join(perm_benches,t)
+        cmd = f"cd {full} && make"
+        os.system(cmd)

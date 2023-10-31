@@ -1,0 +1,48 @@
+File Information
+- File name: Maps
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/maps_lemma_eqb_eq_IN_beq_idP
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_eqb_eq_IN_beq_idP
+- Namespace: vfa_benchmark
+- Proof name: beq_idP
+- Theorem: Theorem beq_idP: forall x0 y0 : nat, reflect (@eq nat x0 y0) (Nat.eqb x0 y0).
+- Declarations: 
+From lfind Require Import LFind.
+From Coq Require Import Bool.Bool.
+From Coq Require Import Logic.FunctionalExtensionality.
+From VFA Require Import Perm.
+
+Proof Context
+* Goal State: iff (@eq nat x y) (@eq bool (Nat.eqb x y) true)
+
+* Hypothesis:
+x : nat
+y : nat
+
+* Types:
+Set
+Prop
+bool
+nat
+
+* Polymorphic Types:
+
+
+* Variables:
+x : nat
+y : nat
+
+* Terms:
+Nat.eqb x y : bool
+@eq bool (Nat.eqb x y) true : Prop
+iff (@eq nat x y) (@eq bool (Nat.eqb x y) true) : Prop
+nat : Set
+@eq nat x y : Prop
+bool : Set
+x : nat
+y : nat
+true : bool
+
+* Functions:
+Nat.eqb  : forall (_ : nat) (_ : nat), bool
+@eq  : forall (A : Type) (_ : A) (_ : A), Prop
+iff  : forall (_ : Prop) (_ : Prop), Prop

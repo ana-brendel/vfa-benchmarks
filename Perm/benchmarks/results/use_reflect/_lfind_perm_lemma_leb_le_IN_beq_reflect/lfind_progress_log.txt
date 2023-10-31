@@ -1,0 +1,44 @@
+File Information
+- File name: Perm
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/perm_lemma_leb_le_IN_beq_reflect
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/_lfind_perm_lemma_leb_le_IN_beq_reflect
+- Namespace: vfa_benchmark
+- Proof name: beq_reflect
+- Theorem: Theorem beq_reflect: forall x0 y0 : nat, reflect (@eq nat x0 y0) (Nat.eqb x0 y0).
+- Declarations: 
+From lfind Require Import LFind.
+Require Import Coq.Strings.String.
+
+Proof Context
+* Goal State: reflect (@eq nat x y) (Nat.eqb x y)
+
+* Hypothesis:
+x : nat
+y : nat
+
+* Types:
+Set
+Prop
+reflect (@eq nat x y) (Nat.eqb x y)
+bool
+nat
+
+* Polymorphic Types:
+reflect (@eq nat x y) (Nat.eqb x y)
+
+* Variables:
+x : nat
+y : nat
+
+* Terms:
+Nat.eqb x y : bool
+nat : Set
+@eq nat x y : Prop
+x : nat
+reflect (@eq nat x y) (Nat.eqb x y) : Set
+y : nat
+
+* Functions:
+reflect  : forall (_ : Prop) (_ : bool), Set
+Nat.eqb  : forall (_ : nat) (_ : nat), bool
+@eq  : forall (A : Type) (_ : A) (_ : A), Prop

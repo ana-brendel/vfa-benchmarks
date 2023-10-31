@@ -1,0 +1,44 @@
+File Information
+- File name: Perm
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/perm_lemma_iff_reflect_IN_blt_reflect
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/_lfind_perm_lemma_iff_reflect_IN_blt_reflect
+- Namespace: vfa_benchmark
+- Proof name: blt_reflect
+- Theorem: Theorem blt_reflect: forall x0 y0 : nat, reflect (lt x0 y0) (Nat.ltb x0 y0).
+- Declarations: 
+From lfind Require Import LFind.
+Require Import Coq.Strings.String.
+
+Proof Context
+* Goal State: reflect (lt x y) (Nat.ltb x y)
+
+* Hypothesis:
+x : nat
+y : nat
+
+* Types:
+Set
+reflect (lt x y) (Nat.ltb x y)
+Prop
+bool
+nat
+
+* Polymorphic Types:
+reflect (lt x y) (Nat.ltb x y)
+
+* Variables:
+x : nat
+y : nat
+
+* Terms:
+nat : Set
+x : nat
+lt x y : Prop
+Nat.ltb x y : bool
+y : nat
+reflect (lt x y) (Nat.ltb x y) : Set
+
+* Functions:
+reflect  : forall (_ : Prop) (_ : bool), Set
+Nat.ltb  : forall (_ : nat) (_ : nat), bool
+lt  : forall (_ : nat) (_ : nat), Prop

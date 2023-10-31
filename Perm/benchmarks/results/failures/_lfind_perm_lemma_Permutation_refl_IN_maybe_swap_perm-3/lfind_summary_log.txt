@@ -1,0 +1,27 @@
+LFind Results
+LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/_lfind_perm_lemma_Permutation_refl_IN_maybe_swap_perm-3
+
+Number of Lemmas: 3
+Number of Lemmas (after duplicates removed): 2
+Number of Lemmas (after QuickChick used to filter): 2
+* Number of Candidate Lemmas: 0
+
+Time until ranking: 35
+Time to complete: 35
+
+Stuck state true independent of hypotheses: true
+
+Category 1:
+Count = 0
+
+
+Category 2:
+Count = 0
+
+
+Category 3 (provable):
+Count = 0
+
+
+Category 3 (not provable):
+Count = 0
