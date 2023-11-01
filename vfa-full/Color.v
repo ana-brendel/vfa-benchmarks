@@ -299,22 +299,49 @@ Proof.
 intros.
 apply eqlistA_Eeq_eq.
 apply SortE_equivlistE_eqlistE.
-* (* To prove this one, [SearchAbout S.elements] *)
-(* FILL IN HERE *) admit.
-* (* Use [filter_sortE] to prove this one *)
-(* FILL IN HERE *) admit.
-*
+apply S.elements_3.
+apply filter_sortE.
+apply S.elements_3.
 intro j.
 rewrite filter_InA; [ | apply Proper_eq_eq].
 destruct (E.eq_dec j i).
-(* To prove this one, you'll need  S.remove_1, S.remove_2, S.remove_3,
-    S.elements_1, S.elements_2. *)
- + (* j=i *)
-(* FILL IN HERE *) admit.
- + (* j <> i *)
-(* FILL IN HERE *) admit.
-(* FILL IN HERE *) Admitted.
-(** [] *)
+{
+  split.
+  {
+    intros.
+    apply (S.remove_1 s) in e as e2.
+    apply S.elements_2 in H0.
+    subst.
+    apply e2 in H0.
+    destruct H0.
+  }
+  {
+    intro.
+    destruct H0.
+    inversion H1.
+  }
+}
+{
+  split.
+  {
+    intro.
+    split; auto.
+    apply S.elements_1.
+    eapply S.remove_3.
+    apply S.elements_2 in H0.
+    eassumption.
+  }
+  {
+    intro.
+    destruct H0.
+    apply S.elements_1.
+    apply S.elements_2 in H0.
+    apply S.remove_2.
+    congruence.
+    assumption.
+  }
+}
+Qed.
 
 (* ================================================================= *)
 (** ** Lists of (key,value) Pairs *)
