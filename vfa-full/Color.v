@@ -361,6 +361,23 @@ Lemma InA_map_fst_key:
 (* FILL IN HERE *) Admitted.
 (** [] *)
 
+Lemma hdrel_lt_lt_key: forall A (al: list (positive*A)) (a: positive*A), HdRel E.lt (fst a) (map fst al) <-> HdRel (M.lt_key (A:=A)) a al.
+Proof.
+  induction al; split ; intros.
+  { constructor. }
+  { constructor. }
+  { rewrite map_cons in H.
+    inversion H.
+    constructor.
+    unfold M.lt_key.
+    assumption. }
+  { rewrite map_cons.
+    constructor.
+    inversion H.
+    unfold M.lt_key in H1.
+    assumption.
+  }
+Qed.
 (** **** Exercise: 3 stars, standard (Sorted_lt_key)
 
     The function [M.lt_key] compares two elements of an [M.elements] list,
@@ -372,6 +389,29 @@ Lemma Sorted_lt_key:
   forall A (al: list (positive*A)), 
    Sorted (@M.lt_key A) al <->  Sorted E.lt (map (@fst positive A) al).
 Proof.
+  induction al; split; intro.
+  { constructor. }
+  { constructor. }
+  { inversion H.
+    inversion IHal.
+    apply H4 in H2.
+    rewrite map_cons.
+    apply Sorted_cons.
+    assumption.
+    apply hdrel_lt_lt_key.
+    assumption.
+  }
+  {
+    inversion H.
+    destruct IHal.
+    apply H5 in H2.
+    rewrite map_cons in H.
+    constructor.
+    assumption.
+    apply hdrel_lt_lt_key.
+    assumption.
+  }
+Qed.
 (* FILL IN HERE *) Admitted.
 (** [] *)
 
