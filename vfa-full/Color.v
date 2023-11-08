@@ -299,22 +299,49 @@ Proof.
 intros.
 apply eqlistA_Eeq_eq.
 apply SortE_equivlistE_eqlistE.
-* (* To prove this one, [SearchAbout S.elements] *)
-(* FILL IN HERE *) admit.
-* (* Use [filter_sortE] to prove this one *)
-(* FILL IN HERE *) admit.
-*
+apply S.elements_3.
+apply filter_sortE.
+apply S.elements_3.
 intro j.
 rewrite filter_InA; [ | apply Proper_eq_eq].
 destruct (E.eq_dec j i).
-(* To prove this one, you'll need  S.remove_1, S.remove_2, S.remove_3,
-    S.elements_1, S.elements_2. *)
- + (* j=i *)
-(* FILL IN HERE *) admit.
- + (* j <> i *)
-(* FILL IN HERE *) admit.
-(* FILL IN HERE *) Admitted.
-(** [] *)
+{
+  split.
+  {
+    intros.
+    apply (S.remove_1 s) in e as e2.
+    apply S.elements_2 in H0.
+    subst.
+    apply e2 in H0.
+    destruct H0.
+  }
+  {
+    intro.
+    destruct H0.
+    inversion H1.
+  }
+}
+{
+  split.
+  {
+    intro.
+    split; auto.
+    apply S.elements_1.
+    eapply S.remove_3.
+    apply S.elements_2 in H0.
+    eassumption.
+  }
+  {
+    intro.
+    destruct H0.
+    apply S.elements_1.
+    apply S.elements_2 in H0.
+    apply S.remove_2.
+    congruence.
+    assumption.
+  }
+}
+Qed.
 
 (* ================================================================= *)
 (** ** Lists of (key,value) Pairs *)
@@ -334,6 +361,23 @@ Lemma InA_map_fst_key:
 (* FILL IN HERE *) Admitted.
 (** [] *)
 
+Lemma hdrel_lt_lt_key: forall A (al: list (positive*A)) (a: positive*A), HdRel E.lt (fst a) (map fst al) <-> HdRel (M.lt_key (A:=A)) a al.
+Proof.
+  induction al; split ; intros.
+  { constructor. }
+  { constructor. }
+  { rewrite map_cons in H.
+    inversion H.
+    constructor.
+    unfold M.lt_key.
+    assumption. }
+  { rewrite map_cons.
+    constructor.
+    inversion H.
+    unfold M.lt_key in H1.
+    assumption.
+  }
+Qed.
 (** **** Exercise: 3 stars, standard (Sorted_lt_key)
 
     The function [M.lt_key] compares two elements of an [M.elements] list,
@@ -345,6 +389,29 @@ Lemma Sorted_lt_key:
   forall A (al: list (positive*A)), 
    Sorted (@M.lt_key A) al <->  Sorted E.lt (map (@fst positive A) al).
 Proof.
+  induction al; split; intro.
+  { constructor. }
+  { constructor. }
+  { inversion H.
+    inversion IHal.
+    apply H4 in H2.
+    rewrite map_cons.
+    apply Sorted_cons.
+    assumption.
+    apply hdrel_lt_lt_key.
+    assumption.
+  }
+  {
+    inversion H.
+    destruct IHal.
+    apply H5 in H2.
+    rewrite map_cons in H.
+    constructor.
+    assumption.
+    apply hdrel_lt_lt_key.
+    assumption.
+  }
+Qed.
 (* FILL IN HERE *) Admitted.
 (** [] *)
 
