@@ -5,6 +5,14 @@ import shutil
 fullVFA = "/home/anabrendel/lfind/vfa-benchmarks/vfa-full"
 main = "/home/anabrendel/lfind/vfa-benchmarks"
 
+def makefile(folder):
+    cmd = f"cd {folder} && coq_makefile -f _CoqProject -o Makefile"
+    os.system(cmd)
+
+def make(folder):
+    cmd = f"cd {folder} && make"
+    os.system(cmd)
+
 def write_content(file, content):
     with open(file,"w") as f:
         f.write("\n".join(content))
@@ -14,29 +22,24 @@ for t in os.listdir(main):
     if t != "vfa-full" and t != "helper.py" and not t.startswith(".") and t != "README.md" and t != "Preface":
         testFolders.append(t)
 
-for t in testFolders:
-    path = os.path.join(main,t)
-    cmd = f"cd {path} && make"
-    # os.system(cmd)
+benches = [
+    "sort_lemma_insert_sorted_IN_sort_sorted",
+    "sort_lemma_insert_perm_IN_sort_perm",
+    #"sort_lemma_sort_perm_IN_insertion_sort_correct",
+    #"sort_lemma_sort_sorted_IN_insertion_sort_correct",
+    "sort_lemma_sorted_remove_cons_1_IN_insert_sortedd",
+    "sort_lemma_sorted_remove_cons_2_IN_insert_sortedd",
+    "sort_lemma_sorted_remove_cons_3_IN_insert_sortedd",
+    "sort_lemma_sorted_remove_cons_4_IN_insert_sortedd",
+    "sort_lemma_sorted_remove_cons_5_IN_insert_sortedd",
+    "sort_lemma_sorted_remove_1_IN_insert_sortedd",
+    "sort_lemma_sorted_remove_2_IN_insert_sortedd",
+    "sort_lemma_insert_sortedd_IN_sort_sortedd"
+]
 
 
-benches = "/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks"
-perm_benches = "/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks"
+src = "/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources"
 
-src = "/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/Maps.v"
-p = "/home/anabrendel/lfind/vfa-benchmarks/Maps/_CoqProject"
-
-l = "/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/perm_lemma_app_assoc_IN_butterfly-1/show_list.v"
-n = "/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/perm_lemma_app_assoc_IN_butterfly-1/show_nat.v"
-
-# for t in m:
-#     folder = os.path.join(benches,t)
-#     # cmd = f"cd {folder} && coq_makefile -f _CoqProject -o Makefile"
-#     cmd = f"cd {folder} && make"
-#     os.system(cmd)
-
-for t in os.listdir(perm_benches):
-    if "butterfly" not in t:
-        full = os.path.join(perm_benches,t)
-        cmd = f"cd {full} && make"
-        os.system(cmd)
+for b in benches:
+    folder = os.path.join(src,b)
+    make(folder)

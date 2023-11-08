@@ -1,0 +1,27 @@
+LFind Results
+LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_cons_3_IN_insert_sortedd
+
+Number of Lemmas: 0
+Number of Lemmas (after duplicates removed): 0
+Number of Lemmas (after QuickChick used to filter): 0
+* Number of Candidate Lemmas: 0
+
+Time until ranking: 46
+Time to complete: 47
+
+Stuck state true independent of hypotheses: false
+
+Category 1:
+Count = 0
+
+
+Category 2:
+Count = 0
+
+
+Category 3 (provable):
+Count = 0
+
+
+Category 3 (not provable):
+Count = 0

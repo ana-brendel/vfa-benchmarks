@@ -1,611 +1,899 @@
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq
 
-cp -r /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/maps_lemma_t_update_neq_IN_update_neq /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq
+cp -r /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/maps_lemma_t_update_neq_IN_update_neq /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_quickchick_generator.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_quickchick_generator.v
 
 export is_lfind=true
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/conj*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/conj*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_conj*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_conj*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_generalized_**
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_generalized_**
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_eval*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_eval*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_proverbot_eval_*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_proverbot_eval_*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_proverbot_eval_*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_proverbot_eval_*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_quickchick*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_quickchick*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_quickchick*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_quickchick*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_axiom_*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_axiom_*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj1.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj1*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj5.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj5*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj6.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj6*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj8.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj8*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj9.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj9*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj13.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj13*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj14.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj14*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj16.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj16*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/conj*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_conj*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_generalized_**
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_eval*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_proverbot_eval_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj1.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_proverbot_eval_*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj1*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_quickchick*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj3.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_quickchick*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj3*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj4.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_axiom_*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj4*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_hypothesis.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj5.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj16_imp.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj5*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj16_imp*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj7.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_hypothesis.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj7*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj14_imp.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj8.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj14_imp*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj8*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_hypothesis.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/conj*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_hypothesis.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_hypothesis.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_conj*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj8_imp.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj8_imp*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_generalized_**
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_hypothesis.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_hypothesis.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_eval*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_hypothesis.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_proverbot_eval_*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/conj*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_proverbot_eval_*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_quickchick*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_conj*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_quickchick*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_generalized_**
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_axiom_*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_hypothesis.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_eval*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj8_imp.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_proverbot_eval_*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj8_imp*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_proverbot_eval_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_hypothesis.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_quickchick*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj7_imp.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_quickchick*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj7_imp*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_hypothesis.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_axiom_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_hypothesis.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj16.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj4_imp.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj16*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj4_imp*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj16_imp.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_hypothesis.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj16_imp*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_hypothesis.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj14.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/conj*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj14*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj14_imp.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_conj*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj14_imp*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj13.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_generalized_**
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj13*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj9.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_eval*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj9*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_proverbot_eval_*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj8.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_proverbot_eval_*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj8*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_quickchick*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj8_imp.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_quickchick*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj8_imp*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj6.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_axiom_*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj6*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj8.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj5.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj8*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj5*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj8_imp.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj1.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj8_imp*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj1*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj7.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/conj*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj7*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj7_imp.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_conj*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj7_imp*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj5.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_generalized_**
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj5*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj4.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_eval*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj4*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_proverbot_eval_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj4_imp.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_proverbot_eval_*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj4_imp*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_quickchick*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj3.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_quickchick*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj3*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj1.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_axiom_*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq//home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj1*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/conj*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/conj*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_conj*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_conj*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_generalized_**
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_generalized_**
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_eval*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_eval*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_proverbot_eval_*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_proverbot_eval_*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_proverbot_eval_*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_proverbot_eval_*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_quickchick*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_quickchick*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_quickchick*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_quickchick*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report*
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_axiom_*
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_axiom_*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/conj*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_conj*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_generalized_**
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_eval*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_proverbot_eval_*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_proverbot_eval_*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_quickchick*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_quickchick*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_axiom_*
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/conj*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_conj*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_generalized_**
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_eval*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_proverbot_eval_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_proverbot_eval_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_quickchick*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_quickchick*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_axiom_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='option X' --params='X:Type,lf3:option X' --extra-exprs='@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.find (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X),@vfa_benchmark.Maps.find_helper ,@vfa_benchmark.Maps.update_helper ' --examples='nat,@None nat=@Some nat O' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_1synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_1synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='option X' --params='X:Type,x1:@Coq.Init.Datatypes.nat,lf2:total_map (option X)' --extra-exprs='@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.find (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X),@vfa_benchmark.Maps.find_helper ,@vfa_benchmark.Maps.update_helper ' --examples='nat,(0),@pair (list (prod nat (option nat))) (option nat) (@cons (prod nat (option nat)) (@pair nat (option nat) O (@Some nat O)) (@nil (prod nat (option nat)))) (@None nat)=@Some nat O' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_2synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_2synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='total_map (option X)' --params='X:Type,lf3:option X,x1:@Coq.Init.Datatypes.nat' --extra-exprs='@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.find (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X),@vfa_benchmark.Maps.find_helper ,@vfa_benchmark.Maps.update_helper ' --examples='nat,@None nat,(0)=@pair (list (prod nat (option nat))) (option nat) (@cons (prod nat (option nat)) (@pair nat (option nat) O (@Some nat O)) (@nil (prod nat (option nat)))) (@None nat)' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_3synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_3synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='option X' --params='X:Type,x2:@Coq.Init.Datatypes.nat,x1:@Coq.Init.Datatypes.nat,lf4:option X,m:partial_map X' --extra-exprs='@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.find (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X),@vfa_benchmark.Maps.find_helper ,@vfa_benchmark.Maps.update_helper ' --examples='nat,(0),(0),@Some nat O,((nil, None))=@Some nat O' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_4synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_4synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='total_map (option X)' --params='X:Type,x2:@Coq.Init.Datatypes.nat,lf4:option X,m:partial_map X' --extra-exprs='@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.find (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X),@vfa_benchmark.Maps.find_helper ,@vfa_benchmark.Maps.update_helper ' --examples='nat,(0),@Some nat O,((nil, None))=@pair (list (prod nat (option nat))) (option nat) (@cons (prod nat (option nat)) (@pair nat (option nat) O (@Some nat O)) (@nil (prod nat (option nat)))) (@None nat)' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_5synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_5synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='option X' --params='X:Type,lf3:option X,x2:@Coq.Init.Datatypes.nat,x1:@Coq.Init.Datatypes.nat' --extra-exprs='@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.find (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X),@vfa_benchmark.Maps.find_helper ,@vfa_benchmark.Maps.update_helper ' --examples='nat,@None nat,(0),(0)=@Some nat O' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_6synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_6synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='option X' --params='X:Type,lf3:option X,x2:@Coq.Init.Datatypes.nat,x1:@Coq.Init.Datatypes.nat,m:partial_map X' --extra-exprs='@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.find (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X),@vfa_benchmark.Maps.find_helper ,@vfa_benchmark.Maps.update_helper ' --examples='nat,@None nat,(0),(0),((nil, None))=@Some nat O' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_7synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_7synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='total_map (option X)' --params='X:Type,lf3:option X,x2:@Coq.Init.Datatypes.nat,x1:@Coq.Init.Datatypes.nat' --extra-exprs='@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.find (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X),@vfa_benchmark.Maps.find_helper ,@vfa_benchmark.Maps.update_helper ' --examples='nat,@None nat,(0),(0)=@pair (list (prod nat (option nat))) (option nat) (@cons (prod nat (option nat)) (@pair nat (option nat) O (@Some nat O)) (@nil (prod nat (option nat)))) (@None nat)' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_8synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_8synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='option X' --params='X:Type,x2:@Coq.Init.Datatypes.nat,x1:@Coq.Init.Datatypes.nat,v:X,m:partial_map X' --extra-exprs='@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.find (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X),@vfa_benchmark.Maps.find_helper ,@vfa_benchmark.Maps.update_helper ' --examples='nat,(0),(0),(0),((nil, None))=@Some nat O' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_9synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_9synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='option X' --params='X:Type,v:X' --extra-exprs='@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.find (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X),@vfa_benchmark.Maps.find_helper ,@vfa_benchmark.Maps.update_helper ' --examples='nat,(0)=@Some nat O' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_10synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_10synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='total_map (option X)' --params='X:Type,x2:@Coq.Init.Datatypes.nat,v:X,m:partial_map X' --extra-exprs='@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.find (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X),@vfa_benchmark.Maps.find_helper ,@vfa_benchmark.Maps.update_helper ' --examples='nat,(0),(0),((nil, None))=@pair (list (prod nat (option nat))) (option nat) (@cons (prod nat (option nat)) (@pair nat (option nat) O (@Some nat O)) (@nil (prod nat (option nat)))) (@None nat)' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_11synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_11synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='option X' --params='X:Type,lf1:option X' --extra-exprs='@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.find (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X),@vfa_benchmark.Maps.find_helper ,@vfa_benchmark.Maps.update_helper ' --examples='nat,@Some nat O=@None nat' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_12synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_12synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='option X' --params='X:Type,x1:@Coq.Init.Datatypes.nat,m:partial_map X' --extra-exprs='@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.find (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X),@vfa_benchmark.Maps.find_helper ,@vfa_benchmark.Maps.update_helper ' --examples='nat,(0),((nil, None))=@None nat' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_13synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_13synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='option X' --params='X:Type,x1:@Coq.Init.Datatypes.nat,lf2:total_map (option X)' --extra-exprs='@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.find (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X),@vfa_benchmark.Maps.find_helper ,@vfa_benchmark.Maps.update_helper ' --examples='nat,(0),@pair (list (prod nat (option nat))) (option nat) (@cons (prod nat (option nat)) (@pair nat (option nat) O (@Some nat O)) (@nil (prod nat (option nat)))) (@None nat)=@None nat' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_14synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_14synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='option X' --params='X:Type,x1:@Coq.Init.Datatypes.nat,m:partial_map X' --extra-exprs='@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.find (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X),@vfa_benchmark.Maps.find_helper ,@vfa_benchmark.Maps.update_helper ' --examples='nat,(0),((nil, None))=@Some nat O' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_15synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_15synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='option X' --params='X:Type,x2:@Coq.Init.Datatypes.nat,x1:@Coq.Init.Datatypes.nat,lf4:option X,m:partial_map X' --extra-exprs='@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.find (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X),@vfa_benchmark.Maps.find_helper ,@vfa_benchmark.Maps.update_helper ' --examples='nat,(0),(0),@Some nat O,((nil, None))=@None nat' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_16synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_16synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='total_map (option X)' --params='X:Type,x1:@Coq.Init.Datatypes.nat,m:partial_map X' --extra-exprs='@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.find (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X),@vfa_benchmark.Maps.find_helper ,@vfa_benchmark.Maps.update_helper ' --examples='nat,(0),((nil, None))=@pair (list (prod nat (option nat))) (option nat) (@cons (prod nat (option nat)) (@pair nat (option nat) O (@Some nat O)) (@nil (prod nat (option nat)))) (@None nat)' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_17synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_17synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='option X' --params='X:Type,x2:@Coq.Init.Datatypes.nat,x1:@Coq.Init.Datatypes.nat,m:partial_map X' --extra-exprs='@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.find (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X),@vfa_benchmark.Maps.find_helper ,@vfa_benchmark.Maps.update_helper ' --examples='nat,(0),(0),((nil, None))=@Some nat O' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_18synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_18synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='option X' --params='X:Type,x2:@Coq.Init.Datatypes.nat,x1:@Coq.Init.Datatypes.nat,v:X,m:partial_map X' --extra-exprs='@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.find (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X),@vfa_benchmark.Maps.find_helper ,@vfa_benchmark.Maps.update_helper ' --examples='nat,(0),(0),(0),((nil, None))=@None nat' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_19synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_19synthesis.txt
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/conj*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_conj*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_generalized_**
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_eval*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_proverbot_eval_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_proverbot_eval_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_quickchick*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_quickchick*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_axiom_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/conj*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_conj*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_generalized_**
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_eval*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_proverbot_eval_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_proverbot_eval_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_quickchick*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_quickchick*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_axiom_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval_candidate_2.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval_candidate_1.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval_candidate_3.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval_candidate_4.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval_candidate_5.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval_candidate_6.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval_candidate_12.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval_candidate_13.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval_candidate_14.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval_candidate_15.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval_candidate_16.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval_candidate_7.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval_candidate_8.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval_candidate_17.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval_candidate_9.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval_candidate_11.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-python3  /home/anabrendel/lfind/lemmafinder/src/filter.py --prelude="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq" --theorem_name="update_neq" --theorem="Theorem update_neq: forall (X0 : Type) (v0 : X0) (x0 x3 : nat) (m0 : partial_map X0)
-  (_ : not (@eq nat x3 x0)),
-@eq (option X0) (@find (option X0) (@update X0 m0 x3 v0) x0)
-  (@find (option X0) m0 x0)." --lemmas  "Lemma candidate_2: forall {X} (x2 : nat) (x1 : nat) (v : X) (m : partial_map X), not (not (@eq nat x2 x1)) \/ (@eq (option X) (@find (option X) (@t_update (option X) m x2 (@Some X v)) x1)   (@find (option X) m x1))." "Lemma candidate_1: forall {X} (x2 : nat) (x1 : nat) (lf4 : option X) (m : partial_map X), not (not (@eq nat x2 x1)) \/ (@eq (option X) (@find (option X) (@t_update (option X) m x2 lf4) x1)   (@find (option X) m x1))." "Lemma candidate_7: forall {X} (x1 : nat) (lf2 : total_map (option X)), @eq (option X) (@find (option X) lf2 x1) (@find (option X) lf2 x1)." "Lemma candidate_9: forall {X} (v : X), @eq (option X) (@Some X v) (@Some X v)." --imports "Load LFindLoad."  "From lfind Require Import LFind." "From Coq Require Import Bool.Bool." "From Coq Require Import Logic.FunctionalExtensionality." "From VFA Require Import Perm." "From vfa_benchmark Require Import Maps."
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/conj*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_conj*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_generalized_**
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_eval*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_proverbot_eval_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_proverbot_eval_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_quickchick*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_quickchick*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_axiom_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_proverbot_eval_candidate_1.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report-candidate_1-Nc7exo
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cat /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report-candidate_1-Nc7exo/*-proofs.txt | grep SUCCESS | grep candidate_1 -c
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_axiom_candidate_1.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report-current_goal-PZKZRJ
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cat /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report-current_goal-PZKZRJ/*-proofs.txt | grep SUCCESS | grep current_goal -c
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_proverbot_eval_candidate_2.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report-candidate_2-VRUYsq
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cat /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report-candidate_2-VRUYsq/*-proofs.txt | grep SUCCESS | grep candidate_2 -c
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_axiom_candidate_2.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report-current_goal-zQsDe8
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-cat /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report-current_goal-zQsDe8/*-proofs.txt | grep SUCCESS | grep current_goal -c
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/conj*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_conj*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_generalized_**
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_eval*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_proverbot_eval_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_proverbot_eval_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_quickchick*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_quickchick*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_axiom_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/conj*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_conj*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_generalized_**
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_eval*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_proverbot_eval_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_proverbot_eval_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_quickchick*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_quickchick*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
 
-rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_axiom_*
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_axiom_*
+
+timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='option X' --params='X:Type,lf3:option X' --extra-exprs=' ,@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X)' --examples='nat,@None nat=@None nat;nat,@None nat=@None nat;nat,@None nat=@None nat;nat,@Some nat (S O)=@Some nat (S O);nat,@None nat=@Some nat O;nat,@None nat=@Some nat (S O);nat,@None nat=@None nat;nat,@None nat=@None nat;nat,@Some nat O=@Some nat O' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_1synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_1synthesis.txt
+
+timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='option X' --params='X:Type,x2:@Coq.Init.Datatypes.nat,x1:@Coq.Init.Datatypes.nat,m:partial_map X,lf2:option X' --extra-exprs=' ,@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X)' --examples='nat,(1),(0),(fun x => match x with | 0 => None | 1 => Some (0) | 2 => Some (3) | 3 => Some (2) | 4 => Some (3) | 5 => Some (3) | 6 => None | 7 => None | 8 => None | 9 => None | _ => None end),@Some nat O=@None nat;nat,(0),(1),(fun x => match x with | 0 => None | 1 => None | 2 => None | 3 => Some (2) | 4 => Some (0) | 5 => None | 6 => None | 7 => Some (2) | 8 => Some (0) | 9 => None | _ => None end),@Some nat (S O)=@None nat;nat,(2),(1),(fun x => match x with | 0 => Some (1) | 1 => None | 2 => Some (1) | 3 => Some (1) | 4 => None | 5 => Some (0) | 6 => None | 7 => None | 8 => None | 9 => Some (3) | _ => Some (0) end),@Some nat (S O)=@None nat;nat,(2),(0),(fun x => match x with | 0 => Some (1) | 1 => None | 2 => Some (2) | 3 => Some (1) | 4 => Some (0) | 5 => None | 6 => None | 7 => Some (3) | 8 => None | 9 => Some (0) | _ => None end),@Some nat (S O)=@Some nat (S O);nat,(2),(2),(fun x => match x with | 0 => None | 1 => Some (0) | 2 => None | 3 => None | 4 => Some (3) | 5 => Some (2) | 6 => Some (0) | 7 => None | 8 => Some (3) | 9 => Some (0) | _ => Some (1) end),@Some nat O=@Some nat O;nat,(2),(2),(fun x => match x with | 0 => None | 1 => Some (0) | 2 => None | 3 => None | 4 => Some (3) | 5 => Some (2) | 6 => Some (0) | 7 => None | 8 => Some (3) | 9 => Some (0) | _ => Some (1) end),@Some nat (S O)=@Some nat (S O);nat,(0),(1),(fun x => match x with | 0 => Some (1) | 1 => None | 2 => None | 3 => None | 4 => Some (1) | 5 => Some (0) | 6 => Some (2) | 7 => None | 8 => None | 9 => None | _ => None end),@Some nat O=@None nat;nat,(1),(0),(fun x => match x with | 0 => None | 1 => Some (1) | 2 => None | 3 => None | 4 => Some (0) | 5 => Some (1) | 6 => None | 7 => None | 8 => Some (1) | 9 => Some (0) | _ => Some (1) end),@Some nat O=@None nat;nat,(0),(0),(fun x => match x with | 0 => Some (0) | 1 => Some (0) | 2 => Some (0) | 3 => Some (0) | 4 => Some (0) | 5 => Some (0) | 6 => Some (0) | 7 => Some (0) | 8 => Some (0) | 9 => Some (0) | _ => Some (0) end),@Some nat O=@Some nat O' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_2synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_2synthesis.txt
+
+timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='option X' --params='X:Type,lf3:option X,x2:@Coq.Init.Datatypes.nat,x1:@Coq.Init.Datatypes.nat,m:partial_map X' --extra-exprs=' ,@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X)' --examples='nat,@None nat,(1),(0),(fun x => match x with | 0 => None | 1 => Some (0) | 2 => Some (3) | 3 => Some (2) | 4 => Some (3) | 5 => Some (3) | 6 => None | 7 => None | 8 => None | 9 => None | _ => None end)=@Some nat O;nat,@None nat,(0),(1),(fun x => match x with | 0 => None | 1 => None | 2 => None | 3 => Some (2) | 4 => Some (0) | 5 => None | 6 => None | 7 => Some (2) | 8 => Some (0) | 9 => None | _ => None end)=@Some nat (S O);nat,@None nat,(2),(1),(fun x => match x with | 0 => Some (1) | 1 => None | 2 => Some (1) | 3 => Some (1) | 4 => None | 5 => Some (0) | 6 => None | 7 => None | 8 => None | 9 => Some (3) | _ => Some (0) end)=@Some nat (S O);nat,@Some nat (S O),(2),(0),(fun x => match x with | 0 => Some (1) | 1 => None | 2 => Some (2) | 3 => Some (1) | 4 => Some (0) | 5 => None | 6 => None | 7 => Some (3) | 8 => None | 9 => Some (0) | _ => None end)=@Some nat (S O);nat,@None nat,(2),(2),(fun x => match x with | 0 => None | 1 => Some (0) | 2 => None | 3 => None | 4 => Some (3) | 5 => Some (2) | 6 => Some (0) | 7 => None | 8 => Some (3) | 9 => Some (0) | _ => Some (1) end)=@Some nat O;nat,@None nat,(2),(2),(fun x => match x with | 0 => None | 1 => Some (0) | 2 => None | 3 => None | 4 => Some (3) | 5 => Some (2) | 6 => Some (0) | 7 => None | 8 => Some (3) | 9 => Some (0) | _ => Some (1) end)=@Some nat (S O);nat,@None nat,(0),(1),(fun x => match x with | 0 => Some (1) | 1 => None | 2 => None | 3 => None | 4 => Some (1) | 5 => Some (0) | 6 => Some (2) | 7 => None | 8 => None | 9 => None | _ => None end)=@Some nat O;nat,@None nat,(1),(0),(fun x => match x with | 0 => None | 1 => Some (1) | 2 => None | 3 => None | 4 => Some (0) | 5 => Some (1) | 6 => None | 7 => None | 8 => Some (1) | 9 => Some (0) | _ => Some (1) end)=@Some nat O;nat,@Some nat O,(0),(0),(fun x => match x with | 0 => Some (0) | 1 => Some (0) | 2 => Some (0) | 3 => Some (0) | 4 => Some (0) | 5 => Some (0) | 6 => Some (0) | 7 => Some (0) | 8 => Some (0) | 9 => Some (0) | _ => Some (0) end)=@Some nat O' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_3synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_3synthesis.txt
+
+timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='option X' --params='X:Type,lf3:option X,x2:@Coq.Init.Datatypes.nat,x1:@Coq.Init.Datatypes.nat' --extra-exprs=' ,@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X)' --examples='nat,@None nat,(1),(0)=@None nat;nat,@None nat,(0),(1)=@None nat;nat,@None nat,(2),(1)=@None nat;nat,@Some nat (S O),(2),(0)=@Some nat (S O);nat,@None nat,(2),(2)=@Some nat O;nat,@None nat,(2),(2)=@Some nat (S O);nat,@None nat,(0),(1)=@None nat;nat,@None nat,(1),(0)=@None nat;nat,@Some nat O,(0),(0)=@Some nat O' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_4synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_4synthesis.txt
+
+timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='option X' --params='X:Type,v:X' --extra-exprs=' ,@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X)' --examples='nat,(0)=@Some nat O;nat,(1)=@Some nat (S O);nat,(1)=@Some nat (S O);nat,(1)=@Some nat (S O);nat,(0)=@Some nat O;nat,(1)=@Some nat (S O);nat,(0)=@Some nat O;nat,(0)=@Some nat O;nat,(0)=@Some nat O' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_5synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_5synthesis.txt
+
+timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='option X' --params='X:Type,x2:@Coq.Init.Datatypes.nat,x1:@Coq.Init.Datatypes.nat,v:X,m:partial_map X' --extra-exprs=' ,@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X)' --examples='nat,(1),(0),(0),(fun x => match x with | 0 => None | 1 => Some (0) | 2 => Some (3) | 3 => Some (2) | 4 => Some (3) | 5 => Some (3) | 6 => None | 7 => None | 8 => None | 9 => None | _ => None end)=@None nat;nat,(0),(1),(1),(fun x => match x with | 0 => None | 1 => None | 2 => None | 3 => Some (2) | 4 => Some (0) | 5 => None | 6 => None | 7 => Some (2) | 8 => Some (0) | 9 => None | _ => None end)=@None nat;nat,(2),(1),(1),(fun x => match x with | 0 => Some (1) | 1 => None | 2 => Some (1) | 3 => Some (1) | 4 => None | 5 => Some (0) | 6 => None | 7 => None | 8 => None | 9 => Some (3) | _ => Some (0) end)=@None nat;nat,(2),(0),(1),(fun x => match x with | 0 => Some (1) | 1 => None | 2 => Some (2) | 3 => Some (1) | 4 => Some (0) | 5 => None | 6 => None | 7 => Some (3) | 8 => None | 9 => Some (0) | _ => None end)=@Some nat (S O);nat,(2),(2),(0),(fun x => match x with | 0 => None | 1 => Some (0) | 2 => None | 3 => None | 4 => Some (3) | 5 => Some (2) | 6 => Some (0) | 7 => None | 8 => Some (3) | 9 => Some (0) | _ => Some (1) end)=@Some nat O;nat,(2),(2),(1),(fun x => match x with | 0 => None | 1 => Some (0) | 2 => None | 3 => None | 4 => Some (3) | 5 => Some (2) | 6 => Some (0) | 7 => None | 8 => Some (3) | 9 => Some (0) | _ => Some (1) end)=@Some nat (S O);nat,(0),(1),(0),(fun x => match x with | 0 => Some (1) | 1 => None | 2 => None | 3 => None | 4 => Some (1) | 5 => Some (0) | 6 => Some (2) | 7 => None | 8 => None | 9 => None | _ => None end)=@None nat;nat,(1),(0),(0),(fun x => match x with | 0 => None | 1 => Some (1) | 2 => None | 3 => None | 4 => Some (0) | 5 => Some (1) | 6 => None | 7 => None | 8 => Some (1) | 9 => Some (0) | _ => Some (1) end)=@None nat;nat,(0),(0),(0),(fun x => match x with | 0 => Some (0) | 1 => Some (0) | 2 => Some (0) | 3 => Some (0) | 4 => Some (0) | 5 => Some (0) | 6 => Some (0) | 7 => Some (0) | 8 => Some (0) | 9 => Some (0) | _ => Some (0) end)=@Some nat O' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_6synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_6synthesis.txt
+
+timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='option X' --params='X:Type,lf1:option X' --extra-exprs=' ,@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X)' --examples='nat,@None nat=@None nat;nat,@None nat=@None nat;nat,@None nat=@None nat;nat,@Some nat (S O)=@Some nat (S O);nat,@Some nat O=@None nat;nat,@Some nat (S O)=@None nat;nat,@None nat=@None nat;nat,@None nat=@None nat;nat,@Some nat O=@Some nat O' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_7synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_7synthesis.txt
+
+timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='option X' --params='X:Type,x1:@Coq.Init.Datatypes.nat' --extra-exprs=' ,@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X)' --examples='nat,(0)=@None nat;nat,(1)=@None nat;nat,(1)=@None nat;nat,(0)=@Some nat (S O);nat,(2)=@None nat;nat,(2)=@None nat;nat,(1)=@None nat;nat,(0)=@None nat;nat,(0)=@Some nat O' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_8synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_8synthesis.txt
+
+timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='option X' --params='X:Type,x2:@Coq.Init.Datatypes.nat,x1:@Coq.Init.Datatypes.nat,m:partial_map X,lf2:option X' --extra-exprs=' ,@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X)' --examples='nat,(1),(0),(fun x => match x with | 0 => None | 1 => Some (0) | 2 => Some (3) | 3 => Some (2) | 4 => Some (3) | 5 => Some (3) | 6 => None | 7 => None | 8 => None | 9 => None | _ => None end),@Some nat O=@None nat;nat,(0),(1),(fun x => match x with | 0 => None | 1 => None | 2 => None | 3 => Some (2) | 4 => Some (0) | 5 => None | 6 => None | 7 => Some (2) | 8 => Some (0) | 9 => None | _ => None end),@Some nat (S O)=@None nat;nat,(2),(1),(fun x => match x with | 0 => Some (1) | 1 => None | 2 => Some (1) | 3 => Some (1) | 4 => None | 5 => Some (0) | 6 => None | 7 => None | 8 => None | 9 => Some (3) | _ => Some (0) end),@Some nat (S O)=@None nat;nat,(2),(0),(fun x => match x with | 0 => Some (1) | 1 => None | 2 => Some (2) | 3 => Some (1) | 4 => Some (0) | 5 => None | 6 => None | 7 => Some (3) | 8 => None | 9 => Some (0) | _ => None end),@Some nat (S O)=@Some nat (S O);nat,(2),(2),(fun x => match x with | 0 => None | 1 => Some (0) | 2 => None | 3 => None | 4 => Some (3) | 5 => Some (2) | 6 => Some (0) | 7 => None | 8 => Some (3) | 9 => Some (0) | _ => Some (1) end),@Some nat O=@None nat;nat,(2),(2),(fun x => match x with | 0 => None | 1 => Some (0) | 2 => None | 3 => None | 4 => Some (3) | 5 => Some (2) | 6 => Some (0) | 7 => None | 8 => Some (3) | 9 => Some (0) | _ => Some (1) end),@Some nat (S O)=@None nat;nat,(0),(1),(fun x => match x with | 0 => Some (1) | 1 => None | 2 => None | 3 => None | 4 => Some (1) | 5 => Some (0) | 6 => Some (2) | 7 => None | 8 => None | 9 => None | _ => None end),@Some nat O=@None nat;nat,(1),(0),(fun x => match x with | 0 => None | 1 => Some (1) | 2 => None | 3 => None | 4 => Some (0) | 5 => Some (1) | 6 => None | 7 => None | 8 => Some (1) | 9 => Some (0) | _ => Some (1) end),@Some nat O=@None nat;nat,(0),(0),(fun x => match x with | 0 => Some (0) | 1 => Some (0) | 2 => Some (0) | 3 => Some (0) | 4 => Some (0) | 5 => Some (0) | 6 => Some (0) | 7 => Some (0) | 8 => Some (0) | 9 => Some (0) | _ => Some (0) end),@Some nat O=@Some nat O' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_9synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_9synthesis.txt
+
+timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='option X' --params='X:Type,x1:@Coq.Init.Datatypes.nat' --extra-exprs=' ,@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X)' --examples='nat,(0)=@None nat;nat,(1)=@None nat;nat,(1)=@None nat;nat,(0)=@Some nat (S O);nat,(2)=@Some nat O;nat,(2)=@Some nat (S O);nat,(1)=@None nat;nat,(0)=@None nat;nat,(0)=@Some nat O' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_10synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_10synthesis.txt
+
+timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='option X' --params='X:Type,x2:@Coq.Init.Datatypes.nat,x1:@Coq.Init.Datatypes.nat,m:partial_map X' --extra-exprs=' ,@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X)' --examples='nat,(1),(0),(fun x => match x with | 0 => None | 1 => Some (0) | 2 => Some (3) | 3 => Some (2) | 4 => Some (3) | 5 => Some (3) | 6 => None | 7 => None | 8 => None | 9 => None | _ => None end)=@Some nat O;nat,(0),(1),(fun x => match x with | 0 => None | 1 => None | 2 => None | 3 => Some (2) | 4 => Some (0) | 5 => None | 6 => None | 7 => Some (2) | 8 => Some (0) | 9 => None | _ => None end)=@Some nat (S O);nat,(2),(1),(fun x => match x with | 0 => Some (1) | 1 => None | 2 => Some (1) | 3 => Some (1) | 4 => None | 5 => Some (0) | 6 => None | 7 => None | 8 => None | 9 => Some (3) | _ => Some (0) end)=@Some nat (S O);nat,(2),(0),(fun x => match x with | 0 => Some (1) | 1 => None | 2 => Some (2) | 3 => Some (1) | 4 => Some (0) | 5 => None | 6 => None | 7 => Some (3) | 8 => None | 9 => Some (0) | _ => None end)=@Some nat (S O);nat,(2),(2),(fun x => match x with | 0 => None | 1 => Some (0) | 2 => None | 3 => None | 4 => Some (3) | 5 => Some (2) | 6 => Some (0) | 7 => None | 8 => Some (3) | 9 => Some (0) | _ => Some (1) end)=@Some nat O;nat,(2),(2),(fun x => match x with | 0 => None | 1 => Some (0) | 2 => None | 3 => None | 4 => Some (3) | 5 => Some (2) | 6 => Some (0) | 7 => None | 8 => Some (3) | 9 => Some (0) | _ => Some (1) end)=@Some nat (S O);nat,(0),(1),(fun x => match x with | 0 => Some (1) | 1 => None | 2 => None | 3 => None | 4 => Some (1) | 5 => Some (0) | 6 => Some (2) | 7 => None | 8 => None | 9 => None | _ => None end)=@Some nat O;nat,(1),(0),(fun x => match x with | 0 => None | 1 => Some (1) | 2 => None | 3 => None | 4 => Some (0) | 5 => Some (1) | 6 => None | 7 => None | 8 => Some (1) | 9 => Some (0) | _ => Some (1) end)=@Some nat O;nat,(0),(0),(fun x => match x with | 0 => Some (0) | 1 => Some (0) | 2 => Some (0) | 3 => Some (0) | 4 => Some (0) | 5 => Some (0) | 6 => Some (0) | 7 => Some (0) | 8 => Some (0) | 9 => Some (0) | _ => Some (0) end)=@Some nat O' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_11synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_11synthesis.txt
+
+timeout  15 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/maps_lemma_t_update_neq_IN_update_neq" --module=Maps --type='option X' --params='X:Type,x2:@Coq.Init.Datatypes.nat,x1:@Coq.Init.Datatypes.nat,v:X,m:partial_map X' --extra-exprs=' ,@Coq.Init.Datatypes.option (X),@Coq.Init.Datatypes.option (X),@Coq.Init.Logic.not ,@Coq.Init.Logic.eq (option X),@vfa_benchmark.Maps.partial_map (X),@vfa_benchmark.Maps.t_update (option X)' --examples='nat,(1),(0),(0),(fun x => match x with | 0 => None | 1 => Some (0) | 2 => Some (3) | 3 => Some (2) | 4 => Some (3) | 5 => Some (3) | 6 => None | 7 => None | 8 => None | 9 => None | _ => None end)=@None nat;nat,(0),(1),(1),(fun x => match x with | 0 => None | 1 => None | 2 => None | 3 => Some (2) | 4 => Some (0) | 5 => None | 6 => None | 7 => Some (2) | 8 => Some (0) | 9 => None | _ => None end)=@None nat;nat,(2),(1),(1),(fun x => match x with | 0 => Some (1) | 1 => None | 2 => Some (1) | 3 => Some (1) | 4 => None | 5 => Some (0) | 6 => None | 7 => None | 8 => None | 9 => Some (3) | _ => Some (0) end)=@None nat;nat,(2),(0),(1),(fun x => match x with | 0 => Some (1) | 1 => None | 2 => Some (2) | 3 => Some (1) | 4 => Some (0) | 5 => None | 6 => None | 7 => Some (3) | 8 => None | 9 => Some (0) | _ => None end)=@Some nat (S O);nat,(2),(2),(0),(fun x => match x with | 0 => None | 1 => Some (0) | 2 => None | 3 => None | 4 => Some (3) | 5 => Some (2) | 6 => Some (0) | 7 => None | 8 => Some (3) | 9 => Some (0) | _ => Some (1) end)=@None nat;nat,(2),(2),(1),(fun x => match x with | 0 => None | 1 => Some (0) | 2 => None | 3 => None | 4 => Some (3) | 5 => Some (2) | 6 => Some (0) | 7 => None | 8 => Some (3) | 9 => Some (0) | _ => Some (1) end)=@None nat;nat,(0),(1),(0),(fun x => match x with | 0 => Some (1) | 1 => None | 2 => None | 3 => None | 4 => Some (1) | 5 => Some (0) | 6 => Some (2) | 7 => None | 8 => None | 9 => None | _ => None end)=@None nat;nat,(1),(0),(0),(fun x => match x with | 0 => None | 1 => Some (1) | 2 => None | 3 => None | 4 => Some (0) | 5 => Some (1) | 6 => None | 7 => None | 8 => Some (1) | 9 => Some (0) | _ => Some (1) end)=@None nat;nat,(0),(0),(0),(fun x => match x with | 0 => Some (0) | 1 => Some (0) | 2 => Some (0) | 3 => Some (0) | 4 => Some (0) | 5 => Some (0) | 6 => Some (0) | 7 => Some (0) | 8 => Some (0) | 9 => Some (0) | _ => Some (0) end)=@Some nat O' --num-terms=6 > /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_12synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/Mapssynth_12synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_axiom_*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval_candidate_2.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval_candidate_1.v
+
+python3  /home/anabrendel/lfind/lemmafinder/src/filter.py --prelude="/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq" --theorem_name="update_neq" --theorem="Theorem update_neq: forall (X0 : Type) (v0 : X0) (x0 x3 : nat) (m0 : partial_map X0)
+  (_ : not (@eq nat x3 x0)), @eq (option X0) (@update X0 m0 x3 v0 x0) (m0 x0)." --lemmas  "Lemma candidate_2: forall {X} (x2 : nat) (x1 : nat) (v : X) (m : partial_map X), not (not (@eq nat x2 x1)) \/ (@eq (option X) (@t_update (option X) m x2 (@Some X v) x1) (m x1))." "Lemma candidate_1: forall {X} (x2 : nat) (x1 : nat) (m : partial_map X) (lf2 : option X), not (not (@eq nat x2 x1)) \/ (@eq (option X) (@t_update (option X) m x2 lf2 x1) (m x1))." --imports "Load LFindLoad."  "From lfind Require Import LFind." "From Coq Require Import Bool.Bool." "From Coq Require Import Logic.FunctionalExtensionality." "From VFA Require Import Perm." "From vfa_benchmark Require Import Maps."
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_axiom_*
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_proverbot_eval_candidate_1.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report-candidate_1-uOwyLJ
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report-candidate_1-uOwyLJ/*-proofs.txt | grep SUCCESS | grep candidate_1 -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_axiom_candidate_1.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report-current_goal-Eisx7q
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report-current_goal-Eisx7q/*-proofs.txt | grep SUCCESS | grep current_goal -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_proverbot_eval_candidate_2.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report-candidate_2-nSFuiz
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report-candidate_2-nSFuiz/*-proofs.txt | grep SUCCESS | grep candidate_2 -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_axiom_candidate_2.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report-current_goal-yaTcrh
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report-current_goal-yaTcrh/*-proofs.txt | grep SUCCESS | grep current_goal -c
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq/lfind_axiom_*
 

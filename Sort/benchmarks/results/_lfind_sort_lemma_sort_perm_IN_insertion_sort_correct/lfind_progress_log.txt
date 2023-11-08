@@ -1,0 +1,99 @@
+File Information
+- File name: Sort
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/sort_lemma_sort_perm_IN_insertion_sort_correct
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct
+- Namespace: vfa_benchmark
+- Proof name: insertion_sort_correct
+- Theorem: Theorem insertion_sort_correct: is_a_sorting_algorithm sort.
+- Declarations: 
+From lfind Require Import LFind.
+From VFA Require Import Perm.
+
+Proof Context
+* Goal State: @Permutation nat al (sort al)
+
+* Hypothesis:
+al : list nat
+
+* Types:
+Set
+Prop
+nat
+list nat
+
+* Polymorphic Types:
+list nat
+
+* Variables:
+al : list nat
+
+* Terms:
+list nat : Set
+nat : Set
+@Permutation nat al (sort al) : Prop
+al : list nat
+sort al : list nat
+
+* Functions:
+sort  : forall _ : list nat, list nat
+list  : forall _ : Type, Type
+Permutation  : forall (A : Type) (_ : list A) (_ : list A), Prop
+
+<---GENERALIZATION--->
+Time elapsed: 2 seconds
+Generalized Variables:
+lf1 : list nat = sort al
+
+Generalizations:
+Lemma conj1: forall (lf1 : list nat) (al : list nat), @Permutation nat al lf1.
+Lemma conj2: forall (al : list nat), @Permutation nat al (sort al).
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 16 seconds
+Valid:
+Lemma conj2: forall (al : list nat), @Permutation nat al (sort al).
+
+Invalid:
+Lemma conj1: forall (lf1 : list nat) (al : list nat), @Permutation nat al lf1.
+
+<---ADD IMPLICATIONS--->
+Time elapsed: 16 seconds
+Generalizations:
+Lemma conj1: forall (lf1 : list nat) (al : list nat), @Permutation nat al lf1.
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 19 seconds
+Valid:
+
+Invalid:
+Lemma conj1: forall (lf1 : list nat) (al : list nat), @Permutation nat al lf1.
+
+
+<---CREATE SKETCHES--->
+Time elapsed: 19 seconds
+Sketches:
+
+
+<---CREATE SYNTHESIS PROBLEMS--->
+Time elapsed: 19 seconds
+Problems per Sketch:
+
+
+<--- SYNTHESIS PROBLEM RESULTS--->
+Time elapsed: 20 seconds
+
+<---INITIAL CANDIDATE LEMMAS--->
+Time elapsed: 20 seconds
+Lemmas:
+Lemma candidate_1: forall (al : list nat), @Permutation nat al (sort al).
+
+<---FILTERED CANDIDATE LEMMAS--->
+Time elapsed: 21 seconds
+Duplicates removed: 1
+Filtered by Quickchick: 0
+Filtered by script: 0
+Remaining: 0
+
+Lemmas: 

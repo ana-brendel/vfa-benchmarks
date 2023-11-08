@@ -1,0 +1,380 @@
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct
+
+cp -r /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/sort_lemma_sort_perm_IN_insertion_sort_correct /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_quickchick_generator.v
+
+export is_lfind=true
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_axiom_*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_conj1.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct//home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_conj1*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_conj2.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct//home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_conj2*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_axiom_*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_conj1.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct//home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_conj1*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_axiom_*
+
+python3  /home/anabrendel/lfind/lemmafinder/src/filter.py --prelude="/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct" --theorem_name="insertion_sort_correct" --theorem="Theorem insertion_sort_correct: is_a_sorting_algorithm sort." --lemmas  --imports "Load LFindLoad."  "From lfind Require Import LFind." "From VFA Require Import Perm." "From vfa_benchmark Require Import Sort."
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_perm_IN_insertion_sort_correct/lfind_axiom_*
+

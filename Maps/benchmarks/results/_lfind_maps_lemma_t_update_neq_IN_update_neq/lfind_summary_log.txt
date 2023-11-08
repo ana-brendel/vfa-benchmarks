@@ -1,13 +1,13 @@
 LFind Results
-LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_neq_IN_update_neq
+LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_neq_IN_update_neq
 
-Number of Lemmas: 24
-Number of Lemmas (after duplicates removed): 16
-Number of Lemmas (after QuickChick used to filter): 4
+Number of Lemmas: 2
+Number of Lemmas (after duplicates removed): 2
+Number of Lemmas (after QuickChick used to filter): 2
 * Number of Candidate Lemmas: 2
 
-Time until ranking: 210
-Time to complete: 313
+Time until ranking: 122
+Time to complete: 217
 
 Stuck state true independent of hypotheses: false
 
@@ -26,5 +26,5 @@ Count = 0
 Category 3 (not provable):
 Count = 2
 
-Lemma candidate_1: forall {X} (x2 : nat) (x1 : nat) (lf4 : option X) (m : partial_map X), not (not (@eq nat x2 x1)) \/ (@eq (option X) (@find (option X) (@t_update (option X) m x2 lf4) x1)   (@find (option X) m x1)).
-Lemma candidate_2: forall {X} (x2 : nat) (x1 : nat) (v : X) (m : partial_map X), not (not (@eq nat x2 x1)) \/ (@eq (option X) (@find (option X) (@t_update (option X) m x2 (@Some X v)) x1)   (@find (option X) m x1)).
+Lemma candidate_1: forall {X} (x2 : nat) (x1 : nat) (m : partial_map X) (lf2 : option X), not (not (@eq nat x2 x1)) \/ (@eq (option X) (@t_update (option X) m x2 lf2 x1) (m x1)).
+Lemma candidate_2: forall {X} (x2 : nat) (x1 : nat) (v : X) (m : partial_map X), not (not (@eq nat x2 x1)) \/ (@eq (option X) (@t_update (option X) m x2 (@Some X v) x1) (m x1)).

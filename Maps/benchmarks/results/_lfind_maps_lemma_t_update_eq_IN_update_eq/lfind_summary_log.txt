@@ -1,13 +1,13 @@
 LFind Results
-LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_eq_IN_update_eq
+LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_eq_IN_update_eq
 
-Number of Lemmas: 25
-Number of Lemmas (after duplicates removed): 10
-Number of Lemmas (after QuickChick used to filter): 10
-* Number of Candidate Lemmas: 6
+Number of Lemmas: 4
+Number of Lemmas (after duplicates removed): 3
+Number of Lemmas (after QuickChick used to filter): 3
+* Number of Candidate Lemmas: 1
 
-Time until ranking: 363
-Time to complete: 678
+Time until ranking: 95
+Time to complete: 112
 
 Stuck state true independent of hypotheses: true
 
@@ -18,17 +18,11 @@ Count = 0
 Category 2:
 Count = 1
 
-Lemma candidate_2: forall {A} (lf3 : option A) (m : partial_map A) (x : nat), @eq (option A) (@find (option A) (@t_update (option A) m x lf3) x) lf3.
+Lemma candidate_2: forall {A} (m : partial_map A) (x : nat) (lf2 : option A), @eq (option A) (@t_update (option A) m x lf2 x) lf2.
 
 Category 3 (provable):
 Count = 0
 
 
 Category 3 (not provable):
-Count = 5
-
-Lemma candidate_7: forall {A} (x : nat) (lf2 : total_map (option A)), @eq (option A) (@find (option A) lf2 x)   (@find (option A) (@t_update (option A) lf2 (S x) (@None A)) x).
-Lemma candidate_8: forall {A} (x : nat) (lf2 : total_map (option A)), @eq (option A) (@find (option A) lf2 x)   (@find (option A) (@t_update (option A) lf2 O (@find (option A) lf2 x)) O).
-Lemma candidate_6: forall {A} (x : nat) (lf2 : total_map (option A)), @eq (option A) (@find (option A) lf2 x)   (@find (option A) (@t_update (option A) lf2 O (@find (option A) lf2 O)) x).
-Lemma candidate_4: forall {A} (x : nat) (lf2 : total_map (option A)), @eq (option A) (@find (option A) lf2 x)   (@find (option A) (@t_update (option A) lf2 O (@find (option A) lf2 x)) x).
-Lemma candidate_5: forall {A} (x : nat) (lf2 : total_map (option A)), @eq (option A) (@find (option A) lf2 x)   (@find (option A) (@t_update (option A) lf2 (S x) (@find (option A) lf2 O)) x).
+Count = 0

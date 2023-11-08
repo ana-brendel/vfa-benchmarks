@@ -1,0 +1,29 @@
+LFind Results
+LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_cons_5_IN_insert_sortedd
+
+Number of Lemmas: 1
+Number of Lemmas (after duplicates removed): 1
+Number of Lemmas (after QuickChick used to filter): 1
+* Number of Candidate Lemmas: 1
+
+Time until ranking: 49
+Time to complete: 97
+
+Stuck state true independent of hypotheses: false
+
+Category 1:
+Count = 0
+
+
+Category 2:
+Count = 0
+
+
+Category 3 (provable):
+Count = 0
+
+
+Category 3 (not provable):
+Count = 1
+
+Lemma candidate_1: forall (a : nat) (l : list nat) (a0 : nat), not (sorted' (@cons nat a l)) \/ (not (@eq bool (Nat.leb a0 a) true) \/ (sorted' (@cons nat a0 (@cons nat a l)))).

@@ -3,7 +3,7 @@
   let values = ref SS.empty
     
   let write_to_file value=
-    let oc = open_out_gen [Open_append; Open_creat] 0o777 "/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/_lfind_maps_lemma_t_update_eq_IN_update_eq/examples_Maps.txt" in
+    let oc = open_out_gen [Open_append; Open_creat] 0o777 "/home/anabrendel/lfind/vfa-benchmarks/Maps/benchmarks/sources/_lfind_maps_lemma_t_update_eq_IN_update_eq/examples_Maps.txt" in
     if not(SS.mem value !values) then 
       (
         values := SS.add value !values;
