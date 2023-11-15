@@ -25,8 +25,8 @@ for t in os.listdir(main):
 benches = [
     "sort_lemma_insert_sorted_IN_sort_sorted",
     "sort_lemma_insert_perm_IN_sort_perm",
-    #"sort_lemma_sort_perm_IN_insertion_sort_correct",
-    #"sort_lemma_sort_sorted_IN_insertion_sort_correct",
+    "sort_lemma_sort_perm_IN_insertion_sort_correct",
+    "sort_lemma_sort_sorted_IN_insertion_sort_correct",
     "sort_lemma_sorted_remove_cons_1_IN_insert_sortedd",
     "sort_lemma_sorted_remove_cons_2_IN_insert_sortedd",
     "sort_lemma_sorted_remove_cons_3_IN_insert_sortedd",
@@ -37,9 +37,9 @@ benches = [
     "sort_lemma_insert_sortedd_IN_sort_sortedd"
 ]
 
-
+decide = "/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/sort_lemma_sorted_remove_cons_1_IN_insert_sortedd/decide.v"
 src = "/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources"
 
-for b in benches:
-    folder = os.path.join(src,b)
-    make(folder)
+for t in os.listdir(src):
+    test = os.path.join(src,t)
+    make(test)

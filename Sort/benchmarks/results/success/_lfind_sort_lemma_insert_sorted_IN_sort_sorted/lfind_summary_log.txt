@@ -1,0 +1,28 @@
+LFind Results
+LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_insert_sorted_IN_sort_sorted
+
+Number of Lemmas: 7
+Number of Lemmas (after duplicates removed): 6
+Number of Lemmas (after QuickChick used to filter): 2
+* Number of Candidate Lemmas: 1
+
+Time until ranking: 86
+Time to complete: 130
+
+Stuck state true independent of hypotheses: true
+
+Category 1:
+Count = 0
+
+
+Category 2:
+Count = 1
+
+Lemma candidate_2: forall (a : nat) (lf2 : list nat), sorted lf2 -> sorted (insert a lf2).
+
+Category 3 (provable):
+Count = 0
+
+
+Category 3 (not provable):
+Count = 0

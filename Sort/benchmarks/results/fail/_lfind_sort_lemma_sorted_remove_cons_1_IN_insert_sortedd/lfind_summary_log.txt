@@ -1,0 +1,34 @@
+LFind Results
+LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_cons_1_IN_insert_sortedd
+
+Number of Lemmas: 53
+Number of Lemmas (after duplicates removed): 32
+Number of Lemmas (after QuickChick used to filter): 14
+* Number of Candidate Lemmas: 6
+
+Time until ranking: 302
+Time to complete: 747
+
+Stuck state true independent of hypotheses: false
+
+Category 1:
+Count = 0
+
+
+Category 2:
+Count = 1
+
+Lemma candidate_11: forall (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
+
+Category 3 (provable):
+Count = 0
+
+
+Category 3 (not provable):
+Count = 5
+
+Lemma candidate_40: forall (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) (false) -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
+Lemma candidate_37: forall (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) (Nat.eqb a (S a)) -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
+Lemma candidate_38: forall (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) (Nat.eqb a (S a0)) -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
+Lemma candidate_39: forall (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) (Nat.eqb a0 (S a0)) -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
+Lemma candidate_36: forall (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a)   (match a0 with | O => false | S m' => Nat.leb a0 m' end) -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).

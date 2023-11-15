@@ -1,0 +1,99 @@
+File Information
+- File name: Sort
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/sort_lemma_sort_sorted_IN_insertion_sort_correct
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sort_sorted_IN_insertion_sort_correct
+- Namespace: vfa_benchmark
+- Proof name: insertion_sort_correct
+- Theorem: Theorem insertion_sort_correct: is_a_sorting_algorithm sort.
+- Declarations: 
+From lfind Require Import LFind.
+From VFA Require Import Perm.
+
+Proof Context
+* Goal State: sorted (sort al)
+
+* Hypothesis:
+al : list nat
+
+* Types:
+Set
+Prop
+nat
+list nat
+
+* Polymorphic Types:
+list nat
+
+* Variables:
+al : list nat
+
+* Terms:
+list nat : Set
+nat : Set
+al : list nat
+sort al : list nat
+sorted (sort al) : Prop
+
+* Functions:
+sort  : forall _ : list nat, list nat
+sorted  : forall _ : list nat, Prop
+list  : forall _ : Type, Type
+
+<---GENERALIZATION--->
+Time elapsed: 3 seconds
+Generalized Variables:
+lf1 : list nat = sort al
+
+Generalizations:
+Lemma conj1: forall (lf1 : list nat), sorted lf1.
+Lemma conj2: forall (al : list nat), sorted (sort al).
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 15 seconds
+Valid:
+Lemma conj2: forall (al : list nat), sorted (sort al).
+
+Invalid:
+Lemma conj1: forall (lf1 : list nat), sorted lf1.
+
+<---ADD IMPLICATIONS--->
+Time elapsed: 15 seconds
+Generalizations:
+Lemma conj1: forall (lf1 : list nat), sorted lf1.
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 17 seconds
+Valid:
+
+Invalid:
+Lemma conj1: forall (lf1 : list nat), sorted lf1.
+
+
+<---CREATE SKETCHES--->
+Time elapsed: 17 seconds
+Sketches:
+
+
+<---CREATE SYNTHESIS PROBLEMS--->
+Time elapsed: 17 seconds
+Problems per Sketch:
+
+
+<--- SYNTHESIS PROBLEM RESULTS--->
+Time elapsed: 17 seconds
+
+<---INITIAL CANDIDATE LEMMAS--->
+Time elapsed: 17 seconds
+Lemmas:
+Lemma candidate_1: forall (al : list nat), sorted (sort al).
+
+<---FILTERED CANDIDATE LEMMAS--->
+Time elapsed: 18 seconds
+Duplicates removed: 1
+Filtered by Quickchick: 0
+Filtered by script: 0
+Remaining: 0
+
+Lemmas: 

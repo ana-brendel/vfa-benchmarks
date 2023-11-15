@@ -1,0 +1,242 @@
+File Information
+- File name: Sort
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/sort_lemma_sorted_remove_1_IN_insert_sortedd
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd
+- Namespace: vfa_benchmark
+- Proof name: insert_sortedd
+- Theorem: Theorem insert_sortedd: forall (a1 : nat) (l0 : list nat) (_ : sortedd l0), sortedd (insert a1 l0).
+- Declarations: 
+From lfind Require Import LFind.
+From VFA Require Import Perm.
+
+Proof Context
+* Goal State: sortedd (@cons nat n l)
+
+* Hypothesis:
+Q : forall (i j iv jv : nat) (_ : lt i j)
+  (_ : @eq (option nat) (@nth_error nat (@cons nat a (@cons nat n l)) i)
+         (@Some nat iv))
+  (_ : @eq (option nat) (@nth_error nat (@cons nat a (@cons nat n l)) j)
+         (@Some nat jv)), le iv jv
+H0 : @eq bool (Nat.leb a a0) true
+H2 : le a0 n
+H1 : lt a a0
+R : le a n
+a0 : nat
+H : sortedd (@cons nat a (@cons nat n l))
+IHl : forall (_ : sortedd (@cons nat n l)) (a1 : nat),
+sortedd (insert a1 (@cons nat n l))
+l : list nat
+n : nat
+a : nat
+P : forall _ : @eq bool true true,
+or (@eq bool (Nat.eqb a0 a) true) (@eq bool (Nat.leb a0 a) false)
+
+* Types:
+Set
+option nat
+Prop
+bool
+nat
+list nat
+
+* Polymorphic Types:
+list nat
+option nat
+
+* Variables:
+a0 : nat
+l : list nat
+n : nat
+a : nat
+
+* Terms:
+list nat : Set
+@eq bool (Nat.leb a0 a) false : Prop
+@eq bool (Nat.leb a a0) true : Prop
+forall _ : @eq bool true true,
+or (@eq bool (Nat.eqb a0 a) true) (@eq bool (Nat.leb a0 a) false) : Prop
+@eq (option nat)
+  (@nth_error nat (@cons nat a (@cons nat n l)) _UNBOUND_REL_5)
+  (@Some nat _UNBOUND_REL_3) : Prop
+le a0 n : Prop
+true : bool
+@eq bool true true : Prop
+insert _UNBOUND_REL_1 (@cons nat n l) : list nat
+lt a a0 : Prop
+le _UNBOUND_REL_5 _UNBOUND_REL_4 : Prop
+Nat.leb a a0 : bool
+Nat.eqb a0 a : bool
+forall
+  (_ : @eq (option nat)
+         (@nth_error nat (@cons nat a (@cons nat n l)) _UNBOUND_REL_5)
+         (@Some nat _UNBOUND_REL_3))
+  (_ : @eq (option nat)
+         (@nth_error nat (@cons nat a (@cons nat n l)) _UNBOUND_REL_5)
+         (@Some nat _UNBOUND_REL_3)), le _UNBOUND_REL_5 _UNBOUND_REL_4 : Prop
+n : nat
+@Some nat _UNBOUND_REL_3 : option nat
+sortedd (@cons nat n l) : Prop
+forall (i j iv jv : nat) (_ : lt i j)
+  (_ : @eq (option nat) (@nth_error nat (@cons nat a (@cons nat n l)) i)
+         (@Some nat iv))
+  (_ : @eq (option nat) (@nth_error nat (@cons nat a (@cons nat n l)) j)
+         (@Some nat jv)), le iv jv : Prop
+forall a1 : nat, sortedd (insert a1 (@cons nat n l)) : Prop
+lt _UNBOUND_REL_4 _UNBOUND_REL_3 : Prop
+le a n : Prop
+option nat : Set
+forall
+  _ : @eq (option nat)
+        (@nth_error nat (@cons nat a (@cons nat n l)) _UNBOUND_REL_5)
+        (@Some nat _UNBOUND_REL_3), le _UNBOUND_REL_5 _UNBOUND_REL_4 : Prop
+l : list nat
+@eq bool (Nat.eqb a0 a) true : Prop
+forall (jv : nat) (_ : lt _UNBOUND_REL_4 _UNBOUND_REL_3)
+  (_ : @eq (option nat)
+         (@nth_error nat (@cons nat a (@cons nat n l)) _UNBOUND_REL_5)
+         (@Some nat _UNBOUND_REL_3))
+  (_ : @eq (option nat)
+         (@nth_error nat (@cons nat a (@cons nat n l)) _UNBOUND_REL_5)
+         (@Some nat jv)), le _UNBOUND_REL_5 jv : Prop
+or (@eq bool (Nat.eqb a0 a) true) (@eq bool (Nat.leb a0 a) false) : Prop
+false : bool
+nat : Set
+sortedd (insert _UNBOUND_REL_1 (@cons nat n l)) : Prop
+bool : Set
+@cons nat n l : list nat
+@cons nat a (@cons nat n l) : list nat
+a0 : nat
+forall (_ : sortedd (@cons nat n l)) (a1 : nat),
+sortedd (insert a1 (@cons nat n l)) : Prop
+forall (_ : lt _UNBOUND_REL_4 _UNBOUND_REL_3)
+  (_ : @eq (option nat)
+         (@nth_error nat (@cons nat a (@cons nat n l)) _UNBOUND_REL_5)
+         (@Some nat _UNBOUND_REL_3))
+  (_ : @eq (option nat)
+         (@nth_error nat (@cons nat a (@cons nat n l)) _UNBOUND_REL_5)
+         (@Some nat _UNBOUND_REL_3)), le _UNBOUND_REL_5 _UNBOUND_REL_4 : Prop
+forall (j iv jv : nat) (_ : lt _UNBOUND_REL_4 j)
+  (_ : @eq (option nat)
+         (@nth_error nat (@cons nat a (@cons nat n l)) _UNBOUND_REL_5)
+         (@Some nat iv))
+  (_ : @eq (option nat) (@nth_error nat (@cons nat a (@cons nat n l)) j)
+         (@Some nat jv)), le iv jv : Prop
+@nth_error nat (@cons nat a (@cons nat n l)) _UNBOUND_REL_5 : option nat
+Nat.leb a0 a : bool
+forall (iv jv : nat) (_ : lt _UNBOUND_REL_4 _UNBOUND_REL_3)
+  (_ : @eq (option nat)
+         (@nth_error nat (@cons nat a (@cons nat n l)) _UNBOUND_REL_5)
+         (@Some nat iv))
+  (_ : @eq (option nat)
+         (@nth_error nat (@cons nat a (@cons nat n l)) _UNBOUND_REL_5)
+         (@Some nat jv)), le iv jv : Prop
+sortedd (@cons nat a (@cons nat n l)) : Prop
+a : nat
+
+* Functions:
+insert  : forall (_ : nat) (_ : list nat), list nat
+le  : forall (_ : nat) (_ : nat), Prop
+Nat.eqb  : forall (_ : nat) (_ : nat), bool
+list  : forall _ : Type, Type
+@Some  : forall (A : Type) (_ : A), option A
+@cons  : forall (A : Type) (_ : A) (_ : list A), list A
+option  : forall _ : Type, Type
+Nat.leb  : forall (_ : nat) (_ : nat), bool
+@eq  : forall (A : Type) (_ : A) (_ : A), Prop
+sortedd  : forall _ : list nat, Prop
+or  : forall (_ : Prop) (_ : Prop), Prop
+lt  : forall (_ : nat) (_ : nat), Prop
+nth_error  : forall (A : Type) (_ : list A) (_ : nat), option A
+
+<---GENERALIZATION--->
+Time elapsed: 5 seconds
+Generalized Variables:
+lf1 : list nat = @cons nat n l
+
+Generalizations:
+Lemma conj1: forall (lf1 : list nat), sortedd lf1.
+Lemma conj2: forall (l : list nat) (n : nat), sortedd (@cons nat n l).
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 8 seconds
+Valid:
+
+Invalid:
+Lemma conj2: forall (l : list nat) (n : nat), sortedd (@cons nat n l).
+Lemma conj1: forall (lf1 : list nat), sortedd lf1.
+
+<---ADD IMPLICATIONS--->
+Time elapsed: 14 seconds
+Generalizations:
+Lemma conj2: forall (l : list nat) (n : nat), sortedd (@cons nat n l).
+Lemma conj1: forall (lf1 : list nat), sortedd lf1.
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 17 seconds
+Valid:
+
+Invalid:
+Lemma conj1: forall (lf1 : list nat), sortedd lf1.
+Lemma conj2: forall (l : list nat) (n : nat), sortedd (@cons nat n l).
+
+
+<---CREATE SKETCHES--->
+Time elapsed: 17 seconds
+Sketches:
+Sketch conj2_sketch0 : sortedd (##hole##)
+Sketch conj2_term_sketch0 : @eq (list nat) (@cons nat n l) (##hole##)
+
+
+<---CREATE SYNTHESIS PROBLEMS--->
+Time elapsed: 18 seconds
+Problems per Sketch:
+Sketch conj2_term_sketch0 --> Problem  synth_2
+Sketch conj2_sketch0 --> Problem  synth_1
+
+
+<--- SYNTHESIS PROBLEM RESULTS--->
+Time elapsed: 19 seconds
+
+Problem: synth_1
+ @cons nat (S O) (@cons nat O (@nil nat))
+ @cons nat O (@cons nat O (@nil nat))
+ @cons nat (S O) (@nil nat)
+ @cons nat O (@nil nat)
+ @nil nat
+
+Problem: synth_2
+ @cons nat n (@nil nat)
+ @cons nat O (@nil nat)
+ sort l
+ l
+ @nil nat
+
+<---INITIAL CANDIDATE LEMMAS--->
+Time elapsed: 19 seconds
+Lemmas:
+Lemma candidate_1: sortedd (@cons nat (S O) (@cons nat O (@nil nat))).
+Lemma candidate_2: sortedd (@cons nat O (@cons nat O (@nil nat))).
+Lemma candidate_3: sortedd (@cons nat (S O) (@nil nat)).
+Lemma candidate_4: sortedd (@cons nat O (@nil nat)).
+Lemma candidate_5: sortedd (@nil nat).
+Lemma candidate_6: forall (l : list nat) (n : nat), @eq (list nat) (@cons nat n l) (@cons nat n (@nil nat)).
+Lemma candidate_7: forall (l : list nat) (n : nat), @eq (list nat) (@cons nat n l) (@cons nat O (@nil nat)).
+Lemma candidate_8: forall (l : list nat) (n : nat), @eq (list nat) (@cons nat n l) (sort l).
+Lemma candidate_9: forall (l : list nat) (n : nat), @eq (list nat) (@cons nat n l) (l).
+Lemma candidate_10: forall (l : list nat) (n : nat), @eq (list nat) (@cons nat n l) (@nil nat).
+
+<---FILTERED CANDIDATE LEMMAS--->
+Time elapsed: 40 seconds
+Duplicates removed: 0
+Filtered by Quickchick: 6
+Filtered by script: 0
+Remaining: 4
+
+Lemmas: 
+Lemma candidate_5: sortedd (@nil nat).
+Lemma candidate_4: sortedd (@cons nat O (@nil nat)).
+Lemma candidate_3: sortedd (@cons nat (S O) (@nil nat)).
+Lemma candidate_2: sortedd (@cons nat O (@cons nat O (@nil nat))).
