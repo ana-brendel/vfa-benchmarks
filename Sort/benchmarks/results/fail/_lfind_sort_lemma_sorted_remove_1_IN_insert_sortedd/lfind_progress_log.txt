@@ -150,7 +150,7 @@ lt  : forall (_ : nat) (_ : nat), Prop
 nth_error  : forall (A : Type) (_ : list A) (_ : nat), option A
 
 <---GENERALIZATION--->
-Time elapsed: 5 seconds
+Time elapsed: 4 seconds
 Generalized Variables:
 lf1 : list nat = @cons nat n l
 
@@ -168,15 +168,19 @@ Lemma conj2: forall (l : list nat) (n : nat), sortedd (@cons nat n l).
 Lemma conj1: forall (lf1 : list nat), sortedd lf1.
 
 <---ADD IMPLICATIONS--->
-Time elapsed: 14 seconds
+Time elapsed: 25 seconds
 Generalizations:
 Lemma conj2: forall (l : list nat) (n : nat), sortedd (@cons nat n l).
+Lemma conj2_imp: forall (a0 : nat) (l : list nat) (n : nat) (a : nat), sortedd (@cons nat a (@cons nat n l)) -> @eq bool (Nat.leb a a0) true -> lt a a0 -> le a n -> le a0 n -> sortedd (@cons nat n l).
 Lemma conj1: forall (lf1 : list nat), sortedd lf1.
+Lemma conj1_imp: forall (a0 : nat) (lf1 : list nat) (n : nat) (a : nat), sortedd (@cons nat a lf1) -> @eq bool (Nat.leb a a0) true -> lt a a0 -> le a n -> le a0 n -> sortedd lf1.
 
 
 <---VALIDITY CHECKS--->
-Time elapsed: 17 seconds
+Time elapsed: 31 seconds
 Valid:
+Lemma conj1_imp: forall (a0 : nat) (lf1 : list nat) (n : nat) (a : nat), sortedd (@cons nat a lf1) -> @eq bool (Nat.leb a a0) true -> lt a a0 -> le a n -> le a0 n -> sortedd lf1.
+Lemma conj2_imp: forall (a0 : nat) (l : list nat) (n : nat) (a : nat), sortedd (@cons nat a (@cons nat n l)) -> @eq bool (Nat.leb a a0) true -> lt a a0 -> le a n -> le a0 n -> sortedd (@cons nat n l).
 
 Invalid:
 Lemma conj1: forall (lf1 : list nat), sortedd lf1.
@@ -184,21 +188,21 @@ Lemma conj2: forall (l : list nat) (n : nat), sortedd (@cons nat n l).
 
 
 <---CREATE SKETCHES--->
-Time elapsed: 17 seconds
+Time elapsed: 31 seconds
 Sketches:
 Sketch conj2_sketch0 : sortedd (##hole##)
 Sketch conj2_term_sketch0 : @eq (list nat) (@cons nat n l) (##hole##)
 
 
 <---CREATE SYNTHESIS PROBLEMS--->
-Time elapsed: 18 seconds
+Time elapsed: 31 seconds
 Problems per Sketch:
 Sketch conj2_term_sketch0 --> Problem  synth_2
 Sketch conj2_sketch0 --> Problem  synth_1
 
 
 <--- SYNTHESIS PROBLEM RESULTS--->
-Time elapsed: 19 seconds
+Time elapsed: 33 seconds
 
 Problem: synth_1
  @cons nat (S O) (@cons nat O (@nil nat))
@@ -215,28 +219,32 @@ Problem: synth_2
  @nil nat
 
 <---INITIAL CANDIDATE LEMMAS--->
-Time elapsed: 19 seconds
+Time elapsed: 33 seconds
 Lemmas:
-Lemma candidate_1: sortedd (@cons nat (S O) (@cons nat O (@nil nat))).
-Lemma candidate_2: sortedd (@cons nat O (@cons nat O (@nil nat))).
-Lemma candidate_3: sortedd (@cons nat (S O) (@nil nat)).
-Lemma candidate_4: sortedd (@cons nat O (@nil nat)).
-Lemma candidate_5: sortedd (@nil nat).
-Lemma candidate_6: forall (l : list nat) (n : nat), @eq (list nat) (@cons nat n l) (@cons nat n (@nil nat)).
-Lemma candidate_7: forall (l : list nat) (n : nat), @eq (list nat) (@cons nat n l) (@cons nat O (@nil nat)).
-Lemma candidate_8: forall (l : list nat) (n : nat), @eq (list nat) (@cons nat n l) (sort l).
-Lemma candidate_9: forall (l : list nat) (n : nat), @eq (list nat) (@cons nat n l) (l).
-Lemma candidate_10: forall (l : list nat) (n : nat), @eq (list nat) (@cons nat n l) (@nil nat).
+Lemma candidate_1: forall (a : nat) (n : nat) (lf1 : list nat) (a0 : nat), sortedd (@cons nat a lf1) -> @eq bool (Nat.leb a a0) true -> lt a a0 -> le a n -> le a0 n -> sortedd lf1.
+Lemma candidate_2: forall (a : nat) (n : nat) (l : list nat) (a0 : nat), sortedd (@cons nat a (@cons nat n l)) -> @eq bool (Nat.leb a a0) true -> lt a a0 -> le a n -> le a0 n -> sortedd (@cons nat n l).
+Lemma candidate_3: sortedd (@cons nat (S O) (@cons nat O (@nil nat))).
+Lemma candidate_4: sortedd (@cons nat O (@cons nat O (@nil nat))).
+Lemma candidate_5: sortedd (@cons nat (S O) (@nil nat)).
+Lemma candidate_6: sortedd (@cons nat O (@nil nat)).
+Lemma candidate_7: sortedd (@nil nat).
+Lemma candidate_8: forall (l : list nat) (n : nat), @eq (list nat) (@cons nat n l) (@cons nat n (@nil nat)).
+Lemma candidate_9: forall (l : list nat) (n : nat), @eq (list nat) (@cons nat n l) (@cons nat O (@nil nat)).
+Lemma candidate_10: forall (l : list nat) (n : nat), @eq (list nat) (@cons nat n l) (sort l).
+Lemma candidate_11: forall (l : list nat) (n : nat), @eq (list nat) (@cons nat n l) (l).
+Lemma candidate_12: forall (l : list nat) (n : nat), @eq (list nat) (@cons nat n l) (@nil nat).
 
 <---FILTERED CANDIDATE LEMMAS--->
-Time elapsed: 40 seconds
+Time elapsed: 57 seconds
 Duplicates removed: 0
 Filtered by Quickchick: 6
 Filtered by script: 0
-Remaining: 4
+Remaining: 6
 
 Lemmas: 
-Lemma candidate_5: sortedd (@nil nat).
-Lemma candidate_4: sortedd (@cons nat O (@nil nat)).
-Lemma candidate_3: sortedd (@cons nat (S O) (@nil nat)).
-Lemma candidate_2: sortedd (@cons nat O (@cons nat O (@nil nat))).
+Lemma candidate_7: sortedd (@nil nat).
+Lemma candidate_6: sortedd (@cons nat O (@nil nat)).
+Lemma candidate_5: sortedd (@cons nat (S O) (@nil nat)).
+Lemma candidate_4: sortedd (@cons nat O (@cons nat O (@nil nat))).
+Lemma candidate_1: forall (a : nat) (n : nat) (lf1 : list nat) (a0 : nat), sortedd (@cons nat a lf1) -> @eq bool (Nat.leb a a0) true -> lt a a0 -> le a n -> le a0 n -> sortedd lf1.
+Lemma candidate_2: forall (a : nat) (n : nat) (l : list nat) (a0 : nat), sortedd (@cons nat a (@cons nat n l)) -> @eq bool (Nat.leb a a0) true -> lt a a0 -> le a n -> le a0 n -> sortedd (@cons nat n l).

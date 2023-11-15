@@ -90,7 +90,7 @@ Lemma conj8: forall (a0 : nat) (a : nat), sortedd (@cons nat a (@cons nat a0 (@n
 
 
 <---VALIDITY CHECKS--->
-Time elapsed: 16 seconds
+Time elapsed: 14 seconds
 Valid:
 
 Invalid:
@@ -100,69 +100,75 @@ Lemma conj3: forall (lf2 : list nat) (a : nat), sortedd (@cons nat a lf2).
 Lemma conj1: forall (lf1 : list nat), sortedd lf1.
 
 <---ADD IMPLICATIONS--->
-Time elapsed: 34 seconds
+Time elapsed: 41 seconds
 Generalizations:
 Lemma conj8: forall (a0 : nat) (a : nat), sortedd (@cons nat a (@cons nat a0 (@nil nat))).
-Lemma conj8_imp: forall (a0 : nat) (a : nat), forall _ : forall _ : le a a0, @eq bool (Nat.leb a0 a) false,
-sortedd (@cons nat a (@cons nat a0 (@nil nat))).
+Lemma conj8_imp: forall (a0 : nat) (a : nat), le a a0 -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
 Lemma conj4: forall (a0 : nat) (a : nat) (lf3 : list nat), sortedd (@cons nat a (@cons nat a0 lf3)).
-Lemma conj4_imp: forall (a0 : nat) (a : nat) (lf3 : list nat), forall _ : forall _ : le a a0, @eq bool (Nat.leb a0 a) false,
-sortedd (@cons nat a (@cons nat a0 lf3)).
+Lemma conj4_imp: forall (a0 : nat) (a : nat) (lf3 : list nat), sortedd (@cons nat a lf3) -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 lf3)).
 Lemma conj3: forall (lf2 : list nat) (a : nat), sortedd (@cons nat a lf2).
+Lemma conj3_imp: forall (lf2 : list nat) (a0 : nat) (a : nat), le a a0 -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a lf2).
 Lemma conj1: forall (lf1 : list nat), sortedd lf1.
+Lemma conj1_imp: forall (a0 : nat) (lf1 : list nat) (a : nat), le a a0 -> @eq bool (Nat.leb a0 a) false -> sortedd lf1.
 
 
 <---VALIDITY CHECKS--->
-Time elapsed: 43 seconds
+Time elapsed: 54 seconds
 Valid:
+Lemma conj8_imp: forall (a0 : nat) (a : nat), le a a0 -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
 
 Invalid:
+Lemma conj1_imp: forall (a0 : nat) (lf1 : list nat) (a : nat), le a a0 -> @eq bool (Nat.leb a0 a) false -> sortedd lf1.
 Lemma conj1: forall (lf1 : list nat), sortedd lf1.
+Lemma conj3_imp: forall (lf2 : list nat) (a0 : nat) (a : nat), le a a0 -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a lf2).
 Lemma conj3: forall (lf2 : list nat) (a : nat), sortedd (@cons nat a lf2).
-Lemma conj4_imp: forall (a0 : nat) (a : nat) (lf3 : list nat), forall _ : forall _ : le a a0, @eq bool (Nat.leb a0 a) false,
-sortedd (@cons nat a (@cons nat a0 lf3)).
+Lemma conj4_imp: forall (a0 : nat) (a : nat) (lf3 : list nat), sortedd (@cons nat a lf3) -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 lf3)).
 Lemma conj4: forall (a0 : nat) (a : nat) (lf3 : list nat), sortedd (@cons nat a (@cons nat a0 lf3)).
-Lemma conj8_imp: forall (a0 : nat) (a : nat), forall _ : forall _ : le a a0, @eq bool (Nat.leb a0 a) false,
-sortedd (@cons nat a (@cons nat a0 (@nil nat))).
 Lemma conj8: forall (a0 : nat) (a : nat), sortedd (@cons nat a (@cons nat a0 (@nil nat))).
 
 
 <---CREATE SKETCHES--->
-Time elapsed: 43 seconds
+Time elapsed: 54 seconds
 Sketches:
+Sketch conj1_imp_sketch0 : forall _ : forall _ : le a a0, @eq bool (Nat.leb a0 a) (##hole##),
+sortedd lf1
+Sketch conj1_imp_sketch1 : forall _ : forall _ : le a a0, @eq bool (##hole##) false, sortedd lf1
+Sketch conj1_imp_term_sketch0 : @eq bool false (##hole##)
+Sketch conj1_imp_term_sketch1 : @eq bool (Nat.leb a0 a) (##hole##)
+Sketch conj3_imp_sketch0 : forall _ : forall _ : le a a0, @eq bool (Nat.leb a0 a) (##hole##),
+sortedd (@cons nat a lf2)
+Sketch conj3_imp_sketch1 : forall _ : forall _ : le a a0, @eq bool (Nat.leb a0 a) false,
+sortedd (##hole##)
+Sketch conj3_imp_sketch2 : forall _ : forall _ : le a a0, @eq bool (##hole##) false,
+sortedd (@cons nat a lf2)
+Sketch conj3_imp_term_sketch0 : @eq bool false (##hole##)
+Sketch conj3_imp_term_sketch1 : @eq (list nat) (@cons nat a lf2) (##hole##)
+Sketch conj3_imp_term_sketch2 : @eq bool (Nat.leb a0 a) (##hole##)
 Sketch conj3_sketch0 : sortedd (##hole##)
 Sketch conj3_term_sketch0 : @eq (list nat) (@cons nat a lf2) (##hole##)
-Sketch conj4_imp_sketch0 : forall _ : forall _ : le a a0, @eq bool (Nat.leb a0 a) (##hole##),
+Sketch conj4_imp_sketch0 : forall
+  _ : forall _ : sortedd (@cons nat a lf3),
+      @eq bool (Nat.leb a0 a) (##hole##),
 sortedd (@cons nat a (@cons nat a0 lf3))
-Sketch conj4_imp_sketch1 : forall _ : forall _ : le a a0, @eq bool (Nat.leb a0 a) false,
+Sketch conj4_imp_sketch1 : forall
+  _ : forall _ : sortedd (@cons nat a lf3), @eq bool (Nat.leb a0 a) false,
 sortedd (##hole##)
-Sketch conj4_imp_sketch2 : forall _ : forall _ : le a a0, @eq bool (##hole##) false,
+Sketch conj4_imp_sketch2 : forall _ : forall _ : sortedd (@cons nat a lf3), @eq bool (##hole##) false,
 sortedd (@cons nat a (@cons nat a0 lf3))
-Sketch conj4_imp_sketch3 : forall _ : forall _ : le a a0, @eq bool (Nat.leb a0 a) false,
+Sketch conj4_imp_sketch3 : forall _ : forall _ : sortedd (##hole##), @eq bool (Nat.leb a0 a) false,
+sortedd (@cons nat a (@cons nat a0 lf3))
+Sketch conj4_imp_sketch4 : forall
+  _ : forall _ : sortedd (@cons nat a lf3), @eq bool (Nat.leb a0 a) false,
 sortedd (@cons nat a (##hole##))
 Sketch conj4_imp_term_sketch0 : @eq bool false (##hole##)
 Sketch conj4_imp_term_sketch1 : @eq (list nat) (@cons nat a (@cons nat a0 lf3)) (##hole##)
 Sketch conj4_imp_term_sketch2 : @eq bool (Nat.leb a0 a) (##hole##)
-Sketch conj4_imp_term_sketch3 : @eq (list nat) (@cons nat a0 lf3) (##hole##)
+Sketch conj4_imp_term_sketch3 : @eq (list nat) (@cons nat a lf3) (##hole##)
+Sketch conj4_imp_term_sketch4 : @eq (list nat) (@cons nat a0 lf3) (##hole##)
 Sketch conj4_sketch0 : sortedd (##hole##)
 Sketch conj4_sketch1 : sortedd (@cons nat a (##hole##))
 Sketch conj4_term_sketch0 : @eq (list nat) (@cons nat a (@cons nat a0 lf3)) (##hole##)
 Sketch conj4_term_sketch1 : @eq (list nat) (@cons nat a0 lf3) (##hole##)
-Sketch conj8_imp_sketch0 : forall _ : forall _ : le a a0, @eq bool (Nat.leb a0 a) (##hole##),
-sortedd (@cons nat a (@cons nat a0 (@nil nat)))
-Sketch conj8_imp_sketch1 : forall _ : forall _ : le a a0, @eq bool (Nat.leb a0 a) false,
-sortedd (##hole##)
-Sketch conj8_imp_sketch2 : forall _ : forall _ : le a a0, @eq bool (##hole##) false,
-sortedd (@cons nat a (@cons nat a0 (@nil nat)))
-Sketch conj8_imp_sketch3 : forall _ : forall _ : le a a0, @eq bool (Nat.leb a0 a) false,
-sortedd (@cons nat a (@cons nat a0 (##hole##)))
-Sketch conj8_imp_sketch4 : forall _ : forall _ : le a a0, @eq bool (Nat.leb a0 a) false,
-sortedd (@cons nat a (##hole##))
-Sketch conj8_imp_term_sketch0 : @eq bool false (##hole##)
-Sketch conj8_imp_term_sketch1 : @eq (list nat) (@cons nat a (@cons nat a0 (@nil nat))) (##hole##)
-Sketch conj8_imp_term_sketch2 : @eq bool (Nat.leb a0 a) (##hole##)
-Sketch conj8_imp_term_sketch3 : @eq (list nat) (@nil nat) (##hole##)
-Sketch conj8_imp_term_sketch4 : @eq (list nat) (@cons nat a0 (@nil nat)) (##hole##)
 Sketch conj8_sketch0 : sortedd (##hole##)
 Sketch conj8_sketch1 : sortedd (@cons nat a (@cons nat a0 (##hole##)))
 Sketch conj8_sketch2 : sortedd (@cons nat a (##hole##))
@@ -172,174 +178,232 @@ Sketch conj8_term_sketch2 : @eq (list nat) (@cons nat a0 (@nil nat)) (##hole##)
 
 
 <---CREATE SYNTHESIS PROBLEMS--->
-Time elapsed: 118 seconds
+Time elapsed: 131 seconds
 Problems per Sketch:
-Sketch conj4_imp_sketch2 --> Problem  synth_5
-Sketch conj3_term_sketch0 --> Problem  synth_2
-Sketch conj4_imp_term_sketch2 --> Problem  synth_9
-Sketch conj8_imp_sketch3 --> Problem  synth_13
-Sketch conj4_imp_term_sketch0 --> Problem  synth_7
-Sketch conj8_imp_term_sketch4 --> Problem  synth_15
-Sketch conj4_imp_term_sketch3 --> Problem  synth_10
-Sketch conj8_sketch1 --> Problem  synth_13
-Sketch conj4_sketch0 --> Problem  synth_1
-Sketch conj8_imp_term_sketch0 --> Problem  synth_7
-Sketch conj4_sketch1 --> Problem  synth_11
-Sketch conj8_imp_sketch0 --> Problem  synth_12
-Sketch conj4_term_sketch1 --> Problem  synth_10
-Sketch conj4_imp_sketch1 --> Problem  synth_4
-Sketch conj8_term_sketch0 --> Problem  synth_4
-Sketch conj4_imp_term_sketch1 --> Problem  synth_8
-Sketch conj3_sketch0 --> Problem  synth_1
-Sketch conj8_sketch2 --> Problem  synth_11
-Sketch conj8_sketch0 --> Problem  synth_1
-Sketch conj8_imp_sketch2 --> Problem  synth_9
-Sketch conj8_imp_term_sketch2 --> Problem  synth_9
-Sketch conj8_term_sketch1 --> Problem  synth_14
-Sketch conj8_imp_term_sketch3 --> Problem  synth_14
-Sketch conj4_term_sketch0 --> Problem  synth_8
-Sketch conj8_term_sketch2 --> Problem  synth_15
-Sketch conj8_imp_sketch1 --> Problem  synth_4
-Sketch conj4_imp_sketch0 --> Problem  synth_3
-Sketch conj8_imp_term_sketch1 --> Problem  synth_4
-Sketch conj8_imp_sketch4 --> Problem  synth_6
-Sketch conj4_imp_sketch3 --> Problem  synth_6
+Sketch conj3_imp_term_sketch0 --> Problem  synth_3
+Sketch conj4_imp_sketch4 --> Problem  synth_14
+Sketch conj4_imp_sketch2 --> Problem  synth_12
+Sketch conj1_imp_sketch1 --> Problem  synth_2
+Sketch conj3_term_sketch0 --> Problem  synth_8
+Sketch conj3_imp_term_sketch2 --> Problem  synth_4
+Sketch conj3_imp_term_sketch1 --> Problem  synth_8
+Sketch conj4_imp_term_sketch2 --> Problem  synth_4
+Sketch conj3_imp_sketch1 --> Problem  synth_6
+Sketch conj3_imp_sketch0 --> Problem  synth_5
+Sketch conj4_imp_term_sketch0 --> Problem  synth_3
+Sketch conj4_imp_term_sketch3 --> Problem  synth_15
+Sketch conj8_sketch1 --> Problem  synth_18
+Sketch conj4_sketch0 --> Problem  synth_9
+Sketch conj1_imp_term_sketch0 --> Problem  synth_3
+Sketch conj4_sketch1 --> Problem  synth_17
+Sketch conj1_imp_sketch0 --> Problem  synth_1
+Sketch conj4_term_sketch1 --> Problem  synth_16
+Sketch conj4_imp_sketch1 --> Problem  synth_11
+Sketch conj8_term_sketch0 --> Problem  synth_6
+Sketch conj4_imp_term_sketch1 --> Problem  synth_11
+Sketch conj3_sketch0 --> Problem  synth_9
+Sketch conj8_sketch2 --> Problem  synth_17
+Sketch conj8_sketch0 --> Problem  synth_9
+Sketch conj8_term_sketch1 --> Problem  synth_19
+Sketch conj4_term_sketch0 --> Problem  synth_11
+Sketch conj8_term_sketch2 --> Problem  synth_20
+Sketch conj1_imp_term_sketch1 --> Problem  synth_4
+Sketch conj4_imp_sketch0 --> Problem  synth_10
+Sketch conj3_imp_sketch2 --> Problem  synth_7
+Sketch conj4_imp_sketch3 --> Problem  synth_13
+Sketch conj4_imp_term_sketch4 --> Problem  synth_16
 
 
 <--- SYNTHESIS PROBLEM RESULTS--->
-Time elapsed: 242 seconds
+Time elapsed: 269 seconds
 
-Problem: synth_15
+Problem: synth_20
  @cons nat a0 (@nil nat)
 
-Problem: synth_14
+Problem: synth_18
  @nil nat
 
-Problem: synth_10
- insert a0 (sort lf3)
- @cons nat a0 (sort lf3)
- insert a0 lf3
- @cons nat a0 lf3
- @cons nat a0 (@nil nat)
+Problem: synth_17
 
-Problem: synth_8
+Problem: synth_9
+
+Problem: synth_13
+ insert a (sort lf3)
+ @cons nat a (sort lf3)
+ insert a lf3
+ @cons nat a lf3
+ @cons nat a (@nil nat)
+
+Problem: synth_6
+ @cons nat a (@cons nat a0 (@nil nat))
+
+Problem: synth_11
  @cons nat a (insert a0 (sort lf3))
  @cons nat a (@cons nat a0 (sort lf3))
  @cons nat a (insert a0 lf3)
  @cons nat a (@cons nat a0 lf3)
  @cons nat a (@cons nat a0 (@nil nat))
 
-Problem: synth_3
- match a0 with | O => false | S m' => Nat.leb a0 m' end
- Nat.eqb a (S a)
- Nat.eqb a (S a0)
- Nat.eqb a0 (S a0)
- false
-
-Problem: synth_9
- Nat.leb a0 a
-
-Problem: synth_13
- @nil nat
-
-Problem: synth_12
- match a0 with | O => false | S m' => Nat.leb a0 m' end
- Nat.eqb a (S a)
- Nat.eqb a (S a0)
- Nat.eqb a0 (S a0)
- false
-
-Problem: synth_6
- @cons nat a0 (@nil nat)
-
-Problem: synth_11
-
 Problem: synth_7
- false
-
-Problem: synth_5
  Nat.leb a0 a
 
 Problem: synth_4
- @cons nat a (@cons nat a0 (@nil nat))
+ Nat.leb a0 a
 
 Problem: synth_1
+ match a0 with | O => false | S m' => Nat.leb a0 m' end
+ Nat.eqb a (S a)
+ Nat.eqb a (S a0)
+ Nat.eqb a0 (S a0)
+ false
 
-Problem: synth_2
+Problem: synth_16
+ insert a0 (sort lf3)
+ @cons nat a0 (sort lf3)
+ insert a0 lf3
+ @cons nat a0 lf3
+ @cons nat a0 (@nil nat)
+
+Problem: synth_19
+ @nil nat
+
+Problem: synth_15
+ insert a (sort lf3)
+ @cons nat a (sort lf3)
+ insert a lf3
+ @cons nat a lf3
+ @cons nat a (@nil nat)
+
+Problem: synth_14
+ insert a0 (sort lf3)
+ @cons nat a0 (sort lf3)
+ insert a0 lf3
+ @cons nat a0 lf3
+ @cons nat a0 (@nil nat)
+
+Problem: synth_10
+ match a0 with | O => false | S m' => Nat.leb a0 m' end
+ Nat.eqb a (S a)
+ Nat.eqb a (S a0)
+ Nat.eqb a0 (S a0)
+ false
+
+Problem: synth_8
  @cons nat a (sort (sort (sort (sort lf2))))
  @cons nat a (sort (sort (sort lf2)))
  @cons nat a (sort (sort lf2))
  @cons nat a (sort lf2)
  @cons nat a lf2
 
+Problem: synth_3
+ false
+
+Problem: synth_12
+ Nat.leb a0 a
+
+Problem: synth_5
+ match a0 with | O => false | S m' => Nat.leb a0 m' end
+ Nat.eqb a (S a)
+ Nat.eqb a (S a0)
+ Nat.eqb a0 (S a0)
+ false
+
+Problem: synth_2
+ Nat.leb a0 a
+
 <---INITIAL CANDIDATE LEMMAS--->
-Time elapsed: 242 seconds
+Time elapsed: 269 seconds
 Lemmas:
-Lemma candidate_1: forall (a : nat) (lf2 : list nat), @eq (list nat) (@cons nat a lf2)   (@cons nat a (sort (sort (sort (sort lf2))))).
-Lemma candidate_2: forall (a : nat) (lf2 : list nat), @eq (list nat) (@cons nat a lf2) (@cons nat a (sort (sort (sort lf2)))).
-Lemma candidate_3: forall (a : nat) (lf2 : list nat), @eq (list nat) (@cons nat a lf2) (@cons nat a (sort (sort lf2))).
-Lemma candidate_4: forall (a : nat) (lf2 : list nat), @eq (list nat) (@cons nat a lf2) (@cons nat a (sort lf2)).
-Lemma candidate_5: forall (a : nat) (lf2 : list nat), @eq (list nat) (@cons nat a lf2) (@cons nat a lf2).
-Lemma candidate_6: forall (lf3 : list nat) (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a)   (match a0 with | O => false | S m' => Nat.leb a0 m' end) -> sortedd (@cons nat a (@cons nat a0 lf3)).
-Lemma candidate_7: forall (lf3 : list nat) (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) (Nat.eqb a (S a)) -> sortedd (@cons nat a (@cons nat a0 lf3)).
-Lemma candidate_8: forall (lf3 : list nat) (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) (Nat.eqb a (S a0)) -> sortedd (@cons nat a (@cons nat a0 lf3)).
-Lemma candidate_9: forall (lf3 : list nat) (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) (Nat.eqb a0 (S a0)) -> sortedd (@cons nat a (@cons nat a0 lf3)).
-Lemma candidate_10: forall (lf3 : list nat) (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) (false) -> sortedd (@cons nat a (@cons nat a0 lf3)).
-Lemma candidate_11: forall (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
-Lemma candidate_12: forall (lf3 : list nat) (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 lf3)).
-Lemma candidate_13: forall (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
-Lemma candidate_14: @eq bool false (false).
-Lemma candidate_15: forall (lf3 : list nat) (a : nat) (a0 : nat), @eq (list nat) (@cons nat a (@cons nat a0 lf3))   (@cons nat a (insert a0 (sort lf3))).
-Lemma candidate_16: forall (lf3 : list nat) (a : nat) (a0 : nat), @eq (list nat) (@cons nat a (@cons nat a0 lf3))   (@cons nat a (@cons nat a0 (sort lf3))).
-Lemma candidate_17: forall (lf3 : list nat) (a : nat) (a0 : nat), @eq (list nat) (@cons nat a (@cons nat a0 lf3)) (@cons nat a (insert a0 lf3)).
-Lemma candidate_18: forall (lf3 : list nat) (a : nat) (a0 : nat), @eq (list nat) (@cons nat a (@cons nat a0 lf3))   (@cons nat a (@cons nat a0 lf3)).
-Lemma candidate_19: forall (lf3 : list nat) (a : nat) (a0 : nat), @eq (list nat) (@cons nat a (@cons nat a0 lf3))   (@cons nat a (@cons nat a0 (@nil nat))).
-Lemma candidate_20: forall (a : nat) (a0 : nat), @eq bool (Nat.leb a0 a) (Nat.leb a0 a).
-Lemma candidate_21: forall (lf3 : list nat) (a0 : nat), @eq (list nat) (@cons nat a0 lf3) (insert a0 (sort lf3)).
-Lemma candidate_22: forall (lf3 : list nat) (a0 : nat), @eq (list nat) (@cons nat a0 lf3) (@cons nat a0 (sort lf3)).
-Lemma candidate_23: forall (lf3 : list nat) (a0 : nat), @eq (list nat) (@cons nat a0 lf3) (insert a0 lf3).
-Lemma candidate_24: forall (lf3 : list nat) (a0 : nat), @eq (list nat) (@cons nat a0 lf3) (@cons nat a0 lf3).
-Lemma candidate_25: forall (lf3 : list nat) (a0 : nat), @eq (list nat) (@cons nat a0 lf3) (@cons nat a0 (@nil nat)).
-Lemma candidate_26: forall (lf3 : list nat) (a : nat) (a0 : nat), @eq (list nat) (@cons nat a (@cons nat a0 lf3))   (@cons nat a (insert a0 (sort lf3))).
-Lemma candidate_27: forall (lf3 : list nat) (a : nat) (a0 : nat), @eq (list nat) (@cons nat a (@cons nat a0 lf3))   (@cons nat a (@cons nat a0 (sort lf3))).
-Lemma candidate_28: forall (lf3 : list nat) (a : nat) (a0 : nat), @eq (list nat) (@cons nat a (@cons nat a0 lf3)) (@cons nat a (insert a0 lf3)).
-Lemma candidate_29: forall (lf3 : list nat) (a : nat) (a0 : nat), @eq (list nat) (@cons nat a (@cons nat a0 lf3))   (@cons nat a (@cons nat a0 lf3)).
-Lemma candidate_30: forall (lf3 : list nat) (a : nat) (a0 : nat), @eq (list nat) (@cons nat a (@cons nat a0 lf3))   (@cons nat a (@cons nat a0 (@nil nat))).
-Lemma candidate_31: forall (lf3 : list nat) (a0 : nat), @eq (list nat) (@cons nat a0 lf3) (insert a0 (sort lf3)).
-Lemma candidate_32: forall (lf3 : list nat) (a0 : nat), @eq (list nat) (@cons nat a0 lf3) (@cons nat a0 (sort lf3)).
-Lemma candidate_33: forall (lf3 : list nat) (a0 : nat), @eq (list nat) (@cons nat a0 lf3) (insert a0 lf3).
-Lemma candidate_34: forall (lf3 : list nat) (a0 : nat), @eq (list nat) (@cons nat a0 lf3) (@cons nat a0 lf3).
-Lemma candidate_35: forall (lf3 : list nat) (a0 : nat), @eq (list nat) (@cons nat a0 lf3) (@cons nat a0 (@nil nat)).
-Lemma candidate_36: forall (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a)   (match a0 with | O => false | S m' => Nat.leb a0 m' end) -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
-Lemma candidate_37: forall (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) (Nat.eqb a (S a)) -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
-Lemma candidate_38: forall (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) (Nat.eqb a (S a0)) -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
-Lemma candidate_39: forall (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) (Nat.eqb a0 (S a0)) -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
-Lemma candidate_40: forall (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) (false) -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
-Lemma candidate_41: forall (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
-Lemma candidate_42: forall (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
-Lemma candidate_43: forall (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
-Lemma candidate_44: forall (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
-Lemma candidate_45: @eq bool false (false).
-Lemma candidate_46: forall (a : nat) (a0 : nat), @eq (list nat) (@cons nat a (@cons nat a0 (@nil nat)))   (@cons nat a (@cons nat a0 (@nil nat))).
-Lemma candidate_47: forall (a : nat) (a0 : nat), @eq bool (Nat.leb a0 a) (Nat.leb a0 a).
-Lemma candidate_48: @eq (list nat) (@nil nat) (@nil nat).
-Lemma candidate_49: forall (a0 : nat), @eq (list nat) (@cons nat a0 (@nil nat)) (@cons nat a0 (@nil nat)).
-Lemma candidate_50: forall (a : nat) (a0 : nat), sortedd (@cons nat a (@cons nat a0 (@nil nat))).
-Lemma candidate_51: forall (a : nat) (a0 : nat), @eq (list nat) (@cons nat a (@cons nat a0 (@nil nat)))   (@cons nat a (@cons nat a0 (@nil nat))).
-Lemma candidate_52: @eq (list nat) (@nil nat) (@nil nat).
-Lemma candidate_53: forall (a0 : nat), @eq (list nat) (@cons nat a0 (@nil nat)) (@cons nat a0 (@nil nat)).
+Lemma candidate_1: forall (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
+Lemma candidate_2: forall (a : nat) (lf1 : list nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a)   (match a0 with | O => false | S m' => Nat.leb a0 m' end) -> sortedd lf1.
+Lemma candidate_3: forall (a : nat) (lf1 : list nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) (Nat.eqb a (S a)) -> sortedd lf1.
+Lemma candidate_4: forall (a : nat) (lf1 : list nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) (Nat.eqb a (S a0)) -> sortedd lf1.
+Lemma candidate_5: forall (a : nat) (lf1 : list nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) (Nat.eqb a0 (S a0)) -> sortedd lf1.
+Lemma candidate_6: forall (a : nat) (lf1 : list nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) (false) -> sortedd lf1.
+Lemma candidate_7: forall (a : nat) (lf1 : list nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) false -> sortedd lf1.
+Lemma candidate_8: @eq bool false (false).
+Lemma candidate_9: forall (a : nat) (a0 : nat), @eq bool (Nat.leb a0 a) (Nat.leb a0 a).
+Lemma candidate_10: forall (a : nat) (a0 : nat) (lf2 : list nat), le a a0 -> @eq bool (Nat.leb a0 a)   (match a0 with | O => false | S m' => Nat.leb a0 m' end) -> sortedd (@cons nat a lf2).
+Lemma candidate_11: forall (a : nat) (a0 : nat) (lf2 : list nat), le a a0 -> @eq bool (Nat.leb a0 a) (Nat.eqb a (S a)) -> sortedd (@cons nat a lf2).
+Lemma candidate_12: forall (a : nat) (a0 : nat) (lf2 : list nat), le a a0 -> @eq bool (Nat.leb a0 a) (Nat.eqb a (S a0)) -> sortedd (@cons nat a lf2).
+Lemma candidate_13: forall (a : nat) (a0 : nat) (lf2 : list nat), le a a0 -> @eq bool (Nat.leb a0 a) (Nat.eqb a0 (S a0)) -> sortedd (@cons nat a lf2).
+Lemma candidate_14: forall (a : nat) (a0 : nat) (lf2 : list nat), le a a0 -> @eq bool (Nat.leb a0 a) (false) -> sortedd (@cons nat a lf2).
+Lemma candidate_15: forall (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
+Lemma candidate_16: forall (a : nat) (a0 : nat) (lf2 : list nat), le a a0 -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a lf2).
+Lemma candidate_17: @eq bool false (false).
+Lemma candidate_18: forall (a : nat) (lf2 : list nat), @eq (list nat) (@cons nat a lf2)   (@cons nat a (sort (sort (sort (sort lf2))))).
+Lemma candidate_19: forall (a : nat) (lf2 : list nat), @eq (list nat) (@cons nat a lf2) (@cons nat a (sort (sort (sort lf2)))).
+Lemma candidate_20: forall (a : nat) (lf2 : list nat), @eq (list nat) (@cons nat a lf2) (@cons nat a (sort (sort lf2))).
+Lemma candidate_21: forall (a : nat) (lf2 : list nat), @eq (list nat) (@cons nat a lf2) (@cons nat a (sort lf2)).
+Lemma candidate_22: forall (a : nat) (lf2 : list nat), @eq (list nat) (@cons nat a lf2) (@cons nat a lf2).
+Lemma candidate_23: forall (a : nat) (a0 : nat), @eq bool (Nat.leb a0 a) (Nat.leb a0 a).
+Lemma candidate_24: forall (a : nat) (lf2 : list nat), @eq (list nat) (@cons nat a lf2)   (@cons nat a (sort (sort (sort (sort lf2))))).
+Lemma candidate_25: forall (a : nat) (lf2 : list nat), @eq (list nat) (@cons nat a lf2) (@cons nat a (sort (sort (sort lf2)))).
+Lemma candidate_26: forall (a : nat) (lf2 : list nat), @eq (list nat) (@cons nat a lf2) (@cons nat a (sort (sort lf2))).
+Lemma candidate_27: forall (a : nat) (lf2 : list nat), @eq (list nat) (@cons nat a lf2) (@cons nat a (sort lf2)).
+Lemma candidate_28: forall (a : nat) (lf2 : list nat), @eq (list nat) (@cons nat a lf2) (@cons nat a lf2).
+Lemma candidate_29: forall (lf3 : list nat) (a : nat) (a0 : nat), sortedd (@cons nat a lf3) -> @eq bool (Nat.leb a0 a)   (match a0 with | O => false | S m' => Nat.leb a0 m' end) -> sortedd (@cons nat a (@cons nat a0 lf3)).
+Lemma candidate_30: forall (lf3 : list nat) (a : nat) (a0 : nat), sortedd (@cons nat a lf3) -> @eq bool (Nat.leb a0 a) (Nat.eqb a (S a)) -> sortedd (@cons nat a (@cons nat a0 lf3)).
+Lemma candidate_31: forall (lf3 : list nat) (a : nat) (a0 : nat), sortedd (@cons nat a lf3) -> @eq bool (Nat.leb a0 a) (Nat.eqb a (S a0)) -> sortedd (@cons nat a (@cons nat a0 lf3)).
+Lemma candidate_32: forall (lf3 : list nat) (a : nat) (a0 : nat), sortedd (@cons nat a lf3) -> @eq bool (Nat.leb a0 a) (Nat.eqb a0 (S a0)) -> sortedd (@cons nat a (@cons nat a0 lf3)).
+Lemma candidate_33: forall (lf3 : list nat) (a : nat) (a0 : nat), sortedd (@cons nat a lf3) -> @eq bool (Nat.leb a0 a) (false) -> sortedd (@cons nat a (@cons nat a0 lf3)).
+Lemma candidate_34: forall (lf3 : list nat) (a : nat) (a0 : nat), sortedd (@cons nat a lf3) -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (insert a0 (sort lf3))).
+Lemma candidate_35: forall (lf3 : list nat) (a : nat) (a0 : nat), sortedd (@cons nat a lf3) -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 (sort lf3))).
+Lemma candidate_36: forall (lf3 : list nat) (a : nat) (a0 : nat), sortedd (@cons nat a lf3) -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (insert a0 lf3)).
+Lemma candidate_37: forall (lf3 : list nat) (a : nat) (a0 : nat), sortedd (@cons nat a lf3) -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 lf3)).
+Lemma candidate_38: forall (lf3 : list nat) (a : nat) (a0 : nat), sortedd (@cons nat a lf3) -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
+Lemma candidate_39: forall (lf3 : list nat) (a : nat) (a0 : nat), sortedd (@cons nat a lf3) -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 lf3)).
+Lemma candidate_40: forall (lf3 : list nat) (a : nat) (a0 : nat), sortedd (insert a (sort lf3)) -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 lf3)).
+Lemma candidate_41: forall (lf3 : list nat) (a : nat) (a0 : nat), sortedd (@cons nat a (sort lf3)) -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 lf3)).
+Lemma candidate_42: forall (lf3 : list nat) (a : nat) (a0 : nat), sortedd (insert a lf3) -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 lf3)).
+Lemma candidate_43: forall (lf3 : list nat) (a : nat) (a0 : nat), sortedd (@cons nat a lf3) -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 lf3)).
+Lemma candidate_44: forall (lf3 : list nat) (a : nat) (a0 : nat), sortedd (@cons nat a (@nil nat)) -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 lf3)).
+Lemma candidate_45: forall (lf3 : list nat) (a : nat) (a0 : nat), sortedd (@cons nat a lf3) -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (insert a0 (sort lf3))).
+Lemma candidate_46: forall (lf3 : list nat) (a : nat) (a0 : nat), sortedd (@cons nat a lf3) -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 (sort lf3))).
+Lemma candidate_47: forall (lf3 : list nat) (a : nat) (a0 : nat), sortedd (@cons nat a lf3) -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (insert a0 lf3)).
+Lemma candidate_48: forall (lf3 : list nat) (a : nat) (a0 : nat), sortedd (@cons nat a lf3) -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 lf3)).
+Lemma candidate_49: forall (lf3 : list nat) (a : nat) (a0 : nat), sortedd (@cons nat a lf3) -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
+Lemma candidate_50: @eq bool false (false).
+Lemma candidate_51: forall (lf3 : list nat) (a : nat) (a0 : nat), @eq (list nat) (@cons nat a (@cons nat a0 lf3))   (@cons nat a (insert a0 (sort lf3))).
+Lemma candidate_52: forall (lf3 : list nat) (a : nat) (a0 : nat), @eq (list nat) (@cons nat a (@cons nat a0 lf3))   (@cons nat a (@cons nat a0 (sort lf3))).
+Lemma candidate_53: forall (lf3 : list nat) (a : nat) (a0 : nat), @eq (list nat) (@cons nat a (@cons nat a0 lf3)) (@cons nat a (insert a0 lf3)).
+Lemma candidate_54: forall (lf3 : list nat) (a : nat) (a0 : nat), @eq (list nat) (@cons nat a (@cons nat a0 lf3))   (@cons nat a (@cons nat a0 lf3)).
+Lemma candidate_55: forall (lf3 : list nat) (a : nat) (a0 : nat), @eq (list nat) (@cons nat a (@cons nat a0 lf3))   (@cons nat a (@cons nat a0 (@nil nat))).
+Lemma candidate_56: forall (a : nat) (a0 : nat), @eq bool (Nat.leb a0 a) (Nat.leb a0 a).
+Lemma candidate_57: forall (lf3 : list nat) (a : nat), @eq (list nat) (@cons nat a lf3) (insert a (sort lf3)).
+Lemma candidate_58: forall (lf3 : list nat) (a : nat), @eq (list nat) (@cons nat a lf3) (@cons nat a (sort lf3)).
+Lemma candidate_59: forall (lf3 : list nat) (a : nat), @eq (list nat) (@cons nat a lf3) (insert a lf3).
+Lemma candidate_60: forall (lf3 : list nat) (a : nat), @eq (list nat) (@cons nat a lf3) (@cons nat a lf3).
+Lemma candidate_61: forall (lf3 : list nat) (a : nat), @eq (list nat) (@cons nat a lf3) (@cons nat a (@nil nat)).
+Lemma candidate_62: forall (lf3 : list nat) (a0 : nat), @eq (list nat) (@cons nat a0 lf3) (insert a0 (sort lf3)).
+Lemma candidate_63: forall (lf3 : list nat) (a0 : nat), @eq (list nat) (@cons nat a0 lf3) (@cons nat a0 (sort lf3)).
+Lemma candidate_64: forall (lf3 : list nat) (a0 : nat), @eq (list nat) (@cons nat a0 lf3) (insert a0 lf3).
+Lemma candidate_65: forall (lf3 : list nat) (a0 : nat), @eq (list nat) (@cons nat a0 lf3) (@cons nat a0 lf3).
+Lemma candidate_66: forall (lf3 : list nat) (a0 : nat), @eq (list nat) (@cons nat a0 lf3) (@cons nat a0 (@nil nat)).
+Lemma candidate_67: forall (lf3 : list nat) (a : nat) (a0 : nat), @eq (list nat) (@cons nat a (@cons nat a0 lf3))   (@cons nat a (insert a0 (sort lf3))).
+Lemma candidate_68: forall (lf3 : list nat) (a : nat) (a0 : nat), @eq (list nat) (@cons nat a (@cons nat a0 lf3))   (@cons nat a (@cons nat a0 (sort lf3))).
+Lemma candidate_69: forall (lf3 : list nat) (a : nat) (a0 : nat), @eq (list nat) (@cons nat a (@cons nat a0 lf3)) (@cons nat a (insert a0 lf3)).
+Lemma candidate_70: forall (lf3 : list nat) (a : nat) (a0 : nat), @eq (list nat) (@cons nat a (@cons nat a0 lf3))   (@cons nat a (@cons nat a0 lf3)).
+Lemma candidate_71: forall (lf3 : list nat) (a : nat) (a0 : nat), @eq (list nat) (@cons nat a (@cons nat a0 lf3))   (@cons nat a (@cons nat a0 (@nil nat))).
+Lemma candidate_72: forall (lf3 : list nat) (a0 : nat), @eq (list nat) (@cons nat a0 lf3) (insert a0 (sort lf3)).
+Lemma candidate_73: forall (lf3 : list nat) (a0 : nat), @eq (list nat) (@cons nat a0 lf3) (@cons nat a0 (sort lf3)).
+Lemma candidate_74: forall (lf3 : list nat) (a0 : nat), @eq (list nat) (@cons nat a0 lf3) (insert a0 lf3).
+Lemma candidate_75: forall (lf3 : list nat) (a0 : nat), @eq (list nat) (@cons nat a0 lf3) (@cons nat a0 lf3).
+Lemma candidate_76: forall (lf3 : list nat) (a0 : nat), @eq (list nat) (@cons nat a0 lf3) (@cons nat a0 (@nil nat)).
+Lemma candidate_77: forall (a : nat) (a0 : nat), sortedd (@cons nat a (@cons nat a0 (@nil nat))).
+Lemma candidate_78: forall (a : nat) (a0 : nat), @eq (list nat) (@cons nat a (@cons nat a0 (@nil nat)))   (@cons nat a (@cons nat a0 (@nil nat))).
+Lemma candidate_79: @eq (list nat) (@nil nat) (@nil nat).
+Lemma candidate_80: forall (a0 : nat), @eq (list nat) (@cons nat a0 (@nil nat)) (@cons nat a0 (@nil nat)).
 
 <---FILTERED CANDIDATE LEMMAS--->
-Time elapsed: 302 seconds
-Duplicates removed: 21
-Filtered by Quickchick: 18
-Filtered by script: 8
-Remaining: 6
+Time elapsed: 382 seconds
+Duplicates removed: 28
+Filtered by Quickchick: 39
+Filtered by script: 9
+Remaining: 4
 
 Lemmas: 
-Lemma candidate_11: forall (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
-Lemma candidate_40: forall (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) (false) -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
-Lemma candidate_37: forall (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) (Nat.eqb a (S a)) -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
-Lemma candidate_38: forall (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) (Nat.eqb a (S a0)) -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
-Lemma candidate_39: forall (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) (Nat.eqb a0 (S a0)) -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
-Lemma candidate_36: forall (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a)   (match a0 with | O => false | S m' => Nat.leb a0 m' end) -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
+Lemma candidate_1: forall (a : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).
+Lemma candidate_36: forall (lf3 : list nat) (a : nat) (a0 : nat), sortedd (@cons nat a lf3) -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (insert a0 lf3)).
+Lemma candidate_34: forall (lf3 : list nat) (a : nat) (a0 : nat), sortedd (@cons nat a lf3) -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (insert a0 (sort lf3))).
+Lemma candidate_38: forall (lf3 : list nat) (a : nat) (a0 : nat), sortedd (@cons nat a lf3) -> @eq bool (Nat.leb a0 a) false -> sortedd (@cons nat a (@cons nat a0 (@nil nat))).

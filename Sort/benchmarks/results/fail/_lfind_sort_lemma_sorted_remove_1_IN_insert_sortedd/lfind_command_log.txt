@@ -78,7 +78,9 @@ cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lem
 
 cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_generalized_hypothesis.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_generalized_hypothesis.v
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_conj2_imp.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd//home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_conj2_imp*
 
 cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_generalized_hypothesis.v
 
@@ -87,6 +89,12 @@ cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lem
 cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_generalized_hypothesis.v
 
 cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_generalized_hypothesis.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_generalized_hypothesis.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_conj1_imp.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd//home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_conj1_imp*
 
 rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/conj*
 
@@ -118,9 +126,17 @@ cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lem
 
 rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd//home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_conj2*
 
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_conj2_imp.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd//home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_conj2_imp*
+
 cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_conj1.v
 
 rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd//home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_conj1*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_conj1_imp.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd//home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_conj1_imp*
 
 rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/conj*
 
@@ -260,27 +276,31 @@ rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort
 
 rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_axiom_*
 
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_candidate_2.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_candidate_1.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_candidate_8.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_candidate_9.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_candidate_3.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_candidate_4.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_candidate_12.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_candidate_10.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_candidate_5.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_candidate_11.v
+
 cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_candidate_6.v
 
 cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_candidate_7.v
 
-cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_candidate_1.v
-
-cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_candidate_2.v
-
-cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_candidate_10.v
-
-cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_candidate_8.v
-
-cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_candidate_3.v
-
-cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_candidate_9.v
-
-cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_candidate_4.v
-
-cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_candidate_5.v
-
-python3  /home/anabrendel/lfind/lemmafinder/src/filter.py --prelude="/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd" --theorem_name="insert_sortedd" --theorem="Theorem insert_sortedd: forall (a1 : nat) (l0 : list nat) (_ : sortedd l0), sortedd (insert a1 l0)." --lemmas  "Lemma candidate_2: sortedd (@cons nat O (@cons nat O (@nil nat)))." "Lemma candidate_3: sortedd (@cons nat (S O) (@nil nat))." "Lemma candidate_4: sortedd (@cons nat O (@nil nat))." "Lemma candidate_5: sortedd (@nil nat)." --imports "Load LFindLoad."  "From lfind Require Import LFind." "From VFA Require Import Perm." "From vfa_benchmark Require Import Sort."
+python3  /home/anabrendel/lfind/lemmafinder/src/filter.py --prelude="/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd" --theorem_name="insert_sortedd" --theorem="Theorem insert_sortedd: forall (a1 : nat) (l0 : list nat) (_ : sortedd l0), sortedd (insert a1 l0)." --lemmas  "Lemma candidate_2: forall (a : nat) (n : nat) (l : list nat) (a0 : nat), sortedd (@cons nat a (@cons nat n l)) -> @eq bool (Nat.leb a a0) true -> lt a a0 -> le a n -> le a0 n -> sortedd (@cons nat n l)." "Lemma candidate_1: forall (a : nat) (n : nat) (lf1 : list nat) (a0 : nat), sortedd (@cons nat a lf1) -> @eq bool (Nat.leb a a0) true -> lt a a0 -> le a n -> le a0 n -> sortedd lf1." "Lemma candidate_4: sortedd (@cons nat O (@cons nat O (@nil nat)))." "Lemma candidate_5: sortedd (@cons nat (S O) (@nil nat))." "Lemma candidate_6: sortedd (@cons nat O (@nil nat))." "Lemma candidate_7: sortedd (@nil nat)." --imports "Load LFindLoad."  "From lfind Require Import LFind." "From VFA Require Import Perm." "From vfa_benchmark Require Import Sort."
 
 rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/conj*
 
@@ -308,37 +328,53 @@ rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort
 
 rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_axiom_*
 
-timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_proverbot_eval_candidate_5.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-candidate_5-SQcafN
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_proverbot_eval_candidate_7.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-candidate_7-mIQWHS
 
-cat /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-candidate_5-SQcafN/*-proofs.txt | grep SUCCESS | grep candidate_5 -c
+cat /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-candidate_7-mIQWHS/*-proofs.txt | grep SUCCESS | grep candidate_7 -c
 
-timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_axiom_candidate_5.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-current_goal-j4Y6vW
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_axiom_candidate_7.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-current_goal-3ZIv1r
 
-cat /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-current_goal-j4Y6vW/*-proofs.txt | grep SUCCESS | grep current_goal -c
+cat /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-current_goal-3ZIv1r/*-proofs.txt | grep SUCCESS | grep current_goal -c
 
-timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_proverbot_eval_candidate_4.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-candidate_4-kHIM0N
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_proverbot_eval_candidate_6.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-candidate_6-y2BnhZ
 
-cat /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-candidate_4-kHIM0N/*-proofs.txt | grep SUCCESS | grep candidate_4 -c
+cat /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-candidate_6-y2BnhZ/*-proofs.txt | grep SUCCESS | grep candidate_6 -c
 
-timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_axiom_candidate_4.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-current_goal-cltDEp
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_axiom_candidate_6.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-current_goal-KpY53L
 
-cat /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-current_goal-cltDEp/*-proofs.txt | grep SUCCESS | grep current_goal -c
+cat /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-current_goal-KpY53L/*-proofs.txt | grep SUCCESS | grep current_goal -c
 
-timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_proverbot_eval_candidate_3.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-candidate_3-s4LvId
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_proverbot_eval_candidate_5.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-candidate_5-wwqVEo
 
-cat /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-candidate_3-s4LvId/*-proofs.txt | grep SUCCESS | grep candidate_3 -c
+cat /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-candidate_5-wwqVEo/*-proofs.txt | grep SUCCESS | grep candidate_5 -c
 
-timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_axiom_candidate_3.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-current_goal-IiR8Op
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_axiom_candidate_5.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-current_goal-R660Nv
 
-cat /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-current_goal-IiR8Op/*-proofs.txt | grep SUCCESS | grep current_goal -c
+cat /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-current_goal-R660Nv/*-proofs.txt | grep SUCCESS | grep current_goal -c
 
-timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_proverbot_eval_candidate_2.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-candidate_2-Apc4oG
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_proverbot_eval_candidate_4.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-candidate_4-p0RI7J
 
-cat /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-candidate_2-Apc4oG/*-proofs.txt | grep SUCCESS | grep candidate_2 -c
+cat /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-candidate_4-p0RI7J/*-proofs.txt | grep SUCCESS | grep candidate_4 -c
 
-timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_axiom_candidate_2.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-current_goal-H6O4Qh
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_axiom_candidate_4.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-current_goal-zEYrxs
 
-cat /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-current_goal-H6O4Qh/*-proofs.txt | grep SUCCESS | grep current_goal -c
+cat /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-current_goal-zEYrxs/*-proofs.txt | grep SUCCESS | grep current_goal -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_proverbot_eval_candidate_1.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-candidate_1-C4bA1b
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-candidate_1-C4bA1b/*-proofs.txt | grep SUCCESS | grep candidate_1 -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_axiom_candidate_1.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-current_goal-kc9t33
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-current_goal-kc9t33/*-proofs.txt | grep SUCCESS | grep current_goal -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_proverbot_eval_candidate_2.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-candidate_2-rDrAoX
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-candidate_2-rDrAoX/*-proofs.txt | grep SUCCESS | grep candidate_2 -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/lfind_axiom_candidate_2.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-current_goal-vd1XPQ
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/search-report-current_goal-vd1XPQ/*-proofs.txt | grep SUCCESS | grep current_goal -c
 
 rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_1_IN_insert_sortedd/conj*
 

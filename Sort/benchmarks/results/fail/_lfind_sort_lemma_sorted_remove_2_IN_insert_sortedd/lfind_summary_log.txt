@@ -1,13 +1,13 @@
 LFind Results
 LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_2_IN_insert_sortedd
 
-Number of Lemmas: 1
-Number of Lemmas (after duplicates removed): 1
-Number of Lemmas (after QuickChick used to filter): 1
-* Number of Candidate Lemmas: 0
+Number of Lemmas: 23
+Number of Lemmas (after duplicates removed): 12
+Number of Lemmas (after QuickChick used to filter): 4
+* Number of Candidate Lemmas: 1
 
-Time until ranking: 152
-Time to complete: 153
+Time until ranking: 196
+Time to complete: 255
 
 Stuck state true independent of hypotheses: false
 
@@ -24,4 +24,6 @@ Count = 0
 
 
 Category 3 (not provable):
-Count = 0
+Count = 1
+
+Lemma candidate_1: forall (a : nat) (n : nat) (l : list nat) (a0 : nat), sortedd (@cons nat a (@cons nat n l)) -> le a a0 -> @eq bool (Nat.leb a0 a) false -> le a n -> gt a0 n -> sortedd (@cons nat n (insert a0 l)).

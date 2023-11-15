@@ -1,13 +1,13 @@
 LFind Results
 LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/_lfind_sort_lemma_sorted_remove_cons_2_IN_insert_sortedd
 
-Number of Lemmas: 19
-Number of Lemmas (after duplicates removed): 19
-Number of Lemmas (after QuickChick used to filter): 3
-* Number of Candidate Lemmas: 0
+Number of Lemmas: 40
+Number of Lemmas (after duplicates removed): 30
+Number of Lemmas (after QuickChick used to filter): 12
+* Number of Candidate Lemmas: 7
 
-Time until ranking: 183
-Time to complete: 184
+Time until ranking: 251
+Time to complete: 623
 
 Stuck state true independent of hypotheses: false
 
@@ -16,12 +16,20 @@ Count = 0
 
 
 Category 2:
-Count = 0
+Count = 1
 
+Lemma candidate_3: forall (a : nat) (n : nat) (l : list nat) (a0 : nat), le a0 n -> sortedd (@cons nat a (@cons nat n l)) -> le a a0 -> @eq bool (Nat.leb a0 a) false -> le a n -> sortedd (@cons nat a (@cons nat a0 (@cons nat n l))).
 
 Category 3 (provable):
-Count = 0
+Count = 1
 
+Lemma candidate_14: forall (lf3 : list nat) (a : nat) (n : nat) (a0 : nat), le a a0 -> @eq bool (true) false -> le a n -> sortedd (@cons nat a (@cons nat a0 lf3)).
 
 Category 3 (not provable):
-Count = 0
+Count = 5
+
+Lemma candidate_11: forall (lf3 : list nat) (a : nat) (n : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb n n) false -> le a n -> sortedd (@cons nat a (@cons nat a0 lf3)).
+Lemma candidate_10: forall (lf3 : list nat) (a : nat) (n : nat) (a0 : nat), le a a0 -> @eq bool (Nat.eqb n n) false -> le a n -> sortedd (@cons nat a (@cons nat a0 lf3)).
+Lemma candidate_13: forall (lf3 : list nat) (a : nat) (n : nat) (a0 : nat), le a a0 -> @eq bool (Nat.leb a0 a0) false -> le a n -> sortedd (@cons nat a (@cons nat a0 lf3)).
+Lemma candidate_12: forall (lf3 : list nat) (a : nat) (n : nat) (a0 : nat), le a a0 -> @eq bool (Nat.eqb a0 a0) false -> le a n -> sortedd (@cons nat a (@cons nat a0 lf3)).
+Lemma candidate_2: forall (a : nat) (l : list nat) (n : nat) (a0 : nat) (lf2 : list nat), sortedd (@cons nat a (@cons nat n l)) -> le a a0 -> @eq bool (Nat.leb a0 a) false -> le a n -> le a0 n -> sortedd (@cons nat a lf2).
