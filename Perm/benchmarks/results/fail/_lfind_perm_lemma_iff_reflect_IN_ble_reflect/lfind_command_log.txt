@@ -1,0 +1,486 @@
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect
+
+cp -r /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/perm_lemma_iff_reflect_IN_ble_reflect /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect
+
+export is_lfind=true
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_*
+
+timeout  12 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/perm_lemma_iff_reflect_IN_ble_reflect" --module=Perm --type='Set' --params='' --extra-exprs='@Coq.Bool.Bool.reflect ,@Coq.Init.Peano.le ,@Coq.Arith.PeanoNat.Nat.leb ' --examples='' --num-terms=5 > /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/Permsynth_1synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/Permsynth_1synthesis.txt
+
+timeout  12 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/perm_lemma_iff_reflect_IN_ble_reflect" --module=Perm --type='Set' --params='y:@Coq.Init.Datatypes.nat,lf1:@Coq.Init.Datatypes.bool,x:@Coq.Init.Datatypes.nat' --extra-exprs='@Coq.Bool.Bool.reflect ,@Coq.Init.Peano.le ,@Coq.Arith.PeanoNat.Nat.leb ' --examples='' --num-terms=5 > /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/Permsynth_2synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/Permsynth_2synthesis.txt
+
+timeout  12 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/perm_lemma_iff_reflect_IN_ble_reflect" --module=Perm --type='@Coq.Init.Datatypes.bool' --params='y:@Coq.Init.Datatypes.nat,x:@Coq.Init.Datatypes.nat' --extra-exprs='@Coq.Bool.Bool.reflect ,@Coq.Init.Peano.le ,@Coq.Arith.PeanoNat.Nat.leb ' --examples='' --num-terms=5 > /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/Permsynth_3synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/Permsynth_3synthesis.txt
+
+timeout  12 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/perm_lemma_iff_reflect_IN_ble_reflect" --module=Perm --type='Set' --params='y:@Coq.Init.Datatypes.nat,x:@Coq.Init.Datatypes.nat' --extra-exprs='@Coq.Bool.Bool.reflect ,@Coq.Init.Peano.le ,@Coq.Arith.PeanoNat.Nat.leb ' --examples='' --num-terms=5 > /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/Permsynth_4synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/Permsynth_4synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_*
+
+python3  /home/anabrendel/lfind/lemmafinder/src/filter.py --prelude="/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect" --theorem_name="ble_reflect" --theorem="Theorem ble_reflect: forall x0 y0 : nat, reflect (le x0 y0) (Nat.leb x0 y0)." --lemmas  "Lemma candidate_26: forall (y : nat) (x : nat), @eq Set (reflect (le x y) (Nat.leb x y)) (reflect (le x x) false)." "Lemma candidate_27: forall (y : nat) (x : nat), @eq Set (reflect (le x y) (Nat.leb x y)) (reflect (le O x) false)." "Lemma candidate_28: forall (y : nat) (x : nat), @eq Set (reflect (le x y) (Nat.leb x y)) (reflect (le y O) false)." "Lemma candidate_29: forall (y : nat) (x : nat), @eq Set (reflect (le x y) (Nat.leb x y)) (reflect (le x O) false)." "Lemma candidate_30: forall (y : nat) (x : nat), @eq Set (reflect (le x y) (Nat.leb x y)) (reflect (le O O) false)." "Lemma candidate_6: forall (y : nat) (lf1 : bool) (x : nat), @eq Set (reflect (le x y) lf1) (reflect (le x x) false)." "Lemma candidate_7: forall (y : nat) (lf1 : bool) (x : nat), @eq Set (reflect (le x y) lf1) (reflect (le O x) false)." "Lemma candidate_8: forall (y : nat) (lf1 : bool) (x : nat), @eq Set (reflect (le x y) lf1) (reflect (le y O) false)." "Lemma candidate_9: forall (y : nat) (lf1 : bool) (x : nat), @eq Set (reflect (le x y) lf1) (reflect (le x O) false)." "Lemma candidate_10: forall (y : nat) (lf1 : bool) (x : nat), @eq Set (reflect (le x y) lf1) (reflect (le O O) false)." "Lemma candidate_21: forall (y : nat) (x : nat), @eq bool (Nat.leb x y) (Nat.leb x x)." "Lemma candidate_22: forall (y : nat) (x : nat), @eq bool (Nat.leb x y) (Nat.leb y O)." "Lemma candidate_23: forall (y : nat) (x : nat), @eq bool (Nat.leb x y) (Nat.leb x O)." "Lemma candidate_11: forall (y : nat) (x : nat), reflect (le x y) (Nat.leb x x)." "Lemma candidate_12: forall (y : nat) (x : nat), reflect (le x y) (Nat.leb y O)." "Lemma candidate_13: forall (y : nat) (x : nat), reflect (le x y) (Nat.leb x O)." "Lemma candidate_25: forall (y : nat) (x : nat), @eq bool (Nat.leb x y) (false)." "Lemma candidate_24: forall (y : nat) (x : nat), @eq bool (Nat.leb x y) (true)." "Lemma candidate_1: (reflect (le (S O) O) false)." "Lemma candidate_4: (reflect (le O (S O)) false)." "Lemma candidate_2: (reflect (le O (S O)) true)." "Lemma candidate_5: (reflect (le O O) false)." "Lemma candidate_15: forall (y : nat) (x : nat), reflect (le x y) (false)." "Lemma candidate_3: (reflect (le O O) true)." "Lemma candidate_14: forall (y : nat) (x : nat), reflect (le x y) (true)." --imports "Load LFindLoad."  "From lfind Require Import LFind." "Require Import Coq.Strings.String." "From vfa_benchmark Require Import Perm."
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_*
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_candidate_14.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_14-nYOHGJ
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_14-nYOHGJ/*-proofs.txt | grep SUCCESS | grep candidate_14 -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_candidate_14.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-AqReXb
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-AqReXb/*-proofs.txt | grep SUCCESS | grep current_goal -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_candidate_15.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_15-Zwx3KJ
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_15-Zwx3KJ/*-proofs.txt | grep SUCCESS | grep candidate_15 -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_candidate_15.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-dHqI0H
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-dHqI0H/*-proofs.txt | grep SUCCESS | grep current_goal -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_candidate_5.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_5-BgxMjN
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_5-BgxMjN/*-proofs.txt | grep SUCCESS | grep candidate_5 -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_candidate_5.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-T9Jq8a
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-T9Jq8a/*-proofs.txt | grep SUCCESS | grep current_goal -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_candidate_4.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_4-SAFQoe
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_4-SAFQoe/*-proofs.txt | grep SUCCESS | grep candidate_4 -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_candidate_4.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-EMWR48
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-EMWR48/*-proofs.txt | grep SUCCESS | grep current_goal -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_candidate_24.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_24-1x7qpD
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_24-1x7qpD/*-proofs.txt | grep SUCCESS | grep candidate_24 -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_candidate_24.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-0gBZYH
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-0gBZYH/*-proofs.txt | grep SUCCESS | grep current_goal -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_candidate_25.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_25-IbVpaQ
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_25-IbVpaQ/*-proofs.txt | grep SUCCESS | grep candidate_25 -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_candidate_25.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-WNrJXY
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-WNrJXY/*-proofs.txt | grep SUCCESS | grep current_goal -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_candidate_13.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_13-zDt0ME
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_13-zDt0ME/*-proofs.txt | grep SUCCESS | grep candidate_13 -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_candidate_13.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-LF3FDS
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-LF3FDS/*-proofs.txt | grep SUCCESS | grep current_goal -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_candidate_12.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_12-dutZAT
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_12-dutZAT/*-proofs.txt | grep SUCCESS | grep candidate_12 -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_candidate_12.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-EmzR1I
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-EmzR1I/*-proofs.txt | grep SUCCESS | grep current_goal -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_candidate_11.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_11-adM9Tc
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_11-adM9Tc/*-proofs.txt | grep SUCCESS | grep candidate_11 -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_candidate_11.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-E3VGAL
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-E3VGAL/*-proofs.txt | grep SUCCESS | grep current_goal -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_candidate_23.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_23-KbVVEX
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_23-KbVVEX/*-proofs.txt | grep SUCCESS | grep candidate_23 -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_candidate_23.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-LpINBX
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-LpINBX/*-proofs.txt | grep SUCCESS | grep current_goal -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_candidate_22.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_22-7aB58d
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_22-7aB58d/*-proofs.txt | grep SUCCESS | grep candidate_22 -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_candidate_22.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-Tgr3Jt
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-Tgr3Jt/*-proofs.txt | grep SUCCESS | grep current_goal -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_candidate_21.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_21-EOHPaD
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_21-EOHPaD/*-proofs.txt | grep SUCCESS | grep candidate_21 -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_candidate_21.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-LocqwM
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-LocqwM/*-proofs.txt | grep SUCCESS | grep current_goal -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_candidate_10.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_10-UDFmPK
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_10-UDFmPK/*-proofs.txt | grep SUCCESS | grep candidate_10 -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_candidate_10.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-WxAHHr
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-WxAHHr/*-proofs.txt | grep SUCCESS | grep current_goal -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_candidate_9.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_9-4cS56I
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_9-4cS56I/*-proofs.txt | grep SUCCESS | grep candidate_9 -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_candidate_9.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-McRSd8
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-McRSd8/*-proofs.txt | grep SUCCESS | grep current_goal -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_candidate_8.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_8-jLuBBy
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_8-jLuBBy/*-proofs.txt | grep SUCCESS | grep candidate_8 -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_candidate_8.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-xqQ8HA
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-xqQ8HA/*-proofs.txt | grep SUCCESS | grep current_goal -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_candidate_7.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_7-OLLAXR
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_7-OLLAXR/*-proofs.txt | grep SUCCESS | grep candidate_7 -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_candidate_7.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-y3kK3b
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-y3kK3b/*-proofs.txt | grep SUCCESS | grep current_goal -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_candidate_6.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_6-JS9r2M
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_6-JS9r2M/*-proofs.txt | grep SUCCESS | grep candidate_6 -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_candidate_6.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-25sxRm
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-25sxRm/*-proofs.txt | grep SUCCESS | grep current_goal -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_candidate_30.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_30-UOEINw
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_30-UOEINw/*-proofs.txt | grep SUCCESS | grep candidate_30 -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_candidate_30.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-xbjzZ3
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-xbjzZ3/*-proofs.txt | grep SUCCESS | grep current_goal -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_candidate_29.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_29-YBSZsr
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_29-YBSZsr/*-proofs.txt | grep SUCCESS | grep candidate_29 -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_candidate_29.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-EdSyC1
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-EdSyC1/*-proofs.txt | grep SUCCESS | grep current_goal -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_candidate_28.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_28-x6UVGh
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_28-x6UVGh/*-proofs.txt | grep SUCCESS | grep candidate_28 -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_candidate_28.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-fTGHCv
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-fTGHCv/*-proofs.txt | grep SUCCESS | grep current_goal -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_candidate_27.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_27-aYfcMT
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_27-aYfcMT/*-proofs.txt | grep SUCCESS | grep candidate_27 -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_candidate_27.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-PjDSrw
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-PjDSrw/*-proofs.txt | grep SUCCESS | grep current_goal -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_candidate_26.v  --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_26-Vvsnbd
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-candidate_26-Vvsnbd/*-proofs.txt | grep SUCCESS | grep candidate_26 -c
+
+timeout 40 python3 /home/anabrendel/lfind/proverbot9001/src/search_file.py  --prelude=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect --weightsfile=/home/anabrendel/lfind/proverbot9001/data/polyarg-weights.dat  /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval_for_completion.v --add-axioms=/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_candidate_26.txt --no-generate-report --max-proof-time=20 -o /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-7UOAMR
+
+cat /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report-current_goal-7UOAMR/*-proofs.txt | grep SUCCESS | grep current_goal -c
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_iff_reflect_IN_ble_reflect/lfind_axiom_*
+

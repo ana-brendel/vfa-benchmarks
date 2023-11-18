@@ -54,7 +54,6 @@ Proof.
   apply iff_reflect. symmetry. apply Nat.leb_le.
 Qed.
 
-
 Definition maybe_swap (al: list nat) : list nat :=
   match al with
   | a :: b :: ar => if a >? b then b::a::ar else a::b::ar
@@ -101,6 +100,7 @@ Definition manual_grade_for_Permutation_properties : option (prod nat string) :=
 
 (* Helper Lemma = Permutation_app_comm : ∀ (A : Type) (l l' : list A), Permutation (l ++ l') (l' ++ l) *)
 (* Helper Lemma = app_assoc : ∀ (A : Type) (l m n : list A), l ++ m ++ n = (l ++ m) ++ n *)
+(* Helper Lemma = Permutation_refl :  ∀ (A : Type) (l : list A), Permutation l l. *)
 (* Helper Lemma = Permutation_app_head : ∀ (A : Type) (l tl tl' : list A), Permutation tl tl' → Permutation (l ++ tl) (l ++ tl') *)
 (* Inductive Constructors = perm_trans, perm_skip, perm_swap *)
 Example butterfly: forall b u t e r f l y : nat,
@@ -109,24 +109,24 @@ Proof.
   intros.
   change [b;u;t;t;e;r] with ([b]++[u;t;t;e;r]).
   change [f;l;u;t;t;e;r] with ([f;l]++[u;t;t;e;r]).
-  remember [u;t;t;e;r] as utter.
-  clear Hequtter.
+  remember [u;t;t;e;r] as utter. clear Hequtter.
   rewrite <- app_assoc.
   lfind_debug.
   Admitted.
-
   (* rewrite <- app_assoc.
   apply perm_trans with (utter ++ [f;l;y] ++ [b]).
   rewrite (app_assoc utter [f;l;y]).
+  remember [f; l; y] as fly. clear Heqfly.
+  remember [b] as bl. clear Heqbl.
   apply Permutation_app_comm.
-  eapply perm_trans.
-  2: apply Permutation_app_comm.
-    rewrite <- app_assoc.
+  apply perm_trans with (l' := utter ++ [f; l; y] ++ [b]).
   apply Permutation_app_head.
-  eapply perm_trans.
-  2: apply Permutation_app_comm.
-  simpl.
-  apply perm_skip.
-  apply perm_skip.
-  apply perm_swap.
+  apply Permutation_refl.
+  apply perm_trans with (l' := utter ++ [b; y] ++ [f; l]).
+  apply Permutation_app_head.
+  apply perm_trans with (l' := [f; l] ++ [b; y]).
+  simpl. apply perm_skip. apply perm_skip. apply perm_swap.
+  apply Permutation_app_comm.
+  rewrite app_assoc.
+  apply Permutation_app_comm.
 Qed. *)

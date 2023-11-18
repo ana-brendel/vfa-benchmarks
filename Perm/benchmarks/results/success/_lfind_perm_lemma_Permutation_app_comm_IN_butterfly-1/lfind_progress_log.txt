@@ -1,0 +1,197 @@
+File Information
+- File name: Perm
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/perm_lemma_Permutation_app_comm_IN_butterfly-1
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_comm_IN_butterfly-1
+- Namespace: vfa_benchmark
+- Proof name: butterfly
+- Theorem: Theorem butterfly: forall b0 u0 t0 e0 r0 f0 l0 y0 : nat,
+@Permutation nat
+  (@app nat
+     (@cons nat b0
+        (@cons nat u0
+           (@cons nat t0
+              (@cons nat t0 (@cons nat e0 (@cons nat r0 (@nil nat)))))))
+     (@cons nat f0 (@cons nat l0 (@cons nat y0 (@nil nat)))))
+  (@app nat
+     (@cons nat f0
+        (@cons nat l0
+           (@cons nat u0
+              (@cons nat t0
+                 (@cons nat t0 (@cons nat e0 (@cons nat r0 (@nil nat))))))))
+     (@cons nat b0 (@cons nat y0 (@nil nat)))).
+- Declarations: 
+From lfind Require Import LFind.
+Require Import Coq.Strings.String.
+
+Proof Context
+* Goal State: @Permutation nat (@app nat bl (@app nat utter fly))
+  (@app nat (@app nat utter fly) bl)
+
+* Hypothesis:
+r : nat
+bl : list nat
+utter : list nat
+y : nat
+b : nat
+e : nat
+t : nat
+fly : list nat
+f : nat
+l : nat
+u : nat
+
+* Types:
+Set
+Prop
+nat
+list nat
+
+* Polymorphic Types:
+list nat
+
+* Variables:
+bl : list nat
+utter : list nat
+fly : list nat
+
+* Terms:
+list nat : Set
+@app nat bl (@app nat utter fly) : list nat
+nat : Set
+bl : list nat
+utter : list nat
+@app nat utter fly : list nat
+fly : list nat
+@app nat (@app nat utter fly) bl : list nat
+@Permutation nat (@app nat bl (@app nat utter fly))
+  (@app nat (@app nat utter fly) bl) : Prop
+
+* Functions:
+app  : forall (A : Type) (_ : list A) (_ : list A), list A
+list  : forall _ : Type, Type
+Permutation  : forall (A : Type) (_ : list A) (_ : list A), Prop
+
+<---GENERALIZATION--->
+Time elapsed: 3 seconds
+Generalized Variables:
+lf3 : list nat = @app nat utter fly
+lf1 : list nat = @app nat bl (@app nat utter fly)
+lf2 : list nat = @app nat (@app nat utter fly) bl
+
+Generalizations:
+Lemma conj1: forall (lf2 : list nat) (lf1 : list nat), @Permutation nat lf1 lf2.
+Lemma conj2: forall (bl : list nat) (lf1 : list nat) (lf3 : list nat), @Permutation nat lf1 (@app nat lf3 bl).
+Lemma conj3: forall (lf2 : list nat) (bl : list nat) (lf3 : list nat), @Permutation nat (@app nat bl lf3) lf2.
+Lemma conj4: forall (bl : list nat) (lf3 : list nat), @Permutation nat (@app nat bl lf3) (@app nat lf3 bl).
+Lemma conj6: forall (bl : list nat) (utter : list nat) (lf1 : list nat) (fly : list nat), @Permutation nat lf1 (@app nat (@app nat utter fly) bl).
+Lemma conj7: forall (lf2 : list nat) (utter : list nat) (bl : list nat) (fly : list nat), @Permutation nat (@app nat bl (@app nat utter fly)) lf2.
+Lemma conj8: forall (bl : list nat) (utter : list nat) (fly : list nat), @Permutation nat (@app nat bl (@app nat utter fly))
+  (@app nat (@app nat utter fly) bl).
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 43 seconds
+Valid:
+Lemma conj8: forall (bl : list nat) (utter : list nat) (fly : list nat), @Permutation nat (@app nat bl (@app nat utter fly))
+  (@app nat (@app nat utter fly) bl).
+Lemma conj4: forall (bl : list nat) (lf3 : list nat), @Permutation nat (@app nat bl lf3) (@app nat lf3 bl).
+
+Invalid:
+Lemma conj7: forall (lf2 : list nat) (utter : list nat) (bl : list nat) (fly : list nat), @Permutation nat (@app nat bl (@app nat utter fly)) lf2.
+Lemma conj6: forall (bl : list nat) (utter : list nat) (lf1 : list nat) (fly : list nat), @Permutation nat lf1 (@app nat (@app nat utter fly) bl).
+Lemma conj3: forall (lf2 : list nat) (bl : list nat) (lf3 : list nat), @Permutation nat (@app nat bl lf3) lf2.
+Lemma conj2: forall (bl : list nat) (lf1 : list nat) (lf3 : list nat), @Permutation nat lf1 (@app nat lf3 bl).
+Lemma conj1: forall (lf2 : list nat) (lf1 : list nat), @Permutation nat lf1 lf2.
+
+<---ADD IMPLICATIONS--->
+Time elapsed: 43 seconds
+Generalizations:
+Lemma conj7: forall (lf2 : list nat) (utter : list nat) (bl : list nat) (fly : list nat), @Permutation nat (@app nat bl (@app nat utter fly)) lf2.
+Lemma conj6: forall (bl : list nat) (utter : list nat) (lf1 : list nat) (fly : list nat), @Permutation nat lf1 (@app nat (@app nat utter fly) bl).
+Lemma conj3: forall (lf2 : list nat) (bl : list nat) (lf3 : list nat), @Permutation nat (@app nat bl lf3) lf2.
+Lemma conj2: forall (bl : list nat) (lf1 : list nat) (lf3 : list nat), @Permutation nat lf1 (@app nat lf3 bl).
+Lemma conj1: forall (lf2 : list nat) (lf1 : list nat), @Permutation nat lf1 lf2.
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 51 seconds
+Valid:
+
+Invalid:
+Lemma conj1: forall (lf2 : list nat) (lf1 : list nat), @Permutation nat lf1 lf2.
+Lemma conj2: forall (bl : list nat) (lf1 : list nat) (lf3 : list nat), @Permutation nat lf1 (@app nat lf3 bl).
+Lemma conj3: forall (lf2 : list nat) (bl : list nat) (lf3 : list nat), @Permutation nat (@app nat bl lf3) lf2.
+Lemma conj6: forall (bl : list nat) (utter : list nat) (lf1 : list nat) (fly : list nat), @Permutation nat lf1 (@app nat (@app nat utter fly) bl).
+Lemma conj7: forall (lf2 : list nat) (utter : list nat) (bl : list nat) (fly : list nat), @Permutation nat (@app nat bl (@app nat utter fly)) lf2.
+
+
+<---CREATE SKETCHES--->
+Time elapsed: 51 seconds
+Sketches:
+Sketch conj2_sketch0 : @Permutation nat lf1 (##hole##)
+Sketch conj2_term_sketch0 : @eq (list nat) (@app nat lf3 bl) (##hole##)
+Sketch conj3_sketch0 : @Permutation nat (##hole##) lf2
+Sketch conj3_term_sketch0 : @eq (list nat) (@app nat bl lf3) (##hole##)
+Sketch conj6_sketch0 : @Permutation nat lf1 (@app nat (##hole##) bl)
+Sketch conj6_sketch1 : @Permutation nat lf1 (##hole##)
+Sketch conj6_term_sketch0 : @eq (list nat) (@app nat utter fly) (##hole##)
+Sketch conj6_term_sketch1 : @eq (list nat) (@app nat (@app nat utter fly) bl) (##hole##)
+Sketch conj7_sketch0 : @Permutation nat (##hole##) lf2
+Sketch conj7_sketch1 : @Permutation nat (@app nat bl (##hole##)) lf2
+Sketch conj7_term_sketch0 : @eq (list nat) (@app nat bl (@app nat utter fly)) (##hole##)
+Sketch conj7_term_sketch1 : @eq (list nat) (@app nat utter fly) (##hole##)
+
+
+<---CREATE SYNTHESIS PROBLEMS--->
+Time elapsed: 171 seconds
+Problems per Sketch:
+Sketch conj2_term_sketch0 --> Problem  synth_2
+Sketch conj3_sketch0 --> Problem  synth_3
+Sketch conj7_sketch1 --> Problem  synth_8
+Sketch conj6_sketch1 --> Problem  synth_1
+Sketch conj3_term_sketch0 --> Problem  synth_4
+Sketch conj7_term_sketch1 --> Problem  synth_6
+Sketch conj7_term_sketch0 --> Problem  synth_9
+Sketch conj6_term_sketch1 --> Problem  synth_7
+Sketch conj6_sketch0 --> Problem  synth_5
+Sketch conj7_sketch0 --> Problem  synth_3
+Sketch conj2_sketch0 --> Problem  synth_1
+Sketch conj6_term_sketch0 --> Problem  synth_6
+
+
+<--- SYNTHESIS PROBLEM RESULTS--->
+Time elapsed: 199 seconds
+
+Problem: synth_8
+
+Problem: synth_3
+
+Problem: synth_9
+
+Problem: synth_6
+
+Problem: synth_7
+
+Problem: synth_5
+
+Problem: synth_4
+
+Problem: synth_1
+
+Problem: synth_2
+
+<---INITIAL CANDIDATE LEMMAS--->
+Time elapsed: 200 seconds
+Lemmas:
+Lemma candidate_1: forall (fly : list nat) (utter : list nat) (bl : list nat), @Permutation nat (@app nat bl (@app nat utter fly))   (@app nat (@app nat utter fly) bl).
+Lemma candidate_2: forall (lf3 : list nat) (bl : list nat), @Permutation nat (@app nat bl lf3) (@app nat lf3 bl).
+
+<---FILTERED CANDIDATE LEMMAS--->
+Time elapsed: 205 seconds
+Duplicates removed: 1
+Filtered by Quickchick: 0
+Filtered by script: 0
+Remaining: 1
+
+Lemmas: 
+Lemma candidate_2: forall (lf3 : list nat) (bl : list nat), @Permutation nat (@app nat bl lf3) (@app nat lf3 bl).

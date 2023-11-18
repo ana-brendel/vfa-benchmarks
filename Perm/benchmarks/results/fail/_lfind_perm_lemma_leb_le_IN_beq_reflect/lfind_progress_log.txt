@@ -1,0 +1,149 @@
+File Information
+- File name: Perm
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/perm_lemma_leb_le_IN_beq_reflect
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_leb_le_IN_beq_reflect
+- Namespace: vfa_benchmark
+- Proof name: beq_reflect
+- Theorem: Theorem beq_reflect: forall x0 y0 : nat, reflect (@eq nat x0 y0) (Nat.eqb x0 y0).
+- Declarations: 
+From lfind Require Import LFind.
+Require Import Coq.Strings.String.
+
+Proof Context
+* Goal State: reflect (@eq nat x y) (Nat.eqb x y)
+
+* Hypothesis:
+x : nat
+y : nat
+
+* Types:
+Set
+Prop
+reflect (@eq nat x y) (Nat.eqb x y)
+bool
+nat
+
+* Polymorphic Types:
+reflect (@eq nat x y) (Nat.eqb x y)
+
+* Variables:
+x : nat
+y : nat
+
+* Terms:
+Nat.eqb x y : bool
+nat : Set
+@eq nat x y : Prop
+x : nat
+reflect (@eq nat x y) (Nat.eqb x y) : Set
+y : nat
+
+* Functions:
+reflect  : forall (_ : Prop) (_ : bool), Set
+Nat.eqb  : forall (_ : nat) (_ : nat), bool
+@eq  : forall (A : Type) (_ : A) (_ : A), Prop
+
+<---GENERALIZATION--->
+Time elapsed: 0 seconds
+Generalized Variables:
+lf1 : bool = Nat.eqb x y
+
+Generalizations:
+Lemma conj1: forall (x : nat) (lf1 : bool) (y : nat), reflect (@eq nat x y) lf1.
+Lemma conj2: forall (x : nat) (y : nat), reflect (@eq nat x y) (Nat.eqb x y).
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 0 seconds
+Valid:
+
+Invalid:
+Lemma conj1: forall (x : nat) (lf1 : bool) (y : nat), reflect (@eq nat x y) lf1.
+Lemma conj2: forall (x : nat) (y : nat), reflect (@eq nat x y) (Nat.eqb x y).
+
+<---ADD IMPLICATIONS--->
+Time elapsed: 0 seconds
+Generalizations:
+Lemma conj1: forall (x : nat) (lf1 : bool) (y : nat), reflect (@eq nat x y) lf1.
+Lemma conj2: forall (x : nat) (y : nat), reflect (@eq nat x y) (Nat.eqb x y).
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 0 seconds
+Valid:
+
+Invalid:
+Lemma conj1: forall (x : nat) (lf1 : bool) (y : nat), reflect (@eq nat x y) lf1.
+Lemma conj2: forall (x : nat) (y : nat), reflect (@eq nat x y) (Nat.eqb x y).
+
+
+<---CREATE SKETCHES--->
+Time elapsed: 1 seconds
+Sketches:
+Sketch conj1_sketch0 : (##hole##)
+Sketch conj1_term_sketch0 : @eq Set (reflect (@eq nat x y) lf1) (##hole##)
+Sketch conj2_sketch0 : reflect (@eq nat x y) (##hole##)
+Sketch conj2_sketch1 : (##hole##)
+Sketch conj2_term_sketch0 : @eq bool (Nat.eqb x y) (##hole##)
+Sketch conj2_term_sketch1 : @eq Set (reflect (@eq nat x y) (Nat.eqb x y)) (##hole##)
+
+
+<---CREATE SYNTHESIS PROBLEMS--->
+Time elapsed: 1 seconds
+Problems per Sketch:
+Sketch conj2_term_sketch0 --> Problem  synth_3
+Sketch conj1_sketch0 --> Problem  synth_1
+Sketch conj2_term_sketch1 --> Problem  synth_4
+Sketch conj2_sketch1 --> Problem  synth_1
+Sketch conj1_term_sketch0 --> Problem  synth_2
+Sketch conj2_sketch0 --> Problem  synth_3
+
+
+<--- SYNTHESIS PROBLEM RESULTS--->
+Time elapsed: 38 seconds
+
+Problem: synth_3
+ match x with | O => true | S _ => false end
+ Nat.eqb y O
+ Nat.eqb x O
+ true
+ false
+
+Problem: synth_4
+
+Problem: synth_1
+
+Problem: synth_2
+
+<---INITIAL CANDIDATE LEMMAS--->
+Time elapsed: 38 seconds
+Lemmas:
+Lemma candidate_1: forall (y : nat) (x : nat), reflect (@eq nat x y) (match x with | O => true | S _ => false end).
+Lemma candidate_2: forall (y : nat) (x : nat), reflect (@eq nat x y) (Nat.eqb y O).
+Lemma candidate_3: forall (y : nat) (x : nat), reflect (@eq nat x y) (Nat.eqb x O).
+Lemma candidate_4: forall (y : nat) (x : nat), reflect (@eq nat x y) (true).
+Lemma candidate_5: forall (y : nat) (x : nat), reflect (@eq nat x y) (false).
+Lemma candidate_6: forall (y : nat) (x : nat), @eq bool (Nat.eqb x y) (match x with | O => true | S _ => false end).
+Lemma candidate_7: forall (y : nat) (x : nat), @eq bool (Nat.eqb x y) (Nat.eqb y O).
+Lemma candidate_8: forall (y : nat) (x : nat), @eq bool (Nat.eqb x y) (Nat.eqb x O).
+Lemma candidate_9: forall (y : nat) (x : nat), @eq bool (Nat.eqb x y) (true).
+Lemma candidate_10: forall (y : nat) (x : nat), @eq bool (Nat.eqb x y) (false).
+
+<---FILTERED CANDIDATE LEMMAS--->
+Time elapsed: 53 seconds
+Duplicates removed: 0
+Filtered by Quickchick: 0
+Filtered by script: 0
+Remaining: 10
+
+Lemmas: 
+Lemma candidate_4: forall (y : nat) (x : nat), reflect (@eq nat x y) (true).
+Lemma candidate_9: forall (y : nat) (x : nat), @eq bool (Nat.eqb x y) (true).
+Lemma candidate_5: forall (y : nat) (x : nat), reflect (@eq nat x y) (false).
+Lemma candidate_10: forall (y : nat) (x : nat), @eq bool (Nat.eqb x y) (false).
+Lemma candidate_3: forall (y : nat) (x : nat), reflect (@eq nat x y) (Nat.eqb x O).
+Lemma candidate_2: forall (y : nat) (x : nat), reflect (@eq nat x y) (Nat.eqb y O).
+Lemma candidate_8: forall (y : nat) (x : nat), @eq bool (Nat.eqb x y) (Nat.eqb x O).
+Lemma candidate_7: forall (y : nat) (x : nat), @eq bool (Nat.eqb x y) (Nat.eqb y O).
+Lemma candidate_1: forall (y : nat) (x : nat), reflect (@eq nat x y) (match x with | O => true | S _ => false end).
+Lemma candidate_6: forall (y : nat) (x : nat), @eq bool (Nat.eqb x y) (match x with | O => true | S _ => false end).

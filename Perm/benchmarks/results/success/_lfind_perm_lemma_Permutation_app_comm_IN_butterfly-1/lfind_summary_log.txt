@@ -1,0 +1,29 @@
+LFind Results
+LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_comm_IN_butterfly-1
+
+
+Number of Lemmas: 2
+Number of Lemmas (after duplicates removed): 1
+Number of Lemmas (after QuickChick used to filter): 1
+* Number of Candidate Lemmas: 1
+
+Time until ranking: 205
+Time to complete: 247
+
+Stuck state true independent of hypotheses: true
+
+Category 1:
+Count = 0
+
+
+Category 2:
+Count = 1
+
+Lemma candidate_2: forall (lf3 : list nat) (bl : list nat), @Permutation nat (@app nat bl lf3) (@app nat lf3 bl).
+
+Category 3 (provable):
+Count = 0
+
+
+Category 3 (not provable):
+Count = 0

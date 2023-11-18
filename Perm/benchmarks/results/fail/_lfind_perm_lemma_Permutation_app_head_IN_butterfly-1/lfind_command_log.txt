@@ -1,0 +1,990 @@
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1
+
+cp -r /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/perm_lemma_Permutation_app_head_IN_butterfly-1 /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/ && coqc -R . vfa_benchmark decide.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_quickchick_generator.v
+
+export is_lfind=true
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_axiom_*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1 && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj1.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1//home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj1*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj5.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1//home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj5*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj37.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1//home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj37*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj65.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1//home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj65*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj69.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1//home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj69*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj73.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1//home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj73*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj74.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1//home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj74*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj77.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1//home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj77*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj78.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1//home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj78*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj101.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1//home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj101*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj106.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1//home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj106*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj109.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1//home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj109*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj110.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1//home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj110*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_axiom_*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval_candidate_5.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval_candidate_2.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval_candidate_3.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval_candidate_6.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval_candidate_7.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval_candidate_4.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval_candidate_8.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval_candidate_9.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval_candidate_11.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval_candidate_10.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval_candidate_12.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval_candidate_13.v
+
+python3  /home/anabrendel/lfind/lemmafinder/src/filter.py --prelude="/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1" --theorem_name="butterfly" --theorem="Theorem butterfly: forall b0 u0 t0 e0 r0 f0 l0 y0 : nat,
+@Permutation nat
+  (@app nat
+     (@cons nat b0
+        (@cons nat u0
+           (@cons nat t0
+              (@cons nat t0 (@cons nat e0 (@cons nat r0 (@nil nat)))))))
+     (@cons nat f0 (@cons nat l0 (@cons nat y0 (@nil nat)))))
+  (@app nat
+     (@cons nat f0
+        (@cons nat l0
+           (@cons nat u0
+              (@cons nat t0
+                 (@cons nat t0 (@cons nat e0 (@cons nat r0 (@nil nat))))))))
+     (@cons nat b0 (@cons nat y0 (@nil nat))))." --lemmas  "Lemma candidate_5: forall (l : nat) (lf7 : list nat) (f : nat) (y : nat) (b : nat) (utter : list nat), @Permutation nat   (@app nat utter      (@app nat (@cons nat f (@cons nat l (@cons nat y lf7)))         (@cons nat b lf7)))   (@app nat utter      (@app nat (@cons nat f (@cons nat l (@cons nat y lf7)))         (@cons nat b lf7)))." "Lemma candidate_2: forall (l : nat) (f : nat) (b : nat) (utter : list nat) (lf6 : list nat), @Permutation nat   (@app nat utter      (@app nat (@cons nat f (@cons nat l lf6)) (@cons nat b (@nil nat))))   (@app nat utter      (@app nat (@cons nat f (@cons nat l lf6)) (@cons nat b (@nil nat))))." "Lemma candidate_3: forall (l : nat) (f : nat) (y : nat) (utter : list nat) (lf5 : list nat), @Permutation nat   (@app nat utter      (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat)))) lf5))   (@app nat utter      (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat)))) lf5))." "Lemma candidate_6: forall (l : nat) (lf7 : list nat) (f : nat) (b : nat) (utter : list nat) (lf6 : list nat), @Permutation nat   (@app nat utter      (@app nat (@cons nat f (@cons nat l lf6)) (@cons nat b lf7)))   (@app nat utter      (@app nat (@cons nat f (@cons nat l lf6)) (@cons nat b lf7)))." "Lemma candidate_7: forall (l : nat) (lf7 : list nat) (f : nat) (y : nat) (utter : list nat) (lf5 : list nat), @Permutation nat   (@app nat utter      (@app nat (@cons nat f (@cons nat l (@cons nat y lf7))) lf5))   (@app nat utter      (@app nat (@cons nat f (@cons nat l (@cons nat y lf7))) lf5))." "Lemma candidate_4: forall (f : nat) (b : nat) (lf4 : list nat) (utter : list nat), @Permutation nat   (@app nat utter (@app nat (@cons nat f lf4) (@cons nat b (@nil nat))))   (@app nat utter (@app nat (@cons nat f lf4) (@cons nat b (@nil nat))))." "Lemma candidate_8: forall (l : nat) (f : nat) (utter : list nat) (lf5 : list nat) (lf6 : list nat), @Permutation nat   (@app nat utter (@app nat (@cons nat f (@cons nat l lf6)) lf5))   (@app nat utter (@app nat (@cons nat f (@cons nat l lf6)) lf5))." "Lemma candidate_9: forall (lf7 : list nat) (f : nat) (b : nat) (lf4 : list nat) (utter : list nat), @Permutation nat   (@app nat utter (@app nat (@cons nat f lf4) (@cons nat b lf7)))   (@app nat utter (@app nat (@cons nat f lf4) (@cons nat b lf7)))." "Lemma candidate_11: forall (lf3 : list nat) (b : nat) (utter : list nat), @Permutation nat (@app nat utter (@app nat lf3 (@cons nat b (@nil nat))))   (@app nat utter (@app nat lf3 (@cons nat b (@nil nat))))." "Lemma candidate_10: forall (f : nat) (lf4 : list nat) (utter : list nat) (lf5 : list nat), @Permutation nat (@app nat utter (@app nat (@cons nat f lf4) lf5))   (@app nat utter (@app nat (@cons nat f lf4) lf5))." "Lemma candidate_12: forall (lf3 : list nat) (lf7 : list nat) (b : nat) (utter : list nat), @Permutation nat (@app nat utter (@app nat lf3 (@cons nat b lf7)))   (@app nat utter (@app nat lf3 (@cons nat b lf7)))." "Lemma candidate_13: forall (lf3 : list nat) (utter : list nat) (lf5 : list nat), @Permutation nat (@app nat utter (@app nat lf3 lf5))   (@app nat utter (@app nat lf3 lf5))." --imports "Load LFindLoad."  "From lfind Require Import LFind." "Require Import Coq.Strings.String." "From vfa_benchmark Require Import Perm."
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1/lfind_axiom_*
+

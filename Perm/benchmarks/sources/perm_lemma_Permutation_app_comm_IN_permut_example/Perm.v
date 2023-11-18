@@ -131,15 +131,13 @@ Qed.
 (* Helper Lemma = Permutation_refl : ∀ (A : Type) (l : list A), Permutation l l *)
 (* Helper Lemma = app_assoc : ∀ (A : Type) (l m n : list A), l ++ m ++ n = (l ++ m) ++ n *)
 (* Inductive Constructors = perm_trans, perm_skip *)
-Example permut_example: forall (a b: list nat),
-  Permutation (5::6::a++b) ((5::b)++(6::a++[])).
+Example permut_example: forall (a b: list nat) (x y: nat),
+  Permutation (x::y::a++b) ((x::b)++(y::a++[])).
 Proof. intros.
   simpl. apply perm_skip.
-  eapply perm_trans.
-  lfind_debug.
-  Admitted.
-
-  (* 2: { apply Permutation_app_comm. }
-  simpl. apply perm_skip. rewrite <- app_assoc. simpl. 
-  apply Permutation_refl.
+  replace (a ++ []) with a.
+  - lfind_debug.
+    Admitted.
+    (* apply Permutation_app_comm with (l := y :: a).
+  - apply app_nil_end.
 Qed. *)

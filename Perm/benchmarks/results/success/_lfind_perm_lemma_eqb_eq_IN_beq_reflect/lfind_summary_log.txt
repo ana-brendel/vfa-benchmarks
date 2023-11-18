@@ -1,0 +1,30 @@
+LFind Results
+LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_eqb_eq_IN_beq_reflect
+
+Decidability proof NOT provided, so results are limited
+
+Number of Lemmas: 34
+Number of Lemmas (after duplicates removed): 27
+Number of Lemmas (after QuickChick used to filter): 27
+* Number of Candidate Lemmas: 26
+
+Time until ranking: 53
+Time to complete: 1381
+
+Stuck state true independent of hypotheses: false
+
+Category 1:
+Count = 1
+
+Lemma candidate_26: forall (y : nat) (x : nat), iff (@eq bool (Nat.eqb x y) (true)) (@eq nat x y).
+
+Category 2:
+Count = 0
+
+
+Category 3 (provable):
+Count = 0
+
+
+Category 3 (not provable):
+Count = 0

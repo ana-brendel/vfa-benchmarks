@@ -1,0 +1,45 @@
+LFind Results
+LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_comm_IN_butterfly-3
+
+
+Number of Lemmas: 18
+Number of Lemmas (after duplicates removed): 17
+Number of Lemmas (after QuickChick used to filter): 17
+* Number of Candidate Lemmas: 17
+
+Time until ranking: 162
+Time to complete: 977
+
+Stuck state true independent of hypotheses: true
+
+Category 1:
+Count = 0
+
+
+Category 2:
+Count = 17
+
+Lemma candidate_18: forall (lf3 : list nat) (lf4 : list nat), @Permutation nat (@app nat lf3 lf4) (@app nat lf4 lf3).
+Lemma candidate_17: forall (lf3 : list nat) (f : nat) (lf6 : list nat), @Permutation nat (@app nat lf3 (@cons nat f lf6))   (@app nat (@cons nat f lf6) lf3).
+Lemma candidate_14: forall (lf4 : list nat) (utter : list nat) (lf5 : list nat), @Permutation nat (@app nat (@app nat utter lf5) lf4)   (@app nat lf4 (@app nat utter lf5)).
+Lemma candidate_16: forall (lf3 : list nat) (l : nat) (f : nat) (lf8 : list nat), @Permutation nat (@app nat lf3 (@cons nat f (@cons nat l lf8)))   (@app nat (@cons nat f (@cons nat l lf8)) lf3).
+Lemma candidate_13: forall (lf7 : list nat) (b : nat) (lf4 : list nat) (utter : list nat), @Permutation nat (@app nat (@app nat utter (@cons nat b lf7)) lf4)   (@app nat lf4 (@app nat utter (@cons nat b lf7))).
+Lemma candidate_12: forall (f : nat) (utter : list nat) (lf5 : list nat) (lf6 : list nat), @Permutation nat (@app nat (@app nat utter lf5) (@cons nat f lf6))   (@app nat (@cons nat f lf6) (@app nat utter lf5)).
+Lemma candidate_15: forall (lf3 : list nat) (l : nat) (f : nat), @Permutation nat (@app nat lf3 (@cons nat f (@cons nat l (@nil nat))))   (@app nat (@cons nat f (@cons nat l (@nil nat))) lf3).
+Lemma candidate_11: forall (l : nat) (f : nat) (utter : list nat) (lf5 : list nat) (lf8 : list nat), @Permutation nat   (@app nat (@app nat utter lf5) (@cons nat f (@cons nat l lf8)))   (@app nat (@cons nat f (@cons nat l lf8)) (@app nat utter lf5)).
+Lemma candidate_9: forall (lf7 : list nat) (f : nat) (b : nat) (utter : list nat) (lf6 : list nat), @Permutation nat   (@app nat (@app nat utter (@cons nat b lf7)) (@cons nat f lf6))   (@app nat (@cons nat f lf6) (@app nat utter (@cons nat b lf7))).
+Lemma candidate_6: forall (b : nat) (y : nat) (lf4 : list nat) (utter : list nat) (lf8 : list nat), @Permutation nat   (@app nat (@app nat utter (@cons nat b (@cons nat y lf8))) lf4)   (@app nat lf4 (@app nat utter (@cons nat b (@cons nat y lf8)))).
+Lemma candidate_10: forall (l : nat) (f : nat) (utter : list nat) (lf5 : list nat), @Permutation nat   (@app nat (@app nat utter lf5) (@cons nat f (@cons nat l (@nil nat))))   (@app nat (@cons nat f (@cons nat l (@nil nat))) (@app nat utter lf5)).
+Lemma candidate_5: forall (b : nat) (y : nat) (lf4 : list nat) (utter : list nat), @Permutation nat   (@app nat (@app nat utter (@cons nat b (@cons nat y (@nil nat)))) lf4)   (@app nat lf4 (@app nat utter (@cons nat b (@cons nat y (@nil nat))))).
+Lemma candidate_8: forall (l : nat) (lf7 : list nat) (f : nat) (b : nat) (utter : list nat) (lf8 : list nat), @Permutation nat   (@app nat (@app nat utter (@cons nat b lf7))      (@cons nat f (@cons nat l lf8)))   (@app nat (@cons nat f (@cons nat l lf8))      (@app nat utter (@cons nat b lf7))).
+Lemma candidate_4: forall (f : nat) (b : nat) (y : nat) (utter : list nat) (lf6 : list nat) (lf8 : list nat), @Permutation nat   (@app nat (@app nat utter (@cons nat b (@cons nat y lf8)))      (@cons nat f lf6))   (@app nat (@cons nat f lf6)      (@app nat utter (@cons nat b (@cons nat y lf8)))).
+Lemma candidate_7: forall (l : nat) (lf7 : list nat) (f : nat) (b : nat) (utter : list nat), @Permutation nat   (@app nat (@app nat utter (@cons nat b lf7))      (@cons nat f (@cons nat l (@nil nat))))   (@app nat (@cons nat f (@cons nat l (@nil nat)))      (@app nat utter (@cons nat b lf7))).
+Lemma candidate_2: forall (f : nat) (b : nat) (y : nat) (utter : list nat) (lf6 : list nat), @Permutation nat   (@app nat (@app nat utter (@cons nat b (@cons nat y (@nil nat))))      (@cons nat f lf6))   (@app nat (@cons nat f lf6)      (@app nat utter (@cons nat b (@cons nat y (@nil nat))))).
+Lemma candidate_3: forall (l : nat) (f : nat) (b : nat) (y : nat) (utter : list nat) (lf8 : list nat), @Permutation nat   (@app nat (@app nat utter (@cons nat b (@cons nat y lf8)))      (@cons nat f (@cons nat l lf8)))   (@app nat (@cons nat f (@cons nat l lf8))      (@app nat utter (@cons nat b (@cons nat y lf8)))).
+
+Category 3 (provable):
+Count = 0
+
+
+Category 3 (not provable):
+Count = 0

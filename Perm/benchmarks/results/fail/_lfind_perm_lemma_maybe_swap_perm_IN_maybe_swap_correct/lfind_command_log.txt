@@ -1,0 +1,384 @@
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct
+
+cp -r /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/perm_lemma_maybe_swap_perm_IN_maybe_swap_correct /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/ && coqc -R . vfa_benchmark decide.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_quickchick_generator.v
+
+export is_lfind=true
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_axiom_*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_conj1.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct//home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_conj1*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_conj2.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct//home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_conj2*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_axiom_*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_conj1.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct//home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_conj1*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_axiom_*
+
+python3  /home/anabrendel/lfind/lemmafinder/src/filter.py --prelude="/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct" --theorem_name="maybe_swap_correct" --theorem="Theorem maybe_swap_correct: forall al0 : list nat,
+and (@Permutation nat al0 (maybe_swap al0))
+  (first_le_second (maybe_swap al0))." --lemmas  --imports "Load LFindLoad."  "From lfind Require Import LFind." "Require Import Coq.Strings.String." "From vfa_benchmark Require Import Perm."
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_maybe_swap_perm_IN_maybe_swap_correct/lfind_axiom_*
+

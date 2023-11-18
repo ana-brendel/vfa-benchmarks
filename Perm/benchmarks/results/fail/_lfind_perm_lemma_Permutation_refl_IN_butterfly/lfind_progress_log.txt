@@ -1,0 +1,217 @@
+File Information
+- File name: Perm
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/perm_lemma_Permutation_refl_IN_butterfly
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_refl_IN_butterfly
+- Namespace: vfa_benchmark
+- Proof name: butterfly
+- Theorem: Theorem butterfly: forall b0 u0 t0 e0 r0 f0 l0 y0 : nat,
+@Permutation nat
+  (@app nat
+     (@cons nat b0
+        (@cons nat u0
+           (@cons nat t0
+              (@cons nat t0 (@cons nat e0 (@cons nat r0 (@nil nat)))))))
+     (@cons nat f0 (@cons nat l0 (@cons nat y0 (@nil nat)))))
+  (@app nat
+     (@cons nat f0
+        (@cons nat l0
+           (@cons nat u0
+              (@cons nat t0
+                 (@cons nat t0 (@cons nat e0 (@cons nat r0 (@nil nat))))))))
+     (@cons nat b0 (@cons nat y0 (@nil nat)))).
+- Declarations: 
+From lfind Require Import LFind.
+Require Import Coq.Strings.String.
+
+Proof Context
+* Goal State: @Permutation nat
+  (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+     (@cons nat b (@nil nat)))
+  (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+     (@cons nat b (@nil nat)))
+
+* Hypothesis:
+r : nat
+utter : list nat
+y : nat
+b : nat
+e : nat
+t : nat
+f : nat
+l : nat
+u : nat
+
+* Types:
+Set
+Prop
+nat
+list nat
+
+* Polymorphic Types:
+list nat
+
+* Variables:
+b : nat
+y : nat
+f : nat
+l : nat
+
+* Terms:
+list nat : Set
+@cons nat f (@cons nat l (@cons nat y (@nil nat))) : list nat
+@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+  (@cons nat b (@nil nat)) : list nat
+@cons nat b (@nil nat) : list nat
+nat : Set
+@Permutation nat
+  (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+     (@cons nat b (@nil nat)))
+  (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+     (@cons nat b (@nil nat))) : Prop
+b : nat
+y : nat
+@cons nat y (@nil nat) : list nat
+f : nat
+l : nat
+@cons nat l (@cons nat y (@nil nat)) : list nat
+@nil nat : list nat
+
+* Functions:
+app  : forall (A : Type) (_ : list A) (_ : list A), list A
+list  : forall _ : Type, Type
+@nil  : forall A : Type, list A
+@cons  : forall (A : Type) (_ : A) (_ : list A), list A
+Permutation  : forall (A : Type) (_ : list A) (_ : list A), Prop
+
+<---GENERALIZATION--->
+Time elapsed: 5 seconds
+Generalized Variables:
+lf3 : list nat = @cons nat l (@cons nat y (@nil nat))
+lf1 : list nat = @app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+  (@cons nat b (@nil nat))
+lf4 : list nat = @cons nat b (@nil nat)
+lf5 : list nat = @cons nat y (@nil nat)
+lf2 : list nat = @cons nat f (@cons nat l (@cons nat y (@nil nat)))
+lf6 : list nat = @nil nat
+
+Generalizations:
+Lemma conj1: forall (lf2 : list nat) (lf4 : list nat), @Permutation nat (@app nat lf2 lf4) (@app nat lf2 lf4).
+Lemma conj3: forall (lf4 : list nat) (f : nat) (lf3 : list nat), @Permutation nat (@app nat (@cons nat f lf3) lf4)
+  (@app nat (@cons nat f lf3) lf4).
+Lemma conj9: forall (lf6 : list nat) (lf2 : list nat) (b : nat), @Permutation nat (@app nat lf2 (@cons nat b lf6))
+  (@app nat lf2 (@cons nat b lf6)).
+Lemma conj10: forall (lf2 : list nat) (b : nat), @Permutation nat (@app nat lf2 (@cons nat b (@nil nat)))
+  (@app nat lf2 (@cons nat b (@nil nat))).
+Lemma conj11: forall (lf6 : list nat) (b : nat) (f : nat) (lf3 : list nat), @Permutation nat (@app nat (@cons nat f lf3) (@cons nat b lf6))
+  (@app nat (@cons nat f lf3) (@cons nat b lf6)).
+Lemma conj12: forall (b : nat) (f : nat) (lf3 : list nat), @Permutation nat (@app nat (@cons nat f lf3) (@cons nat b (@nil nat)))
+  (@app nat (@cons nat f lf3) (@cons nat b (@nil nat))).
+Lemma conj35: forall (lf5 : list nat) (lf4 : list nat) (f : nat) (l : nat), @Permutation nat (@app nat (@cons nat f (@cons nat l lf5)) lf4)
+  (@app nat (@cons nat f (@cons nat l lf5)) lf4).
+Lemma conj39: forall (lf6 : list nat) (lf4 : list nat) (y : nat) (f : nat) (l : nat), @Permutation nat (@app nat (@cons nat f (@cons nat l (@cons nat y lf6))) lf4)
+  (@app nat (@cons nat f (@cons nat l (@cons nat y lf6))) lf4).
+Lemma conj40: forall (lf4 : list nat) (y : nat) (f : nat) (l : nat), @Permutation nat
+  (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat)))) lf4)
+  (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat)))) lf4).
+Lemma conj43: forall (lf6 : list nat) (lf5 : list nat) (b : nat) (f : nat) (l : nat), @Permutation nat (@app nat (@cons nat f (@cons nat l lf5)) (@cons nat b lf6))
+  (@app nat (@cons nat f (@cons nat l lf5)) (@cons nat b lf6)).
+Lemma conj44: forall (lf5 : list nat) (b : nat) (f : nat) (l : nat), @Permutation nat
+  (@app nat (@cons nat f (@cons nat l lf5)) (@cons nat b (@nil nat)))
+  (@app nat (@cons nat f (@cons nat l lf5)) (@cons nat b (@nil nat))).
+Lemma conj47: forall (lf6 : list nat) (b : nat) (y : nat) (f : nat) (l : nat), @Permutation nat
+  (@app nat (@cons nat f (@cons nat l (@cons nat y lf6))) (@cons nat b lf6))
+  (@app nat (@cons nat f (@cons nat l (@cons nat y lf6))) (@cons nat b lf6)).
+Lemma conj48: forall (b : nat) (y : nat) (f : nat) (l : nat), @Permutation nat
+  (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+     (@cons nat b (@nil nat)))
+  (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+     (@cons nat b (@nil nat))).
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 88 seconds
+Valid:
+Lemma conj48: forall (b : nat) (y : nat) (f : nat) (l : nat), @Permutation nat
+  (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+     (@cons nat b (@nil nat)))
+  (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+     (@cons nat b (@nil nat))).
+Lemma conj47: forall (lf6 : list nat) (b : nat) (y : nat) (f : nat) (l : nat), @Permutation nat
+  (@app nat (@cons nat f (@cons nat l (@cons nat y lf6))) (@cons nat b lf6))
+  (@app nat (@cons nat f (@cons nat l (@cons nat y lf6))) (@cons nat b lf6)).
+Lemma conj44: forall (lf5 : list nat) (b : nat) (f : nat) (l : nat), @Permutation nat
+  (@app nat (@cons nat f (@cons nat l lf5)) (@cons nat b (@nil nat)))
+  (@app nat (@cons nat f (@cons nat l lf5)) (@cons nat b (@nil nat))).
+Lemma conj43: forall (lf6 : list nat) (lf5 : list nat) (b : nat) (f : nat) (l : nat), @Permutation nat (@app nat (@cons nat f (@cons nat l lf5)) (@cons nat b lf6))
+  (@app nat (@cons nat f (@cons nat l lf5)) (@cons nat b lf6)).
+Lemma conj40: forall (lf4 : list nat) (y : nat) (f : nat) (l : nat), @Permutation nat
+  (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat)))) lf4)
+  (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat)))) lf4).
+Lemma conj39: forall (lf6 : list nat) (lf4 : list nat) (y : nat) (f : nat) (l : nat), @Permutation nat (@app nat (@cons nat f (@cons nat l (@cons nat y lf6))) lf4)
+  (@app nat (@cons nat f (@cons nat l (@cons nat y lf6))) lf4).
+Lemma conj35: forall (lf5 : list nat) (lf4 : list nat) (f : nat) (l : nat), @Permutation nat (@app nat (@cons nat f (@cons nat l lf5)) lf4)
+  (@app nat (@cons nat f (@cons nat l lf5)) lf4).
+Lemma conj12: forall (b : nat) (f : nat) (lf3 : list nat), @Permutation nat (@app nat (@cons nat f lf3) (@cons nat b (@nil nat)))
+  (@app nat (@cons nat f lf3) (@cons nat b (@nil nat))).
+Lemma conj11: forall (lf6 : list nat) (b : nat) (f : nat) (lf3 : list nat), @Permutation nat (@app nat (@cons nat f lf3) (@cons nat b lf6))
+  (@app nat (@cons nat f lf3) (@cons nat b lf6)).
+Lemma conj10: forall (lf2 : list nat) (b : nat), @Permutation nat (@app nat lf2 (@cons nat b (@nil nat)))
+  (@app nat lf2 (@cons nat b (@nil nat))).
+Lemma conj9: forall (lf6 : list nat) (lf2 : list nat) (b : nat), @Permutation nat (@app nat lf2 (@cons nat b lf6))
+  (@app nat lf2 (@cons nat b lf6)).
+Lemma conj3: forall (lf4 : list nat) (f : nat) (lf3 : list nat), @Permutation nat (@app nat (@cons nat f lf3) lf4)
+  (@app nat (@cons nat f lf3) lf4).
+Lemma conj1: forall (lf2 : list nat) (lf4 : list nat), @Permutation nat (@app nat lf2 lf4) (@app nat lf2 lf4).
+
+Invalid:
+
+<---ADD IMPLICATIONS--->
+Time elapsed: 88 seconds
+Generalizations:
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 88 seconds
+Valid:
+
+Invalid:
+
+
+<---CREATE SKETCHES--->
+Time elapsed: 89 seconds
+Sketches:
+
+
+<---CREATE SYNTHESIS PROBLEMS--->
+Time elapsed: 89 seconds
+Problems per Sketch:
+
+
+<--- SYNTHESIS PROBLEM RESULTS--->
+Time elapsed: 89 seconds
+
+<---INITIAL CANDIDATE LEMMAS--->
+Time elapsed: 89 seconds
+Lemmas:
+Lemma candidate_1: forall (l : nat) (f : nat) (y : nat) (b : nat), @Permutation nat   (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))      (@cons nat b (@nil nat)))   (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))      (@cons nat b (@nil nat))).
+Lemma candidate_2: forall (l : nat) (f : nat) (y : nat) (b : nat) (lf6 : list nat), @Permutation nat   (@app nat (@cons nat f (@cons nat l (@cons nat y lf6))) (@cons nat b lf6))   (@app nat (@cons nat f (@cons nat l (@cons nat y lf6))) (@cons nat b lf6)).
+Lemma candidate_3: forall (l : nat) (f : nat) (b : nat) (lf5 : list nat), @Permutation nat   (@app nat (@cons nat f (@cons nat l lf5)) (@cons nat b (@nil nat)))   (@app nat (@cons nat f (@cons nat l lf5)) (@cons nat b (@nil nat))).
+Lemma candidate_4: forall (l : nat) (f : nat) (b : nat) (lf5 : list nat) (lf6 : list nat), @Permutation nat (@app nat (@cons nat f (@cons nat l lf5)) (@cons nat b lf6))   (@app nat (@cons nat f (@cons nat l lf5)) (@cons nat b lf6)).
+Lemma candidate_5: forall (l : nat) (f : nat) (y : nat) (lf4 : list nat), @Permutation nat   (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat)))) lf4)   (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat)))) lf4).
+Lemma candidate_6: forall (l : nat) (f : nat) (y : nat) (lf4 : list nat) (lf6 : list nat), @Permutation nat (@app nat (@cons nat f (@cons nat l (@cons nat y lf6))) lf4)   (@app nat (@cons nat f (@cons nat l (@cons nat y lf6))) lf4).
+Lemma candidate_7: forall (l : nat) (f : nat) (lf4 : list nat) (lf5 : list nat), @Permutation nat (@app nat (@cons nat f (@cons nat l lf5)) lf4)   (@app nat (@cons nat f (@cons nat l lf5)) lf4).
+Lemma candidate_8: forall (lf3 : list nat) (f : nat) (b : nat), @Permutation nat (@app nat (@cons nat f lf3) (@cons nat b (@nil nat)))   (@app nat (@cons nat f lf3) (@cons nat b (@nil nat))).
+Lemma candidate_9: forall (lf3 : list nat) (f : nat) (b : nat) (lf6 : list nat), @Permutation nat (@app nat (@cons nat f lf3) (@cons nat b lf6))   (@app nat (@cons nat f lf3) (@cons nat b lf6)).
+Lemma candidate_10: forall (b : nat) (lf2 : list nat), @Permutation nat (@app nat lf2 (@cons nat b (@nil nat)))   (@app nat lf2 (@cons nat b (@nil nat))).
+Lemma candidate_11: forall (b : nat) (lf2 : list nat) (lf6 : list nat), @Permutation nat (@app nat lf2 (@cons nat b lf6))   (@app nat lf2 (@cons nat b lf6)).
+Lemma candidate_12: forall (lf3 : list nat) (f : nat) (lf4 : list nat), @Permutation nat (@app nat (@cons nat f lf3) lf4)   (@app nat (@cons nat f lf3) lf4).
+Lemma candidate_13: forall (lf4 : list nat) (lf2 : list nat), @Permutation nat (@app nat lf2 lf4) (@app nat lf2 lf4).
+
+<---FILTERED CANDIDATE LEMMAS--->
+Time elapsed: 111 seconds
+Duplicates removed: 1
+Filtered by Quickchick: 0
+Filtered by script: 12
+Remaining: 0
+
+Lemmas: 

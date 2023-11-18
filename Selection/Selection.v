@@ -1,28 +1,5 @@
 (** * Selection:  Selection Sort *)
-
-(** If you don't recall selection sort or haven't seen it in
-    a while, see Wikipedia or read any standard textbook; some
-    suggestions can be found in [Sort]. *)
-
-(** The specification for sorting algorithms we developed in
-    [Sort] can also be used to verify selection sort.  The
-    selection-sort program itself is interesting, because writing it
-    in Coq will cause us to explore a new technique for convincing Coq
-    that a function terminates. *)
-
-(** A couple of notes on efficiency:
-
-    - Selection sort, like insertion sort, runs in quadratic time.
-      But selection sort typically makes many more comparisons than
-      insertion sort, so insertion sort is usually preferable for
-      sorting small inputs.  Selection sort can beat insertion sort if
-      the cost of swapping elements is vastly higher than the cost of
-      comparing them, but that doesn't apply to functional lists.
-
-    - What you should really never use is bubble sort.  "Bubble sort
-      would be the wrong way to go."  Everybody should know that!  See
-      this video for a definitive statement:
-        {https://www.youtube.com/watch?v=k4RRi_ntQc8&t=34} *)
+(* Some proofs from: https://github.com/kolya-vasiliev/verified-functional-algorithms-2019/blob/master/Selection.v *)
 
 Set Warnings "-notation-overridden,-parsing,-deprecated-hint-without-locality".
 From VFA Require Import Perm.
@@ -31,13 +8,6 @@ From Coq Require Export Lists.List.  (* for exercises involving [List.length] *)
 
 (* ################################################################# *)
 (** * The Selection-Sort Program  *)
-
-(** Selection sort on lists is more challenging to code in Coq
-    than insertion sort was. First, we write a helper function
-    to select the smallest element. *)
-
-(* [select x l] is [(y, l')], where [y] is the smallest element
-   of [x :: l], and [l'] is all the remaining elements of [x :: l]. *)
 Fixpoint select (x: nat) (l: list nat) : nat * list nat :=
   match l with
   | [] => (x, [])
@@ -49,31 +19,6 @@ Fixpoint select (x: nat) (l: list nat) : nat * list nat :=
          in (j, x :: l')
   end.
 
-(** Selection sort should repeatedly extract the smallest element and
-    make a list of the results. But the following attempted definition
-    fails: *)
-
-Fail Fixpoint selsort (l : list nat) : list nat :=
-  match l with
-  | [] => []
-  | x :: r => let (y, r') := select x r
-            in y :: selsort r'
-  end.
-
-(** Coq rejects [selsort] because it doesn't satisfy Coq's
-    requirements for termination.  The problem is that the recursive
-    call in [selsort] is not _structurally decreasing_: the argument
-    [r'] at the call site is not known to be a smaller part of the
-    original input [l]. Indeed, [select] might not return such a list.
-    For example, [select 1 [0; 2]] is [(0, [1; 2])], but [[1; 2]] is
-    not a part of [[0; 2]]. *)
-
-(** There are several ways to fix this problem. One programming
-    pattern is to provide _fuel_: an extra argument that has no use in
-    the algorithm except to bound the amount of recursion.  The [n]
-    argument, below, is the fuel. When it reaches [0], the recursion
-    terminates. *)
-
 Fixpoint selsort (l : list nat) (n : nat) : list nat :=
   match l, n with
   | _, O => []  (* ran out of fuel *)
@@ -82,39 +27,11 @@ Fixpoint selsort (l : list nat) (n : nat) : list nat :=
                   in y :: selsort r' n'
 end.
 
-(** If fuel runs out, we get the wrong output. *)
-
-Example out_of_fuel: selsort [3;1;4;1;5] 3 <> [1;1;3;4;5].
-Proof.
-  simpl. intro. discriminate.
-Qed.
-
-(** Extra fuel isn't a problem though. *)
-
-Example extra_fuel: selsort [3;1;4;1;5] 10 = [1;1;3;4;5].
-Proof.
-  simpl. reflexivity.
-Qed.
-
-(** The exact amount of fuel needed is the length of the input list.
-    So that's how we define [selection_sort]: *)
-
 Definition selection_sort (l : list nat) : list nat :=
   selsort l (length l).
-
-Example sort_pi :
-  selection_sort [3;1;4;1;5;9;2;6;5;3;5] = [1;1;2;3;3;4;5;5;5;6;9].
-Proof.
-  unfold selection_sort.
-  simpl. reflexivity.
-Qed.
-
+  
 (* ################################################################# *)
 (** * Proof of Correctness *)
-
-(** We begin by repeating from [Sort] the specification of a
-    correct sorting algorithm: it rearranges the elements into a list
-    that is totally ordered. *)
 
 Inductive sorted: list nat -> Prop :=
  | sorted_nil: sorted []
@@ -126,83 +43,65 @@ Hint Constructors sorted : core.
 Definition is_a_sorting_algorithm (f: list nat -> list nat) := forall al,
     Permutation al (f al) /\ sorted (f al).
 
-(** In the following exercises, you will prove that selection sort
-    is a correct sorting algorithm.  You might wish to keep track
-    of the lemmas you have proved, so that you can spot places to
-    use them later. *)
-
-(** Depending on the path you have followed through _Software
-    Foundations_ it might have been a while since you have worked with
-    pairs.  Here's a brief reminder of how [destruct] can be used to
-    break a pair apart into its components.  A similar technique
-    will be needed in many of the following proofs. *)
-Example pairs_example : forall (a c x : nat) (b d l : list nat),
-    (a, b) = (let (c, d) := select x l in (c, d)) ->
-    (a, b) = select x l.
+Lemma select_perm: forall x l y r, select x l = (y, r) -> Permutation (x :: l) (y :: r).
 Proof.
-  intros. destruct (select x l) as [c' d'] eqn:E. auto.
+  intros x l; revert x.
+  induction l; intros.
+  - simpl in *. inversion H. apply Permutation_refl.
+  - unfold select in H.  
+    bdestruct (x <=? a); fold select in H.
+    + specialize (IHl x).   
+      destruct (select x l) eqn:Seq.
+      apply perm_trans with (a :: n :: l0);
+        try apply perm_swap.
+      apply perm_trans with (a :: x :: l);
+        try apply perm_swap.
+      apply perm_skip.
+      apply IHl. reflexivity. inversion H. rewrite <- H2.
+      apply perm_swap.
+    + specialize (IHl a).
+      destruct (select a l) eqn:Seq.
+      apply perm_trans with (x :: n :: l0);
+        try apply perm_swap.
+      apply perm_skip. apply IHl.
+      reflexivity. inversion H. apply perm_swap.
 Qed.
 
-(** **** Exercise: 2 stars, standard (select_perm) *)
-
-(** Prove that [select] returns a permutation of its input. Proceed by
-    induction on [l].  The [inv] tactic defined at the end of
-    [Perm] will be helpful. The [eauto] tactic] will be helpful
-    at finding instantiations for [perm_trans]. *)
-
-Lemma select_perm: forall x l y r,
-    select x l = (y, r) -> Permutation (x :: l) (y :: r).
+Lemma select_rest_length : forall x l y r, select x l = (y, r) -> length l = length r.
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros. apply select_perm in H.
+  apply Permutation_length in H. auto.
+Qed.
 
-(** [] *)
-
-(** **** Exercise: 1 star, standard (select_rest_length) *)
-
-(** Prove that [select] returns a list that has the correct
-    length. You can do this without induction if you make use of
-    [select_perm]. *)
-
-Lemma select_rest_length : forall x l y r,
-    select x l = (y, r) -> length l = length r.
+Lemma selsort_perm: forall n l, length l = n -> Permutation l (selsort l n).
 Proof.
-  (* FILL IN HERE *) Admitted.
+  induction n.
+  - intros. rewrite length_zero_iff_nil in H.
+    subst. apply Permutation_refl.
+  - intros. destruct l. inversion H.
+    simpl. 
+    destruct (select n0 l) eqn:Seq.
+    apply perm_trans with (n1 :: l0).
+    apply select_perm. auto.
+    apply perm_skip. apply IHn. inversion H.
+    apply select_rest_length in Seq. auto.
+Qed.
 
-(** [] *)
+Lemma selection_sort_perm: forall l, Permutation l (selection_sort l).
+Proof. 
+  unfold selection_sort. intros. 
+  apply selsort_perm. reflexivity. 
+Qed.
 
-(** **** Exercise: 3 stars, standard (selsort_perm) *)
-
-(** Prove that if you provide sufficient fuel, [selsort] produces a
-    permutation.  Proceed by induction on [n]. *)
-
-Lemma selsort_perm: forall n l,
-    length l = n -> Permutation l (selsort l n).
+Lemma select_fst_leq: forall al bl x y, select x al = (y, bl) -> y <= x.
 Proof.
-  (* FILL IN HERE *) Admitted.
-
-(** [] *)
-
-(** **** Exercise: 1 star, standard (selection_sort_perm) *)
-
-(** Prove that [selection_sort] produces a permutation. *)
-
-Lemma selection_sort_perm: forall l,
-    Permutation l (selection_sort l).
-Proof.
-  (* FILL IN HERE *) Admitted.
-
-(** [] *)
-
-(** **** Exercise: 2 stars, standard (select_fst_leq) *)
-
-(** Prove that the first component of [select x _] is no bigger than
-    [x]. Proceed by induction on [al]. *)
-
-Lemma select_fst_leq: forall al bl x y,
-    select x al = (y, bl) ->
-    y <= x.
-Proof.
-  (* FILL IN HERE *) Admitted.
+  intros. 
+  (* inversion H. unfold select in H. generalize dependent x; generalize dependent y. *)
+  unfold select in H.
+  induction al.
+  intros. inversion H. auto.
+  intros. fold select in IHal. apply IHal. fold select in H.  bdestruct (x <=? a).
+  inversion H. unfold select.
 
 (** [] *)
 

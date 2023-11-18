@@ -1,0 +1,39 @@
+File Information
+- File name: Perm
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/perm_lemma_Permutation_refl_IN_maybe_swap_perm-1
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_refl_IN_maybe_swap_perm-1
+- Namespace: vfa_benchmark
+- Proof name: maybe_swap_perm
+- Theorem: Theorem maybe_swap_perm: forall al : list nat, @Permutation nat al (maybe_swap al).
+- Declarations: 
+From lfind Require Import LFind.
+Require Import Coq.Strings.String.
+
+Proof Context
+* Goal State: @Permutation nat (@nil nat) (@nil nat)
+
+* Hypothesis:
+
+
+* Types:
+Set
+Prop
+nat
+list nat
+
+* Polymorphic Types:
+
+
+* Variables:
+
+
+* Terms:
+@Permutation nat (@nil nat) (@nil nat) : Prop
+nat : Set
+@nil nat : list nat
+
+* Functions:
+@nil  : forall A : Type, list A
+Permutation  : forall (A : Type) (_ : list A) (_ : list A), Prop
+
+Goal state includes no variables. No need to run lfind.

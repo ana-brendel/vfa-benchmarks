@@ -1,0 +1,1045 @@
+File Information
+- File name: Perm
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/perm_lemma_app_assoc_IN_butterfly-3
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_app_assoc_IN_butterfly-3
+- Namespace: vfa_benchmark
+- Proof name: butterfly
+- Theorem: Theorem butterfly: forall b0 u0 t0 e0 r0 f0 l0 y0 : nat,
+@Permutation nat
+  (@app nat
+     (@cons nat b0
+        (@cons nat u0
+           (@cons nat t0
+              (@cons nat t0 (@cons nat e0 (@cons nat r0 (@nil nat)))))))
+     (@cons nat f0 (@cons nat l0 (@cons nat y0 (@nil nat)))))
+  (@app nat
+     (@cons nat f0
+        (@cons nat l0
+           (@cons nat u0
+              (@cons nat t0
+                 (@cons nat t0 (@cons nat e0 (@cons nat r0 (@nil nat))))))))
+     (@cons nat b0 (@cons nat y0 (@nil nat)))).
+- Declarations: 
+From lfind Require Import LFind.
+Require Import Coq.Strings.String.
+
+Proof Context
+* Goal State: @Permutation nat
+  (@app nat (@cons nat b (@nil nat))
+     (@app nat utter (@cons nat f (@cons nat l (@cons nat y (@nil nat))))))
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+        (@cons nat b (@nil nat))))
+
+* Hypothesis:
+r : nat
+utter : list nat
+y : nat
+b : nat
+e : nat
+t : nat
+f : nat
+l : nat
+u : nat
+
+* Types:
+Set
+Prop
+nat
+list nat
+
+* Polymorphic Types:
+list nat
+
+* Variables:
+utter : list nat
+b : nat
+y : nat
+f : nat
+l : nat
+
+* Terms:
+list nat : Set
+@cons nat f (@cons nat l (@cons nat y (@nil nat))) : list nat
+@app nat utter (@cons nat f (@cons nat l (@cons nat y (@nil nat)))) : list nat
+utter : list nat
+@app nat (@cons nat b (@nil nat))
+  (@app nat utter (@cons nat f (@cons nat l (@cons nat y (@nil nat))))) : list nat
+y : nat
+@cons nat y (@nil nat) : list nat
+f : nat
+l : nat
+@cons nat l (@cons nat y (@nil nat)) : list nat
+@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+  (@cons nat b (@nil nat)) : list nat
+@cons nat b (@nil nat) : list nat
+nat : Set
+b : nat
+@Permutation nat
+  (@app nat (@cons nat b (@nil nat))
+     (@app nat utter (@cons nat f (@cons nat l (@cons nat y (@nil nat))))))
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+        (@cons nat b (@nil nat)))) : Prop
+@nil nat : list nat
+@app nat utter
+  (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+     (@cons nat b (@nil nat))) : list nat
+
+* Functions:
+app  : forall (A : Type) (_ : list A) (_ : list A), list A
+list  : forall _ : Type, Type
+@nil  : forall A : Type, list A
+@cons  : forall (A : Type) (_ : A) (_ : list A), list A
+Permutation  : forall (A : Type) (_ : list A) (_ : list A), Prop
+
+<---GENERALIZATION--->
+Time elapsed: 4 seconds
+Generalized Variables:
+lf3 : list nat = @app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+  (@cons nat b (@nil nat))
+lf7 : list nat = @cons nat b (@nil nat)
+lf1 : list nat = @app nat utter
+  (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+     (@cons nat b (@nil nat)))
+lf4 : list nat = @app nat utter (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+lf5 : list nat = @cons nat f (@cons nat l (@cons nat y (@nil nat)))
+lf9 : list nat = @nil nat
+lf2 : list nat = @app nat (@cons nat b (@nil nat))
+  (@app nat utter (@cons nat f (@cons nat l (@cons nat y (@nil nat)))))
+lf8 : list nat = @cons nat y (@nil nat)
+lf6 : list nat = @cons nat l (@cons nat y (@nil nat))
+
+Generalizations:
+Lemma conj1: forall (lf5 : list nat) (utter : list nat) (lf4 : list nat) (lf7 : list nat), @Permutation nat (@app nat lf7 lf4) (@app nat utter (@app nat lf5 lf7)).
+Lemma conj17: forall (lf6 : list nat) (utter : list nat) (lf4 : list nat) (f : nat) (lf7 : list nat), @Permutation nat (@app nat lf7 lf4)
+  (@app nat utter (@app nat (@cons nat f lf6) lf7)).
+Lemma conj18: forall (lf8 : list nat) (utter : list nat) (lf4 : list nat) (f : nat) (lf7 : list nat) (l : nat), @Permutation nat (@app nat lf7 lf4)
+  (@app nat utter (@app nat (@cons nat f (@cons nat l lf8)) lf7)).
+Lemma conj20: forall (lf9 : list nat) (utter : list nat) (lf4 : list nat) (y : nat) (f : nat) (lf7 : list nat) (l : nat), @Permutation nat (@app nat lf7 lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y lf9))) lf7)).
+Lemma conj28: forall (utter : list nat) (lf4 : list nat) (y : nat) (f : nat) (lf7 : list nat) (l : nat), @Permutation nat (@app nat lf7 lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat)))) lf7)).
+Lemma conj33: forall (lf5 : list nat) (utter : list nat) (lf7 : list nat), @Permutation nat (@app nat lf7 (@app nat utter lf5))
+  (@app nat utter (@app nat lf5 lf7)).
+Lemma conj49: forall (lf6 : list nat) (utter : list nat) (f : nat) (lf7 : list nat), @Permutation nat (@app nat lf7 (@app nat utter (@cons nat f lf6)))
+  (@app nat utter (@app nat (@cons nat f lf6) lf7)).
+Lemma conj50: forall (lf8 : list nat) (utter : list nat) (f : nat) (lf7 : list nat) (l : nat), @Permutation nat
+  (@app nat lf7 (@app nat utter (@cons nat f (@cons nat l lf8))))
+  (@app nat utter (@app nat (@cons nat f (@cons nat l lf8)) lf7)).
+Lemma conj52: forall (lf9 : list nat) (utter : list nat) (y : nat) (f : nat) (lf7 : list nat) (l : nat), @Permutation nat
+  (@app nat lf7
+     (@app nat utter (@cons nat f (@cons nat l (@cons nat y lf9)))))
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y lf9))) lf7)).
+Lemma conj60: forall (utter : list nat) (y : nat) (f : nat) (lf7 : list nat) (l : nat), @Permutation nat
+  (@app nat lf7
+     (@app nat utter (@cons nat f (@cons nat l (@cons nat y (@nil nat))))))
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat)))) lf7)).
+Lemma conj129: forall (lf9 : list nat) (lf5 : list nat) (utter : list nat) (lf4 : list nat) (b : nat), @Permutation nat (@app nat (@cons nat b lf9) lf4)
+  (@app nat utter (@app nat lf5 (@cons nat b lf9))).
+Lemma conj137: forall (lf5 : list nat) (utter : list nat) (lf4 : list nat) (b : nat), @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4)
+  (@app nat utter (@app nat lf5 (@cons nat b (@nil nat)))).
+Lemma conj145: forall (lf6 : list nat) (lf9 : list nat) (utter : list nat) (lf4 : list nat) (b : nat) (f : nat), @Permutation nat (@app nat (@cons nat b lf9) lf4)
+  (@app nat utter (@app nat (@cons nat f lf6) (@cons nat b lf9))).
+Lemma conj146: forall (lf8 : list nat) (lf9 : list nat) (utter : list nat) (lf4 : list nat) (b : nat) (f : nat) (l : nat), @Permutation nat (@app nat (@cons nat b lf9) lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l lf8)) (@cons nat b lf9))).
+Lemma conj148: forall (lf9 : list nat) (utter : list nat) (lf4 : list nat) (b : nat) (y : nat) (f : nat) (l : nat), @Permutation nat (@app nat (@cons nat b lf9) lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y lf9)))
+        (@cons nat b lf9))).
+Lemma conj153: forall (lf6 : list nat) (utter : list nat) (lf4 : list nat) (b : nat) (f : nat), @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4)
+  (@app nat utter (@app nat (@cons nat f lf6) (@cons nat b (@nil nat)))).
+Lemma conj154: forall (lf8 : list nat) (utter : list nat) (lf4 : list nat) (b : nat) (f : nat) (l : nat), @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l lf8)) (@cons nat b (@nil nat)))).
+Lemma conj156: forall (utter : list nat) (lf4 : list nat) (b : nat) (y : nat) (f : nat) (l : nat), @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+        (@cons nat b (@nil nat)))).
+Lemma conj161: forall (lf9 : list nat) (lf5 : list nat) (utter : list nat) (b : nat), @Permutation nat (@app nat (@cons nat b lf9) (@app nat utter lf5))
+  (@app nat utter (@app nat lf5 (@cons nat b lf9))).
+Lemma conj169: forall (lf5 : list nat) (utter : list nat) (b : nat), @Permutation nat (@app nat (@cons nat b (@nil nat)) (@app nat utter lf5))
+  (@app nat utter (@app nat lf5 (@cons nat b (@nil nat)))).
+Lemma conj177: forall (lf6 : list nat) (lf9 : list nat) (utter : list nat) (b : nat) (f : nat), @Permutation nat
+  (@app nat (@cons nat b lf9) (@app nat utter (@cons nat f lf6)))
+  (@app nat utter (@app nat (@cons nat f lf6) (@cons nat b lf9))).
+Lemma conj178: forall (lf8 : list nat) (lf9 : list nat) (utter : list nat) (b : nat) (f : nat) (l : nat), @Permutation nat
+  (@app nat (@cons nat b lf9)
+     (@app nat utter (@cons nat f (@cons nat l lf8))))
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l lf8)) (@cons nat b lf9))).
+Lemma conj180: forall (lf9 : list nat) (utter : list nat) (b : nat) (y : nat) (f : nat) (l : nat), @Permutation nat
+  (@app nat (@cons nat b lf9)
+     (@app nat utter (@cons nat f (@cons nat l (@cons nat y lf9)))))
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y lf9)))
+        (@cons nat b lf9))).
+Lemma conj185: forall (lf6 : list nat) (utter : list nat) (b : nat) (f : nat), @Permutation nat
+  (@app nat (@cons nat b (@nil nat)) (@app nat utter (@cons nat f lf6)))
+  (@app nat utter (@app nat (@cons nat f lf6) (@cons nat b (@nil nat)))).
+Lemma conj186: forall (lf8 : list nat) (utter : list nat) (b : nat) (f : nat) (l : nat), @Permutation nat
+  (@app nat (@cons nat b (@nil nat))
+     (@app nat utter (@cons nat f (@cons nat l lf8))))
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l lf8)) (@cons nat b (@nil nat)))).
+Lemma conj188: forall (utter : list nat) (b : nat) (y : nat) (f : nat) (l : nat), @Permutation nat
+  (@app nat (@cons nat b (@nil nat))
+     (@app nat utter (@cons nat f (@cons nat l (@cons nat y (@nil nat))))))
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+        (@cons nat b (@nil nat)))).
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 147 seconds
+Valid:
+Lemma conj188: forall (utter : list nat) (b : nat) (y : nat) (f : nat) (l : nat), @Permutation nat
+  (@app nat (@cons nat b (@nil nat))
+     (@app nat utter (@cons nat f (@cons nat l (@cons nat y (@nil nat))))))
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+        (@cons nat b (@nil nat)))).
+Lemma conj186: forall (lf8 : list nat) (utter : list nat) (b : nat) (f : nat) (l : nat), @Permutation nat
+  (@app nat (@cons nat b (@nil nat))
+     (@app nat utter (@cons nat f (@cons nat l lf8))))
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l lf8)) (@cons nat b (@nil nat)))).
+Lemma conj185: forall (lf6 : list nat) (utter : list nat) (b : nat) (f : nat), @Permutation nat
+  (@app nat (@cons nat b (@nil nat)) (@app nat utter (@cons nat f lf6)))
+  (@app nat utter (@app nat (@cons nat f lf6) (@cons nat b (@nil nat)))).
+Lemma conj180: forall (lf9 : list nat) (utter : list nat) (b : nat) (y : nat) (f : nat) (l : nat), @Permutation nat
+  (@app nat (@cons nat b lf9)
+     (@app nat utter (@cons nat f (@cons nat l (@cons nat y lf9)))))
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y lf9)))
+        (@cons nat b lf9))).
+Lemma conj178: forall (lf8 : list nat) (lf9 : list nat) (utter : list nat) (b : nat) (f : nat) (l : nat), @Permutation nat
+  (@app nat (@cons nat b lf9)
+     (@app nat utter (@cons nat f (@cons nat l lf8))))
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l lf8)) (@cons nat b lf9))).
+Lemma conj177: forall (lf6 : list nat) (lf9 : list nat) (utter : list nat) (b : nat) (f : nat), @Permutation nat
+  (@app nat (@cons nat b lf9) (@app nat utter (@cons nat f lf6)))
+  (@app nat utter (@app nat (@cons nat f lf6) (@cons nat b lf9))).
+Lemma conj169: forall (lf5 : list nat) (utter : list nat) (b : nat), @Permutation nat (@app nat (@cons nat b (@nil nat)) (@app nat utter lf5))
+  (@app nat utter (@app nat lf5 (@cons nat b (@nil nat)))).
+Lemma conj161: forall (lf9 : list nat) (lf5 : list nat) (utter : list nat) (b : nat), @Permutation nat (@app nat (@cons nat b lf9) (@app nat utter lf5))
+  (@app nat utter (@app nat lf5 (@cons nat b lf9))).
+Lemma conj60: forall (utter : list nat) (y : nat) (f : nat) (lf7 : list nat) (l : nat), @Permutation nat
+  (@app nat lf7
+     (@app nat utter (@cons nat f (@cons nat l (@cons nat y (@nil nat))))))
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat)))) lf7)).
+Lemma conj52: forall (lf9 : list nat) (utter : list nat) (y : nat) (f : nat) (lf7 : list nat) (l : nat), @Permutation nat
+  (@app nat lf7
+     (@app nat utter (@cons nat f (@cons nat l (@cons nat y lf9)))))
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y lf9))) lf7)).
+Lemma conj50: forall (lf8 : list nat) (utter : list nat) (f : nat) (lf7 : list nat) (l : nat), @Permutation nat
+  (@app nat lf7 (@app nat utter (@cons nat f (@cons nat l lf8))))
+  (@app nat utter (@app nat (@cons nat f (@cons nat l lf8)) lf7)).
+Lemma conj49: forall (lf6 : list nat) (utter : list nat) (f : nat) (lf7 : list nat), @Permutation nat (@app nat lf7 (@app nat utter (@cons nat f lf6)))
+  (@app nat utter (@app nat (@cons nat f lf6) lf7)).
+Lemma conj33: forall (lf5 : list nat) (utter : list nat) (lf7 : list nat), @Permutation nat (@app nat lf7 (@app nat utter lf5))
+  (@app nat utter (@app nat lf5 lf7)).
+
+Invalid:
+Lemma conj156: forall (utter : list nat) (lf4 : list nat) (b : nat) (y : nat) (f : nat) (l : nat), @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+        (@cons nat b (@nil nat)))).
+Lemma conj154: forall (lf8 : list nat) (utter : list nat) (lf4 : list nat) (b : nat) (f : nat) (l : nat), @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l lf8)) (@cons nat b (@nil nat)))).
+Lemma conj153: forall (lf6 : list nat) (utter : list nat) (lf4 : list nat) (b : nat) (f : nat), @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4)
+  (@app nat utter (@app nat (@cons nat f lf6) (@cons nat b (@nil nat)))).
+Lemma conj148: forall (lf9 : list nat) (utter : list nat) (lf4 : list nat) (b : nat) (y : nat) (f : nat) (l : nat), @Permutation nat (@app nat (@cons nat b lf9) lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y lf9)))
+        (@cons nat b lf9))).
+Lemma conj146: forall (lf8 : list nat) (lf9 : list nat) (utter : list nat) (lf4 : list nat) (b : nat) (f : nat) (l : nat), @Permutation nat (@app nat (@cons nat b lf9) lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l lf8)) (@cons nat b lf9))).
+Lemma conj145: forall (lf6 : list nat) (lf9 : list nat) (utter : list nat) (lf4 : list nat) (b : nat) (f : nat), @Permutation nat (@app nat (@cons nat b lf9) lf4)
+  (@app nat utter (@app nat (@cons nat f lf6) (@cons nat b lf9))).
+Lemma conj137: forall (lf5 : list nat) (utter : list nat) (lf4 : list nat) (b : nat), @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4)
+  (@app nat utter (@app nat lf5 (@cons nat b (@nil nat)))).
+Lemma conj129: forall (lf9 : list nat) (lf5 : list nat) (utter : list nat) (lf4 : list nat) (b : nat), @Permutation nat (@app nat (@cons nat b lf9) lf4)
+  (@app nat utter (@app nat lf5 (@cons nat b lf9))).
+Lemma conj28: forall (utter : list nat) (lf4 : list nat) (y : nat) (f : nat) (lf7 : list nat) (l : nat), @Permutation nat (@app nat lf7 lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat)))) lf7)).
+Lemma conj20: forall (lf9 : list nat) (utter : list nat) (lf4 : list nat) (y : nat) (f : nat) (lf7 : list nat) (l : nat), @Permutation nat (@app nat lf7 lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y lf9))) lf7)).
+Lemma conj18: forall (lf8 : list nat) (utter : list nat) (lf4 : list nat) (f : nat) (lf7 : list nat) (l : nat), @Permutation nat (@app nat lf7 lf4)
+  (@app nat utter (@app nat (@cons nat f (@cons nat l lf8)) lf7)).
+Lemma conj17: forall (lf6 : list nat) (utter : list nat) (lf4 : list nat) (f : nat) (lf7 : list nat), @Permutation nat (@app nat lf7 lf4)
+  (@app nat utter (@app nat (@cons nat f lf6) lf7)).
+Lemma conj1: forall (lf5 : list nat) (utter : list nat) (lf4 : list nat) (lf7 : list nat), @Permutation nat (@app nat lf7 lf4) (@app nat utter (@app nat lf5 lf7)).
+
+<---ADD IMPLICATIONS--->
+Time elapsed: 148 seconds
+Generalizations:
+Lemma conj156: forall (utter : list nat) (lf4 : list nat) (b : nat) (y : nat) (f : nat) (l : nat), @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+        (@cons nat b (@nil nat)))).
+Lemma conj154: forall (lf8 : list nat) (utter : list nat) (lf4 : list nat) (b : nat) (f : nat) (l : nat), @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l lf8)) (@cons nat b (@nil nat)))).
+Lemma conj153: forall (lf6 : list nat) (utter : list nat) (lf4 : list nat) (b : nat) (f : nat), @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4)
+  (@app nat utter (@app nat (@cons nat f lf6) (@cons nat b (@nil nat)))).
+Lemma conj148: forall (lf9 : list nat) (utter : list nat) (lf4 : list nat) (b : nat) (y : nat) (f : nat) (l : nat), @Permutation nat (@app nat (@cons nat b lf9) lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y lf9)))
+        (@cons nat b lf9))).
+Lemma conj146: forall (lf8 : list nat) (lf9 : list nat) (utter : list nat) (lf4 : list nat) (b : nat) (f : nat) (l : nat), @Permutation nat (@app nat (@cons nat b lf9) lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l lf8)) (@cons nat b lf9))).
+Lemma conj145: forall (lf6 : list nat) (lf9 : list nat) (utter : list nat) (lf4 : list nat) (b : nat) (f : nat), @Permutation nat (@app nat (@cons nat b lf9) lf4)
+  (@app nat utter (@app nat (@cons nat f lf6) (@cons nat b lf9))).
+Lemma conj137: forall (lf5 : list nat) (utter : list nat) (lf4 : list nat) (b : nat), @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4)
+  (@app nat utter (@app nat lf5 (@cons nat b (@nil nat)))).
+Lemma conj129: forall (lf9 : list nat) (lf5 : list nat) (utter : list nat) (lf4 : list nat) (b : nat), @Permutation nat (@app nat (@cons nat b lf9) lf4)
+  (@app nat utter (@app nat lf5 (@cons nat b lf9))).
+Lemma conj28: forall (utter : list nat) (lf4 : list nat) (y : nat) (f : nat) (lf7 : list nat) (l : nat), @Permutation nat (@app nat lf7 lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat)))) lf7)).
+Lemma conj20: forall (lf9 : list nat) (utter : list nat) (lf4 : list nat) (y : nat) (f : nat) (lf7 : list nat) (l : nat), @Permutation nat (@app nat lf7 lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y lf9))) lf7)).
+Lemma conj18: forall (lf8 : list nat) (utter : list nat) (lf4 : list nat) (f : nat) (lf7 : list nat) (l : nat), @Permutation nat (@app nat lf7 lf4)
+  (@app nat utter (@app nat (@cons nat f (@cons nat l lf8)) lf7)).
+Lemma conj17: forall (lf6 : list nat) (utter : list nat) (lf4 : list nat) (f : nat) (lf7 : list nat), @Permutation nat (@app nat lf7 lf4)
+  (@app nat utter (@app nat (@cons nat f lf6) lf7)).
+Lemma conj1: forall (lf5 : list nat) (utter : list nat) (lf4 : list nat) (lf7 : list nat), @Permutation nat (@app nat lf7 lf4) (@app nat utter (@app nat lf5 lf7)).
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 169 seconds
+Valid:
+
+Invalid:
+Lemma conj1: forall (lf5 : list nat) (utter : list nat) (lf4 : list nat) (lf7 : list nat), @Permutation nat (@app nat lf7 lf4) (@app nat utter (@app nat lf5 lf7)).
+Lemma conj17: forall (lf6 : list nat) (utter : list nat) (lf4 : list nat) (f : nat) (lf7 : list nat), @Permutation nat (@app nat lf7 lf4)
+  (@app nat utter (@app nat (@cons nat f lf6) lf7)).
+Lemma conj18: forall (lf8 : list nat) (utter : list nat) (lf4 : list nat) (f : nat) (lf7 : list nat) (l : nat), @Permutation nat (@app nat lf7 lf4)
+  (@app nat utter (@app nat (@cons nat f (@cons nat l lf8)) lf7)).
+Lemma conj20: forall (lf9 : list nat) (utter : list nat) (lf4 : list nat) (y : nat) (f : nat) (lf7 : list nat) (l : nat), @Permutation nat (@app nat lf7 lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y lf9))) lf7)).
+Lemma conj28: forall (utter : list nat) (lf4 : list nat) (y : nat) (f : nat) (lf7 : list nat) (l : nat), @Permutation nat (@app nat lf7 lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat)))) lf7)).
+Lemma conj129: forall (lf9 : list nat) (lf5 : list nat) (utter : list nat) (lf4 : list nat) (b : nat), @Permutation nat (@app nat (@cons nat b lf9) lf4)
+  (@app nat utter (@app nat lf5 (@cons nat b lf9))).
+Lemma conj137: forall (lf5 : list nat) (utter : list nat) (lf4 : list nat) (b : nat), @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4)
+  (@app nat utter (@app nat lf5 (@cons nat b (@nil nat)))).
+Lemma conj145: forall (lf6 : list nat) (lf9 : list nat) (utter : list nat) (lf4 : list nat) (b : nat) (f : nat), @Permutation nat (@app nat (@cons nat b lf9) lf4)
+  (@app nat utter (@app nat (@cons nat f lf6) (@cons nat b lf9))).
+Lemma conj146: forall (lf8 : list nat) (lf9 : list nat) (utter : list nat) (lf4 : list nat) (b : nat) (f : nat) (l : nat), @Permutation nat (@app nat (@cons nat b lf9) lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l lf8)) (@cons nat b lf9))).
+Lemma conj148: forall (lf9 : list nat) (utter : list nat) (lf4 : list nat) (b : nat) (y : nat) (f : nat) (l : nat), @Permutation nat (@app nat (@cons nat b lf9) lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y lf9)))
+        (@cons nat b lf9))).
+Lemma conj153: forall (lf6 : list nat) (utter : list nat) (lf4 : list nat) (b : nat) (f : nat), @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4)
+  (@app nat utter (@app nat (@cons nat f lf6) (@cons nat b (@nil nat)))).
+Lemma conj154: forall (lf8 : list nat) (utter : list nat) (lf4 : list nat) (b : nat) (f : nat) (l : nat), @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l lf8)) (@cons nat b (@nil nat)))).
+Lemma conj156: forall (utter : list nat) (lf4 : list nat) (b : nat) (y : nat) (f : nat) (l : nat), @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+        (@cons nat b (@nil nat)))).
+
+
+<---CREATE SKETCHES--->
+Time elapsed: 169 seconds
+Sketches:
+Sketch conj1_sketch0 : @Permutation nat (##hole##) (@app nat utter (@app nat lf5 lf7))
+Sketch conj1_sketch1 : @Permutation nat (@app nat lf7 lf4) (##hole##)
+Sketch conj1_sketch2 : @Permutation nat (@app nat lf7 lf4) (@app nat utter (##hole##))
+Sketch conj1_term_sketch0 : @eq (list nat) (@app nat lf7 lf4) (##hole##)
+Sketch conj1_term_sketch1 : @eq (list nat) (@app nat utter (@app nat lf5 lf7)) (##hole##)
+Sketch conj1_term_sketch2 : @eq (list nat) (@app nat lf5 lf7) (##hole##)
+Sketch conj17_sketch0 : @Permutation nat (@app nat lf7 lf4) (##hole##)
+Sketch conj17_sketch1 : @Permutation nat (##hole##) (@app nat utter (@app nat (@cons nat f lf6) lf7))
+Sketch conj17_sketch2 : @Permutation nat (@app nat lf7 lf4)
+  (@app nat utter (@app nat (##hole##) lf7))
+Sketch conj17_sketch3 : @Permutation nat (@app nat lf7 lf4) (@app nat utter (##hole##))
+Sketch conj17_term_sketch0 : @eq (list nat) (@app nat utter (@app nat (@cons nat f lf6) lf7)) (##hole##)
+Sketch conj17_term_sketch1 : @eq (list nat) (@app nat lf7 lf4) (##hole##)
+Sketch conj17_term_sketch2 : @eq (list nat) (@cons nat f lf6) (##hole##)
+Sketch conj17_term_sketch3 : @eq (list nat) (@app nat (@cons nat f lf6) lf7) (##hole##)
+Sketch conj18_sketch0 : @Permutation nat (@app nat lf7 lf4) (##hole##)
+Sketch conj18_sketch1 : @Permutation nat (##hole##)
+  (@app nat utter (@app nat (@cons nat f (@cons nat l lf8)) lf7))
+Sketch conj18_sketch2 : @Permutation nat (@app nat lf7 lf4)
+  (@app nat utter (@app nat (##hole##) lf7))
+Sketch conj18_sketch3 : @Permutation nat (@app nat lf7 lf4)
+  (@app nat utter (@app nat (@cons nat f (##hole##)) lf7))
+Sketch conj18_sketch4 : @Permutation nat (@app nat lf7 lf4) (@app nat utter (##hole##))
+Sketch conj18_term_sketch0 : @eq (list nat)
+  (@app nat utter (@app nat (@cons nat f (@cons nat l lf8)) lf7)) (##hole##)
+Sketch conj18_term_sketch1 : @eq (list nat) (@app nat lf7 lf4) (##hole##)
+Sketch conj18_term_sketch2 : @eq (list nat) (@cons nat f (@cons nat l lf8)) (##hole##)
+Sketch conj18_term_sketch3 : @eq (list nat) (@cons nat l lf8) (##hole##)
+Sketch conj18_term_sketch4 : @eq (list nat) (@app nat (@cons nat f (@cons nat l lf8)) lf7) (##hole##)
+Sketch conj20_sketch0 : @Permutation nat (##hole##)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y lf9))) lf7))
+Sketch conj20_sketch1 : @Permutation nat (@app nat lf7 lf4) (##hole##)
+Sketch conj20_sketch2 : @Permutation nat (@app nat lf7 lf4)
+  (@app nat utter (@app nat (@cons nat f (##hole##)) lf7))
+Sketch conj20_sketch3 : @Permutation nat (@app nat lf7 lf4)
+  (@app nat utter (@app nat (@cons nat f (@cons nat l (##hole##))) lf7))
+Sketch conj20_sketch4 : @Permutation nat (@app nat lf7 lf4) (@app nat utter (##hole##))
+Sketch conj20_sketch5 : @Permutation nat (@app nat lf7 lf4)
+  (@app nat utter (@app nat (##hole##) lf7))
+Sketch conj20_term_sketch0 : @eq (list nat) (@app nat lf7 lf4) (##hole##)
+Sketch conj20_term_sketch1 : @eq (list nat)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y lf9))) lf7)) (##hole##)
+Sketch conj20_term_sketch2 : @eq (list nat) (@cons nat l (@cons nat y lf9)) (##hole##)
+Sketch conj20_term_sketch3 : @eq (list nat) (@cons nat y lf9) (##hole##)
+Sketch conj20_term_sketch4 : @eq (list nat) (@app nat (@cons nat f (@cons nat l (@cons nat y lf9))) lf7)
+  (##hole##)
+Sketch conj20_term_sketch5 : @eq (list nat) (@cons nat f (@cons nat l (@cons nat y lf9))) (##hole##)
+Sketch conj28_sketch0 : @Permutation nat (@app nat lf7 lf4)
+  (@app nat utter (@app nat (##hole##) lf7))
+Sketch conj28_sketch1 : @Permutation nat (##hole##)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat)))) lf7))
+Sketch conj28_sketch2 : @Permutation nat (@app nat lf7 lf4) (##hole##)
+Sketch conj28_sketch3 : @Permutation nat (@app nat lf7 lf4)
+  (@app nat utter (@app nat (@cons nat f (@cons nat l (##hole##))) lf7))
+Sketch conj28_sketch4 : @Permutation nat (@app nat lf7 lf4)
+  (@app nat utter (@app nat (@cons nat f (##hole##)) lf7))
+Sketch conj28_sketch5 : @Permutation nat (@app nat lf7 lf4) (@app nat utter (##hole##))
+Sketch conj28_sketch6 : @Permutation nat (@app nat lf7 lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y (##hole##)))) lf7))
+Sketch conj28_term_sketch0 : @eq (list nat) (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+  (##hole##)
+Sketch conj28_term_sketch1 : @eq (list nat) (@app nat lf7 lf4) (##hole##)
+Sketch conj28_term_sketch2 : @eq (list nat)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat)))) lf7))
+  (##hole##)
+Sketch conj28_term_sketch3 : @eq (list nat) (@cons nat y (@nil nat)) (##hole##)
+Sketch conj28_term_sketch4 : @eq (list nat) (@cons nat l (@cons nat y (@nil nat))) (##hole##)
+Sketch conj28_term_sketch5 : @eq (list nat)
+  (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat)))) lf7)
+  (##hole##)
+Sketch conj28_term_sketch6 : @eq (list nat) (@nil nat) (##hole##)
+Sketch conj129_sketch0 : @Permutation nat (@app nat (@cons nat b lf9) lf4) (@app nat utter (##hole##))
+Sketch conj129_sketch1 : @Permutation nat (@app nat (##hole##) lf4)
+  (@app nat utter (@app nat lf5 (##hole##)))
+Sketch conj129_sketch2 : @Permutation nat (@app nat (@cons nat b lf9) lf4) (##hole##)
+Sketch conj129_sketch3 : @Permutation nat (##hole##) (@app nat utter (@app nat lf5 (@cons nat b lf9)))
+Sketch conj129_term_sketch0 : @eq (list nat) (@app nat lf5 (@cons nat b lf9)) (##hole##)
+Sketch conj129_term_sketch1 : @eq (list nat) (@cons nat b lf9) (##hole##)
+Sketch conj129_term_sketch2 : @eq (list nat) (@app nat utter (@app nat lf5 (@cons nat b lf9))) (##hole##)
+Sketch conj129_term_sketch3 : @eq (list nat) (@app nat (@cons nat b lf9) lf4) (##hole##)
+Sketch conj137_sketch0 : @Permutation nat (@app nat (##hole##) lf4)
+  (@app nat utter (@app nat lf5 (##hole##)))
+Sketch conj137_sketch1 : @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4)
+  (@app nat utter (##hole##))
+Sketch conj137_sketch2 : @Permutation nat (##hole##)
+  (@app nat utter (@app nat lf5 (@cons nat b (@nil nat))))
+Sketch conj137_sketch3 : @Permutation nat (@app nat (@cons nat b (##hole##)) lf4)
+  (@app nat utter (@app nat lf5 (@cons nat b (##hole##))))
+Sketch conj137_sketch4 : @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4) (##hole##)
+Sketch conj137_term_sketch0 : @eq (list nat) (@cons nat b (@nil nat)) (##hole##)
+Sketch conj137_term_sketch1 : @eq (list nat) (@app nat lf5 (@cons nat b (@nil nat))) (##hole##)
+Sketch conj137_term_sketch2 : @eq (list nat) (@app nat (@cons nat b (@nil nat)) lf4) (##hole##)
+Sketch conj137_term_sketch3 : @eq (list nat) (@nil nat) (##hole##)
+Sketch conj137_term_sketch4 : @eq (list nat) (@app nat utter (@app nat lf5 (@cons nat b (@nil nat))))
+  (##hole##)
+Sketch conj145_sketch0 : @Permutation nat (@app nat (##hole##) lf4)
+  (@app nat utter (@app nat (@cons nat f lf6) (##hole##)))
+Sketch conj145_sketch1 : @Permutation nat (@app nat (@cons nat b lf9) lf4) (##hole##)
+Sketch conj145_sketch2 : @Permutation nat (@app nat (@cons nat b lf9) lf4)
+  (@app nat utter (@app nat (##hole##) (@cons nat b lf9)))
+Sketch conj145_sketch3 : @Permutation nat (@app nat (@cons nat b lf9) lf4) (@app nat utter (##hole##))
+Sketch conj145_sketch4 : @Permutation nat (##hole##)
+  (@app nat utter (@app nat (@cons nat f lf6) (@cons nat b lf9)))
+Sketch conj145_term_sketch0 : @eq (list nat) (@cons nat b lf9) (##hole##)
+Sketch conj145_term_sketch1 : @eq (list nat)
+  (@app nat utter (@app nat (@cons nat f lf6) (@cons nat b lf9))) (##hole##)
+Sketch conj145_term_sketch2 : @eq (list nat) (@cons nat f lf6) (##hole##)
+Sketch conj145_term_sketch3 : @eq (list nat) (@app nat (@cons nat f lf6) (@cons nat b lf9)) (##hole##)
+Sketch conj145_term_sketch4 : @eq (list nat) (@app nat (@cons nat b lf9) lf4) (##hole##)
+Sketch conj146_sketch0 : @Permutation nat (@app nat (##hole##) lf4)
+  (@app nat utter (@app nat (@cons nat f (@cons nat l lf8)) (##hole##)))
+Sketch conj146_sketch1 : @Permutation nat (@app nat (@cons nat b lf9) lf4) (##hole##)
+Sketch conj146_sketch2 : @Permutation nat (@app nat (@cons nat b lf9) lf4)
+  (@app nat utter (@app nat (##hole##) (@cons nat b lf9)))
+Sketch conj146_sketch3 : @Permutation nat (@app nat (@cons nat b lf9) lf4) (@app nat utter (##hole##))
+Sketch conj146_sketch4 : @Permutation nat (@app nat (@cons nat b lf9) lf4)
+  (@app nat utter (@app nat (@cons nat f (##hole##)) (@cons nat b lf9)))
+Sketch conj146_sketch5 : @Permutation nat (##hole##)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l lf8)) (@cons nat b lf9)))
+Sketch conj146_term_sketch0 : @eq (list nat) (@cons nat b lf9) (##hole##)
+Sketch conj146_term_sketch1 : @eq (list nat)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l lf8)) (@cons nat b lf9))) (##hole##)
+Sketch conj146_term_sketch2 : @eq (list nat) (@cons nat f (@cons nat l lf8)) (##hole##)
+Sketch conj146_term_sketch3 : @eq (list nat) (@app nat (@cons nat f (@cons nat l lf8)) (@cons nat b lf9))
+  (##hole##)
+Sketch conj146_term_sketch4 : @eq (list nat) (@cons nat l lf8) (##hole##)
+Sketch conj146_term_sketch5 : @eq (list nat) (@app nat (@cons nat b lf9) lf4) (##hole##)
+Sketch conj148_sketch0 : @Permutation nat (@app nat (##hole##) lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y lf9))) (##hole##)))
+Sketch conj148_sketch1 : @Permutation nat (@app nat (@cons nat b lf9) lf4) (@app nat utter (##hole##))
+Sketch conj148_sketch2 : @Permutation nat (@app nat (@cons nat b lf9) lf4) (##hole##)
+Sketch conj148_sketch3 : @Permutation nat (@app nat (@cons nat b lf9) lf4)
+  (@app nat utter (@app nat (@cons nat f (##hole##)) (@cons nat b lf9)))
+Sketch conj148_sketch4 : @Permutation nat (@app nat (@cons nat b lf9) lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (##hole##))) (@cons nat b lf9)))
+Sketch conj148_sketch5 : @Permutation nat (##hole##)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y lf9)))
+        (@cons nat b lf9)))
+Sketch conj148_sketch6 : @Permutation nat (@app nat (@cons nat b lf9) lf4)
+  (@app nat utter (@app nat (##hole##) (@cons nat b lf9)))
+Sketch conj148_term_sketch0 : @eq (list nat) (@cons nat b lf9) (##hole##)
+Sketch conj148_term_sketch1 : @eq (list nat)
+  (@app nat (@cons nat f (@cons nat l (@cons nat y lf9))) (@cons nat b lf9))
+  (##hole##)
+Sketch conj148_term_sketch2 : @eq (list nat)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y lf9)))
+        (@cons nat b lf9))) (##hole##)
+Sketch conj148_term_sketch3 : @eq (list nat) (@cons nat l (@cons nat y lf9)) (##hole##)
+Sketch conj148_term_sketch4 : @eq (list nat) (@cons nat y lf9) (##hole##)
+Sketch conj148_term_sketch5 : @eq (list nat) (@app nat (@cons nat b lf9) lf4) (##hole##)
+Sketch conj148_term_sketch6 : @eq (list nat) (@cons nat f (@cons nat l (@cons nat y lf9))) (##hole##)
+Sketch conj153_sketch0 : @Permutation nat (@app nat (##hole##) lf4)
+  (@app nat utter (@app nat (@cons nat f lf6) (##hole##)))
+Sketch conj153_sketch1 : @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4)
+  (@app nat utter (@app nat (##hole##) (@cons nat b (@nil nat))))
+Sketch conj153_sketch2 : @Permutation nat (##hole##)
+  (@app nat utter (@app nat (@cons nat f lf6) (@cons nat b (@nil nat))))
+Sketch conj153_sketch3 : @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4)
+  (@app nat utter (##hole##))
+Sketch conj153_sketch4 : @Permutation nat (@app nat (@cons nat b (##hole##)) lf4)
+  (@app nat utter (@app nat (@cons nat f lf6) (@cons nat b (##hole##))))
+Sketch conj153_sketch5 : @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4) (##hole##)
+Sketch conj153_term_sketch0 : @eq (list nat) (@cons nat b (@nil nat)) (##hole##)
+Sketch conj153_term_sketch1 : @eq (list nat) (@cons nat f lf6) (##hole##)
+Sketch conj153_term_sketch2 : @eq (list nat) (@app nat (@cons nat b (@nil nat)) lf4) (##hole##)
+Sketch conj153_term_sketch3 : @eq (list nat) (@app nat (@cons nat f lf6) (@cons nat b (@nil nat)))
+  (##hole##)
+Sketch conj153_term_sketch4 : @eq (list nat) (@nil nat) (##hole##)
+Sketch conj153_term_sketch5 : @eq (list nat)
+  (@app nat utter (@app nat (@cons nat f lf6) (@cons nat b (@nil nat))))
+  (##hole##)
+Sketch conj154_sketch0 : @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4) (##hole##)
+Sketch conj154_sketch1 : @Permutation nat (@app nat (##hole##) lf4)
+  (@app nat utter (@app nat (@cons nat f (@cons nat l lf8)) (##hole##)))
+Sketch conj154_sketch2 : @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4)
+  (@app nat utter (##hole##))
+Sketch conj154_sketch3 : @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4)
+  (@app nat utter (@app nat (##hole##) (@cons nat b (@nil nat))))
+Sketch conj154_sketch4 : @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (##hole##)) (@cons nat b (@nil nat))))
+Sketch conj154_sketch5 : @Permutation nat (##hole##)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l lf8)) (@cons nat b (@nil nat))))
+Sketch conj154_sketch6 : @Permutation nat (@app nat (@cons nat b (##hole##)) lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l lf8)) (@cons nat b (##hole##))))
+Sketch conj154_term_sketch0 : @eq (list nat)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l lf8)) (@cons nat b (@nil nat))))
+  (##hole##)
+Sketch conj154_term_sketch1 : @eq (list nat) (@cons nat b (@nil nat)) (##hole##)
+Sketch conj154_term_sketch2 : @eq (list nat)
+  (@app nat (@cons nat f (@cons nat l lf8)) (@cons nat b (@nil nat)))
+  (##hole##)
+Sketch conj154_term_sketch3 : @eq (list nat) (@cons nat f (@cons nat l lf8)) (##hole##)
+Sketch conj154_term_sketch4 : @eq (list nat) (@cons nat l lf8) (##hole##)
+Sketch conj154_term_sketch5 : @eq (list nat) (@app nat (@cons nat b (@nil nat)) lf4) (##hole##)
+Sketch conj154_term_sketch6 : @eq (list nat) (@nil nat) (##hole##)
+Sketch conj156_sketch0 : @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4)
+  (@app nat utter (@app nat (##hole##) (@cons nat b (@nil nat))))
+Sketch conj156_sketch1 : @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4)
+  (@app nat utter (##hole##))
+Sketch conj156_sketch2 : @Permutation nat (@app nat (##hole##) lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+        (##hole##)))
+Sketch conj156_sketch3 : @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (##hole##)))
+        (@cons nat b (@nil nat))))
+Sketch conj156_sketch4 : @Permutation nat (##hole##)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+        (@cons nat b (@nil nat))))
+Sketch conj156_sketch5 : @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (##hole##)) (@cons nat b (@nil nat))))
+Sketch conj156_sketch6 : @Permutation nat (@app nat (@cons nat b (##hole##)) lf4)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y (##hole##))))
+        (@cons nat b (##hole##))))
+Sketch conj156_sketch7 : @Permutation nat (@app nat (@cons nat b (@nil nat)) lf4) (##hole##)
+Sketch conj156_term_sketch0 : @eq (list nat) (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+  (##hole##)
+Sketch conj156_term_sketch1 : @eq (list nat)
+  (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+     (@cons nat b (@nil nat))) (##hole##)
+Sketch conj156_term_sketch2 : @eq (list nat) (@cons nat b (@nil nat)) (##hole##)
+Sketch conj156_term_sketch3 : @eq (list nat) (@cons nat y (@nil nat)) (##hole##)
+Sketch conj156_term_sketch4 : @eq (list nat) (@app nat (@cons nat b (@nil nat)) lf4) (##hole##)
+Sketch conj156_term_sketch5 : @eq (list nat) (@cons nat l (@cons nat y (@nil nat))) (##hole##)
+Sketch conj156_term_sketch6 : @eq (list nat) (@nil nat) (##hole##)
+Sketch conj156_term_sketch7 : @eq (list nat)
+  (@app nat utter
+     (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))
+        (@cons nat b (@nil nat)))) (##hole##)
+
+
+<---CREATE SYNTHESIS PROBLEMS--->
+Time elapsed: 3131 seconds
+Problems per Sketch:
+Sketch conj156_term_sketch0 --> Problem  synth_27
+Sketch conj156_sketch7 --> Problem  synth_44
+Sketch conj129_sketch3 --> Problem  synth_36
+Sketch conj154_sketch5 --> Problem  synth_70
+Sketch conj129_sketch1 --> Problem  synth_34
+Sketch conj156_term_sketch2 --> Problem  synth_45
+Sketch conj137_sketch4 --> Problem  synth_44
+Sketch conj156_term_sketch7 --> Problem  synth_79
+Sketch conj20_term_sketch3 --> Problem  synth_22
+Sketch conj148_sketch0 --> Problem  synth_59
+Sketch conj20_term_sketch2 --> Problem  synth_21
+Sketch conj154_term_sketch5 --> Problem  synth_47
+Sketch conj146_sketch1 --> Problem  synth_35
+Sketch conj17_term_sketch0 --> Problem  synth_9
+Sketch conj129_term_sketch2 --> Problem  synth_39
+Sketch conj153_term_sketch1 --> Problem  synth_10
+Sketch conj154_sketch1 --> Problem  synth_54
+Sketch conj18_sketch4 --> Problem  synth_3
+Sketch conj153_term_sketch0 --> Problem  synth_45
+Sketch conj154_sketch4 --> Problem  synth_69
+Sketch conj154_term_sketch1 --> Problem  synth_45
+Sketch conj1_sketch1 --> Problem  synth_2
+Sketch conj154_term_sketch6 --> Problem  synth_32
+Sketch conj146_sketch3 --> Problem  synth_33
+Sketch conj28_sketch2 --> Problem  synth_2
+Sketch conj146_term_sketch5 --> Problem  synth_40
+Sketch conj156_sketch4 --> Problem  synth_76
+Sketch conj153_sketch5 --> Problem  synth_44
+Sketch conj137_sketch3 --> Problem  synth_43
+Sketch conj1_term_sketch0 --> Problem  synth_4
+Sketch conj145_sketch0 --> Problem  synth_49
+Sketch conj28_term_sketch2 --> Problem  synth_28
+Sketch conj153_sketch1 --> Problem  synth_64
+Sketch conj145_sketch1 --> Problem  synth_35
+Sketch conj18_term_sketch3 --> Problem  synth_16
+Sketch conj145_sketch3 --> Problem  synth_33
+Sketch conj137_term_sketch4 --> Problem  synth_48
+Sketch conj153_sketch3 --> Problem  synth_41
+Sketch conj18_sketch1 --> Problem  synth_12
+Sketch conj129_term_sketch3 --> Problem  synth_40
+Sketch conj154_term_sketch0 --> Problem  synth_72
+Sketch conj20_sketch3 --> Problem  synth_19
+Sketch conj20_sketch2 --> Problem  synth_13
+Sketch conj17_sketch2 --> Problem  synth_8
+Sketch conj18_term_sketch2 --> Problem  synth_15
+Sketch conj18_sketch2 --> Problem  synth_8
+Sketch conj153_term_sketch4 --> Problem  synth_32
+Sketch conj146_term_sketch3 --> Problem  synth_58
+Sketch conj137_sketch0 --> Problem  synth_34
+Sketch conj156_sketch1 --> Problem  synth_41
+Sketch conj156_sketch6 --> Problem  synth_77
+Sketch conj154_sketch0 --> Problem  synth_44
+Sketch conj145_term_sketch4 --> Problem  synth_40
+Sketch conj18_sketch0 --> Problem  synth_2
+Sketch conj154_sketch6 --> Problem  synth_71
+Sketch conj156_term_sketch5 --> Problem  synth_30
+Sketch conj153_sketch2 --> Problem  synth_65
+Sketch conj148_sketch3 --> Problem  synth_55
+Sketch conj137_term_sketch0 --> Problem  synth_45
+Sketch conj28_sketch5 --> Problem  synth_3
+Sketch conj20_term_sketch5 --> Problem  synth_24
+Sketch conj145_term_sketch1 --> Problem  synth_52
+Sketch conj154_sketch3 --> Problem  synth_64
+Sketch conj148_term_sketch1 --> Problem  synth_62
+Sketch conj145_term_sketch3 --> Problem  synth_53
+Sketch conj148_term_sketch6 --> Problem  synth_24
+Sketch conj137_term_sketch3 --> Problem  synth_32
+Sketch conj156_term_sketch1 --> Problem  synth_78
+Sketch conj145_term_sketch2 --> Problem  synth_10
+Sketch conj156_term_sketch3 --> Problem  synth_29
+Sketch conj148_sketch5 --> Problem  synth_61
+Sketch conj129_term_sketch1 --> Problem  synth_38
+Sketch conj17_term_sketch2 --> Problem  synth_10
+Sketch conj146_term_sketch2 --> Problem  synth_15
+Sketch conj129_sketch0 --> Problem  synth_33
+Sketch conj154_term_sketch4 --> Problem  synth_16
+Sketch conj153_sketch4 --> Problem  synth_66
+Sketch conj28_sketch0 --> Problem  synth_8
+Sketch conj1_sketch0 --> Problem  synth_1
+Sketch conj20_sketch5 --> Problem  synth_8
+Sketch conj28_sketch4 --> Problem  synth_13
+Sketch conj148_sketch4 --> Problem  synth_60
+Sketch conj28_sketch6 --> Problem  synth_26
+Sketch conj148_sketch6 --> Problem  synth_50
+Sketch conj28_term_sketch4 --> Problem  synth_30
+Sketch conj17_sketch1 --> Problem  synth_7
+Sketch conj28_term_sketch1 --> Problem  synth_4
+Sketch conj146_sketch0 --> Problem  synth_54
+Sketch conj1_term_sketch1 --> Problem  synth_5
+Sketch conj148_term_sketch3 --> Problem  synth_21
+Sketch conj28_term_sketch3 --> Problem  synth_29
+Sketch conj18_sketch3 --> Problem  synth_13
+Sketch conj145_sketch4 --> Problem  synth_51
+Sketch conj148_term_sketch4 --> Problem  synth_22
+Sketch conj20_sketch0 --> Problem  synth_18
+Sketch conj148_sketch1 --> Problem  synth_33
+Sketch conj1_term_sketch2 --> Problem  synth_6
+Sketch conj28_term_sketch6 --> Problem  synth_32
+Sketch conj20_term_sketch0 --> Problem  synth_4
+Sketch conj18_term_sketch1 --> Problem  synth_4
+Sketch conj148_term_sketch2 --> Problem  synth_63
+Sketch conj17_term_sketch3 --> Problem  synth_11
+Sketch conj146_term_sketch1 --> Problem  synth_57
+Sketch conj20_sketch4 --> Problem  synth_3
+Sketch conj153_term_sketch3 --> Problem  synth_67
+Sketch conj146_sketch5 --> Problem  synth_56
+Sketch conj129_term_sketch0 --> Problem  synth_37
+Sketch conj146_sketch4 --> Problem  synth_55
+Sketch conj153_sketch0 --> Problem  synth_49
+Sketch conj1_sketch2 --> Problem  synth_3
+Sketch conj154_sketch2 --> Problem  synth_41
+Sketch conj148_term_sketch5 --> Problem  synth_40
+Sketch conj156_sketch3 --> Problem  synth_75
+Sketch conj154_term_sketch3 --> Problem  synth_15
+Sketch conj156_sketch5 --> Problem  synth_69
+Sketch conj17_sketch0 --> Problem  synth_2
+Sketch conj154_term_sketch2 --> Problem  synth_73
+Sketch conj28_term_sketch5 --> Problem  synth_31
+Sketch conj148_term_sketch0 --> Problem  synth_38
+Sketch conj156_term_sketch4 --> Problem  synth_47
+Sketch conj137_term_sketch2 --> Problem  synth_47
+Sketch conj153_term_sketch5 --> Problem  synth_68
+Sketch conj20_sketch1 --> Problem  synth_2
+Sketch conj146_term_sketch4 --> Problem  synth_16
+Sketch conj156_sketch2 --> Problem  synth_74
+Sketch conj146_sketch2 --> Problem  synth_50
+Sketch conj18_term_sketch4 --> Problem  synth_17
+Sketch conj28_term_sketch0 --> Problem  synth_27
+Sketch conj156_term_sketch6 --> Problem  synth_32
+Sketch conj145_term_sketch0 --> Problem  synth_38
+Sketch conj148_sketch2 --> Problem  synth_35
+Sketch conj20_term_sketch1 --> Problem  synth_20
+Sketch conj137_sketch1 --> Problem  synth_41
+Sketch conj153_term_sketch2 --> Problem  synth_47
+Sketch conj28_sketch3 --> Problem  synth_19
+Sketch conj18_term_sketch0 --> Problem  synth_14
+Sketch conj145_sketch2 --> Problem  synth_50
+Sketch conj17_term_sketch1 --> Problem  synth_4
+Sketch conj137_term_sketch1 --> Problem  synth_46
+Sketch conj28_sketch1 --> Problem  synth_25
+Sketch conj129_sketch2 --> Problem  synth_35
+Sketch conj146_term_sketch0 --> Problem  synth_38
+Sketch conj17_sketch3 --> Problem  synth_3
+Sketch conj20_term_sketch4 --> Problem  synth_23
+Sketch conj137_sketch2 --> Problem  synth_42
+Sketch conj156_sketch0 --> Problem  synth_64
+
+
+<--- SYNTHESIS PROBLEM RESULTS--->
+Time elapsed: 3573 seconds
+
+Problem: synth_63
+
+Problem: synth_68
+
+Problem: synth_67
+
+Problem: synth_77
+
+Problem: synth_64
+
+Problem: synth_11
+
+Problem: synth_54
+
+Problem: synth_39
+
+Problem: synth_46
+
+Problem: synth_66
+
+Problem: synth_57
+
+Problem: synth_59
+
+Problem: synth_31
+ @cons nat f (@cons nat l (@cons nat y lf7))
+
+Problem: synth_8
+
+Problem: synth_34
+
+Problem: synth_5
+
+Problem: synth_37
+
+Problem: synth_58
+
+Problem: synth_53
+
+Problem: synth_2
+
+Problem: synth_22
+ @cons nat y lf9
+ @cons nat y (@nil nat)
+
+Problem: synth_18
+
+Problem: synth_21
+ @cons nat l (@cons nat y lf9)
+ @cons nat l (@cons nat y (@nil nat))
+
+Problem: synth_72
+
+Problem: synth_56
+
+Problem: synth_41
+
+Problem: synth_49
+
+Problem: synth_75
+
+Problem: synth_25
+
+Problem: synth_13
+
+Problem: synth_6
+
+Problem: synth_4
+
+Problem: synth_38
+ @cons nat b lf9
+ @cons nat b (@nil nat)
+
+Problem: synth_65
+
+Problem: synth_23
+ @cons nat f (@cons nat l (@cons nat y lf7))
+
+Problem: synth_19
+
+Problem: synth_10
+ @cons nat f lf6
+
+Problem: synth_24
+ @cons nat f (@cons nat l (@cons nat y lf9))
+ @cons nat f (@cons nat l (@cons nat y (@nil nat)))
+
+Problem: synth_32
+ @nil nat
+
+Problem: synth_48
+
+Problem: synth_51
+
+Problem: synth_35
+
+Problem: synth_28
+
+Problem: synth_73
+
+Problem: synth_17
+
+Problem: synth_29
+ @cons nat y (@nil nat)
+
+Problem: synth_45
+ @cons nat b (@nil nat)
+
+Problem: synth_76
+
+Problem: synth_26
+
+Problem: synth_70
+
+Problem: synth_9
+
+Problem: synth_30
+ @cons nat l (@cons nat y (@nil nat))
+
+Problem: synth_1
+
+Problem: synth_69
+
+Problem: synth_55
+
+Problem: synth_71
+
+Problem: synth_15
+ @cons nat f (@cons nat l lf8)
+
+Problem: synth_14
+
+Problem: synth_79
+
+Problem: synth_12
+
+Problem: synth_62
+ @cons nat f (@cons nat l (@cons nat y (@cons nat b lf9)))
+ @cons nat f (@cons nat l (@cons nat y (@cons nat b (@nil nat))))
+
+Problem: synth_74
+
+Problem: synth_50
+
+Problem: synth_20
+
+Problem: synth_7
+
+Problem: synth_61
+
+Problem: synth_27
+ @cons nat f (@cons nat l (@cons nat y (@nil nat)))
+
+Problem: synth_42
+
+Problem: synth_16
+ @cons nat l lf8
+
+Problem: synth_40
+ @cons nat b lf4
+
+Problem: synth_33
+
+Problem: synth_47
+ @cons nat b lf4
+
+Problem: synth_3
+
+Problem: synth_52
+
+Problem: synth_44
+
+Problem: synth_60
+
+Problem: synth_36
+
+Problem: synth_78
+ @cons nat f (@cons nat l (@cons nat y (@cons nat b (@nil nat))))
+
+Problem: synth_43
+
+<---INITIAL CANDIDATE LEMMAS--->
+Time elapsed: 3574 seconds
+Lemmas:
+Lemma candidate_1: forall (l : nat) (f : nat) (y : nat) (b : nat) (utter : list nat), @Permutation nat   (@app nat (@cons nat b (@nil nat))      (@app nat utter (@cons nat f (@cons nat l (@cons nat y (@nil nat))))))   (@app nat utter      (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))         (@cons nat b (@nil nat)))).
+Lemma candidate_2: forall (l : nat) (f : nat) (b : nat) (utter : list nat) (lf8 : list nat), @Permutation nat   (@app nat (@cons nat b (@nil nat))      (@app nat utter (@cons nat f (@cons nat l lf8))))   (@app nat utter      (@app nat (@cons nat f (@cons nat l lf8)) (@cons nat b (@nil nat)))).
+Lemma candidate_3: forall (f : nat) (b : nat) (utter : list nat) (lf6 : list nat), @Permutation nat   (@app nat (@cons nat b (@nil nat)) (@app nat utter (@cons nat f lf6)))   (@app nat utter (@app nat (@cons nat f lf6) (@cons nat b (@nil nat)))).
+Lemma candidate_4: forall (l : nat) (f : nat) (y : nat) (b : nat) (utter : list nat) (lf9 : list nat), @Permutation nat   (@app nat (@cons nat b lf9)      (@app nat utter (@cons nat f (@cons nat l (@cons nat y lf9)))))   (@app nat utter      (@app nat (@cons nat f (@cons nat l (@cons nat y lf9)))         (@cons nat b lf9))).
+Lemma candidate_5: forall (l : nat) (f : nat) (b : nat) (utter : list nat) (lf9 : list nat) (lf8 : list nat), @Permutation nat   (@app nat (@cons nat b lf9)      (@app nat utter (@cons nat f (@cons nat l lf8))))   (@app nat utter      (@app nat (@cons nat f (@cons nat l lf8)) (@cons nat b lf9))).
+Lemma candidate_6: forall (f : nat) (b : nat) (utter : list nat) (lf9 : list nat) (lf6 : list nat), @Permutation nat   (@app nat (@cons nat b lf9) (@app nat utter (@cons nat f lf6)))   (@app nat utter (@app nat (@cons nat f lf6) (@cons nat b lf9))).
+Lemma candidate_7: forall (b : nat) (utter : list nat) (lf5 : list nat), @Permutation nat (@app nat (@cons nat b (@nil nat)) (@app nat utter lf5))   (@app nat utter (@app nat lf5 (@cons nat b (@nil nat)))).
+Lemma candidate_8: forall (b : nat) (utter : list nat) (lf5 : list nat) (lf9 : list nat), @Permutation nat (@app nat (@cons nat b lf9) (@app nat utter lf5))   (@app nat utter (@app nat lf5 (@cons nat b lf9))).
+Lemma candidate_9: forall (l : nat) (lf7 : list nat) (f : nat) (y : nat) (utter : list nat), @Permutation nat   (@app nat lf7      (@app nat utter (@cons nat f (@cons nat l (@cons nat y (@nil nat))))))   (@app nat utter      (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat)))) lf7)).
+Lemma candidate_10: forall (l : nat) (lf7 : list nat) (f : nat) (y : nat) (utter : list nat) (lf9 : list nat), @Permutation nat   (@app nat lf7      (@app nat utter (@cons nat f (@cons nat l (@cons nat y lf9)))))   (@app nat utter      (@app nat (@cons nat f (@cons nat l (@cons nat y lf9))) lf7)).
+Lemma candidate_11: forall (l : nat) (lf7 : list nat) (f : nat) (utter : list nat) (lf8 : list nat), @Permutation nat   (@app nat lf7 (@app nat utter (@cons nat f (@cons nat l lf8))))   (@app nat utter (@app nat (@cons nat f (@cons nat l lf8)) lf7)).
+Lemma candidate_12: forall (lf7 : list nat) (f : nat) (utter : list nat) (lf6 : list nat), @Permutation nat (@app nat lf7 (@app nat utter (@cons nat f lf6)))   (@app nat utter (@app nat (@cons nat f lf6) lf7)).
+Lemma candidate_13: forall (lf7 : list nat) (utter : list nat) (lf5 : list nat), @Permutation nat (@app nat lf7 (@app nat utter lf5))   (@app nat utter (@app nat lf5 lf7)).
+Lemma candidate_14: forall (f : nat) (lf6 : list nat), @eq (list nat) (@cons nat f lf6) (@cons nat f lf6).
+Lemma candidate_15: forall (l : nat) (f : nat) (lf8 : list nat), @eq (list nat) (@cons nat f (@cons nat l lf8))   (@cons nat f (@cons nat l lf8)).
+Lemma candidate_16: forall (l : nat) (lf8 : list nat), @eq (list nat) (@cons nat l lf8) (@cons nat l lf8).
+Lemma candidate_17: forall (l : nat) (y : nat) (lf9 : list nat), @eq (list nat) (@cons nat l (@cons nat y lf9))   (@cons nat l (@cons nat y lf9)).
+Lemma candidate_18: forall (l : nat) (y : nat) (lf9 : list nat), @eq (list nat) (@cons nat l (@cons nat y lf9))   (@cons nat l (@cons nat y (@nil nat))).
+Lemma candidate_19: forall (y : nat) (lf9 : list nat), @eq (list nat) (@cons nat y lf9) (@cons nat y lf9).
+Lemma candidate_20: forall (y : nat) (lf9 : list nat), @eq (list nat) (@cons nat y lf9) (@cons nat y (@nil nat)).
+Lemma candidate_21: forall (lf7 : list nat) (l : nat) (f : nat) (y : nat) (lf9 : list nat), @eq (list nat) (@app nat (@cons nat f (@cons nat l (@cons nat y lf9))) lf7)   (@cons nat f (@cons nat l (@cons nat y lf7))).
+Lemma candidate_22: forall (l : nat) (f : nat) (y : nat) (lf9 : list nat), @eq (list nat) (@cons nat f (@cons nat l (@cons nat y lf9)))   (@cons nat f (@cons nat l (@cons nat y lf9))).
+Lemma candidate_23: forall (l : nat) (f : nat) (y : nat) (lf9 : list nat), @eq (list nat) (@cons nat f (@cons nat l (@cons nat y lf9)))   (@cons nat f (@cons nat l (@cons nat y (@nil nat)))).
+Lemma candidate_24: forall (l : nat) (f : nat) (y : nat), @eq (list nat) (@cons nat f (@cons nat l (@cons nat y (@nil nat))))   (@cons nat f (@cons nat l (@cons nat y (@nil nat)))).
+Lemma candidate_25: forall (y : nat), @eq (list nat) (@cons nat y (@nil nat)) (@cons nat y (@nil nat)).
+Lemma candidate_26: forall (l : nat) (y : nat), @eq (list nat) (@cons nat l (@cons nat y (@nil nat)))   (@cons nat l (@cons nat y (@nil nat))).
+Lemma candidate_27: forall (lf7 : list nat) (l : nat) (f : nat) (y : nat), @eq (list nat)   (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat)))) lf7)   (@cons nat f (@cons nat l (@cons nat y lf7))).
+Lemma candidate_28: @eq (list nat) (@nil nat) (@nil nat).
+Lemma candidate_29: forall (b : nat) (lf9 : list nat), @eq (list nat) (@cons nat b lf9) (@cons nat b lf9).
+Lemma candidate_30: forall (b : nat) (lf9 : list nat), @eq (list nat) (@cons nat b lf9) (@cons nat b (@nil nat)).
+Lemma candidate_31: forall (b : nat) (lf4 : list nat) (lf9 : list nat), @eq (list nat) (@app nat (@cons nat b lf9) lf4) (@cons nat b lf4).
+Lemma candidate_32: forall (b : nat), @eq (list nat) (@cons nat b (@nil nat)) (@cons nat b (@nil nat)).
+Lemma candidate_33: forall (b : nat) (lf4 : list nat), @eq (list nat) (@app nat (@cons nat b (@nil nat)) lf4) (@cons nat b lf4).
+Lemma candidate_34: @eq (list nat) (@nil nat) (@nil nat).
+Lemma candidate_35: forall (b : nat) (lf9 : list nat), @eq (list nat) (@cons nat b lf9) (@cons nat b lf9).
+Lemma candidate_36: forall (b : nat) (lf9 : list nat), @eq (list nat) (@cons nat b lf9) (@cons nat b (@nil nat)).
+Lemma candidate_37: forall (f : nat) (lf6 : list nat), @eq (list nat) (@cons nat f lf6) (@cons nat f lf6).
+Lemma candidate_38: forall (b : nat) (lf4 : list nat) (lf9 : list nat), @eq (list nat) (@app nat (@cons nat b lf9) lf4) (@cons nat b lf4).
+Lemma candidate_39: forall (b : nat) (lf9 : list nat), @eq (list nat) (@cons nat b lf9) (@cons nat b lf9).
+Lemma candidate_40: forall (b : nat) (lf9 : list nat), @eq (list nat) (@cons nat b lf9) (@cons nat b (@nil nat)).
+Lemma candidate_41: forall (l : nat) (f : nat) (lf8 : list nat), @eq (list nat) (@cons nat f (@cons nat l lf8))   (@cons nat f (@cons nat l lf8)).
+Lemma candidate_42: forall (l : nat) (lf8 : list nat), @eq (list nat) (@cons nat l lf8) (@cons nat l lf8).
+Lemma candidate_43: forall (b : nat) (lf4 : list nat) (lf9 : list nat), @eq (list nat) (@app nat (@cons nat b lf9) lf4) (@cons nat b lf4).
+Lemma candidate_44: forall (b : nat) (lf9 : list nat), @eq (list nat) (@cons nat b lf9) (@cons nat b lf9).
+Lemma candidate_45: forall (b : nat) (lf9 : list nat), @eq (list nat) (@cons nat b lf9) (@cons nat b (@nil nat)).
+Lemma candidate_46: forall (l : nat) (f : nat) (b : nat) (y : nat) (lf9 : list nat), @eq (list nat)   (@app nat (@cons nat f (@cons nat l (@cons nat y lf9))) (@cons nat b lf9))   (@cons nat f (@cons nat l (@cons nat y (@cons nat b lf9)))).
+Lemma candidate_47: forall (l : nat) (f : nat) (b : nat) (y : nat) (lf9 : list nat), @eq (list nat)   (@app nat (@cons nat f (@cons nat l (@cons nat y lf9))) (@cons nat b lf9))   (@cons nat f (@cons nat l (@cons nat y (@cons nat b (@nil nat))))).
+Lemma candidate_48: forall (l : nat) (y : nat) (lf9 : list nat), @eq (list nat) (@cons nat l (@cons nat y lf9))   (@cons nat l (@cons nat y lf9)).
+Lemma candidate_49: forall (l : nat) (y : nat) (lf9 : list nat), @eq (list nat) (@cons nat l (@cons nat y lf9))   (@cons nat l (@cons nat y (@nil nat))).
+Lemma candidate_50: forall (y : nat) (lf9 : list nat), @eq (list nat) (@cons nat y lf9) (@cons nat y lf9).
+Lemma candidate_51: forall (y : nat) (lf9 : list nat), @eq (list nat) (@cons nat y lf9) (@cons nat y (@nil nat)).
+Lemma candidate_52: forall (b : nat) (lf4 : list nat) (lf9 : list nat), @eq (list nat) (@app nat (@cons nat b lf9) lf4) (@cons nat b lf4).
+Lemma candidate_53: forall (l : nat) (f : nat) (y : nat) (lf9 : list nat), @eq (list nat) (@cons nat f (@cons nat l (@cons nat y lf9)))   (@cons nat f (@cons nat l (@cons nat y lf9))).
+Lemma candidate_54: forall (l : nat) (f : nat) (y : nat) (lf9 : list nat), @eq (list nat) (@cons nat f (@cons nat l (@cons nat y lf9)))   (@cons nat f (@cons nat l (@cons nat y (@nil nat)))).
+Lemma candidate_55: forall (b : nat), @eq (list nat) (@cons nat b (@nil nat)) (@cons nat b (@nil nat)).
+Lemma candidate_56: forall (f : nat) (lf6 : list nat), @eq (list nat) (@cons nat f lf6) (@cons nat f lf6).
+Lemma candidate_57: forall (b : nat) (lf4 : list nat), @eq (list nat) (@app nat (@cons nat b (@nil nat)) lf4) (@cons nat b lf4).
+Lemma candidate_58: @eq (list nat) (@nil nat) (@nil nat).
+Lemma candidate_59: forall (b : nat), @eq (list nat) (@cons nat b (@nil nat)) (@cons nat b (@nil nat)).
+Lemma candidate_60: forall (l : nat) (f : nat) (lf8 : list nat), @eq (list nat) (@cons nat f (@cons nat l lf8))   (@cons nat f (@cons nat l lf8)).
+Lemma candidate_61: forall (l : nat) (lf8 : list nat), @eq (list nat) (@cons nat l lf8) (@cons nat l lf8).
+Lemma candidate_62: forall (b : nat) (lf4 : list nat), @eq (list nat) (@app nat (@cons nat b (@nil nat)) lf4) (@cons nat b lf4).
+Lemma candidate_63: @eq (list nat) (@nil nat) (@nil nat).
+Lemma candidate_64: forall (l : nat) (f : nat) (y : nat), @eq (list nat) (@cons nat f (@cons nat l (@cons nat y (@nil nat))))   (@cons nat f (@cons nat l (@cons nat y (@nil nat)))).
+Lemma candidate_65: forall (l : nat) (f : nat) (b : nat) (y : nat), @eq (list nat)   (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat))))      (@cons nat b (@nil nat)))   (@cons nat f (@cons nat l (@cons nat y (@cons nat b (@nil nat))))).
+Lemma candidate_66: forall (b : nat), @eq (list nat) (@cons nat b (@nil nat)) (@cons nat b (@nil nat)).
+Lemma candidate_67: forall (y : nat), @eq (list nat) (@cons nat y (@nil nat)) (@cons nat y (@nil nat)).
+Lemma candidate_68: forall (b : nat) (lf4 : list nat), @eq (list nat) (@app nat (@cons nat b (@nil nat)) lf4) (@cons nat b lf4).
+Lemma candidate_69: forall (l : nat) (y : nat), @eq (list nat) (@cons nat l (@cons nat y (@nil nat)))   (@cons nat l (@cons nat y (@nil nat))).
+Lemma candidate_70: @eq (list nat) (@nil nat) (@nil nat).
+
+<---FILTERED CANDIDATE LEMMAS--->
+Time elapsed: 3730 seconds
+Duplicates removed: 35
+Filtered by Quickchick: 8
+Filtered by script: 15
+Remaining: 12
+
+Lemmas: 
+Lemma candidate_13: forall (lf7 : list nat) (utter : list nat) (lf5 : list nat), @Permutation nat (@app nat lf7 (@app nat utter lf5))   (@app nat utter (@app nat lf5 lf7)).
+Lemma candidate_12: forall (lf7 : list nat) (f : nat) (utter : list nat) (lf6 : list nat), @Permutation nat (@app nat lf7 (@app nat utter (@cons nat f lf6)))   (@app nat utter (@app nat (@cons nat f lf6) lf7)).
+Lemma candidate_8: forall (b : nat) (utter : list nat) (lf5 : list nat) (lf9 : list nat), @Permutation nat (@app nat (@cons nat b lf9) (@app nat utter lf5))   (@app nat utter (@app nat lf5 (@cons nat b lf9))).
+Lemma candidate_7: forall (b : nat) (utter : list nat) (lf5 : list nat), @Permutation nat (@app nat (@cons nat b (@nil nat)) (@app nat utter lf5))   (@app nat utter (@app nat lf5 (@cons nat b (@nil nat)))).
+Lemma candidate_11: forall (l : nat) (lf7 : list nat) (f : nat) (utter : list nat) (lf8 : list nat), @Permutation nat   (@app nat lf7 (@app nat utter (@cons nat f (@cons nat l lf8))))   (@app nat utter (@app nat (@cons nat f (@cons nat l lf8)) lf7)).
+Lemma candidate_6: forall (f : nat) (b : nat) (utter : list nat) (lf9 : list nat) (lf6 : list nat), @Permutation nat   (@app nat (@cons nat b lf9) (@app nat utter (@cons nat f lf6)))   (@app nat utter (@app nat (@cons nat f lf6) (@cons nat b lf9))).
+Lemma candidate_3: forall (f : nat) (b : nat) (utter : list nat) (lf6 : list nat), @Permutation nat   (@app nat (@cons nat b (@nil nat)) (@app nat utter (@cons nat f lf6)))   (@app nat utter (@app nat (@cons nat f lf6) (@cons nat b (@nil nat)))).
+Lemma candidate_10: forall (l : nat) (lf7 : list nat) (f : nat) (y : nat) (utter : list nat) (lf9 : list nat), @Permutation nat   (@app nat lf7      (@app nat utter (@cons nat f (@cons nat l (@cons nat y lf9)))))   (@app nat utter      (@app nat (@cons nat f (@cons nat l (@cons nat y lf9))) lf7)).
+Lemma candidate_5: forall (l : nat) (f : nat) (b : nat) (utter : list nat) (lf9 : list nat) (lf8 : list nat), @Permutation nat   (@app nat (@cons nat b lf9)      (@app nat utter (@cons nat f (@cons nat l lf8))))   (@app nat utter      (@app nat (@cons nat f (@cons nat l lf8)) (@cons nat b lf9))).
+Lemma candidate_9: forall (l : nat) (lf7 : list nat) (f : nat) (y : nat) (utter : list nat), @Permutation nat   (@app nat lf7      (@app nat utter (@cons nat f (@cons nat l (@cons nat y (@nil nat))))))   (@app nat utter      (@app nat (@cons nat f (@cons nat l (@cons nat y (@nil nat)))) lf7)).
+Lemma candidate_2: forall (l : nat) (f : nat) (b : nat) (utter : list nat) (lf8 : list nat), @Permutation nat   (@app nat (@cons nat b (@nil nat))      (@app nat utter (@cons nat f (@cons nat l lf8))))   (@app nat utter      (@app nat (@cons nat f (@cons nat l lf8)) (@cons nat b (@nil nat)))).
+Lemma candidate_4: forall (l : nat) (f : nat) (y : nat) (b : nat) (utter : list nat) (lf9 : list nat), @Permutation nat   (@app nat (@cons nat b lf9)      (@app nat utter (@cons nat f (@cons nat l (@cons nat y lf9)))))   (@app nat utter      (@app nat (@cons nat f (@cons nat l (@cons nat y lf9)))         (@cons nat b lf9))).

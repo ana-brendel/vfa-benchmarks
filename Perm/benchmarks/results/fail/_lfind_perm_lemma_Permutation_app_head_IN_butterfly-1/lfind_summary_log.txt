@@ -1,0 +1,28 @@
+LFind Results
+LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources/_lfind_perm_lemma_Permutation_app_head_IN_butterfly-1
+
+
+Number of Lemmas: 13
+Number of Lemmas (after duplicates removed): 12
+Number of Lemmas (after QuickChick used to filter): 12
+* Number of Candidate Lemmas: 0
+
+Time until ranking: 122
+Time to complete: 122
+
+Stuck state true independent of hypotheses: true
+
+Category 1:
+Count = 0
+
+
+Category 2:
+Count = 0
+
+
+Category 3 (provable):
+Count = 0
+
+
+Category 3 (not provable):
+Count = 0

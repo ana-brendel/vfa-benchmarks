@@ -1,28 +1,5 @@
 (** * Multiset:  Insertion Sort Verified With Multisets *)
 
-(** Our specification of [sorted] in [Sort] was based in
-    part on permutations, which enabled us to express the idea that
-    sorting rearranges list elements but does not add or remove any.
-
-    Another way to express that idea is to use multisets, aka bags.  A
-    _set_ is like a list in which element order is irrelevant, and in
-    which no duplicate elements are permitted. That is, an element can
-    either be _in_ the set or not in the set, but it can't be in the
-    set multiple times.  A _multiset_ relaxes that restriction: an
-    element can be in the multiset multiple times.  The number of
-    times the element occurs in the multiset is the element's
-    _multiplicity_. *)
-
-(** For example:
-
-    - [{1, 2}] is a set, and is the same as set [{2, 1}].
-
-    - [[1; 1; 2]] is a list, and is different than list [[2; 1; 1]].
-
-    - [{1, 1, 2}] is a multiset and the same as multiset [{2, 1, 1}].
-
-    In this chapter we'll explore using multisets to specify
-    sortedness. *)
 
 From Coq Require Import Strings.String.  (* for manual grading *)
 From Coq Require Import FunctionalExtensionality.
