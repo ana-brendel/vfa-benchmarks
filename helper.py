@@ -22,7 +22,7 @@ for t in os.listdir(main):
     if t != "vfa-full" and t != "helper.py" and not t.startswith(".") and t != "README.md" and t != "Preface":
         testFolders.append(t)
 
-benches = [
+benches_perm = [
     #"perm_lemma_Permutation_app_comm_IN_butterfly-1",
     #"perm_lemma_Permutation_app_comm_IN_butterfly-3",
     #"perm_lemma_Permutation_app_head_IN_butterfly-1",
@@ -48,14 +48,25 @@ benches = [
     "perm_lemma_iff_reflect_IN_ble_reflect"
 ]
 
+benches = [
+    "sort_lemma_sortedd_remove_cons_1_IN_insert_sortedd",
+    "sort_lemma_sortedd_remove_cons_2_IN_insert_sortedd",
+    "sort_lemma_sortedd_remove_cons_3_IN_insert_sortedd",
+    "sort_lemma_sortedd_remove_cons_4_IN_insert_sortedd",
+    "sort_lemma_sortedd_remove_cons_5_IN_insert_sortedd",
+    "sort_lemma_sortedd_single_1_IN_insert_sortedd",
+    "sort_lemma_sortedd_single_2_IN_insert_sortedd",
+    "sort_lemma_sortedd_remove_IN_insert_sortedd",
+    "sort_lemma_simple_insert_IN_insert_sortedd",
+    "sort_lemma_sortedd_nil_IN_sortedd_remove"
+]
+
+src_sort = "/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/backward_reasoning"
+
 decide = "/home/anabrendel/lfind/_QUICKCHICK_PROOFS_/perm_decide.v"
 src = "/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources"
+backwards = "/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/backward_reasoning"
 
-for t in os.listdir(src):
-    if t.startswith("perm"):
-        l = t.removeprefix("perm_lemma_")
-        m = l.split("_IN_")
-        print(m[1])
-    # test = os.path.join(src,t)
-    # print(test)
-    # make(test)
+for t in benches:
+    test = os.path.join(backwards,t)
+    make(test)

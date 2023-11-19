@@ -1,0 +1,51 @@
+File Information
+- File name: Sort
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/backward_reasoning/sort_lemma_sortedd_nil_IN_sortedd_remove
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/backward_reasoning/_lfind_sort_lemma_sortedd_nil_IN_sortedd_remove
+- Namespace: vfa_benchmark
+- Proof name: sortedd_remove
+- Theorem: Theorem sortedd_remove: forall (a0 : nat) (l : list nat) (_ : sortedd (@cons nat a0 l)), sortedd l.
+- Declarations: 
+From lfind Require Import LFind.
+From VFA Require Import Perm.
+
+Proof Context
+* Goal State: sortedd (@nil nat)
+
+* Hypothesis:
+H : sortedd (@cons nat a (@nil nat))
+a : nat
+
+* Types:
+Set
+Prop
+nat
+list nat
+
+* Polymorphic Types:
+
+
+* Variables:
+a : nat
+
+* Terms:
+sortedd (@cons nat a (@nil nat)) : Prop
+nat : Set
+@cons nat a (@nil nat) : list nat
+sortedd (@nil nat) : Prop
+a : nat
+@nil nat : list nat
+
+* Functions:
+@nil  : forall A : Type, list A
+@cons  : forall (A : Type) (_ : A) (_ : list A), list A
+sortedd  : forall _ : list nat, Prop
+
+<---GENERALIZATION--->
+Time elapsed: 3 seconds
+Generalized Variables:
+lf1 : list nat = @nil nat
+
+Generalizations:
+Lemma conj1: forall (lf1 : list nat), sortedd lf1.
+Lemma conj2: forall , sortedd (@nil nat).

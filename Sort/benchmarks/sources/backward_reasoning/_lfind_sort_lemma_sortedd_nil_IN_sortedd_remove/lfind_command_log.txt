@@ -1,0 +1,36 @@
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/backward_reasoning/_lfind_sort_lemma_sortedd_nil_IN_sortedd_remove
+
+cp -r /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/backward_reasoning/sort_lemma_sortedd_nil_IN_sortedd_remove /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/backward_reasoning/_lfind_sort_lemma_sortedd_nil_IN_sortedd_remove
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/backward_reasoning/_lfind_sort_lemma_sortedd_nil_IN_sortedd_remove/ && coqc -R . vfa_benchmark decide.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/backward_reasoning/_lfind_sort_lemma_sortedd_nil_IN_sortedd_remove/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/backward_reasoning/_lfind_sort_lemma_sortedd_nil_IN_sortedd_remove/lfind_quickchick_generator.v
+
+export is_lfind=true
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/backward_reasoning/_lfind_sort_lemma_sortedd_nil_IN_sortedd_remove/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/backward_reasoning/_lfind_sort_lemma_sortedd_nil_IN_sortedd_remove/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/backward_reasoning/_lfind_sort_lemma_sortedd_nil_IN_sortedd_remove/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/backward_reasoning/_lfind_sort_lemma_sortedd_nil_IN_sortedd_remove/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/backward_reasoning/_lfind_sort_lemma_sortedd_nil_IN_sortedd_remove/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/backward_reasoning/_lfind_sort_lemma_sortedd_nil_IN_sortedd_remove/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/backward_reasoning/_lfind_sort_lemma_sortedd_nil_IN_sortedd_remove/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/backward_reasoning/_lfind_sort_lemma_sortedd_nil_IN_sortedd_remove/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/backward_reasoning/_lfind_sort_lemma_sortedd_nil_IN_sortedd_remove/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/backward_reasoning/_lfind_sort_lemma_sortedd_nil_IN_sortedd_remove/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/backward_reasoning/_lfind_sort_lemma_sortedd_nil_IN_sortedd_remove/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/backward_reasoning/_lfind_sort_lemma_sortedd_nil_IN_sortedd_remove/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/backward_reasoning/_lfind_sort_lemma_sortedd_nil_IN_sortedd_remove/lfind_axiom_*
+

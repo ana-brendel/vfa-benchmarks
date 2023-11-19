@@ -1,0 +1,5 @@
+a:(0)`l:(nil)`a0:(0)
+a:(1)`l:(cons 0 (nil))`a0:(1)
+a:(1)`l:(cons 0 (nil))`a0:(0)
+a:(1)`l:(nil)`a0:(0)
+a:(0)`l:(cons 0 (nil))`a0:(0)
