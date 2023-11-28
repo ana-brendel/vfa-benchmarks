@@ -84,7 +84,8 @@ Proof.
     apply perm_trans with (n1 :: l0).
     apply select_perm. auto.
     apply perm_skip. apply IHn. inversion H.
-    apply select_rest_length in Seq. auto.
+    symmetry. eapply select_rest_length. eauto.
+    (* apply select_rest_length in Seq. auto. *)
 Qed.
 
 Lemma selection_sort_perm: forall l, Permutation l (selection_sort l).
@@ -93,137 +94,120 @@ Proof.
   apply selsort_perm. reflexivity. 
 Qed.
 
+Lemma select_exists (l : list nat) (a : nat) : exists i j, select a l = (i ,j).
+Proof.
+  generalize dependent a. induction l.
+  - intros. exists a. exists []. reflexivity.
+  - intros. unfold select. destruct (a0 <=? a).
+  + fold select. assert (P: exists i j, select a0 l = (i,j)). apply IHl.
+  inversion P. inversion H. exists x. exists (a :: x0). rewrite H0. reflexivity.
+  + fold select. assert (P: exists i j, select a l = (i,j)). apply IHl.
+  inversion P. inversion H. exists x. exists (a0 :: x0). rewrite H0. reflexivity.
+Qed.
+
 Lemma select_fst_leq: forall al bl x y, select x al = (y, bl) -> y <= x.
 Proof.
   intros. 
   (* inversion H. unfold select in H. generalize dependent x; generalize dependent y. *)
   unfold select in H.
-  induction al.
-  intros. inversion H. auto.
-  intros. fold select in IHal. apply IHal. fold select in H.  bdestruct (x <=? a).
-  inversion H. unfold select.
-
-(** [] *)
-
-(** To represent the concept of comparing a number to a list, we
-    introduce a new notation: *)
+  generalize dependent x; generalize dependent y; generalize dependent bl. induction al.
+  - intros. inversion H. auto.
+  - intros. fold select in IHal. fold select in H.  
+  bdestruct (x <=? a).
+  -- pose (select_exists al x).
+  inversion e. inversion H1. rewrite H2 in H. apply IHal with (bl := x1). inversion H. 
+  rewrite <- H4. auto.
+  -- pose (select_exists al a).
+  inversion e. inversion H1. rewrite H2 in H. inversion H. rewrite <- H4.
+  apply IHal in H2. inversion H2. unfold gt in H0. apply lt_n_Sm_le. apply lt_S. auto. 
+  unfold gt in H0. apply le_lt_n_Sm in H3. rewrite H6 in H3. assert (Q: x0 < x). 
+  apply lt_trans with (m := a). auto. auto. apply lt_n_Sm_le. apply lt_S. auto.
+Qed. 
 
 Definition le_all x xs := Forall (fun y => x <= y) xs.
 Hint Unfold le_all : core.
 Infix "<=*" := le_all (at level 70, no associativity).
 
-(** **** Exercise: 1 star, standard (le_all__le_one) *)
+Lemma le_all__le_one : forall lst y n, y <=* lst -> In n lst -> y <= n.
+Proof. 
+  intros. unfold le_all in H. destruct H.
+  - contradiction.
+  - pose (select_perm n (x::l)). pose (select_exists (x::l) n). inversion e. inversion H2.
+  apply p in H3. apply in_inv in H0. destruct H0.
+  -- rewrite <- H0. auto.
+  -- rewrite Forall_forall in H1. apply H1. auto.
+Qed.
 
-(** Prove that if [y] is no more than any of the elements of [lst],
-    and if [n] is in [lst], then [y] is no more than [n]. Hint: a
-    library theorem about [Forall] and [In] will make this easy. *)
-
-Lemma le_all__le_one : forall lst y n,
-    y <=* lst -> In n lst -> y <= n.
-Proof. (* FILL IN HERE *) Admitted.
-
-(** [] *)
-
-(** **** Exercise: 2 stars, standard (select_smallest) *)
-
-(** Prove that the first component of [select _ _] is no bigger than
-    any of the elements in the second component. Proceed by induction
-    on [al]. *)
-
-Lemma select_smallest: forall al bl x y,
-    select x al = (y, bl) ->
-    y <=* bl.
+(* I think this is a good example of where forward reasoning makes targeting lemmas easier *)
+Lemma select_smallest: forall al bl x y, select x al = (y, bl) -> y <=* bl.
 Proof.
-  (* FILL IN HERE *) Admitted.
-
-(** [] *)
-
-(** **** Exercise: 2 stars, standard (select_in) *)
-
-(** Prove that the element returned by [select] must be one of the
-    elements in its input. Proceed by induction on [al]. *)
-
-Lemma select_in : forall al bl x y,
-    select x al = (y, bl) ->
-    In y (x :: al).
-Proof.
-  (* FILL IN HERE *) Admitted.
-
-(** [] *)
-
-(** **** Exercise: 3 stars, standard (cons_of_small_maintains_sort) *)
-
-(** Prove that adding an element to the beginning of a
-    selection-sorted list maintains sortedness, as long as the element
-    is small enough and enough fuel is provided. No induction is
-    needed. *)
+  intros. unfold le_all. 
+  generalize dependent bl; generalize dependent x; generalize dependent y. induction al.
+  - intros. inversion H. auto.
+  - intros. unfold select in H. bdestruct (x <=? a).
+  * fold select in H. pose (select_exists al x). inversion e. inversion H1.
+  rewrite H2 in H. inversion H2. apply IHal in H2. inversion H. apply Forall_cons.
+  ** apply le_trans with (m:=x). rewrite <- H5. eapply select_fst_leq. eauto. auto.
+  ** rewrite <- H5. auto.
+  * fold select in H. pose (select_exists al a). inversion e. inversion H1. rewrite H2 in H.
+  inversion H2.  apply IHal in H2. inversion H. apply Forall_cons.
+  ** rewrite <- H5. apply lt_n_Sm_le. apply lt_S. apply Nat.le_lt_trans with (m:=a). 
+  eapply select_fst_leq. eauto. auto.
+  ** rewrite <- H5. auto.
+Qed. 
+   
+Lemma select_in : forall al bl x y, select x al = (y, bl) -> In y (x :: al).
+Proof. intros.
+  generalize dependent bl; generalize dependent x; generalize dependent y. induction al.
+  - intros. inversion H. simpl. left. reflexivity.
+  - intros. 
+  * inversion H. bdestruct (x <=? a). 
+  ** simpl. apply or_comm. apply or_assoc. 
+  right. apply or_comm. replace (x = y \/ In y al) with (In y (x :: al)).
+  pose (select_exists al x). inversion e. inversion H2. rewrite H3 in H1. 
+  inversion H1. eapply IHal. rewrite <- H5. eauto. simpl. reflexivity.
+  ** apply select_perm in H. eapply Permutation_in. apply Permutation_sym. eauto. 
+  simpl. left. auto.
+Qed.
 
 Lemma cons_of_small_maintains_sort: forall bl y n,
-    n = length bl ->
-    y <=* bl ->
-    sorted (selsort bl n) ->
-    sorted (y :: selsort bl n).
+  n = length bl -> y <=* bl -> sorted (selsort bl n) -> sorted (y :: selsort bl n).
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros. symmetry in H. apply selsort_perm in H. induction (selsort bl n).
+  - apply sorted_1.
+  - apply sorted_cons. eapply le_all__le_one. eauto. eapply Permutation_in. 
+  apply Permutation_sym. eauto. simpl. auto. auto.
+Qed.
 
-(** [] *)
-
-(** **** Exercise: 2 stars, standard (selsort_sorted) *)
-
-(** Prove that [selsort] produces a sorted list when given
-    sufficient fuel.  Proceed by induction on [n].  This proof
-    will make use of a few previous lemmas. *)
-
-Lemma selsort_sorted : forall n al,
-    length al = n -> sorted (selsort al n).
+Lemma selsort_sorted : forall n al, length al = n -> sorted (selsort al n).
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros. generalize dependent al. induction n.
+  - intros. assert (P : al = []). destruct al. auto. simpl in H. inversion H. 
+  rewrite P. simpl. apply sorted_nil.
+  - intros. destruct al. simpl in H. inversion H.
+  simpl in H. inversion H. simpl. pose (select_exists al n0).
+  inversion e. inversion H0.
+  rewrite H2. apply cons_of_small_maintains_sort.
+  + eapply select_rest_length. eauto.
+  + eapply select_smallest. eauto.
+  + rewrite H1. apply IHn. rewrite <- H1. symmetry. eapply select_rest_length. eauto.
+Qed. 
 
-(** [] *)
-
-(** **** Exercise: 1 star, standard (selection_sort_sorted) *)
-
-(** Prove that [selection_sort] produces a sorted list. *)
-
-Lemma selection_sort_sorted : forall al,
-    sorted (selection_sort al).
+Lemma selection_sort_sorted : forall al, sorted (selection_sort al).
 Proof.
-  (* FILL IN HERE *) Admitted.
+  unfold selection_sort. intros. apply selsort_sorted. reflexivity.
+Qed.
 
-(** [] *)
-
-(** **** Exercise: 1 star, standard (selection_sort_is_correct) *)
-
-(** Finish the proof of correctness! *)
-
-Theorem selection_sort_is_correct :
-  is_a_sorting_algorithm selection_sort.
+Theorem selection_sort_is_correct : is_a_sorting_algorithm selection_sort.
 Proof.
-  (* FILL IN HERE *) Admitted.
-
-(** [] *)
+  unfold is_a_sorting_algorithm. intros. split.
+  apply selection_sort_perm. apply selection_sort_sorted.
+Qed.
 
 (* ################################################################# *)
 (** * Recursive Functions That are Not Structurally Recursive *)
 
-(** We used fuel above to create a structurally recursive
-    version of [selsort] that Coq would accept as terminating.  The
-    amount of fuel decreased at each call, until it reached zero.
-    Since the fuel argument was structurally decreasing, Coq accepted
-    the definition.  But it complicated the implementation of
-    [selsort] and the proofs about it.
-
-    Coq provides a command [Function] that implements a similar idea
-    as fuel, but without requiring the function definition to be
-    structurally recursive.  Instead, the function is annotated with a
-    _measure_ that is decreasing at each recursive call. To activate
-    such annotations, we need to load a library. *)
-
 Require Import Recdef.  (* needed for [measure] feature *)
-
-(** Now we can add a [measure] annotation on the definition of
-    [selsort] to tell Coq that each recursive call decreases the
-    length of [l]: *)
 
 Function selsort' l {measure length l} :=
   match l with
@@ -232,130 +216,86 @@ Function selsort' l {measure length l} :=
             in y :: selsort' r'
 end.
 
-(** The [measure] annotation takes two parameters, a measure
-    function and an argument name.  Above, the function is [length]
-    and the argument is [l].  The function must return a [nat] when
-    applied to the argument.  Coq then challenges us to prove that
-    [length] applied to [l] is actually decreasing at every recursive
-    call. *)
-
 Proof.
   intros l x r HL y r' Hsel.
   apply select_rest_length in Hsel. inv Hsel. simpl. lia.
 Defined.
 
-(** The proof must end with [Defined] instead of [Qed].  That
-    ensures the function's body can be used in computation.  For
-    example, the following unit test succeeds, but try changing
-    [Defined] to [Qed] and see how it gets stuck. *)
-
-Example selsort'_example : selsort' [3;1;4;1;5;9;2;6;5] = [1;1;2;3;4;5;5;6;9].
-Proof. reflexivity. Qed.
-
-(** The definition of [selsort'] is completed by the [Function]
-    command using a helper function that it generates,
-    [selsort'_terminate].  Neither of them is going to be useful to
-    unfold in proofs: *)
-
-Print selsort'.
-Print selsort'_terminate.
-
-(** Instead, anywhere you want to unfold or simplify [selsort'], you
-    should now rewrite with [selsort'_equation], which was
-    automatically defined by the [Function] command: *)
-
-Check selsort'_equation.
-
-(** **** Exercise: 1 star, standard (selsort'_perm) *)
-
-(** Hint: Follow the same strategy as [selsort_perm]. In our solution,
-    there was only a one-line change. *)
-
-Lemma selsort'_perm : forall n l,
-    length l = n -> Permutation l (selsort' l).
+Lemma selsort'_perm : forall n l, length l = n -> Permutation l (selsort' l).
 Proof.
-  (* FILL IN HERE *) Admitted.
+  induction n.
+  - intros. rewrite length_zero_iff_nil in H. subst. apply Permutation_refl.
+  - intros. destruct l. inversion H. rewrite selsort'_equation. 
+    destruct (select n0 l) eqn:Seq. apply perm_trans with (n1 :: l0).
+    + pose (select_perm n0 l). rewrite Seq in p. apply p. auto.
+    + apply perm_skip. apply IHn. simpl in H. inversion H. 
+    symmetry. eapply select_rest_length. eauto.
+    (* This is how dude from GitHub did it below *)
+    (* + apply perm_skip. apply IHn. assert (length (n0::l) = (length (n1::l0))).
+    { 
+      apply Permutation_length.
+      pose (select_perm n0 l).
+      rewrite Seq in p.
+      apply p. auto.
+    } inversion H0. inversion H. reflexivity. *)
+  Qed.
 
-(** [] *)
-
-(** **** Exercise: 1 star, standard (cons_of_small_maintains_sort') *)
-
-(** Hint: Follow the same strategy as
-    [cons_of_small_maintains_sort']. In our solution, there was only a
-    one-line change. *)
+Lemma list_has_length {T} (l : list T): exists x, length l = x.
+Proof. induction l. exists 0. reflexivity. inversion IHl. exists (S x). simpl. auto.
+Qed.
 
 Lemma cons_of_small_maintains_sort': forall bl y,
-    y <=* bl ->
-    sorted (selsort' bl) ->
-    sorted (y :: selsort' bl).
-Proof. (* FILL IN HERE *) Admitted.
+    y <=* bl -> sorted (selsort' bl) -> sorted (y :: selsort' bl).
+Proof. 
+  intros. assert (L: exists x, length bl = x). apply list_has_length.
+  inversion L. apply selsort'_perm in H1. induction (selsort' bl).
+  - apply sorted_1.
+  - apply sorted_cons. eapply le_all__le_one. eauto. eapply Permutation_in. 
+  apply Permutation_sym. eauto. simpl. auto. auto.
+Qed.
 
-(** [] *)
-
-(** **** Exercise: 1 star, standard (selsort'_sorted) *)
-
-(** Hint: Follow the same strategy as [selsort_sorted]. In our
-    solution, there were only three small changes. *)
-
-Lemma selsort'_sorted : forall n al,
-    length al = n -> sorted (selsort' al).
-Proof. (* FILL IN HERE *) Admitted.
-
-(** [] *)
-
-(** **** Exercise: 1 star, standard (selsort'_is_correct) *)
-
-(** Finish the proof of correctness! *)
+Lemma selsort'_sorted : forall n al, length al = n -> sorted (selsort' al).
+Proof. 
+  intros. generalize dependent al. induction n.
+  - intros. assert (P : al = []). destruct al. auto. simpl in H. inversion H. 
+  rewrite P. simpl. apply sorted_nil.
+  - intros. destruct al. simpl in H. inversion H.
+  simpl in H. inversion H. simpl. pose (select_exists al n0).
+  inversion e. inversion H0. rewrite selsort'_equation. 
+  rewrite H2. apply cons_of_small_maintains_sort'.
+  + eapply select_smallest. eauto.
+  + apply IHn. rewrite <- H1. symmetry. eapply select_rest_length. eauto.
+Qed. 
 
 Theorem selsort'_is_correct :
   is_a_sorting_algorithm selsort'.
-Proof. (* FILL IN HERE *) Admitted.
-
-(** [] *)
-
+Proof. 
+  unfold is_a_sorting_algorithm. intros. assert (E: exists x, length al = x). apply list_has_length.
+  inversion E. split.
+  eapply selsort'_perm. eauto.
+  eapply selsort'_sorted. eauto.
+Qed.
 
 (* ################################################################# *)
 (** * Selection Sort with Multisets (Optional) *)
 
-(** This section relies on [Multiset]. *)
+(** This section relies on [Multiset] --> don't have decidability for *)
 
 From VFA Require Import Multiset.
-
-(** Let's prove the correctness of [selection_sort] using multisets
-    instead of permutations. These exercises and their proofs were
-    contributed by William Ma. *)
-
-(** **** Exercise: 3 stars, standard, optional (select_contents) *)
 
 Lemma select_contents : forall al bl x y,
   select x al = (y, bl) ->
   union (singleton x) (contents al) = union (singleton y) (contents bl).
 Proof. (* FILL IN HERE *) Admitted.
 
-(** [] *)
-
-(** **** Exercise: 3 stars, standard, optional (selection_sort_contents) *)
-
 Lemma selection_sort_contents : forall n l,
   length l = n ->
   contents l = contents (selection_sort l).
 Proof. (* FILL IN HERE *) Admitted.
 
-(** [] *)
-
-(** **** Exercise: 2 stars, standard, optional (sorted_iff_sorted) *)
-
 Lemma sorted_iff_sorted : forall l, sorted l <-> Sort.sorted l.
 Proof. (* FILL IN HERE *) Admitted.
-
-(** [] *)
-
-(** **** Exercise: 1 star, standard, optional (selection_sort_correct') *)
 
 Theorem selection_sort_correct' :
   is_a_sorting_algorithm' selection_sort.
 Proof. (* FILL IN HERE *) Admitted.
-
-(** [] *)
-
-(* 2023-08-23 11:34 *)
