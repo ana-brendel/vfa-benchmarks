@@ -1,0 +1,33 @@
+LFind Results
+LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_le_all__le_one_IN_cons_of_small_maintains_sortt
+
+
+Number of Lemmas: 1
+Number of Lemmas (after duplicates removed): 1
+Number of Lemmas (after QuickChick used to filter): 1
+* Number of Candidate Lemmas: 1
+
+Time until ranking: 22
+Time to complete: 22
+
+Stuck state true independent of hypotheses: false
+
+Category 1:
+Count = 0
+
+
+Category 2:
+Count = 0
+
+
+Category 3 (provable):
+Count = 0
+
+
+
+All lemmas here because ranking is turned off right now...
+
+Category 3 (not provable):
+Count = 1
+
+Lemma candidate_1: forall (a : nat) (l : list nat) (y : nat) (bl : list nat), sorted (@cons nat a l) -> @Permutation nat bl (@cons nat a l) -> le y a.

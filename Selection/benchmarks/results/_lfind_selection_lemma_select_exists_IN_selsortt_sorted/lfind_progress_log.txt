@@ -1,0 +1,164 @@
+File Information
+- File name: Selection
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_select_exists_IN_selsortt_sorted
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_select_exists_IN_selsortt_sorted
+- Namespace: vfa_benchmark
+- Proof name: selsortt_sorted
+- Theorem: Theorem selsortt_sorted: forall (n1 : nat) (al0 : list nat) (_ : @eq nat (@list_length nat al0) n1),
+sorted (selsortt al0).
+- Declarations: 
+From lfind Require Import LFind.
+From VFA Require Import Perm.
+
+Proof Context
+* Goal State: sorted (selsortt (@cons nat n0 al))
+
+* Hypothesis:
+H1 : @eq nat (@list_length nat al) n
+H : @eq nat (S (@list_length nat al)) (S n)
+al : list nat
+n : nat
+n0 : nat
+IHn : forall (al0 : list nat) (_ : @eq nat (@list_length nat al0) n),
+sorted (selsortt al0)
+
+* Types:
+Set
+Prop
+nat
+list nat
+
+* Polymorphic Types:
+list nat
+
+* Variables:
+al : list nat
+n : nat
+n0 : nat
+
+* Terms:
+list nat : Set
+@eq nat (@list_length nat al) n : Prop
+@eq nat (S (@list_length nat al)) (S n) : Prop
+@list_length nat al : nat
+al : list nat
+selsortt _UNBOUND_REL_2 : list nat
+@list_length nat _UNBOUND_REL_1 : nat
+forall _ : @eq nat (@list_length nat _UNBOUND_REL_1) n,
+sorted (selsortt _UNBOUND_REL_2) : Prop
+@cons nat n0 al : list nat
+nat : Set
+S (@list_length nat al) : nat
+@eq nat (@list_length nat _UNBOUND_REL_1) n : Prop
+forall (al0 : list nat) (_ : @eq nat (@list_length nat al0) n),
+sorted (selsortt al0) : Prop
+selsortt (@cons nat n0 al) : list nat
+sorted (selsortt _UNBOUND_REL_2) : Prop
+S n : nat
+n : nat
+n0 : nat
+sorted (selsortt (@cons nat n0 al)) : Prop
+
+* Functions:
+sorted  : forall _ : list nat, Prop
+@list_length  : forall (T : Type) (_ : list T), nat
+selsortt  : forall _ : list nat, list nat
+list  : forall _ : Type, Type
+@cons  : forall (A : Type) (_ : A) (_ : list A), list A
+S  : forall _ : nat, nat
+@eq  : forall (A : Type) (_ : A) (_ : A), Prop
+
+<---GENERALIZATION--->
+Time elapsed: 3 seconds
+Generalized Variables:
+lf1 : list nat = selsortt (@cons nat n0 al)
+lf2 : list nat = @cons nat n0 al
+
+Generalizations:
+Lemma conj1: forall (lf1 : list nat), sorted lf1.
+Lemma conj3: forall (lf2 : list nat), sorted (selsortt lf2).
+Lemma conj4: forall (al : list nat) (n0 : nat), sorted (selsortt (@cons nat n0 al)).
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 32 seconds
+Valid:
+Lemma conj4: forall (al : list nat) (n0 : nat), sorted (selsortt (@cons nat n0 al)).
+Lemma conj3: forall (lf2 : list nat), sorted (selsortt lf2).
+
+Invalid:
+Lemma conj1: forall (lf1 : list nat), sorted lf1.
+
+<---ADD IMPLICATIONS--->
+Time elapsed: 37 seconds
+Generalizations:
+Lemma conj1: forall (lf1 : list nat), sorted lf1.
+Lemma conj1_imp: forall (lf1 : list nat) (al : list nat) (n : nat), @eq nat (S (@list_length nat al)) (S n) -> @eq nat (@list_length nat al) n -> sorted lf1.
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 40 seconds
+Valid:
+
+Invalid:
+Lemma conj1_imp: forall (lf1 : list nat) (al : list nat) (n : nat), @eq nat (S (@list_length nat al)) (S n) -> @eq nat (@list_length nat al) n -> sorted lf1.
+Lemma conj1: forall (lf1 : list nat), sorted lf1.
+
+
+<---CREATE SKETCHES--->
+Time elapsed: 41 seconds
+Sketches:
+Sketch conj1_imp_sketch0 : forall
+  _ : forall _ : @eq nat (##hole##) (S n), @eq nat (@list_length nat al) n,
+sorted lf1
+Sketch conj1_imp_sketch1 : forall _ : forall _ : @eq nat (S (##hole##)) (S n), @eq nat (##hole##) n,
+sorted lf1
+Sketch conj1_imp_sketch2 : forall
+  _ : forall _ : @eq nat (S (@list_length nat al)) (##hole##),
+      @eq nat (@list_length nat al) n, sorted lf1
+Sketch conj1_imp_term_sketch0 : @eq nat (S (@list_length nat al)) (##hole##)
+Sketch conj1_imp_term_sketch1 : @eq nat (@list_length nat al) (##hole##)
+Sketch conj1_imp_term_sketch2 : @eq nat (S n) (##hole##)
+
+
+<---CREATE SYNTHESIS PROBLEMS--->
+Time elapsed: 114 seconds
+Problems per Sketch:
+Sketch conj1_imp_sketch1 --> Problem  synth_2
+Sketch conj1_imp_term_sketch2 --> Problem  synth_6
+Sketch conj1_imp_term_sketch1 --> Problem  synth_5
+Sketch conj1_imp_term_sketch0 --> Problem  synth_4
+Sketch conj1_imp_sketch2 --> Problem  synth_3
+Sketch conj1_imp_sketch0 --> Problem  synth_1
+
+
+<--- SYNTHESIS PROBLEM RESULTS--->
+Time elapsed: 118 seconds
+
+Problem: synth_3
+
+Problem: synth_6
+
+Problem: synth_5
+
+Problem: synth_4
+
+Problem: synth_1
+
+Problem: synth_2
+
+<---INITIAL CANDIDATE LEMMAS--->
+Time elapsed: 118 seconds
+Lemmas:
+Lemma candidate_1: forall (n0 : nat) (al : list nat), sorted (selsortt (@cons nat n0 al)).
+Lemma candidate_2: forall (lf2 : list nat), sorted (selsortt lf2).
+
+<---FILTERED CANDIDATE LEMMAS--->
+Time elapsed: 125 seconds
+Duplicates removed: 1
+Filtered by Quickchick: 0
+Filtered by script: 0
+Remaining: 1
+
+Lemmas: 
+Lemma candidate_2: forall (lf2 : list nat), sorted (selsortt lf2).

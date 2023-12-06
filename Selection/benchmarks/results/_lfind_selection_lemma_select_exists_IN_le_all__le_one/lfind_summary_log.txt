@@ -1,0 +1,35 @@
+LFind Results
+LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_select_exists_IN_le_all__le_one
+
+
+Number of Lemmas: 10
+Number of Lemmas (after duplicates removed): 10
+Number of Lemmas (after QuickChick used to filter): 3
+* Number of Candidate Lemmas: 3
+
+Time until ranking: 38
+Time to complete: 39
+
+Stuck state true independent of hypotheses: false
+
+Category 1:
+Count = 0
+
+
+Category 2:
+Count = 0
+
+
+Category 3 (provable):
+Count = 0
+
+
+
+All lemmas here because ranking is turned off right now...
+
+Category 3 (not provable):
+Count = 3
+
+Lemma candidate_5: forall (n : nat) (y : nat) (x : nat), le y x -> @In nat n (@nil nat) -> le y n.
+Lemma candidate_3: forall (n : nat) (y : nat) (x : nat), le y x -> @In nat n (@cons nat x (@nil nat)) -> le y n.
+Lemma candidate_2: forall (n : nat) (y : nat) (x : nat), le y x -> @In nat n (@cons nat y (@nil nat)) -> le y n.

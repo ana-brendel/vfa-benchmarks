@@ -108,7 +108,6 @@ Qed.
 Lemma select_fst_leq: forall al bl x y, select x al = (y, bl) -> y <= x.
 Proof.
   intros. 
-  (* inversion H. unfold select in H. generalize dependent x; generalize dependent y. *)
   unfold select in H.
   generalize dependent x; generalize dependent y; generalize dependent bl. induction al.
   - intros. inversion H. auto.
@@ -209,23 +208,22 @@ Qed.
 
 Require Import Recdef.  (* needed for [measure] feature *)
 
-Function selsort' l {measure length l} :=
+Function selsortt l {measure length l} :=
   match l with
   | [] => []
   | x :: r => let (y, r') := select x r
-            in y :: selsort' r'
+            in y :: selsortt r'
 end.
-
 Proof.
   intros l x r HL y r' Hsel.
   apply select_rest_length in Hsel. inv Hsel. simpl. lia.
 Defined.
 
-Lemma selsort'_perm : forall n l, length l = n -> Permutation l (selsort' l).
+Lemma selsortt_perm : forall n l, length l = n -> Permutation l (selsortt l).
 Proof.
   induction n.
   - intros. rewrite length_zero_iff_nil in H. subst. apply Permutation_refl.
-  - intros. destruct l. inversion H. rewrite selsort'_equation. 
+  - intros. destruct l. inversion H. rewrite selsortt_equation. 
     destruct (select n0 l) eqn:Seq. apply perm_trans with (n1 :: l0).
     + pose (select_perm n0 l). rewrite Seq in p. apply p. auto.
     + apply perm_skip. apply IHn. simpl in H. inversion H. 
@@ -244,36 +242,35 @@ Lemma list_has_length {T} (l : list T): exists x, length l = x.
 Proof. induction l. exists 0. reflexivity. inversion IHl. exists (S x). simpl. auto.
 Qed.
 
-Lemma cons_of_small_maintains_sort': forall bl y,
-    y <=* bl -> sorted (selsort' bl) -> sorted (y :: selsort' bl).
+Lemma cons_of_small_maintains_sortt: forall bl y,
+    y <=* bl -> sorted (selsortt bl) -> sorted (y :: selsortt bl).
 Proof. 
   intros. assert (L: exists x, length bl = x). apply list_has_length.
-  inversion L. apply selsort'_perm in H1. induction (selsort' bl).
+  inversion L. apply selsortt_perm in H1. induction (selsortt bl).
   - apply sorted_1.
   - apply sorted_cons. eapply le_all__le_one. eauto. eapply Permutation_in. 
   apply Permutation_sym. eauto. simpl. auto. auto.
 Qed.
 
-Lemma selsort'_sorted : forall n al, length al = n -> sorted (selsort' al).
+Lemma selsortt_sorted : forall n al, length al = n -> sorted (selsortt al).
 Proof. 
   intros. generalize dependent al. induction n.
   - intros. assert (P : al = []). destruct al. auto. simpl in H. inversion H. 
   rewrite P. simpl. apply sorted_nil.
   - intros. destruct al. simpl in H. inversion H.
   simpl in H. inversion H. simpl. pose (select_exists al n0).
-  inversion e. inversion H0. rewrite selsort'_equation. 
-  rewrite H2. apply cons_of_small_maintains_sort'.
+  inversion e. inversion H0. rewrite selsortt_equation. rewrite H2. apply cons_of_small_maintains_sortt.
   + eapply select_smallest. eauto.
   + apply IHn. rewrite <- H1. symmetry. eapply select_rest_length. eauto.
 Qed. 
 
-Theorem selsort'_is_correct :
-  is_a_sorting_algorithm selsort'.
+Theorem selsortt_is_correct :
+  is_a_sorting_algorithm selsortt.
 Proof. 
   unfold is_a_sorting_algorithm. intros. assert (E: exists x, length al = x). apply list_has_length.
   inversion E. split.
-  eapply selsort'_perm. eauto.
-  eapply selsort'_sorted. eauto.
+  eapply selsortt_perm. eauto.
+  eapply selsortt_sorted. eauto.
 Qed.
 
 (* ################################################################# *)

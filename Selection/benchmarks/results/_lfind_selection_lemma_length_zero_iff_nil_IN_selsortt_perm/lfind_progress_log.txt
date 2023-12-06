@@ -1,0 +1,110 @@
+File Information
+- File name: Selection
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_length_zero_iff_nil_IN_selsortt_perm
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_length_zero_iff_nil_IN_selsortt_perm
+- Namespace: vfa_benchmark
+- Proof name: selsortt_perm
+- Theorem: Theorem selsortt_perm: forall (n : nat) (l0 : list nat) (_ : @eq nat (@list_length nat l0) n),
+@Permutation nat l0 (selsortt l0).
+- Declarations: 
+From lfind Require Import LFind.
+From VFA Require Import Perm.
+
+Proof Context
+* Goal State: @Permutation nat l (selsortt l)
+
+* Hypothesis:
+H : @eq nat (@list_length nat l) O
+l : list nat
+
+* Types:
+Set
+Prop
+nat
+list nat
+
+* Polymorphic Types:
+list nat
+
+* Variables:
+l : list nat
+
+* Terms:
+list nat : Set
+nat : Set
+@Permutation nat l (selsortt l) : Prop
+selsortt l : list nat
+l : list nat
+@eq nat (@list_length nat l) O : Prop
+O : nat
+@list_length nat l : nat
+
+* Functions:
+@list_length  : forall (T : Type) (_ : list T), nat
+selsortt  : forall _ : list nat, list nat
+list  : forall _ : Type, Type
+Permutation  : forall (A : Type) (_ : list A) (_ : list A), Prop
+@eq  : forall (A : Type) (_ : A) (_ : A), Prop
+
+<---GENERALIZATION--->
+Time elapsed: 3 seconds
+Generalized Variables:
+lf1 : list nat = selsortt l
+
+Generalizations:
+Lemma conj1: forall (lf1 : list nat) (l : list nat), @Permutation nat l lf1.
+Lemma conj2: forall (l : list nat), @Permutation nat l (selsortt l).
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 17 seconds
+Valid:
+Lemma conj2: forall (l : list nat), @Permutation nat l (selsortt l).
+
+Invalid:
+Lemma conj1: forall (lf1 : list nat) (l : list nat), @Permutation nat l lf1.
+
+<---ADD IMPLICATIONS--->
+Time elapsed: 21 seconds
+Generalizations:
+Lemma conj1: forall (lf1 : list nat) (l : list nat), @Permutation nat l lf1.
+Lemma conj1_imp: forall (lf1 : list nat) (l : list nat), @eq nat (@list_length nat l) O -> @Permutation nat l lf1.
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 24 seconds
+Valid:
+Lemma conj1_imp: forall (lf1 : list nat) (l : list nat), @eq nat (@list_length nat l) O -> @Permutation nat l lf1.
+
+Invalid:
+Lemma conj1: forall (lf1 : list nat) (l : list nat), @Permutation nat l lf1.
+
+
+<---CREATE SKETCHES--->
+Time elapsed: 24 seconds
+Sketches:
+
+
+<---CREATE SYNTHESIS PROBLEMS--->
+Time elapsed: 25 seconds
+Problems per Sketch:
+
+
+<--- SYNTHESIS PROBLEM RESULTS--->
+Time elapsed: 25 seconds
+
+<---INITIAL CANDIDATE LEMMAS--->
+Time elapsed: 25 seconds
+Lemmas:
+Lemma candidate_1: forall (l : list nat), @Permutation nat l (selsortt l).
+Lemma candidate_2: forall (l : list nat) (lf1 : list nat), @eq nat (@list_length nat l) O -> @Permutation nat l lf1.
+
+<---FILTERED CANDIDATE LEMMAS--->
+Time elapsed: 31 seconds
+Duplicates removed: 1
+Filtered by Quickchick: 0
+Filtered by script: 0
+Remaining: 1
+
+Lemmas: 
+Lemma candidate_2: forall (l : list nat) (lf1 : list nat), @eq nat (@list_length nat l) O -> @Permutation nat l lf1.

@@ -1,0 +1,223 @@
+File Information
+- File name: Selection
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_Permutation_in_IN_select_in
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_Permutation_in_IN_select_in
+- Namespace: vfa_benchmark
+- Proof name: select_in
+- Theorem: Theorem select_in: forall (al0 bl0 : list nat) (x0 y0 : nat)
+  (_ : @eq (prod nat (list nat)) (select x0 al0)
+         (@pair nat (list nat) y0 bl0)), @In nat y0 (@cons nat x0 al0).
+- Declarations: 
+From lfind Require Import LFind.
+From VFA Require Import Perm.
+
+Proof Context
+* Goal State: @In nat y (@cons nat x (@cons nat a al))
+
+* Hypothesis:
+IHal : forall (y0 x0 : nat) (bl0 : list nat)
+  (_ : @eq (prod nat (list nat)) (select x0 al) (@pair nat (list nat) y0 bl0)),
+@In nat y0 (@cons nat x0 al)
+H0 : gt x a
+H1 : @eq (prod nat (list nat))
+  (let (j, l') := select a al in @pair nat (list nat) j (@cons nat x l'))
+  (@pair nat (list nat) y bl)
+bl : list nat
+x : nat
+H : @Permutation nat (@cons nat x (@cons nat a al)) (@cons nat y bl)
+al : list nat
+y : nat
+a : nat
+
+* Types:
+forall _ : list nat, prod nat (list nat)
+Set
+forall (_ : nat) (_ : list nat), prod nat (list nat)
+Prop
+nat
+forall _ : prod nat (list nat), Set
+prod nat (list nat)
+list nat
+
+* Polymorphic Types:
+list nat
+prod nat (list nat)
+
+* Variables:
+x : nat
+bl : list nat
+al : list nat
+y : nat
+a : nat
+
+* Terms:
+list nat : Set
+prod nat (list nat) : Set
+forall (bl0 : list nat)
+  (_ : @eq (prod nat (list nat)) (select _UNBOUND_REL_2 al)
+         (@pair nat (list nat) _UNBOUND_REL_3 bl0)),
+@In nat _UNBOUND_REL_4 (@cons nat _UNBOUND_REL_3 al) : Prop
+@In nat y (@cons nat x (@cons nat a al)) : Prop
+@eq (prod nat (list nat)) (select _UNBOUND_REL_2 al)
+  (@pair nat (list nat) _UNBOUND_REL_3 _UNBOUND_REL_1) : Prop
+@Permutation nat (@cons nat x (@cons nat a al)) (@cons nat y bl) : Prop
+@cons nat x _UNBOUND_REL_1 : list nat
+bl : list nat
+x : nat
+@eq (prod nat (list nat))
+  (let (j, l') := select a al in @pair nat (list nat) j (@cons nat x l'))
+  (@pair nat (list nat) y bl) : Prop
+gt x a : Prop
+forall (x0 : nat) (bl0 : list nat)
+  (_ : @eq (prod nat (list nat)) (select x0 al)
+         (@pair nat (list nat) _UNBOUND_REL_3 bl0)),
+@In nat _UNBOUND_REL_4 (@cons nat x0 al) : Prop
+@pair nat (list nat) _UNBOUND_REL_2 (@cons nat x _UNBOUND_REL_1) : prod nat (list nat)
+al : list nat
+@cons nat a al : list nat
+fun l' : list nat => @pair nat (list nat) _UNBOUND_REL_2 (@cons nat x l') : forall _ : list nat, prod nat (list nat)
+y : nat
+@pair nat (list nat) _UNBOUND_REL_3 _UNBOUND_REL_1 : prod nat (list nat)
+fun (j : nat) (l' : list nat) => @pair nat (list nat) j (@cons nat x l') : forall (_ : nat) (_ : list nat), prod nat (list nat)
+fun _ : prod nat (list nat) => prod nat (list nat) : forall _ : prod nat (list nat), Set
+@In nat _UNBOUND_REL_4 (@cons nat _UNBOUND_REL_3 al) : Prop
+@cons nat y bl : list nat
+nat : Set
+@cons nat x (@cons nat a al) : list nat
+forall
+  _ : @eq (prod nat (list nat)) (select _UNBOUND_REL_2 al)
+        (@pair nat (list nat) _UNBOUND_REL_3 _UNBOUND_REL_1),
+@In nat _UNBOUND_REL_4 (@cons nat _UNBOUND_REL_3 al) : Prop
+@cons nat _UNBOUND_REL_3 al : list nat
+@pair nat (list nat) y bl : prod nat (list nat)
+select a al : prod nat (list nat)
+select _UNBOUND_REL_2 al : prod nat (list nat)
+forall (y0 x0 : nat) (bl0 : list nat)
+  (_ : @eq (prod nat (list nat)) (select x0 al) (@pair nat (list nat) y0 bl0)),
+@In nat y0 (@cons nat x0 al) : Prop
+a : nat
+let (j, l') := select a al in @pair nat (list nat) j (@cons nat x l') : prod nat (list nat)
+
+* Functions:
+prod  : forall (_ : Type) (_ : Type), Type
+@pair  : forall (A B : Type) (_ : A) (_ : B), prod A B
+select  : forall (_ : nat) (_ : list nat), prod nat (list nat)
+In  : forall (A : Type) (_ : A) (_ : list A), Prop
+gt  : forall (_ : nat) (_ : nat), Prop
+list  : forall _ : Type, Type
+@cons  : forall (A : Type) (_ : A) (_ : list A), list A
+Permutation  : forall (A : Type) (_ : list A) (_ : list A), Prop
+@eq  : forall (A : Type) (_ : A) (_ : A), Prop
+
+<---GENERALIZATION--->
+Time elapsed: 4 seconds
+Generalized Variables:
+lf1 : list nat = @cons nat x (@cons nat a al)
+lf2 : list nat = @cons nat a al
+
+Generalizations:
+Lemma conj1: forall (lf1 : list nat) (y : nat), @In nat y lf1.
+Lemma conj3: forall (lf2 : list nat) (x : nat) (y : nat), @In nat y (@cons nat x lf2).
+Lemma conj4: forall (x : nat) (al : list nat) (y : nat) (a : nat), @In nat y (@cons nat x (@cons nat a al)).
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 12 seconds
+Valid:
+
+Invalid:
+Lemma conj4: forall (x : nat) (al : list nat) (y : nat) (a : nat), @In nat y (@cons nat x (@cons nat a al)).
+Lemma conj3: forall (lf2 : list nat) (x : nat) (y : nat), @In nat y (@cons nat x lf2).
+Lemma conj1: forall (lf1 : list nat) (y : nat), @In nat y lf1.
+
+<---ADD IMPLICATIONS--->
+Time elapsed: 29 seconds
+Generalizations:
+Lemma conj4: forall (x : nat) (al : list nat) (y : nat) (a : nat), @In nat y (@cons nat x (@cons nat a al)).
+Lemma conj4_imp: forall (x : nat) (bl : list nat) (al : list nat) (y : nat) (a : nat), @Permutation nat (@cons nat x (@cons nat a al)) (@cons nat y bl) -> @eq (prod nat (list nat))
+  (let (j, l') := select a al in @pair nat (list nat) j (@cons nat x l'))
+  (@pair nat (list nat) y bl) -> gt x a -> @In nat y (@cons nat x (@cons nat a al)).
+Lemma conj3: forall (lf2 : list nat) (x : nat) (y : nat), @In nat y (@cons nat x lf2).
+Lemma conj3_imp: forall (lf2 : list nat) (x : nat) (bl : list nat) (y : nat) (a : nat), @Permutation nat (@cons nat x lf2) (@cons nat y bl) -> gt x a -> @In nat y (@cons nat x lf2).
+Lemma conj1: forall (lf1 : list nat) (y : nat), @In nat y lf1.
+Lemma conj1_imp: forall (x : nat) (bl : list nat) (lf1 : list nat) (y : nat) (a : nat), @Permutation nat lf1 (@cons nat y bl) -> gt x a -> @In nat y lf1.
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 40 seconds
+Valid:
+Lemma conj1_imp: forall (x : nat) (bl : list nat) (lf1 : list nat) (y : nat) (a : nat), @Permutation nat lf1 (@cons nat y bl) -> gt x a -> @In nat y lf1.
+Lemma conj3_imp: forall (lf2 : list nat) (x : nat) (bl : list nat) (y : nat) (a : nat), @Permutation nat (@cons nat x lf2) (@cons nat y bl) -> gt x a -> @In nat y (@cons nat x lf2).
+Lemma conj4_imp: forall (x : nat) (bl : list nat) (al : list nat) (y : nat) (a : nat), @Permutation nat (@cons nat x (@cons nat a al)) (@cons nat y bl) -> @eq (prod nat (list nat))
+  (let (j, l') := select a al in @pair nat (list nat) j (@cons nat x l'))
+  (@pair nat (list nat) y bl) -> gt x a -> @In nat y (@cons nat x (@cons nat a al)).
+
+Invalid:
+Lemma conj1: forall (lf1 : list nat) (y : nat), @In nat y lf1.
+Lemma conj3: forall (lf2 : list nat) (x : nat) (y : nat), @In nat y (@cons nat x lf2).
+Lemma conj4: forall (x : nat) (al : list nat) (y : nat) (a : nat), @In nat y (@cons nat x (@cons nat a al)).
+
+
+<---CREATE SKETCHES--->
+Time elapsed: 40 seconds
+Sketches:
+Sketch conj3_sketch0 : @In nat y (##hole##)
+Sketch conj3_term_sketch0 : @eq (list nat) (@cons nat x lf2) (##hole##)
+Sketch conj4_sketch0 : @In nat y (##hole##)
+Sketch conj4_sketch1 : @In nat y (@cons nat x (##hole##))
+Sketch conj4_term_sketch0 : @eq (list nat) (@cons nat x (@cons nat a al)) (##hole##)
+Sketch conj4_term_sketch1 : @eq (list nat) (@cons nat a al) (##hole##)
+
+
+<---CREATE SYNTHESIS PROBLEMS--->
+Time elapsed: 49 seconds
+Problems per Sketch:
+Sketch conj4_term_sketch1 --> Problem  synth_5
+Sketch conj3_sketch0 --> Problem  synth_1
+Sketch conj3_term_sketch0 --> Problem  synth_2
+Sketch conj4_term_sketch0 --> Problem  synth_4
+Sketch conj4_sketch0 --> Problem  synth_1
+Sketch conj4_sketch1 --> Problem  synth_3
+
+
+<--- SYNTHESIS PROBLEM RESULTS--->
+Time elapsed: 75 seconds
+
+Problem: synth_3
+
+Problem: synth_5
+
+Problem: synth_4
+
+Problem: synth_1
+
+Problem: synth_2
+ @cons nat x match lf2 with | nil => @nil nat | cons x0 r => let (y, r') := select x0 r in @cons nat y match r' with | nil => @nil nat | cons x1 r0 => let (y0, r'0) := select x1 r0 in @cons nat y0 match r'0 with | nil => @nil nat | cons x2 r1 => let (y1, r'1) := select x2 r1 in @cons nat y1 (selsort r'1 x) end end end
+ @cons nat x match lf2 with | nil => @nil nat | cons x r => let (y, r') := select x r in @cons nat y match r' with | nil => @nil nat | cons x0 r0 => let (y0, r'0) := select x0 r0 in @cons nat y0 match r'0 with | nil => @nil nat | cons x1 r1 => let (y1, r'1) := select x1 r1 in @cons nat y1 match r'1 with | nil | _ => @nil nat end end end end
+ @cons nat x match lf2 with | nil => @nil nat | cons x0 r => let (y, r') := select x0 r in @cons nat y match r' with | nil => @nil nat | cons x1 r0 => let (y0, r'0) := select x1 r0 in @cons nat y0 (selsort r'0 x) end end
+ @cons nat x match lf2 with | nil => @nil nat | cons x r => let (y, r') := select x r in @cons nat y match r' with | nil => @nil nat | cons x0 r0 => let (y0, r'0) := select x0 r0 in @cons nat y0 match r'0 with | nil | _ => @nil nat end end end
+ @cons nat x lf2
+
+<---INITIAL CANDIDATE LEMMAS--->
+Time elapsed: 75 seconds
+Lemmas:
+Lemma candidate_1: forall (a : nat) (y : nat) (lf1 : list nat) (bl : list nat) (x : nat), @Permutation nat lf1 (@cons nat y bl) -> gt x a -> @In nat y lf1.
+Lemma candidate_2: forall (a : nat) (y : nat) (bl : list nat) (x : nat) (lf2 : list nat), @Permutation nat (@cons nat x lf2) (@cons nat y bl) -> gt x a -> @In nat y (@cons nat x lf2).
+Lemma candidate_3: forall (a : nat) (y : nat) (al : list nat) (bl : list nat) (x : nat), @Permutation nat (@cons nat x (@cons nat a al)) (@cons nat y bl) -> @eq (prod nat (list nat))   (let (j, l') := select a al in @pair nat (list nat) j (@cons nat x l'))   (@pair nat (list nat) y bl) -> gt x a -> @In nat y (@cons nat x (@cons nat a al)).
+Lemma candidate_4: forall (x : nat) (lf2 : list nat), @eq (list nat) (@cons nat x lf2)   (@cons nat x match lf2 with | nil => @nil nat | cons x0 r => let (y, r') := select x0 r in @cons nat y match r' with | nil => @nil nat | cons x1 r0 => let (y0, r'0) := select x1 r0 in @cons nat y0 match r'0 with | nil => @nil nat | cons x2 r1 => let (y1, r'1) := select x2 r1 in @cons nat y1 (selsort r'1 x) end end end).
+Lemma candidate_5: forall (x : nat) (lf2 : list nat), @eq (list nat) (@cons nat x lf2)   (@cons nat x match lf2 with | nil => @nil nat | cons x r => let (y, r') := select x r in @cons nat y match r' with | nil => @nil nat | cons x0 r0 => let (y0, r'0) := select x0 r0 in @cons nat y0 match r'0 with | nil => @nil nat | cons x1 r1 => let (y1, r'1) := select x1 r1 in @cons nat y1 match r'1 with | nil | _ => @nil nat end end end end).
+Lemma candidate_6: forall (x : nat) (lf2 : list nat), @eq (list nat) (@cons nat x lf2)   (@cons nat x match lf2 with | nil => @nil nat | cons x0 r => let (y, r') := select x0 r in @cons nat y match r' with | nil => @nil nat | cons x1 r0 => let (y0, r'0) := select x1 r0 in @cons nat y0 (selsort r'0 x) end end).
+Lemma candidate_7: forall (x : nat) (lf2 : list nat), @eq (list nat) (@cons nat x lf2)   (@cons nat x match lf2 with | nil => @nil nat | cons x r => let (y, r') := select x r in @cons nat y match r' with | nil => @nil nat | cons x0 r0 => let (y0, r'0) := select x0 r0 in @cons nat y0 match r'0 with | nil | _ => @nil nat end end end).
+Lemma candidate_8: forall (x : nat) (lf2 : list nat), @eq (list nat) (@cons nat x lf2) (@cons nat x lf2).
+
+<---FILTERED CANDIDATE LEMMAS--->
+Time elapsed: 95 seconds
+Duplicates removed: 0
+Filtered by Quickchick: 4
+Filtered by script: 1
+Remaining: 3
+
+Lemmas: 
+Lemma candidate_1: forall (a : nat) (y : nat) (lf1 : list nat) (bl : list nat) (x : nat), @Permutation nat lf1 (@cons nat y bl) -> gt x a -> @In nat y lf1.
+Lemma candidate_2: forall (a : nat) (y : nat) (bl : list nat) (x : nat) (lf2 : list nat), @Permutation nat (@cons nat x lf2) (@cons nat y bl) -> gt x a -> @In nat y (@cons nat x lf2).
+Lemma candidate_3: forall (a : nat) (y : nat) (al : list nat) (bl : list nat) (x : nat), @Permutation nat (@cons nat x (@cons nat a al)) (@cons nat y bl) -> @eq (prod nat (list nat))   (let (j, l') := select a al in @pair nat (list nat) j (@cons nat x l'))   (@pair nat (list nat) y bl) -> gt x a -> @In nat y (@cons nat x (@cons nat a al)).

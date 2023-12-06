@@ -1,0 +1,338 @@
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct
+
+cp -r /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_selsortt_sorted_IN_selsortt_is_correct /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/ && coqc -R . vfa_benchmark decide.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_quickchick_generator.v
+
+export is_lfind=true
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_axiom_*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_conj1.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct//home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_conj1*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_conj2.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct//home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_conj2*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_axiom_*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_generalized_hypothesis.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_generalized_hypothesis.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_conj1_imp.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct//home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_conj1_imp*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_generalized_hypothesis.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_axiom_*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_conj1.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct//home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_conj1*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_conj1_imp.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct//home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_conj1_imp*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_axiom_*
+
+timeout  12 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_selsortt_sorted_IN_selsortt_is_correct" --module=Selection --type='@Coq.Init.Datatypes.nat' --params='lf1:list nat,x:@Coq.Init.Datatypes.nat' --extra-exprs='@vfa_benchmark.Selection.sorted ,@vfa_benchmark.Selection.list_length ,@Coq.Init.Logic.ex ,@vfa_benchmark.Selection.selsortt ,@Coq.Init.Datatypes.list ,@Coq.Init.Logic.eq ,@vfa_benchmark.Selection.selsort ,@vfa_benchmark.Selection.select ' --examples='' --num-terms=5 > /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/Selectionsynth_1synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/Selectionsynth_1synthesis.txt
+
+timeout  12 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_selsortt_sorted_IN_selsortt_is_correct" --module=Selection --type='@Coq.Init.Datatypes.nat' --params='al:list nat' --extra-exprs='@vfa_benchmark.Selection.sorted ,@vfa_benchmark.Selection.list_length ,@Coq.Init.Logic.ex ,@vfa_benchmark.Selection.selsortt ,@Coq.Init.Datatypes.list ,@Coq.Init.Logic.eq ,@vfa_benchmark.Selection.selsort ,@vfa_benchmark.Selection.select ' --examples='' --num-terms=5 > /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/Selectionsynth_2synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/Selectionsynth_2synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_axiom_*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_eval_candidate_2.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_eval_candidate_3.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_eval_candidate_4.v
+
+python3  /home/anabrendel/lfind/lemmafinder/src/filter.py --prelude="/home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct" --theorem_name="selsortt_is_correct" --theorem="Theorem selsortt_is_correct: is_a_sorting_algorithm selsortt." --lemmas  --imports "Load LFindLoad."  "From lfind Require Import LFind." "From VFA Require Import Perm." "From vfa_benchmark Require Import Selection."
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_sorted_IN_selsortt_is_correct/lfind_axiom_*
+

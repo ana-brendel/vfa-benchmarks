@@ -1,0 +1,44 @@
+File Information
+- File name: Selection
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_list_has_length_IN_selsortt_is_correct
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_list_has_length_IN_selsortt_is_correct
+- Namespace: vfa_benchmark
+- Proof name: selsortt_is_correct
+- Theorem: Theorem selsortt_is_correct: is_a_sorting_algorithm selsortt.
+- Declarations: 
+From lfind Require Import LFind.
+From VFA Require Import Perm.
+
+Proof Context
+* Goal State: @ex nat (fun x : nat => @eq nat (@list_length nat al) x)
+
+* Hypothesis:
+al : list nat
+
+* Types:
+Set
+Prop
+nat
+forall _ : nat, Prop
+list nat
+
+* Polymorphic Types:
+list nat
+
+* Variables:
+al : list nat
+
+* Terms:
+list nat : Set
+nat : Set
+@list_length nat al : nat
+@ex nat (fun x : nat => @eq nat (@list_length nat al) x) : Prop
+al : list nat
+fun x : nat => @eq nat (@list_length nat al) x : forall _ : nat, Prop
+@eq nat (@list_length nat al) _UNBOUND_REL_1 : Prop
+
+* Functions:
+@list_length  : forall (T : Type) (_ : list T), nat
+ex  : forall (A : Type) (_ : forall _ : A, Prop), Prop
+list  : forall _ : Type, Type
+@eq  : forall (A : Type) (_ : A) (_ : A), Prop

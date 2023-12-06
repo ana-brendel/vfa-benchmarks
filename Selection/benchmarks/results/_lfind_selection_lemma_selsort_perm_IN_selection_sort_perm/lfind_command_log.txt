@@ -1,0 +1,36 @@
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsort_perm_IN_selection_sort_perm
+
+cp -r /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_selsort_perm_IN_selection_sort_perm /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsort_perm_IN_selection_sort_perm
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsort_perm_IN_selection_sort_perm/ && coqc -R . vfa_benchmark decide.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsort_perm_IN_selection_sort_perm/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsort_perm_IN_selection_sort_perm/lfind_quickchick_generator.v
+
+export is_lfind=true
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsort_perm_IN_selection_sort_perm/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsort_perm_IN_selection_sort_perm/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsort_perm_IN_selection_sort_perm/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsort_perm_IN_selection_sort_perm/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsort_perm_IN_selection_sort_perm/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsort_perm_IN_selection_sort_perm/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsort_perm_IN_selection_sort_perm/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsort_perm_IN_selection_sort_perm/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsort_perm_IN_selection_sort_perm/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsort_perm_IN_selection_sort_perm/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsort_perm_IN_selection_sort_perm/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsort_perm_IN_selection_sort_perm/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsort_perm_IN_selection_sort_perm/lfind_axiom_*
+

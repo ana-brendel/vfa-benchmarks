@@ -1,0 +1,35 @@
+LFind Results
+LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_Permutation_in_IN_select_in
+
+
+Number of Lemmas: 8
+Number of Lemmas (after duplicates removed): 8
+Number of Lemmas (after QuickChick used to filter): 4
+* Number of Candidate Lemmas: 3
+
+Time until ranking: 95
+Time to complete: 95
+
+Stuck state true independent of hypotheses: false
+
+Category 1:
+Count = 0
+
+
+Category 2:
+Count = 0
+
+
+Category 3 (provable):
+Count = 0
+
+
+
+All lemmas here because ranking is turned off right now...
+
+Category 3 (not provable):
+Count = 3
+
+Lemma candidate_1: forall (a : nat) (y : nat) (lf1 : list nat) (bl : list nat) (x : nat), @Permutation nat lf1 (@cons nat y bl) -> gt x a -> @In nat y lf1.
+Lemma candidate_2: forall (a : nat) (y : nat) (bl : list nat) (x : nat) (lf2 : list nat), @Permutation nat (@cons nat x lf2) (@cons nat y bl) -> gt x a -> @In nat y (@cons nat x lf2).
+Lemma candidate_3: forall (a : nat) (y : nat) (al : list nat) (bl : list nat) (x : nat), @Permutation nat (@cons nat x (@cons nat a al)) (@cons nat y bl) -> @eq (prod nat (list nat))   (let (j, l') := select a al in @pair nat (list nat) j (@cons nat x l'))   (@pair nat (list nat) y bl) -> gt x a -> @In nat y (@cons nat x (@cons nat a al)).

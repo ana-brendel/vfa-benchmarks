@@ -1,0 +1,76 @@
+File Information
+- File name: Selection
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_Permutation_sym_IN_cons_of_small_maintains_sortt
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_Permutation_sym_IN_cons_of_small_maintains_sortt
+- Namespace: vfa_benchmark
+- Proof name: cons_of_small_maintains_sortt
+- Theorem: Theorem cons_of_small_maintains_sortt: forall (bl0 : list nat) (y0 : nat) (_ : le_all y0 bl0)
+  (_ : sorted (selsortt bl0)), sorted (@cons nat y0 (selsortt bl0)).
+- Declarations: 
+From lfind Require Import LFind.
+From VFA Require Import Perm.
+
+Proof Context
+* Goal State: @Permutation nat ?l bl
+
+* Hypothesis:
+H0 : sorted (@cons nat a l)
+H1 : @Permutation nat bl (@cons nat a l)
+L : @ex nat (fun x0 : nat => @eq nat (@list_length nat bl) x0)
+x : nat
+bl : list nat
+H : le_all y bl
+IHl : forall (_ : sorted l) (_ : @Permutation nat bl l), sorted (@cons nat y l)
+y : nat
+l : list nat
+a : nat
+
+* Types:
+Set
+Prop
+nat
+forall _ : nat, Prop
+list nat
+
+* Polymorphic Types:
+list nat
+
+* Variables:
+bl : list nat
+y : nat
+l : list nat
+a : nat
+
+* Terms:
+list nat : Set
+le_all y bl : Prop
+@cons nat a l : list nat
+forall (_ : sorted l) (_ : @Permutation nat bl l), sorted (@cons nat y l) : Prop
+@Permutation nat ?l bl : Prop
+sorted (@cons nat y l) : Prop
+@eq nat (@list_length nat bl) _UNBOUND_REL_1 : Prop
+@list_length nat bl : nat
+bl : list nat
+@Permutation nat bl (@cons nat a l) : Prop
+y : nat
+l : list nat
+fun x0 : nat => @eq nat (@list_length nat bl) x0 : forall _ : nat, Prop
+nat : Set
+?l : list nat
+sorted (@cons nat a l) : Prop
+forall _ : @Permutation nat bl l, sorted (@cons nat y l) : Prop
+@ex nat (fun x0 : nat => @eq nat (@list_length nat bl) x0) : Prop
+@cons nat y l : list nat
+sorted l : Prop
+@Permutation nat bl l : Prop
+a : nat
+
+* Functions:
+sorted  : forall _ : list nat, Prop
+@list_length  : forall (T : Type) (_ : list T), nat
+ex  : forall (A : Type) (_ : forall _ : A, Prop), Prop
+le_all  : forall (_ : nat) (_ : list nat), Prop
+list  : forall _ : Type, Type
+@cons  : forall (A : Type) (_ : A) (_ : list A), list A
+Permutation  : forall (A : Type) (_ : list A) (_ : list A), Prop
+@eq  : forall (A : Type) (_ : A) (_ : A), Prop

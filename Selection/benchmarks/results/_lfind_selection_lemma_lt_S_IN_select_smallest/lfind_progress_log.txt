@@ -1,0 +1,237 @@
+File Information
+- File name: Selection
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_lt_S_IN_select_smallest
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_lt_S_IN_select_smallest
+- Namespace: vfa_benchmark
+- Proof name: select_smallest
+- Theorem: Theorem select_smallest: forall (al0 bl0 : list nat) (x2 y0 : nat)
+  (_ : @eq (prod nat (list nat)) (select x2 al0)
+         (@pair nat (list nat) y0 bl0)), le_all y0 bl0.
+- Declarations: 
+From lfind Require Import LFind.
+From VFA Require Import Perm.
+
+Proof Context
+* Goal State: lt x0 (S x)
+
+* Hypothesis:
+H4 : @eq (prod nat (list nat)) (select a al) (@pair nat (list nat) x0 x1)
+IHal : forall (y0 x2 : nat) (bl0 : list nat)
+  (_ : @eq (prod nat (list nat)) (select x2 al) (@pair nat (list nat) y0 bl0)),
+@Forall nat (fun y1 : nat => le y0 y1) bl0
+H6 : @eq (list nat) (@cons nat x x1) bl
+H0 : gt x a
+x0 : nat
+H2 : @Forall nat (fun y0 : nat => le x0 y0) x1
+H1 : @ex (list nat)
+  (fun j : list nat =>
+   @eq (prod nat (list nat)) (select a al) (@pair nat (list nat) x0 j))
+bl : list nat
+x : nat
+H : @eq (prod nat (list nat)) (@pair nat (list nat) x0 (@cons nat x x1))
+  (@pair nat (list nat) y bl)
+x1 : list nat
+al : list nat
+y : nat
+H5 : @eq nat x0 y
+e : @ex nat
+  (fun i : nat =>
+   @ex (list nat)
+     (fun j : list nat =>
+      @eq (prod nat (list nat)) (select a al) (@pair nat (list nat) i j)))
+a : nat
+
+* Types:
+Set
+Prop
+forall _ : list nat, Prop
+nat
+forall _ : nat, Prop
+prod nat (list nat)
+list nat
+
+* Polymorphic Types:
+list nat
+prod nat (list nat)
+
+* Variables:
+x0 : nat
+x : nat
+bl : list nat
+x1 : list nat
+al : list nat
+y : nat
+a : nat
+
+* Terms:
+list nat : Set
+prod nat (list nat) : Set
+@cons nat x x1 : list nat
+x0 : nat
+bl : list nat
+x : nat
+forall (bl0 : list nat)
+  (_ : @eq (prod nat (list nat)) (select _UNBOUND_REL_2 al)
+         (@pair nat (list nat) _UNBOUND_REL_3 bl0)),
+@Forall nat (fun y0 : nat => le _UNBOUND_REL_5 y0) bl0 : Prop
+fun i : nat =>
+@ex (list nat)
+  (fun j : list nat =>
+   @eq (prod nat (list nat)) (select a al) (@pair nat (list nat) i j)) : forall _ : nat, Prop
+y : nat
+@ex nat
+  (fun i : nat =>
+   @ex (list nat)
+     (fun j : list nat =>
+      @eq (prod nat (list nat)) (select a al) (@pair nat (list nat) i j))) : Prop
+@ex (list nat)
+  (fun j : list nat =>
+   @eq (prod nat (list nat)) (select a al)
+     (@pair nat (list nat) _UNBOUND_REL_2 j)) : Prop
+le _UNBOUND_REL_5 _UNBOUND_REL_1 : Prop
+forall (y0 x2 : nat) (bl0 : list nat)
+  (_ : @eq (prod nat (list nat)) (select x2 al) (@pair nat (list nat) y0 bl0)),
+@Forall nat (fun y1 : nat => le y0 y1) bl0 : Prop
+@Forall nat (fun y0 : nat => le x0 y0) x1 : Prop
+@eq (list nat) (@cons nat x x1) bl : Prop
+@ex (list nat)
+  (fun j : list nat =>
+   @eq (prod nat (list nat)) (select a al) (@pair nat (list nat) x0 j)) : Prop
+x1 : list nat
+@pair nat (list nat) x0 (@cons nat x x1) : prod nat (list nat)
+@eq (prod nat (list nat)) (select a al) (@pair nat (list nat) x0 x1) : Prop
+lt x0 (S x) : Prop
+@Forall nat (fun y0 : nat => le _UNBOUND_REL_5 y0) _UNBOUND_REL_2 : Prop
+@eq (prod nat (list nat)) (select a al)
+  (@pair nat (list nat) _UNBOUND_REL_2 _UNBOUND_REL_1) : Prop
+@eq (prod nat (list nat)) (select _UNBOUND_REL_2 al)
+  (@pair nat (list nat) _UNBOUND_REL_3 _UNBOUND_REL_1) : Prop
+@pair nat (list nat) x0 _UNBOUND_REL_1 : prod nat (list nat)
+@eq (prod nat (list nat)) (@pair nat (list nat) x0 (@cons nat x x1))
+  (@pair nat (list nat) y bl) : Prop
+gt x a : Prop
+le x0 _UNBOUND_REL_1 : Prop
+al : list nat
+fun j : list nat =>
+@eq (prod nat (list nat)) (select a al) (@pair nat (list nat) x0 j) : forall _ : list nat, Prop
+@pair nat (list nat) _UNBOUND_REL_3 _UNBOUND_REL_1 : prod nat (list nat)
+@eq nat x0 y : Prop
+fun y0 : nat => le x0 y0 : forall _ : nat, Prop
+@pair nat (list nat) x0 x1 : prod nat (list nat)
+fun j : list nat =>
+@eq (prod nat (list nat)) (select a al)
+  (@pair nat (list nat) _UNBOUND_REL_2 j) : forall _ : list nat, Prop
+nat : Set
+S x : nat
+fun y0 : nat => le _UNBOUND_REL_5 y0 : forall _ : nat, Prop
+@pair nat (list nat) y bl : prod nat (list nat)
+select a al : prod nat (list nat)
+select _UNBOUND_REL_2 al : prod nat (list nat)
+@eq (prod nat (list nat)) (select a al)
+  (@pair nat (list nat) x0 _UNBOUND_REL_1) : Prop
+@pair nat (list nat) _UNBOUND_REL_2 _UNBOUND_REL_1 : prod nat (list nat)
+a : nat
+forall
+  _ : @eq (prod nat (list nat)) (select _UNBOUND_REL_2 al)
+        (@pair nat (list nat) _UNBOUND_REL_3 _UNBOUND_REL_1),
+@Forall nat (fun y0 : nat => le _UNBOUND_REL_5 y0) _UNBOUND_REL_2 : Prop
+forall (x2 : nat) (bl0 : list nat)
+  (_ : @eq (prod nat (list nat)) (select x2 al)
+         (@pair nat (list nat) _UNBOUND_REL_3 bl0)),
+@Forall nat (fun y0 : nat => le _UNBOUND_REL_5 y0) bl0 : Prop
+
+* Functions:
+Forall  : forall (A : Type) (_ : forall _ : A, Prop) (_ : list A), Prop
+prod  : forall (_ : Type) (_ : Type), Type
+@pair  : forall (A B : Type) (_ : A) (_ : B), prod A B
+select  : forall (_ : nat) (_ : list nat), prod nat (list nat)
+ex  : forall (A : Type) (_ : forall _ : A, Prop), Prop
+gt  : forall (_ : nat) (_ : nat), Prop
+le  : forall (_ : nat) (_ : nat), Prop
+list  : forall _ : Type, Type
+S  : forall _ : nat, nat
+@cons  : forall (A : Type) (_ : A) (_ : list A), list A
+@eq  : forall (A : Type) (_ : A) (_ : A), Prop
+lt  : forall (_ : nat) (_ : nat), Prop
+
+<---GENERALIZATION--->
+Time elapsed: 6 seconds
+Generalized Variables:
+lf1 : nat = S x
+
+Generalizations:
+Lemma conj1: forall (x0 : nat) (lf1 : nat), lt x0 lf1.
+Lemma conj2: forall (x0 : nat) (x : nat), lt x0 (S x).
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 28 seconds
+Valid:
+
+Invalid:
+Lemma conj2: forall (x0 : nat) (x : nat), lt x0 (S x).
+Lemma conj1: forall (x0 : nat) (lf1 : nat), lt x0 lf1.
+
+<---ADD IMPLICATIONS--->
+Time elapsed: 49 seconds
+Generalizations:
+Lemma conj2: forall (x0 : nat) (x : nat), lt x0 (S x).
+Lemma conj2_imp: forall (x0 : nat) (x : nat) (bl : list nat) (x1 : list nat) (al : list nat) (y : nat) (a : nat), @eq (prod nat (list nat)) (@pair nat (list nat) x0 (@cons nat x x1))
+  (@pair nat (list nat) y bl) -> gt x a -> @eq (prod nat (list nat)) (select a al) (@pair nat (list nat) x0 x1) -> @eq nat x0 y -> @eq (list nat) (@cons nat x x1) bl -> lt x0 (S x).
+Lemma conj1: forall (x0 : nat) (lf1 : nat), lt x0 lf1.
+Lemma conj1_imp: forall (x0 : nat) (bl : list nat) (x : nat) (lf1 : nat) (x1 : list nat) (al : list nat) (y : nat) (a : nat), @eq (prod nat (list nat)) (@pair nat (list nat) x0 (@cons nat x x1))
+  (@pair nat (list nat) y bl) -> gt x a -> @eq (prod nat (list nat)) (select a al) (@pair nat (list nat) x0 x1) -> @eq nat x0 y -> @eq (list nat) (@cons nat x x1) bl -> lt x0 lf1.
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 56 seconds
+Valid:
+Lemma conj1_imp: forall (x0 : nat) (bl : list nat) (x : nat) (lf1 : nat) (x1 : list nat) (al : list nat) (y : nat) (a : nat), @eq (prod nat (list nat)) (@pair nat (list nat) x0 (@cons nat x x1))
+  (@pair nat (list nat) y bl) -> gt x a -> @eq (prod nat (list nat)) (select a al) (@pair nat (list nat) x0 x1) -> @eq nat x0 y -> @eq (list nat) (@cons nat x x1) bl -> lt x0 lf1.
+Lemma conj2_imp: forall (x0 : nat) (x : nat) (bl : list nat) (x1 : list nat) (al : list nat) (y : nat) (a : nat), @eq (prod nat (list nat)) (@pair nat (list nat) x0 (@cons nat x x1))
+  (@pair nat (list nat) y bl) -> gt x a -> @eq (prod nat (list nat)) (select a al) (@pair nat (list nat) x0 x1) -> @eq nat x0 y -> @eq (list nat) (@cons nat x x1) bl -> lt x0 (S x).
+
+Invalid:
+Lemma conj1: forall (x0 : nat) (lf1 : nat), lt x0 lf1.
+Lemma conj2: forall (x0 : nat) (x : nat), lt x0 (S x).
+
+
+<---CREATE SKETCHES--->
+Time elapsed: 56 seconds
+Sketches:
+Sketch conj2_sketch0 : lt x0 (##hole##)
+Sketch conj2_term_sketch0 : @eq nat (S x) (##hole##)
+
+
+<---CREATE SYNTHESIS PROBLEMS--->
+Time elapsed: 95 seconds
+Problems per Sketch:
+Sketch conj2_term_sketch0 --> Problem  synth_2
+Sketch conj2_sketch0 --> Problem  synth_1
+
+
+<--- SYNTHESIS PROBLEM RESULTS--->
+Time elapsed: 120 seconds
+
+Problem: synth_1
+
+Problem: synth_2
+ S x
+
+<---INITIAL CANDIDATE LEMMAS--->
+Time elapsed: 120 seconds
+Lemmas:
+Lemma candidate_1: forall (a : nat) (y : nat) (al : list nat) (x1 : list nat) (lf1 : nat) (x : nat) (bl : list nat) (x0 : nat), @eq (prod nat (list nat)) (@pair nat (list nat) x0 (@cons nat x x1))   (@pair nat (list nat) y bl) -> gt x a -> @eq (prod nat (list nat)) (select a al) (@pair nat (list nat) x0 x1) -> @eq nat x0 y -> @eq (list nat) (@cons nat x x1) bl -> lt x0 lf1.
+Lemma candidate_2: forall (a : nat) (y : nat) (al : list nat) (x1 : list nat) (bl : list nat) (x : nat) (x0 : nat), @eq (prod nat (list nat)) (@pair nat (list nat) x0 (@cons nat x x1))   (@pair nat (list nat) y bl) -> gt x a -> @eq (prod nat (list nat)) (select a al) (@pair nat (list nat) x0 x1) -> @eq nat x0 y -> @eq (list nat) (@cons nat x x1) bl -> lt x0 (S x).
+Lemma candidate_3: forall (x : nat), @eq nat (S x) (S x).
+
+<---FILTERED CANDIDATE LEMMAS--->
+Time elapsed: 131 seconds
+Duplicates removed: 0
+Filtered by Quickchick: 0
+Filtered by script: 1
+Remaining: 2
+
+Lemmas: 
+Lemma candidate_1: forall (a : nat) (y : nat) (al : list nat) (x1 : list nat) (lf1 : nat) (x : nat) (bl : list nat) (x0 : nat), @eq (prod nat (list nat)) (@pair nat (list nat) x0 (@cons nat x x1))   (@pair nat (list nat) y bl) -> gt x a -> @eq (prod nat (list nat)) (select a al) (@pair nat (list nat) x0 x1) -> @eq nat x0 y -> @eq (list nat) (@cons nat x x1) bl -> lt x0 lf1.
+Lemma candidate_2: forall (a : nat) (y : nat) (al : list nat) (x1 : list nat) (bl : list nat) (x : nat) (x0 : nat), @eq (prod nat (list nat)) (@pair nat (list nat) x0 (@cons nat x x1))   (@pair nat (list nat) y bl) -> gt x a -> @eq (prod nat (list nat)) (select a al) (@pair nat (list nat) x0 x1) -> @eq nat x0 y -> @eq (list nat) (@cons nat x x1) bl -> lt x0 (S x).

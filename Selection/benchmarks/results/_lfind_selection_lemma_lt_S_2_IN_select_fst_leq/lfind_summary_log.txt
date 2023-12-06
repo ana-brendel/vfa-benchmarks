@@ -1,0 +1,34 @@
+LFind Results
+LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_lt_S_2_IN_select_fst_leq
+
+
+Number of Lemmas: 3
+Number of Lemmas (after duplicates removed): 3
+Number of Lemmas (after QuickChick used to filter): 3
+* Number of Candidate Lemmas: 2
+
+Time until ranking: 93
+Time to complete: 94
+
+Stuck state true independent of hypotheses: false
+
+Category 1:
+Count = 0
+
+
+Category 2:
+Count = 0
+
+
+Category 3 (provable):
+Count = 0
+
+
+
+All lemmas here because ranking is turned off right now...
+
+Category 3 (not provable):
+Count = 2
+
+Lemma candidate_1: forall (a : nat) (y : nat) (x1 : list nat) (lf1 : nat) (m : nat) (bl : list nat) (x : nat) (x0 : nat), @eq (prod nat (list nat)) (@pair nat (list nat) x0 (@cons nat x x1))   (@pair nat (list nat) y bl) -> lt a x -> @eq nat x0 y -> @eq (list nat) (@cons nat x x1) bl -> lt x0 a -> @eq nat (S m) a -> lt x0 x -> lt x0 lf1.
+Lemma candidate_2: forall (a : nat) (y : nat) (x1 : list nat) (m : nat) (bl : list nat) (x : nat) (x0 : nat), @eq (prod nat (list nat)) (@pair nat (list nat) x0 (@cons nat x x1))   (@pair nat (list nat) y bl) -> lt a x -> le x0 a -> @eq nat x0 y -> @eq (list nat) (@cons nat x x1) bl -> lt x0 a -> @eq nat (S m) a -> lt x0 x -> lt x0 (S x).

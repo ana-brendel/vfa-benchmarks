@@ -1,0 +1,35 @@
+LFind Results
+LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_length_zero_iff_nil_IN_selsort_perm
+
+
+Number of Lemmas: 4
+Number of Lemmas (after duplicates removed): 4
+Number of Lemmas (after QuickChick used to filter): 4
+* Number of Candidate Lemmas: 3
+
+Time until ranking: 48
+Time to complete: 49
+
+Stuck state true independent of hypotheses: false
+
+Category 1:
+Count = 0
+
+
+Category 2:
+Count = 0
+
+
+Category 3 (provable):
+Count = 0
+
+
+
+All lemmas here because ranking is turned off right now...
+
+Category 3 (not provable):
+Count = 3
+
+Lemma candidate_1: forall (l : list nat) (lf1 : list nat), @eq nat (@list_length nat l) O -> @Permutation nat l lf1.
+Lemma candidate_3: forall (l : list nat), @eq nat (@list_length nat l) O -> @Permutation nat l (selsort l O).
+Lemma candidate_2: forall (l : list nat) (lf2 : nat), @eq nat (@list_length nat l) lf2 -> @Permutation nat l (selsort l lf2).

@@ -1,0 +1,33 @@
+LFind Results
+LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_or_assoc_IN_select_in
+
+
+Number of Lemmas: 1
+Number of Lemmas (after duplicates removed): 1
+Number of Lemmas (after QuickChick used to filter): 1
+* Number of Candidate Lemmas: 1
+
+Time until ranking: 24
+Time to complete: 24
+
+Stuck state true independent of hypotheses: false
+
+Category 1:
+Count = 0
+
+
+Category 2:
+Count = 0
+
+
+Category 3 (provable):
+Count = 0
+
+
+
+All lemmas here because ranking is turned off right now...
+
+Category 3 (not provable):
+Count = 1
+
+Lemma candidate_1: forall (a : nat) (y : nat) (al : list nat) (bl : list nat) (x : nat), @eq (prod nat (list nat)) (select x (@cons nat a al))   (@pair nat (list nat) y bl) -> @eq (prod nat (list nat))   (let (j, l') := select x al in @pair nat (list nat) j (@cons nat a l'))   (@pair nat (list nat) y bl) -> le x a -> or (or (@eq nat a y) (@In nat y al)) (@eq nat x y).

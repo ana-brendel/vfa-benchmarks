@@ -1,0 +1,210 @@
+File Information
+- File name: Selection
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_Permutation_length_IN_select_rest_length
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_Permutation_length_IN_select_rest_length
+- Namespace: vfa_benchmark
+- Proof name: select_rest_length
+- Theorem: Theorem select_rest_length: forall (x0 : nat) (l0 : list nat) (y0 : nat) (r0 : list nat)
+  (_ : @eq (prod nat (list nat)) (select x0 l0) (@pair nat (list nat) y0 r0)),
+@eq nat (@list_length nat l0) (@list_length nat r0).
+- Declarations: 
+From lfind Require Import LFind.
+From VFA Require Import Perm.
+
+Proof Context
+* Goal State: @eq nat (@list_length nat l) (@list_length nat r)
+
+* Hypothesis:
+r : list nat
+x : nat
+H : @Permutation nat (@cons nat x l) (@cons nat y r)
+y : nat
+l : list nat
+
+* Types:
+Set
+Prop
+nat
+list nat
+
+* Polymorphic Types:
+list nat
+
+* Variables:
+r : list nat
+x : nat
+y : nat
+l : list nat
+
+* Terms:
+list nat : Set
+@list_length nat r : nat
+nat : Set
+r : list nat
+@cons nat x l : list nat
+x : nat
+y : nat
+@Permutation nat (@cons nat x l) (@cons nat y r) : Prop
+@cons nat y r : list nat
+l : list nat
+@eq nat (@list_length nat l) (@list_length nat r) : Prop
+@list_length nat l : nat
+
+* Functions:
+@list_length  : forall (T : Type) (_ : list T), nat
+list  : forall _ : Type, Type
+@cons  : forall (A : Type) (_ : A) (_ : list A), list A
+Permutation  : forall (A : Type) (_ : list A) (_ : list A), Prop
+@eq  : forall (A : Type) (_ : A) (_ : A), Prop
+
+<---GENERALIZATION--->
+Time elapsed: 2 seconds
+Generalized Variables:
+lf1 : nat = @list_length nat r
+lf2 : nat = @list_length nat l
+
+Generalizations:
+Lemma conj1: forall (lf2 : nat) (lf1 : nat), @eq nat lf2 lf1.
+Lemma conj2: forall (lf1 : nat) (l : list nat), @eq nat (@list_length nat l) lf1.
+Lemma conj3: forall (lf2 : nat) (r : list nat), @eq nat lf2 (@list_length nat r).
+Lemma conj4: forall (r : list nat) (l : list nat), @eq nat (@list_length nat l) (@list_length nat r).
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 29 seconds
+Valid:
+Lemma conj4: forall (r : list nat) (l : list nat), @eq nat (@list_length nat l) (@list_length nat r).
+
+Invalid:
+Lemma conj3: forall (lf2 : nat) (r : list nat), @eq nat lf2 (@list_length nat r).
+Lemma conj2: forall (lf1 : nat) (l : list nat), @eq nat (@list_length nat l) lf1.
+Lemma conj1: forall (lf2 : nat) (lf1 : nat), @eq nat lf2 lf1.
+
+<---ADD IMPLICATIONS--->
+Time elapsed: 39 seconds
+Generalizations:
+Lemma conj3: forall (lf2 : nat) (r : list nat), @eq nat lf2 (@list_length nat r).
+Lemma conj3_imp: forall (lf2 : nat) (r : list nat) (x : nat) (y : nat) (l : list nat), @Permutation nat (@cons nat x l) (@cons nat y r) -> @eq nat lf2 (@list_length nat r).
+Lemma conj2: forall (lf1 : nat) (l : list nat), @eq nat (@list_length nat l) lf1.
+Lemma conj2_imp: forall (r : list nat) (x : nat) (lf1 : nat) (y : nat) (l : list nat), @Permutation nat (@cons nat x l) (@cons nat y r) -> @eq nat (@list_length nat l) lf1.
+Lemma conj1: forall (lf2 : nat) (lf1 : nat), @eq nat lf2 lf1.
+Lemma conj1_imp: forall (lf2 : nat) (r : list nat) (x : nat) (lf1 : nat) (y : nat) (l : list nat), @Permutation nat (@cons nat x l) (@cons nat y r) -> @eq nat lf2 lf1.
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 48 seconds
+Valid:
+
+Invalid:
+Lemma conj1_imp: forall (lf2 : nat) (r : list nat) (x : nat) (lf1 : nat) (y : nat) (l : list nat), @Permutation nat (@cons nat x l) (@cons nat y r) -> @eq nat lf2 lf1.
+Lemma conj1: forall (lf2 : nat) (lf1 : nat), @eq nat lf2 lf1.
+Lemma conj2_imp: forall (r : list nat) (x : nat) (lf1 : nat) (y : nat) (l : list nat), @Permutation nat (@cons nat x l) (@cons nat y r) -> @eq nat (@list_length nat l) lf1.
+Lemma conj2: forall (lf1 : nat) (l : list nat), @eq nat (@list_length nat l) lf1.
+Lemma conj3_imp: forall (lf2 : nat) (r : list nat) (x : nat) (y : nat) (l : list nat), @Permutation nat (@cons nat x l) (@cons nat y r) -> @eq nat lf2 (@list_length nat r).
+Lemma conj3: forall (lf2 : nat) (r : list nat), @eq nat lf2 (@list_length nat r).
+
+
+<---CREATE SKETCHES--->
+Time elapsed: 48 seconds
+Sketches:
+Sketch conj1_imp_sketch0 : forall _ : @Permutation nat (##hole##) (@cons nat y r), @eq nat lf2 lf1
+Sketch conj1_imp_sketch1 : forall _ : @Permutation nat (@cons nat x l) (##hole##), @eq nat lf2 lf1
+Sketch conj1_imp_term_sketch0 : @eq (list nat) (@cons nat x l) (##hole##)
+Sketch conj1_imp_term_sketch1 : @eq (list nat) (@cons nat y r) (##hole##)
+Sketch conj2_imp_sketch0 : forall _ : @Permutation nat (##hole##) (@cons nat y r),
+@eq nat (@list_length nat l) lf1
+Sketch conj2_imp_sketch1 : forall _ : @Permutation nat (@cons nat x l) (##hole##),
+@eq nat (@list_length nat l) lf1
+Sketch conj2_imp_sketch2 : forall _ : @Permutation nat (@cons nat x l) (@cons nat y r),
+@eq nat (##hole##) lf1
+Sketch conj2_imp_term_sketch0 : @eq (list nat) (@cons nat x l) (##hole##)
+Sketch conj2_imp_term_sketch1 : @eq (list nat) (@cons nat y r) (##hole##)
+Sketch conj2_imp_term_sketch2 : @eq nat (@list_length nat l) (##hole##)
+Sketch conj2_sketch0 : @eq nat (##hole##) lf1
+Sketch conj2_term_sketch0 : @eq nat (@list_length nat l) (##hole##)
+Sketch conj3_imp_sketch0 : forall _ : @Permutation nat (@cons nat x l) (@cons nat y r),
+@eq nat lf2 (##hole##)
+Sketch conj3_imp_sketch1 : forall _ : @Permutation nat (##hole##) (@cons nat y r),
+@eq nat lf2 (@list_length nat r)
+Sketch conj3_imp_sketch2 : forall _ : @Permutation nat (@cons nat x l) (##hole##),
+@eq nat lf2 (@list_length nat r)
+Sketch conj3_imp_term_sketch0 : @eq nat (@list_length nat r) (##hole##)
+Sketch conj3_imp_term_sketch1 : @eq (list nat) (@cons nat x l) (##hole##)
+Sketch conj3_imp_term_sketch2 : @eq (list nat) (@cons nat y r) (##hole##)
+Sketch conj3_sketch0 : @eq nat lf2 (##hole##)
+Sketch conj3_term_sketch0 : @eq nat (@list_length nat r) (##hole##)
+
+
+<---CREATE SYNTHESIS PROBLEMS--->
+Time elapsed: 268 seconds
+Problems per Sketch:
+Sketch conj3_imp_term_sketch0 --> Problem  synth_13
+Sketch conj2_imp_term_sketch0 --> Problem  synth_3
+Sketch conj1_imp_sketch1 --> Problem  synth_2
+Sketch conj3_term_sketch0 --> Problem  synth_13
+Sketch conj3_imp_term_sketch2 --> Problem  synth_4
+Sketch conj3_imp_term_sketch1 --> Problem  synth_3
+Sketch conj3_imp_sketch1 --> Problem  synth_11
+Sketch conj3_imp_sketch0 --> Problem  synth_10
+Sketch conj2_imp_sketch0 --> Problem  synth_5
+Sketch conj1_imp_term_sketch0 --> Problem  synth_3
+Sketch conj1_imp_sketch0 --> Problem  synth_1
+Sketch conj2_term_sketch0 --> Problem  synth_8
+Sketch conj3_sketch0 --> Problem  synth_14
+Sketch conj2_imp_term_sketch2 --> Problem  synth_8
+Sketch conj2_imp_sketch2 --> Problem  synth_7
+Sketch conj2_imp_sketch1 --> Problem  synth_6
+Sketch conj1_imp_term_sketch1 --> Problem  synth_4
+Sketch conj3_imp_sketch2 --> Problem  synth_12
+Sketch conj2_sketch0 --> Problem  synth_9
+Sketch conj2_imp_term_sketch1 --> Problem  synth_4
+
+
+<--- SYNTHESIS PROBLEM RESULTS--->
+Time elapsed: 278 seconds
+
+Problem: synth_14
+ lf2
+
+Problem: synth_10
+
+Problem: synth_8
+
+Problem: synth_3
+
+Problem: synth_9
+ lf1
+
+Problem: synth_13
+
+Problem: synth_12
+
+Problem: synth_6
+
+Problem: synth_11
+
+Problem: synth_7
+
+Problem: synth_5
+
+Problem: synth_4
+
+Problem: synth_1
+
+Problem: synth_2
+
+<---INITIAL CANDIDATE LEMMAS--->
+Time elapsed: 278 seconds
+Lemmas:
+Lemma candidate_1: forall (l : list nat) (r : list nat), @eq nat (@list_length nat l) (@list_length nat r).
+Lemma candidate_2: forall (lf1 : nat), @eq nat (lf1) lf1.
+Lemma candidate_3: forall (lf2 : nat), @eq nat lf2 (lf2).
+
+<---FILTERED CANDIDATE LEMMAS--->
+Time elapsed: 282 seconds
+Duplicates removed: 1
+Filtered by Quickchick: 0
+Filtered by script: 2
+Remaining: 0
+
+Lemmas: 

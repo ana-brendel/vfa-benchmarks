@@ -1,0 +1,31 @@
+LFind Results
+LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_select_rest_length_IN_selsortt_sorted
+
+
+Number of Lemmas: 3
+Number of Lemmas (after duplicates removed): 2
+Number of Lemmas (after QuickChick used to filter): 2
+* Number of Candidate Lemmas: 0
+
+Time until ranking: 741
+Time to complete: 742
+
+Stuck state true independent of hypotheses: true
+
+Category 1:
+Count = 0
+
+
+Category 2:
+Count = 0
+
+
+Category 3 (provable):
+Count = 0
+
+
+
+All lemmas here because ranking is turned off right now...
+
+Category 3 (not provable):
+Count = 0

@@ -1,0 +1,3 @@
+l:(nil)
+l:(cons 1 (nil))
+l:(cons 0 (nil))

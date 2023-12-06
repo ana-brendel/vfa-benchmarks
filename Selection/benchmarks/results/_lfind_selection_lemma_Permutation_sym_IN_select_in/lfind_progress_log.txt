@@ -1,0 +1,111 @@
+File Information
+- File name: Selection
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_Permutation_sym_IN_select_in
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_Permutation_sym_IN_select_in
+- Namespace: vfa_benchmark
+- Proof name: select_in
+- Theorem: Theorem select_in: forall (al0 bl0 : list nat) (x0 y0 : nat)
+  (_ : @eq (prod nat (list nat)) (select x0 al0)
+         (@pair nat (list nat) y0 bl0)), @In nat y0 (@cons nat x0 al0).
+- Declarations: 
+From lfind Require Import LFind.
+From VFA Require Import Perm.
+
+Proof Context
+* Goal State: @Permutation nat ?l (@cons nat x (@cons nat a al))
+
+* Hypothesis:
+IHal : forall (y0 x0 : nat) (bl0 : list nat)
+  (_ : @eq (prod nat (list nat)) (select x0 al) (@pair nat (list nat) y0 bl0)),
+@In nat y0 (@cons nat x0 al)
+H0 : gt x a
+H1 : @eq (prod nat (list nat))
+  (let (j, l') := select a al in @pair nat (list nat) j (@cons nat x l'))
+  (@pair nat (list nat) y bl)
+bl : list nat
+x : nat
+H : @Permutation nat (@cons nat x (@cons nat a al)) (@cons nat y bl)
+al : list nat
+y : nat
+a : nat
+
+* Types:
+forall _ : list nat, prod nat (list nat)
+Set
+forall (_ : nat) (_ : list nat), prod nat (list nat)
+Prop
+nat
+forall _ : prod nat (list nat), Set
+prod nat (list nat)
+list nat
+
+* Polymorphic Types:
+list nat
+prod nat (list nat)
+
+* Variables:
+x : nat
+bl : list nat
+al : list nat
+y : nat
+a : nat
+
+* Terms:
+list nat : Set
+prod nat (list nat) : Set
+forall (bl0 : list nat)
+  (_ : @eq (prod nat (list nat)) (select _UNBOUND_REL_2 al)
+         (@pair nat (list nat) _UNBOUND_REL_3 bl0)),
+@In nat _UNBOUND_REL_4 (@cons nat _UNBOUND_REL_3 al) : Prop
+@cons nat x _UNBOUND_REL_1 : list nat
+bl : list nat
+x : nat
+@cons nat a al : list nat
+y : nat
+@In nat _UNBOUND_REL_4 (@cons nat _UNBOUND_REL_3 al) : Prop
+@Permutation nat ?l (@cons nat x (@cons nat a al)) : Prop
+@cons nat y bl : list nat
+@cons nat x (@cons nat a al) : list nat
+?l : list nat
+@cons nat _UNBOUND_REL_3 al : list nat
+@eq (prod nat (list nat)) (select _UNBOUND_REL_2 al)
+  (@pair nat (list nat) _UNBOUND_REL_3 _UNBOUND_REL_1) : Prop
+@Permutation nat (@cons nat x (@cons nat a al)) (@cons nat y bl) : Prop
+@eq (prod nat (list nat))
+  (let (j, l') := select a al in @pair nat (list nat) j (@cons nat x l'))
+  (@pair nat (list nat) y bl) : Prop
+gt x a : Prop
+forall (x0 : nat) (bl0 : list nat)
+  (_ : @eq (prod nat (list nat)) (select x0 al)
+         (@pair nat (list nat) _UNBOUND_REL_3 bl0)),
+@In nat _UNBOUND_REL_4 (@cons nat x0 al) : Prop
+@pair nat (list nat) _UNBOUND_REL_2 (@cons nat x _UNBOUND_REL_1) : prod nat (list nat)
+al : list nat
+fun l' : list nat => @pair nat (list nat) _UNBOUND_REL_2 (@cons nat x l') : forall _ : list nat, prod nat (list nat)
+@pair nat (list nat) _UNBOUND_REL_3 _UNBOUND_REL_1 : prod nat (list nat)
+fun (j : nat) (l' : list nat) => @pair nat (list nat) j (@cons nat x l') : forall (_ : nat) (_ : list nat), prod nat (list nat)
+fun _ : prod nat (list nat) => prod nat (list nat) : forall _ : prod nat (list nat), Set
+nat : Set
+forall
+  _ : @eq (prod nat (list nat)) (select _UNBOUND_REL_2 al)
+        (@pair nat (list nat) _UNBOUND_REL_3 _UNBOUND_REL_1),
+@In nat _UNBOUND_REL_4 (@cons nat _UNBOUND_REL_3 al) : Prop
+@pair nat (list nat) y bl : prod nat (list nat)
+select a al : prod nat (list nat)
+select _UNBOUND_REL_2 al : prod nat (list nat)
+forall (y0 x0 : nat) (bl0 : list nat)
+  (_ : @eq (prod nat (list nat)) (select x0 al) (@pair nat (list nat) y0 bl0)),
+@In nat y0 (@cons nat x0 al) : Prop
+a : nat
+let (j, l') := select a al in @pair nat (list nat) j (@cons nat x l') : prod nat (list nat)
+
+* Functions:
+prod  : forall (_ : Type) (_ : Type), Type
+@pair  : forall (A B : Type) (_ : A) (_ : B), prod A B
+select  : forall (_ : nat) (_ : list nat), prod nat (list nat)
+In  : forall (A : Type) (_ : A) (_ : list A), Prop
+gt  : forall (_ : nat) (_ : nat), Prop
+list  : forall _ : Type, Type
+@cons  : forall (A : Type) (_ : A) (_ : list A), list A
+Permutation  : forall (A : Type) (_ : list A) (_ : list A), Prop
+@eq  : forall (A : Type) (_ : A) (_ : A), Prop

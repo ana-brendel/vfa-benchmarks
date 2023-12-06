@@ -1,0 +1,33 @@
+LFind Results
+LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_Forall_forall_IN_le_all__le_one
+
+
+Number of Lemmas: 1
+Number of Lemmas (after duplicates removed): 1
+Number of Lemmas (after QuickChick used to filter): 1
+* Number of Candidate Lemmas: 1
+
+Time until ranking: 25
+Time to complete: 25
+
+Stuck state true independent of hypotheses: false
+
+Category 1:
+Count = 0
+
+
+Category 2:
+Count = 0
+
+
+Category 3 (provable):
+Count = 0
+
+
+
+All lemmas here because ranking is turned off right now...
+
+Category 3 (not provable):
+Count = 1
+
+Lemma candidate_1: forall (l : list nat) (n : nat) (y : nat) (x1 : list nat) (x : nat) (x0 : nat), le y x -> @In nat n l -> @Permutation nat (@cons nat n (@cons nat x l)) (@cons nat x0 x1) -> le y n.

@@ -1,0 +1,121 @@
+File Information
+- File name: Selection
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_select_smallest_IN_selsortt_sorted
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_select_smallest_IN_selsortt_sorted
+- Namespace: vfa_benchmark
+- Proof name: selsortt_sorted
+- Theorem: Theorem selsortt_sorted: forall (n1 : nat) (al0 : list nat) (_ : @eq nat (@list_length nat al0) n1),
+sorted (selsortt al0).
+- Declarations: 
+From lfind Require Import LFind.
+From VFA Require Import Perm.
+
+Proof Context
+* Goal State: le_all x x0
+
+* Hypothesis:
+x0 : list nat
+H0 : @ex (list nat)
+  (fun j : list nat =>
+   @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x j))
+H2 : @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x x0)
+H1 : @eq nat (@list_length nat al) n
+x : nat
+H : @eq nat (S (@list_length nat al)) (S n)
+al : list nat
+e : @ex nat
+  (fun i : nat =>
+   @ex (list nat)
+     (fun j : list nat =>
+      @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) i j)))
+n : nat
+n0 : nat
+IHn : forall (al0 : list nat) (_ : @eq nat (@list_length nat al0) n),
+sorted (selsortt al0)
+
+* Types:
+Set
+Prop
+forall _ : list nat, Prop
+nat
+forall _ : nat, Prop
+prod nat (list nat)
+list nat
+
+* Polymorphic Types:
+list nat
+prod nat (list nat)
+
+* Variables:
+x0 : list nat
+x : nat
+al : list nat
+n : nat
+n0 : nat
+
+* Terms:
+list nat : Set
+prod nat (list nat) : Set
+x0 : list nat
+select n0 al : prod nat (list nat)
+le_all x x0 : Prop
+@list_length nat al : nat
+x : nat
+selsortt _UNBOUND_REL_2 : list nat
+@list_length nat _UNBOUND_REL_1 : nat
+@eq (prod nat (list nat)) (select n0 al)
+  (@pair nat (list nat) _UNBOUND_REL_2 _UNBOUND_REL_1) : Prop
+S (@list_length nat al) : nat
+@ex nat
+  (fun i : nat =>
+   @ex (list nat)
+     (fun j : list nat =>
+      @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) i j))) : Prop
+fun i : nat =>
+@ex (list nat)
+  (fun j : list nat =>
+   @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) i j)) : forall _ : nat, Prop
+n : nat
+@ex (list nat)
+  (fun j : list nat =>
+   @eq (prod nat (list nat)) (select n0 al)
+     (@pair nat (list nat) _UNBOUND_REL_2 j)) : Prop
+@eq nat (@list_length nat al) n : Prop
+fun j : list nat =>
+@eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x j) : forall _ : list nat, Prop
+@eq nat (S (@list_length nat al)) (S n) : Prop
+@pair nat (list nat) x x0 : prod nat (list nat)
+@eq (prod nat (list nat)) (select n0 al)
+  (@pair nat (list nat) x _UNBOUND_REL_1) : Prop
+@ex (list nat)
+  (fun j : list nat =>
+   @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x j)) : Prop
+al : list nat
+@eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x x0) : Prop
+forall _ : @eq nat (@list_length nat _UNBOUND_REL_1) n,
+sorted (selsortt _UNBOUND_REL_2) : Prop
+nat : Set
+@eq nat (@list_length nat _UNBOUND_REL_1) n : Prop
+fun j : list nat =>
+@eq (prod nat (list nat)) (select n0 al)
+  (@pair nat (list nat) _UNBOUND_REL_2 j) : forall _ : list nat, Prop
+forall (al0 : list nat) (_ : @eq nat (@list_length nat al0) n),
+sorted (selsortt al0) : Prop
+sorted (selsortt _UNBOUND_REL_2) : Prop
+S n : nat
+@pair nat (list nat) x _UNBOUND_REL_1 : prod nat (list nat)
+@pair nat (list nat) _UNBOUND_REL_2 _UNBOUND_REL_1 : prod nat (list nat)
+n0 : nat
+
+* Functions:
+sorted  : forall _ : list nat, Prop
+prod  : forall (_ : Type) (_ : Type), Type
+@pair  : forall (A B : Type) (_ : A) (_ : B), prod A B
+select  : forall (_ : nat) (_ : list nat), prod nat (list nat)
+ex  : forall (A : Type) (_ : forall _ : A, Prop), Prop
+@list_length  : forall (T : Type) (_ : list T), nat
+le_all  : forall (_ : nat) (_ : list nat), Prop
+list  : forall _ : Type, Type
+selsortt  : forall _ : list nat, list nat
+S  : forall _ : nat, nat
+@eq  : forall (A : Type) (_ : A) (_ : A), Prop

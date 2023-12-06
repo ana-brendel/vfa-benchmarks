@@ -1,0 +1,157 @@
+File Information
+- File name: Selection
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_select_exists_1_IN_select_fst_leq
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_select_exists_1_IN_select_fst_leq
+- Namespace: vfa_benchmark
+- Proof name: select_fst_leq
+- Theorem: Theorem select_fst_leq: forall (al0 bl0 : list nat) (x0 y0 : nat)
+  (_ : @eq (prod nat (list nat)) (select x0 al0)
+         (@pair nat (list nat) y0 bl0)), le y0 x0.
+- Declarations: 
+From lfind Require Import LFind.
+From VFA Require Import Perm.
+
+Proof Context
+* Goal State: le y x
+
+* Hypothesis:
+IHal : forall (bl0 : list nat) (y0 x0 : nat)
+  (_ : @eq (prod nat (list nat)) (select x0 al) (@pair nat (list nat) y0 bl0)),
+le y0 x0
+H0 : le x a
+x : nat
+bl : list nat
+H : @eq (prod nat (list nat))
+  (let (j, l') := select x al in @pair nat (list nat) j (@cons nat a l'))
+  (@pair nat (list nat) y bl)
+al : list nat
+y : nat
+a : nat
+
+* Types:
+forall _ : list nat, prod nat (list nat)
+Set
+forall (_ : nat) (_ : list nat), prod nat (list nat)
+Prop
+nat
+forall _ : prod nat (list nat), Set
+list nat
+prod nat (list nat)
+
+* Polymorphic Types:
+prod nat (list nat)
+list nat
+
+* Variables:
+x : nat
+bl : list nat
+al : list nat
+y : nat
+a : nat
+
+* Terms:
+list nat : Set
+prod nat (list nat) : Set
+@eq (prod nat (list nat))
+  (let (j, l') := select x al in @pair nat (list nat) j (@cons nat a l'))
+  (@pair nat (list nat) y bl) : Prop
+@pair nat (list nat) _UNBOUND_REL_2 _UNBOUND_REL_3 : prod nat (list nat)
+bl : list nat
+x : nat
+le _UNBOUND_REL_3 _UNBOUND_REL_2 : Prop
+forall (x0 : nat)
+  (_ : @eq (prod nat (list nat)) (select x0 al)
+         (@pair nat (list nat) _UNBOUND_REL_2 _UNBOUND_REL_3)),
+le _UNBOUND_REL_3 x0 : Prop
+al : list nat
+y : nat
+@eq (prod nat (list nat)) (select _UNBOUND_REL_1 al)
+  (@pair nat (list nat) _UNBOUND_REL_2 _UNBOUND_REL_3) : Prop
+forall
+  _ : @eq (prod nat (list nat)) (select _UNBOUND_REL_1 al)
+        (@pair nat (list nat) _UNBOUND_REL_2 _UNBOUND_REL_3),
+le _UNBOUND_REL_3 _UNBOUND_REL_2 : Prop
+select x al : prod nat (list nat)
+fun l' : list nat => @pair nat (list nat) _UNBOUND_REL_2 (@cons nat a l') : forall _ : list nat, prod nat (list nat)
+fun _ : prod nat (list nat) => prod nat (list nat) : forall _ : prod nat (list nat), Set
+forall (bl0 : list nat) (y0 x0 : nat)
+  (_ : @eq (prod nat (list nat)) (select x0 al) (@pair nat (list nat) y0 bl0)),
+le y0 x0 : Prop
+le y x : Prop
+nat : Set
+forall (y0 x0 : nat)
+  (_ : @eq (prod nat (list nat)) (select x0 al)
+         (@pair nat (list nat) y0 _UNBOUND_REL_3)), 
+le y0 x0 : Prop
+fun (j : nat) (l' : list nat) => @pair nat (list nat) j (@cons nat a l') : forall (_ : nat) (_ : list nat), prod nat (list nat)
+@pair nat (list nat) y bl : prod nat (list nat)
+@pair nat (list nat) _UNBOUND_REL_2 (@cons nat a _UNBOUND_REL_1) : prod nat (list nat)
+let (j, l') := select x al in @pair nat (list nat) j (@cons nat a l') : prod nat (list nat)
+@cons nat a _UNBOUND_REL_1 : list nat
+a : nat
+le x a : Prop
+select _UNBOUND_REL_1 al : prod nat (list nat)
+
+* Functions:
+prod  : forall (_ : Type) (_ : Type), Type
+@pair  : forall (A B : Type) (_ : A) (_ : B), prod A B
+select  : forall (_ : nat) (_ : list nat), prod nat (list nat)
+le  : forall (_ : nat) (_ : nat), Prop
+list  : forall _ : Type, Type
+@cons  : forall (A : Type) (_ : A) (_ : list A), list A
+@eq  : forall (A : Type) (_ : A) (_ : A), Prop
+
+<---GENERALIZATION--->
+Time elapsed: 4 seconds
+Generalized Variables:
+
+Generalizations:
+Lemma conj1: forall (x : nat) (y : nat), le y x.
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 6 seconds
+Valid:
+
+Invalid:
+Lemma conj1: forall (x : nat) (y : nat), le y x.
+
+<---ADD IMPLICATIONS--->
+Time elapsed: 8 seconds
+Generalizations:
+Lemma conj1: forall (x : nat) (y : nat), le y x.
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 10 seconds
+Valid:
+
+Invalid:
+Lemma conj1: forall (x : nat) (y : nat), le y x.
+
+
+<---CREATE SKETCHES--->
+Time elapsed: 10 seconds
+Sketches:
+
+
+<---CREATE SYNTHESIS PROBLEMS--->
+Time elapsed: 10 seconds
+Problems per Sketch:
+
+
+<--- SYNTHESIS PROBLEM RESULTS--->
+Time elapsed: 10 seconds
+
+<---INITIAL CANDIDATE LEMMAS--->
+Time elapsed: 11 seconds
+Lemmas:
+
+<---FILTERED CANDIDATE LEMMAS--->
+Time elapsed: 11 seconds
+Duplicates removed: 0
+Filtered by Quickchick: 0
+Filtered by script: 0
+Remaining: 0
+
+Lemmas: 

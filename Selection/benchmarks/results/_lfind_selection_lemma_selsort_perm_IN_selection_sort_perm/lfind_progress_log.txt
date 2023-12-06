@@ -1,0 +1,53 @@
+File Information
+- File name: Selection
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_selsort_perm_IN_selection_sort_perm
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsort_perm_IN_selection_sort_perm
+- Namespace: vfa_benchmark
+- Proof name: selection_sort_perm
+- Theorem: Theorem selection_sort_perm: forall l0 : list nat, @Permutation nat l0 (selection_sort l0).
+- Declarations: 
+From lfind Require Import LFind.
+From VFA Require Import Perm.
+
+Proof Context
+* Goal State: @Permutation nat l (selsort l (@length nat l))
+
+* Hypothesis:
+l : list nat
+
+* Types:
+Set
+Prop
+nat
+list nat
+
+* Polymorphic Types:
+list nat
+
+* Variables:
+l : list nat
+
+* Terms:
+list nat : Set
+nat : Set
+selsort l (@length nat l) : list nat
+@length nat l : nat
+l : list nat
+@Permutation nat l (selsort l (@length nat l)) : Prop
+
+* Functions:
+length  : forall (A : Type) (_ : list A), nat
+selsort  : forall (_ : list nat) (_ : nat), list nat
+list  : forall _ : Type, Type
+Permutation  : forall (A : Type) (_ : list A) (_ : list A), Prop
+
+<---GENERALIZATION--->
+Time elapsed: 2 seconds
+Generalized Variables:
+lf1 : list nat = selsort l (@length nat l)
+lf2 : nat = @length nat l
+
+Generalizations:
+Lemma conj1: forall (lf1 : list nat) (l : list nat), @Permutation nat l lf1.
+Lemma conj3: forall (lf2 : nat) (l : list nat), @Permutation nat l (selsort l lf2).
+Lemma conj4: forall (l : list nat), @Permutation nat l (selsort l (@length nat l)).

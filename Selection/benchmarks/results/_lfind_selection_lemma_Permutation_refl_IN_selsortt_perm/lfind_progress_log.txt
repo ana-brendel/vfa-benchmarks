@@ -1,0 +1,42 @@
+File Information
+- File name: Selection
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_Permutation_refl_IN_selsortt_perm
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_Permutation_refl_IN_selsortt_perm
+- Namespace: vfa_benchmark
+- Proof name: selsortt_perm
+- Theorem: Theorem selsortt_perm: forall (n : nat) (l : list nat) (_ : @eq nat (@list_length nat l) n),
+@Permutation nat l (selsortt l).
+- Declarations: 
+From lfind Require Import LFind.
+From VFA Require Import Perm.
+
+Proof Context
+* Goal State: @Permutation nat (@nil nat) (selsortt (@nil nat))
+
+* Hypothesis:
+
+
+* Types:
+Set
+Prop
+nat
+list nat
+
+* Polymorphic Types:
+
+
+* Variables:
+
+
+* Terms:
+nat : Set
+selsortt (@nil nat) : list nat
+@Permutation nat (@nil nat) (selsortt (@nil nat)) : Prop
+@nil nat : list nat
+
+* Functions:
+selsortt  : forall _ : list nat, list nat
+@nil  : forall A : Type, list A
+Permutation  : forall (A : Type) (_ : list A) (_ : list A), Prop
+
+Goal state includes no variables. No need to run lfind.

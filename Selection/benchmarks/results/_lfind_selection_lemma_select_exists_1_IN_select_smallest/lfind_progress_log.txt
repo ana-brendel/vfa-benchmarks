@@ -1,0 +1,108 @@
+File Information
+- File name: Selection
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_select_exists_1_IN_select_smallest
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_select_exists_1_IN_select_smallest
+- Namespace: vfa_benchmark
+- Proof name: select_smallest
+- Theorem: Theorem select_smallest: forall (al0 bl0 : list nat) (x0 y0 : nat)
+  (_ : @eq (prod nat (list nat)) (select x0 al0)
+         (@pair nat (list nat) y0 bl0)), le_all y0 bl0.
+- Declarations: 
+From lfind Require Import LFind.
+From VFA Require Import Perm.
+
+Proof Context
+* Goal State: @Forall nat (fun y0 : nat => le y y0) bl
+
+* Hypothesis:
+IHal : forall (y0 x0 : nat) (bl0 : list nat)
+  (_ : @eq (prod nat (list nat)) (select x0 al) (@pair nat (list nat) y0 bl0)),
+@Forall nat (fun y1 : nat => le y0 y1) bl0
+H0 : le x a
+bl : list nat
+x : nat
+H : @eq (prod nat (list nat))
+  (let (j, l') := select x al in @pair nat (list nat) j (@cons nat a l'))
+  (@pair nat (list nat) y bl)
+al : list nat
+y : nat
+a : nat
+
+* Types:
+forall _ : list nat, prod nat (list nat)
+Set
+forall (_ : nat) (_ : list nat), prod nat (list nat)
+Prop
+nat
+forall _ : prod nat (list nat), Set
+forall _ : nat, Prop
+prod nat (list nat)
+list nat
+
+* Polymorphic Types:
+list nat
+prod nat (list nat)
+
+* Variables:
+bl : list nat
+x : nat
+al : list nat
+y : nat
+a : nat
+
+* Terms:
+list nat : Set
+prod nat (list nat) : Set
+@Forall nat (fun y0 : nat => le _UNBOUND_REL_5 y0) _UNBOUND_REL_2 : Prop
+@eq (prod nat (list nat))
+  (let (j, l') := select x al in @pair nat (list nat) j (@cons nat a l'))
+  (@pair nat (list nat) y bl) : Prop
+@eq (prod nat (list nat)) (select _UNBOUND_REL_2 al)
+  (@pair nat (list nat) _UNBOUND_REL_3 _UNBOUND_REL_1) : Prop
+forall (x0 : nat) (bl0 : list nat)
+  (_ : @eq (prod nat (list nat)) (select x0 al)
+         (@pair nat (list nat) _UNBOUND_REL_3 bl0)),
+@Forall nat (fun y0 : nat => le _UNBOUND_REL_5 y0) bl0 : Prop
+@Forall nat (fun y0 : nat => le y y0) bl : Prop
+bl : list nat
+x : nat
+forall (bl0 : list nat)
+  (_ : @eq (prod nat (list nat)) (select _UNBOUND_REL_2 al)
+         (@pair nat (list nat) _UNBOUND_REL_3 bl0)),
+@Forall nat (fun y0 : nat => le _UNBOUND_REL_5 y0) bl0 : Prop
+forall (y0 x0 : nat) (bl0 : list nat)
+  (_ : @eq (prod nat (list nat)) (select x0 al) (@pair nat (list nat) y0 bl0)),
+@Forall nat (fun y1 : nat => le y0 y1) bl0 : Prop
+al : list nat
+le y _UNBOUND_REL_1 : Prop
+y : nat
+select x al : prod nat (list nat)
+@pair nat (list nat) _UNBOUND_REL_3 _UNBOUND_REL_1 : prod nat (list nat)
+fun l' : list nat => @pair nat (list nat) _UNBOUND_REL_2 (@cons nat a l') : forall _ : list nat, prod nat (list nat)
+fun _ : prod nat (list nat) => prod nat (list nat) : forall _ : prod nat (list nat), Set
+le _UNBOUND_REL_5 _UNBOUND_REL_1 : Prop
+fun y0 : nat => le y y0 : forall _ : nat, Prop
+nat : Set
+fun (j : nat) (l' : list nat) => @pair nat (list nat) j (@cons nat a l') : forall (_ : nat) (_ : list nat), prod nat (list nat)
+fun y0 : nat => le _UNBOUND_REL_5 y0 : forall _ : nat, Prop
+@pair nat (list nat) y bl : prod nat (list nat)
+@pair nat (list nat) _UNBOUND_REL_2 (@cons nat a _UNBOUND_REL_1) : prod nat (list nat)
+let (j, l') := select x al in @pair nat (list nat) j (@cons nat a l') : prod nat (list nat)
+select _UNBOUND_REL_2 al : prod nat (list nat)
+@cons nat a _UNBOUND_REL_1 : list nat
+a : nat
+le x a : Prop
+forall
+  _ : @eq (prod nat (list nat)) (select _UNBOUND_REL_2 al)
+        (@pair nat (list nat) _UNBOUND_REL_3 _UNBOUND_REL_1),
+@Forall nat (fun y0 : nat => le _UNBOUND_REL_5 y0) _UNBOUND_REL_2 : Prop
+
+* Functions:
+Forall  : forall (A : Type) (_ : forall _ : A, Prop) (_ : list A), Prop
+prod  : forall (_ : Type) (_ : Type), Type
+@pair  : forall (A B : Type) (_ : A) (_ : B), prod A B
+select  : forall (_ : nat) (_ : list nat), prod nat (list nat)
+le  : forall (_ : nat) (_ : nat), Prop
+list  : forall _ : Type, Type
+@cons  : forall (A : Type) (_ : A) (_ : list A), list A
+@eq  : forall (A : Type) (_ : A) (_ : A), Prop

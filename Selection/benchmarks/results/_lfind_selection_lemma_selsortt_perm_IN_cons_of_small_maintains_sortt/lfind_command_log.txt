@@ -1,0 +1,1167 @@
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt
+
+cp -r /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/ && coqc -R . vfa_benchmark decide.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_quickchick_generator.v
+
+export is_lfind=true
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_axiom_*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj1.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt//home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj1*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj3.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt//home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj3*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj4.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt//home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj4*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_axiom_*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_hypothesis.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_hypothesis.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_hypothesis.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_hypothesis.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj4_imp.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt//home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj4_imp*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_hypothesis.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_hypothesis.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_hypothesis.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_hypothesis.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_hypothesis.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_hypothesis.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_hypothesis.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj3_imp.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt//home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj3_imp*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_hypothesis.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_hypothesis.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_hypothesis.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj3_imp.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt//home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj3_imp*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_hypothesis.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_hypothesis.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_hypothesis.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_hypothesis.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_hypothesis.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_hypothesis.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj1_imp.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt//home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj1_imp*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_hypothesis.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_hypothesis.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_hypothesis.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_axiom_*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj4.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt//home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj4*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj4_imp.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt//home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj4_imp*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj3.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt//home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj3*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj3_imp.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt//home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj3_imp*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj1.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt//home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj1*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj1_imp.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt//home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj1_imp*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_axiom_*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval.v
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_axiom_*
+
+timeout  12 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt" --module=Selection --type='@Coq.Init.Datatypes.nat' --params='lf1:list nat,x:@Coq.Init.Datatypes.nat' --extra-exprs='@vfa_benchmark.Selection.sorted ,@vfa_benchmark.Selection.list_length ,@Coq.Init.Logic.ex ,@vfa_benchmark.Selection.le_all ,@vfa_benchmark.Selection.selsortt ,@Coq.Init.Datatypes.list ,@Coq.Init.Datatypes.list ,@Coq.Init.Logic.eq ,@vfa_benchmark.Selection.selsort ,@vfa_benchmark.Selection.select ' --examples='@cons nat (S O) (@nil nat),(0)=O;@cons nat (S O) (@cons nat O (@nil nat)),(0)=S O;@cons nat O (@cons nat O (@cons nat O (@nil nat))),(0)=S (S O);@cons nat (S O) (@cons nat (S O) (@cons nat (S (S O)) (@nil nat))),(1)=S (S O);@cons nat (S O) (@cons nat O (@cons nat O (@nil nat))),(0)=S (S O);@cons nat (S O) (@cons nat O (@nil nat)),(2)=S O;@cons nat (S O) (@cons nat (S O) (@nil nat)),(2)=S O;@cons nat (S O) (@cons nat O (@cons nat O (@nil nat))),(2)=S (S O);@cons nat (S O) (@cons nat O (@cons nat (S O) (@nil nat))),(2)=S (S O);@cons nat O (@cons nat (S O) (@cons nat (S (S O)) (@nil nat))),(0)=S (S O);@cons nat (S (S O)) (@cons nat (S O) (@cons nat (S (S O)) (@nil nat))),(0)=S (S O);@cons nat (S (S O)) (@cons nat O (@nil nat)),(1)=S O;@cons nat (S (S O)) (@cons nat (S (S O)) (@nil nat)),(1)=S O;@cons nat (S (S O)) (@cons nat O (@cons nat (S O) (@nil nat))),(1)=S (S O);@cons nat (S (S O)) (@cons nat O (@cons nat O (@nil nat))),(1)=S (S O);@cons nat (S (S O)) (@cons nat O (@cons nat (S (S O)) (@nil nat))),(1)=S (S O);@cons nat (S O) (@cons nat (S O) (@nil nat)),(1)=S O;@cons nat O (@nil nat),(0)=O' --num-terms=5 > /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/Selectionsynth_1synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/Selectionsynth_1synthesis.txt
+
+timeout  12 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt" --module=Selection --type='@Coq.Init.Datatypes.nat' --params='bl:list nat' --extra-exprs='@vfa_benchmark.Selection.sorted ,@vfa_benchmark.Selection.list_length ,@Coq.Init.Logic.ex ,@vfa_benchmark.Selection.le_all ,@vfa_benchmark.Selection.selsortt ,@Coq.Init.Datatypes.list ,@Coq.Init.Datatypes.list ,@Coq.Init.Logic.eq ,@vfa_benchmark.Selection.selsort ,@vfa_benchmark.Selection.select ' --examples='(nil)=O;(cons 0 (nil))=S O;(cons 0 (cons 0 (nil)))=S (S O);(cons 1 (cons 2 (nil)))=S (S O);(cons 0 (cons 0 (nil)))=S (S O);(cons 0 (nil))=S O;(cons 1 (nil))=S O;(cons 0 (cons 0 (nil)))=S (S O);(cons 1 (cons 0 (nil)))=S (S O);(cons 2 (cons 1 (nil)))=S (S O);(cons 2 (cons 1 (nil)))=S (S O);(cons 0 (nil))=S O;(cons 2 (nil))=S O;(cons 1 (cons 0 (nil)))=S (S O);(cons 0 (cons 0 (nil)))=S (S O);(cons 2 (cons 0 (nil)))=S (S O);(cons 1 (nil))=S O;(nil)=O' --num-terms=5 > /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/Selectionsynth_2synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/Selectionsynth_2synthesis.txt
+
+timeout  12 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt" --module=Selection --type='list nat' --params='x:@Coq.Init.Datatypes.nat,bl:list nat,lf2:list nat' --extra-exprs='@vfa_benchmark.Selection.sorted ,@vfa_benchmark.Selection.list_length ,@Coq.Init.Logic.ex ,@vfa_benchmark.Selection.le_all ,@vfa_benchmark.Selection.selsortt ,@Coq.Init.Datatypes.list ,@Coq.Init.Datatypes.list ,@Coq.Init.Logic.eq ,@vfa_benchmark.Selection.selsort ,@vfa_benchmark.Selection.select ' --examples='(0),(nil),@nil nat=@cons nat (S O) (@nil nat);(0),(cons 0 (nil)),@cons nat O (@nil nat)=@cons nat (S O) (@cons nat O (@nil nat));(0),(cons 0 (cons 0 (nil))),@cons nat O (@cons nat O (@nil nat))=@cons nat O (@cons nat O (@cons nat O (@nil nat)));(1),(cons 1 (cons 2 (nil))),@cons nat (S O) (@cons nat (S (S O)) (@nil nat))=@cons nat (S O) (@cons nat (S O) (@cons nat (S (S O)) (@nil nat)));(0),(cons 0 (cons 0 (nil))),@cons nat O (@cons nat O (@nil nat))=@cons nat (S O) (@cons nat O (@cons nat O (@nil nat)));(2),(cons 0 (nil)),@cons nat O (@nil nat)=@cons nat (S O) (@cons nat O (@nil nat));(2),(cons 1 (nil)),@cons nat (S O) (@nil nat)=@cons nat (S O) (@cons nat (S O) (@nil nat));(2),(cons 0 (cons 0 (nil))),@cons nat O (@cons nat O (@nil nat))=@cons nat (S O) (@cons nat O (@cons nat O (@nil nat)));(2),(cons 1 (cons 0 (nil))),@cons nat O (@cons nat (S O) (@nil nat))=@cons nat (S O) (@cons nat O (@cons nat (S O) (@nil nat)));(0),(cons 2 (cons 1 (nil))),@cons nat (S O) (@cons nat (S (S O)) (@nil nat))=@cons nat O (@cons nat (S O) (@cons nat (S (S O)) (@nil nat)));(0),(cons 2 (cons 1 (nil))),@cons nat (S O) (@cons nat (S (S O)) (@nil nat))=@cons nat (S (S O)) (@cons nat (S O) (@cons nat (S (S O)) (@nil nat)));(1),(cons 0 (nil)),@cons nat O (@nil nat)=@cons nat (S (S O)) (@cons nat O (@nil nat));(1),(cons 2 (nil)),@cons nat (S (S O)) (@nil nat)=@cons nat (S (S O)) (@cons nat (S (S O)) (@nil nat));(1),(cons 1 (cons 0 (nil))),@cons nat O (@cons nat (S O) (@nil nat))=@cons nat (S (S O)) (@cons nat O (@cons nat (S O) (@nil nat)));(1),(cons 0 (cons 0 (nil))),@cons nat O (@cons nat O (@nil nat))=@cons nat (S (S O)) (@cons nat O (@cons nat O (@nil nat)));(1),(cons 2 (cons 0 (nil))),@cons nat O (@cons nat (S (S O)) (@nil nat))=@cons nat (S (S O)) (@cons nat O (@cons nat (S (S O)) (@nil nat)));(1),(cons 1 (nil)),@cons nat (S O) (@nil nat)=@cons nat (S O) (@cons nat (S O) (@nil nat));(0),(nil),@nil nat=@cons nat O (@nil nat)' --num-terms=5 > /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/Selectionsynth_3synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/Selectionsynth_3synthesis.txt
+
+timeout  12 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt" --module=Selection --type='@Coq.Init.Datatypes.nat' --params='y:@Coq.Init.Datatypes.nat,x:@Coq.Init.Datatypes.nat,lf2:list nat' --extra-exprs='@vfa_benchmark.Selection.sorted ,@vfa_benchmark.Selection.list_length ,@Coq.Init.Logic.ex ,@vfa_benchmark.Selection.le_all ,@vfa_benchmark.Selection.selsortt ,@Coq.Init.Datatypes.list ,@Coq.Init.Datatypes.list ,@Coq.Init.Logic.eq ,@vfa_benchmark.Selection.selsort ,@vfa_benchmark.Selection.select ' --examples='(1),(0),@nil nat=O;(1),(0),@cons nat O (@nil nat)=S O;(0),(0),@cons nat O (@cons nat O (@nil nat))=S (S O);(1),(1),@cons nat (S O) (@cons nat (S (S O)) (@nil nat))=S (S O);(1),(0),@cons nat O (@cons nat O (@nil nat))=S (S O);(1),(2),@cons nat O (@nil nat)=S O;(1),(2),@cons nat (S O) (@nil nat)=S O;(1),(2),@cons nat O (@cons nat O (@nil nat))=S (S O);(1),(2),@cons nat O (@cons nat (S O) (@nil nat))=S (S O);(0),(0),@cons nat (S O) (@cons nat (S (S O)) (@nil nat))=S (S O);(2),(0),@cons nat (S O) (@cons nat (S (S O)) (@nil nat))=S (S O);(2),(1),@cons nat O (@nil nat)=S O;(2),(1),@cons nat (S (S O)) (@nil nat)=S O;(2),(1),@cons nat O (@cons nat (S O) (@nil nat))=S (S O);(2),(1),@cons nat O (@cons nat O (@nil nat))=S (S O);(2),(1),@cons nat O (@cons nat (S (S O)) (@nil nat))=S (S O);(1),(1),@cons nat (S O) (@nil nat)=S O;(0),(0),@nil nat=O' --num-terms=5 > /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/Selectionsynth_4synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/Selectionsynth_4synthesis.txt
+
+timeout  12 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt" --module=Selection --type='list nat' --params='y:@Coq.Init.Datatypes.nat,lf2:list nat' --extra-exprs='@vfa_benchmark.Selection.sorted ,@vfa_benchmark.Selection.list_length ,@Coq.Init.Logic.ex ,@vfa_benchmark.Selection.le_all ,@vfa_benchmark.Selection.selsortt ,@Coq.Init.Datatypes.list ,@Coq.Init.Datatypes.list ,@Coq.Init.Logic.eq ,@vfa_benchmark.Selection.selsort ,@vfa_benchmark.Selection.select ' --examples='(1),@nil nat=@cons nat (S O) (@nil nat);(1),@cons nat O (@nil nat)=@cons nat (S O) (@cons nat O (@nil nat));(0),@cons nat O (@cons nat O (@nil nat))=@cons nat O (@cons nat O (@cons nat O (@nil nat)));(1),@cons nat (S O) (@cons nat (S (S O)) (@nil nat))=@cons nat (S O) (@cons nat (S O) (@cons nat (S (S O)) (@nil nat)));(1),@cons nat O (@cons nat O (@nil nat))=@cons nat (S O) (@cons nat O (@cons nat O (@nil nat)));(1),@cons nat O (@nil nat)=@cons nat (S O) (@cons nat O (@nil nat));(1),@cons nat (S O) (@nil nat)=@cons nat (S O) (@cons nat (S O) (@nil nat));(1),@cons nat O (@cons nat O (@nil nat))=@cons nat (S O) (@cons nat O (@cons nat O (@nil nat)));(1),@cons nat O (@cons nat (S O) (@nil nat))=@cons nat (S O) (@cons nat O (@cons nat (S O) (@nil nat)));(0),@cons nat (S O) (@cons nat (S (S O)) (@nil nat))=@cons nat O (@cons nat (S O) (@cons nat (S (S O)) (@nil nat)));(2),@cons nat (S O) (@cons nat (S (S O)) (@nil nat))=@cons nat (S (S O)) (@cons nat (S O) (@cons nat (S (S O)) (@nil nat)));(2),@cons nat O (@nil nat)=@cons nat (S (S O)) (@cons nat O (@nil nat));(2),@cons nat (S (S O)) (@nil nat)=@cons nat (S (S O)) (@cons nat (S (S O)) (@nil nat));(2),@cons nat O (@cons nat (S O) (@nil nat))=@cons nat (S (S O)) (@cons nat O (@cons nat (S O) (@nil nat)));(2),@cons nat O (@cons nat O (@nil nat))=@cons nat (S (S O)) (@cons nat O (@cons nat O (@nil nat)));(2),@cons nat O (@cons nat (S (S O)) (@nil nat))=@cons nat (S (S O)) (@cons nat O (@cons nat (S (S O)) (@nil nat)));(1),@cons nat (S O) (@nil nat)=@cons nat (S O) (@cons nat (S O) (@nil nat));(0),@nil nat=@cons nat O (@nil nat)' --num-terms=5 > /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/Selectionsynth_5synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/Selectionsynth_5synthesis.txt
+
+timeout  12 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt" --module=Selection --type='list nat' --params='' --extra-exprs='@vfa_benchmark.Selection.sorted ,@vfa_benchmark.Selection.list_length ,@Coq.Init.Logic.ex ,@vfa_benchmark.Selection.le_all ,@vfa_benchmark.Selection.selsortt ,@Coq.Init.Datatypes.list ,@Coq.Init.Datatypes.list ,@Coq.Init.Logic.eq ,@vfa_benchmark.Selection.selsort ,@vfa_benchmark.Selection.select ' --examples='=@cons nat (S O) (@nil nat);=@cons nat (S O) (@cons nat O (@nil nat));=@cons nat O (@cons nat O (@cons nat O (@nil nat)));=@cons nat (S O) (@cons nat (S O) (@cons nat (S (S O)) (@nil nat)));=@cons nat (S O) (@cons nat O (@cons nat O (@nil nat)));=@cons nat (S O) (@cons nat O (@nil nat));=@cons nat (S O) (@cons nat (S O) (@nil nat));=@cons nat (S O) (@cons nat O (@cons nat O (@nil nat)));=@cons nat (S O) (@cons nat O (@cons nat (S O) (@nil nat)));=@cons nat O (@cons nat (S O) (@cons nat (S (S O)) (@nil nat)));=@cons nat (S (S O)) (@cons nat (S O) (@cons nat (S (S O)) (@nil nat)));=@cons nat (S (S O)) (@cons nat O (@nil nat));=@cons nat (S (S O)) (@cons nat (S (S O)) (@nil nat));=@cons nat (S (S O)) (@cons nat O (@cons nat (S O) (@nil nat)));=@cons nat (S (S O)) (@cons nat O (@cons nat O (@nil nat)));=@cons nat (S (S O)) (@cons nat O (@cons nat (S (S O)) (@nil nat)));=@cons nat (S O) (@cons nat (S O) (@nil nat));=@cons nat O (@nil nat)' --num-terms=5 > /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/Selectionsynth_6synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/Selectionsynth_6synthesis.txt
+
+timeout  12 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt" --module=Selection --type='list nat' --params='x:@Coq.Init.Datatypes.nat,bl:list nat' --extra-exprs='@vfa_benchmark.Selection.sorted ,@vfa_benchmark.Selection.list_length ,@Coq.Init.Logic.ex ,@vfa_benchmark.Selection.le_all ,@vfa_benchmark.Selection.selsortt ,@Coq.Init.Datatypes.list ,@Coq.Init.Datatypes.list ,@Coq.Init.Logic.eq ,@vfa_benchmark.Selection.selsort ,@vfa_benchmark.Selection.select ' --examples='(0),(nil)=@cons nat (S O) (@nil nat);(0),(cons 0 (nil))=@cons nat (S O) (@cons nat O (@nil nat));(0),(cons 0 (cons 0 (nil)))=@cons nat O (@cons nat O (@cons nat O (@nil nat)));(1),(cons 1 (cons 2 (nil)))=@cons nat (S O) (@cons nat (S O) (@cons nat (S (S O)) (@nil nat)));(0),(cons 0 (cons 0 (nil)))=@cons nat (S O) (@cons nat O (@cons nat O (@nil nat)));(2),(cons 0 (nil))=@cons nat (S O) (@cons nat O (@nil nat));(2),(cons 1 (nil))=@cons nat (S O) (@cons nat (S O) (@nil nat));(2),(cons 0 (cons 0 (nil)))=@cons nat (S O) (@cons nat O (@cons nat O (@nil nat)));(2),(cons 1 (cons 0 (nil)))=@cons nat (S O) (@cons nat O (@cons nat (S O) (@nil nat)));(0),(cons 2 (cons 1 (nil)))=@cons nat O (@cons nat (S O) (@cons nat (S (S O)) (@nil nat)));(0),(cons 2 (cons 1 (nil)))=@cons nat (S (S O)) (@cons nat (S O) (@cons nat (S (S O)) (@nil nat)));(1),(cons 0 (nil))=@cons nat (S (S O)) (@cons nat O (@nil nat));(1),(cons 2 (nil))=@cons nat (S (S O)) (@cons nat (S (S O)) (@nil nat));(1),(cons 1 (cons 0 (nil)))=@cons nat (S (S O)) (@cons nat O (@cons nat (S O) (@nil nat)));(1),(cons 0 (cons 0 (nil)))=@cons nat (S (S O)) (@cons nat O (@cons nat O (@nil nat)));(1),(cons 2 (cons 0 (nil)))=@cons nat (S (S O)) (@cons nat O (@cons nat (S (S O)) (@nil nat)));(1),(cons 1 (nil))=@cons nat (S O) (@cons nat (S O) (@nil nat));(0),(nil)=@cons nat O (@nil nat)' --num-terms=5 > /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/Selectionsynth_7synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/Selectionsynth_7synthesis.txt
+
+timeout  12 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt" --module=Selection --type='@Coq.Init.Datatypes.nat' --params='y:@Coq.Init.Datatypes.nat,bl:list nat,x:@Coq.Init.Datatypes.nat' --extra-exprs='@vfa_benchmark.Selection.sorted ,@vfa_benchmark.Selection.list_length ,@Coq.Init.Logic.ex ,@vfa_benchmark.Selection.le_all ,@vfa_benchmark.Selection.selsortt ,@Coq.Init.Datatypes.list ,@Coq.Init.Datatypes.list ,@Coq.Init.Logic.eq ,@vfa_benchmark.Selection.selsort ,@vfa_benchmark.Selection.select ' --examples='(1),(nil),(0)=O;(1),(cons 0 (nil)),(0)=S O;(0),(cons 0 (cons 0 (nil))),(0)=S (S O);(1),(cons 1 (cons 2 (nil))),(1)=S (S O);(1),(cons 0 (cons 0 (nil))),(0)=S (S O);(1),(cons 0 (nil)),(2)=S O;(1),(cons 1 (nil)),(2)=S O;(1),(cons 0 (cons 0 (nil))),(2)=S (S O);(1),(cons 1 (cons 0 (nil))),(2)=S (S O);(0),(cons 2 (cons 1 (nil))),(0)=S (S O);(2),(cons 2 (cons 1 (nil))),(0)=S (S O);(2),(cons 0 (nil)),(1)=S O;(2),(cons 2 (nil)),(1)=S O;(2),(cons 1 (cons 0 (nil))),(1)=S (S O);(2),(cons 0 (cons 0 (nil))),(1)=S (S O);(2),(cons 2 (cons 0 (nil))),(1)=S (S O);(1),(cons 1 (nil)),(1)=S O;(0),(nil),(0)=O' --num-terms=5 > /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/Selectionsynth_8synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/Selectionsynth_8synthesis.txt
+
+timeout  12 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt" --module=Selection --type='list nat' --params='y:@Coq.Init.Datatypes.nat,x:@Coq.Init.Datatypes.nat,bl:list nat' --extra-exprs='@vfa_benchmark.Selection.sorted ,@vfa_benchmark.Selection.list_length ,@Coq.Init.Logic.ex ,@vfa_benchmark.Selection.le_all ,@vfa_benchmark.Selection.selsortt ,@Coq.Init.Datatypes.list ,@Coq.Init.Datatypes.list ,@Coq.Init.Logic.eq ,@vfa_benchmark.Selection.selsort ,@vfa_benchmark.Selection.select ' --examples='(1),(0),(nil)=@nil nat;(1),(0),(cons 0 (nil))=@cons nat O (@nil nat);(0),(0),(cons 0 (cons 0 (nil)))=@cons nat O (@cons nat O (@nil nat));(1),(1),(cons 1 (cons 2 (nil)))=@cons nat (S O) (@cons nat (S (S O)) (@nil nat));(1),(0),(cons 0 (cons 0 (nil)))=@cons nat O (@cons nat O (@nil nat));(1),(2),(cons 0 (nil))=@cons nat O (@nil nat);(1),(2),(cons 1 (nil))=@cons nat (S O) (@nil nat);(1),(2),(cons 0 (cons 0 (nil)))=@cons nat O (@cons nat O (@nil nat));(1),(2),(cons 1 (cons 0 (nil)))=@cons nat O (@cons nat (S O) (@nil nat));(0),(0),(cons 2 (cons 1 (nil)))=@cons nat (S O) (@cons nat (S (S O)) (@nil nat));(2),(0),(cons 2 (cons 1 (nil)))=@cons nat (S O) (@cons nat (S (S O)) (@nil nat));(2),(1),(cons 0 (nil))=@cons nat O (@nil nat);(2),(1),(cons 2 (nil))=@cons nat (S (S O)) (@nil nat);(2),(1),(cons 1 (cons 0 (nil)))=@cons nat O (@cons nat (S O) (@nil nat));(2),(1),(cons 0 (cons 0 (nil)))=@cons nat O (@cons nat O (@nil nat));(2),(1),(cons 2 (cons 0 (nil)))=@cons nat O (@cons nat (S (S O)) (@nil nat));(1),(1),(cons 1 (nil))=@cons nat (S O) (@nil nat);(0),(0),(nil)=@nil nat' --num-terms=5 > /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/Selectionsynth_9synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/Selectionsynth_9synthesis.txt
+
+timeout  12 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt" --module=Selection --type='list nat' --params='y:@Coq.Init.Datatypes.nat,bl:list nat' --extra-exprs='@vfa_benchmark.Selection.sorted ,@vfa_benchmark.Selection.list_length ,@Coq.Init.Logic.ex ,@vfa_benchmark.Selection.le_all ,@vfa_benchmark.Selection.selsortt ,@Coq.Init.Datatypes.list ,@Coq.Init.Datatypes.list ,@Coq.Init.Logic.eq ,@vfa_benchmark.Selection.selsort ,@vfa_benchmark.Selection.select ' --examples='(1),(nil)=@cons nat (S O) (@nil nat);(1),(cons 0 (nil))=@cons nat (S O) (@cons nat O (@nil nat));(0),(cons 0 (cons 0 (nil)))=@cons nat O (@cons nat O (@cons nat O (@nil nat)));(1),(cons 1 (cons 2 (nil)))=@cons nat (S O) (@cons nat (S O) (@cons nat (S (S O)) (@nil nat)));(1),(cons 0 (cons 0 (nil)))=@cons nat (S O) (@cons nat O (@cons nat O (@nil nat)));(1),(cons 0 (nil))=@cons nat (S O) (@cons nat O (@nil nat));(1),(cons 1 (nil))=@cons nat (S O) (@cons nat (S O) (@nil nat));(1),(cons 0 (cons 0 (nil)))=@cons nat (S O) (@cons nat O (@cons nat O (@nil nat)));(1),(cons 1 (cons 0 (nil)))=@cons nat (S O) (@cons nat O (@cons nat (S O) (@nil nat)));(0),(cons 2 (cons 1 (nil)))=@cons nat O (@cons nat (S O) (@cons nat (S (S O)) (@nil nat)));(2),(cons 2 (cons 1 (nil)))=@cons nat (S (S O)) (@cons nat (S O) (@cons nat (S (S O)) (@nil nat)));(2),(cons 0 (nil))=@cons nat (S (S O)) (@cons nat O (@nil nat));(2),(cons 2 (nil))=@cons nat (S (S O)) (@cons nat (S (S O)) (@nil nat));(2),(cons 1 (cons 0 (nil)))=@cons nat (S (S O)) (@cons nat O (@cons nat (S O) (@nil nat)));(2),(cons 0 (cons 0 (nil)))=@cons nat (S (S O)) (@cons nat O (@cons nat O (@nil nat)));(2),(cons 2 (cons 0 (nil)))=@cons nat (S (S O)) (@cons nat O (@cons nat (S (S O)) (@nil nat)));(1),(cons 1 (nil))=@cons nat (S O) (@cons nat (S O) (@nil nat));(0),(nil)=@cons nat O (@nil nat)' --num-terms=5 > /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/Selectionsynth_10synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/Selectionsynth_10synthesis.txt
+
+timeout  12 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt" --module=Selection --type='list nat' --params='bl:list nat' --extra-exprs='@vfa_benchmark.Selection.sorted ,@vfa_benchmark.Selection.list_length ,@Coq.Init.Logic.ex ,@vfa_benchmark.Selection.le_all ,@vfa_benchmark.Selection.selsortt ,@Coq.Init.Datatypes.list ,@Coq.Init.Datatypes.list ,@Coq.Init.Logic.eq ,@vfa_benchmark.Selection.selsort ,@vfa_benchmark.Selection.select ' --examples='(nil)=@nil nat;(cons 0 (nil))=@cons nat O (@nil nat);(cons 0 (cons 0 (nil)))=@cons nat O (@cons nat O (@nil nat));(cons 1 (cons 2 (nil)))=@cons nat (S O) (@cons nat (S (S O)) (@nil nat));(cons 0 (cons 0 (nil)))=@cons nat O (@cons nat O (@nil nat));(cons 0 (nil))=@cons nat O (@nil nat);(cons 1 (nil))=@cons nat (S O) (@nil nat);(cons 0 (cons 0 (nil)))=@cons nat O (@cons nat O (@nil nat));(cons 1 (cons 0 (nil)))=@cons nat O (@cons nat (S O) (@nil nat));(cons 2 (cons 1 (nil)))=@cons nat (S O) (@cons nat (S (S O)) (@nil nat));(cons 2 (cons 1 (nil)))=@cons nat (S O) (@cons nat (S (S O)) (@nil nat));(cons 0 (nil))=@cons nat O (@nil nat);(cons 2 (nil))=@cons nat (S (S O)) (@nil nat);(cons 1 (cons 0 (nil)))=@cons nat O (@cons nat (S O) (@nil nat));(cons 0 (cons 0 (nil)))=@cons nat O (@cons nat O (@nil nat));(cons 2 (cons 0 (nil)))=@cons nat O (@cons nat (S (S O)) (@nil nat));(cons 1 (nil))=@cons nat (S O) (@nil nat);(nil)=@nil nat' --num-terms=5 > /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/Selectionsynth_11synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/Selectionsynth_11synthesis.txt
+
+timeout  12 coq_synth --logical-dir=vfa_benchmark --physical-dir="/home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt" --module=Selection --type='list nat' --params='y:@Coq.Init.Datatypes.nat' --extra-exprs='@vfa_benchmark.Selection.sorted ,@vfa_benchmark.Selection.list_length ,@Coq.Init.Logic.ex ,@vfa_benchmark.Selection.le_all ,@vfa_benchmark.Selection.selsortt ,@Coq.Init.Datatypes.list ,@Coq.Init.Datatypes.list ,@Coq.Init.Logic.eq ,@vfa_benchmark.Selection.selsort ,@vfa_benchmark.Selection.select ' --examples='(1)=@nil nat;(1)=@cons nat O (@nil nat);(0)=@cons nat O (@cons nat O (@nil nat));(1)=@cons nat (S O) (@cons nat (S (S O)) (@nil nat));(1)=@cons nat O (@cons nat O (@nil nat));(1)=@cons nat O (@nil nat);(1)=@cons nat (S O) (@nil nat);(1)=@cons nat O (@cons nat O (@nil nat));(1)=@cons nat O (@cons nat (S O) (@nil nat));(0)=@cons nat (S O) (@cons nat (S (S O)) (@nil nat));(2)=@cons nat (S O) (@cons nat (S (S O)) (@nil nat));(2)=@cons nat O (@nil nat);(2)=@cons nat (S (S O)) (@nil nat);(2)=@cons nat O (@cons nat (S O) (@nil nat));(2)=@cons nat O (@cons nat O (@nil nat));(2)=@cons nat O (@cons nat (S (S O)) (@nil nat));(1)=@cons nat (S O) (@nil nat);(0)=@nil nat' --num-terms=5 > /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/Selectionsynth_12synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/Selectionsynth_12synthesis.txt
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_axiom_*
+
+cd /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/ && coqc -R . vfa_benchmark /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval_candidate_1.v
+
+python3  /home/anabrendel/lfind/lemmafinder/src/filter.py --prelude="/home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt" --theorem_name="cons_of_small_maintains_sortt" --theorem="Theorem cons_of_small_maintains_sortt: forall (bl0 : list nat) (y0 : nat) (_ : le_all y0 bl0)
+  (_ : sorted (selsortt bl0)), sorted (@cons nat y0 (selsortt bl0))." --lemmas  "Lemma candidate_1: forall (y : nat) (lf2 : list nat), @eq (list nat) (@cons nat y lf2) (@cons nat y lf2)." --imports "Load LFindLoad."  "From lfind Require Import LFind." "From VFA Require Import Perm." "From vfa_benchmark Require Import Selection."
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_axiom_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_conj*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_generalized_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_generalized_**
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_eval*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_proverbot_eval_*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/.lfind_quickchick*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/search-report*
+
+rm -rf /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt/lfind_axiom_*
+

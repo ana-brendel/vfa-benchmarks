@@ -1,0 +1,253 @@
+File Information
+- File name: Selection
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_cons_of_small_maintains_sort_IN_selsort_sorted
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_cons_of_small_maintains_sort_IN_selsort_sorted
+- Namespace: vfa_benchmark
+- Proof name: selsort_sorted
+- Theorem: Theorem selsort_sorted: forall (n1 : nat) (al0 : list nat) (_ : @eq nat (@list_length nat al0) n1),
+sorted (selsort al0 n1).
+- Declarations: 
+From lfind Require Import LFind.
+From VFA Require Import Perm.
+
+Proof Context
+* Goal State: sorted (@cons nat x (selsort x0 (@list_length nat al)))
+
+* Hypothesis:
+x0 : list nat
+H0 : @ex (list nat)
+  (fun j : list nat =>
+   @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x j))
+H2 : @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x x0)
+H1 : @eq nat (@list_length nat al) n
+x : nat
+H : @eq nat (S (@list_length nat al)) (S n)
+al : list nat
+e : @ex nat
+  (fun i : nat =>
+   @ex (list nat)
+     (fun j : list nat =>
+      @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) i j)))
+n : nat
+n0 : nat
+IHn : forall (al0 : list nat) (_ : @eq nat (@list_length nat al0) n),
+sorted (selsort al0 n)
+
+* Types:
+Set
+Prop
+forall _ : list nat, Prop
+nat
+forall _ : nat, Prop
+prod nat (list nat)
+list nat
+
+* Polymorphic Types:
+list nat
+prod nat (list nat)
+
+* Variables:
+x0 : list nat
+x : nat
+al : list nat
+n : nat
+n0 : nat
+
+* Terms:
+list nat : Set
+prod nat (list nat) : Set
+x0 : list nat
+forall _ : @eq nat (@list_length nat _UNBOUND_REL_1) n,
+sorted (selsort _UNBOUND_REL_2 n) : Prop
+select n0 al : prod nat (list nat)
+selsort _UNBOUND_REL_2 n : list nat
+@list_length nat al : nat
+x : nat
+@list_length nat _UNBOUND_REL_1 : nat
+@eq (prod nat (list nat)) (select n0 al)
+  (@pair nat (list nat) _UNBOUND_REL_2 _UNBOUND_REL_1) : Prop
+forall (al0 : list nat) (_ : @eq nat (@list_length nat al0) n),
+sorted (selsort al0 n) : Prop
+S (@list_length nat al) : nat
+sorted (@cons nat x (selsort x0 (@list_length nat al))) : Prop
+@ex nat
+  (fun i : nat =>
+   @ex (list nat)
+     (fun j : list nat =>
+      @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) i j))) : Prop
+fun i : nat =>
+@ex (list nat)
+  (fun j : list nat =>
+   @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) i j)) : forall _ : nat, Prop
+n : nat
+@ex (list nat)
+  (fun j : list nat =>
+   @eq (prod nat (list nat)) (select n0 al)
+     (@pair nat (list nat) _UNBOUND_REL_2 j)) : Prop
+@eq nat (@list_length nat al) n : Prop
+fun j : list nat =>
+@eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x j) : forall _ : list nat, Prop
+@eq nat (S (@list_length nat al)) (S n) : Prop
+@pair nat (list nat) x x0 : prod nat (list nat)
+@eq (prod nat (list nat)) (select n0 al)
+  (@pair nat (list nat) x _UNBOUND_REL_1) : Prop
+@ex (list nat)
+  (fun j : list nat =>
+   @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x j)) : Prop
+sorted (selsort _UNBOUND_REL_2 n) : Prop
+al : list nat
+@eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x x0) : Prop
+selsort x0 (@list_length nat al) : list nat
+nat : Set
+@eq nat (@list_length nat _UNBOUND_REL_1) n : Prop
+fun j : list nat =>
+@eq (prod nat (list nat)) (select n0 al)
+  (@pair nat (list nat) _UNBOUND_REL_2 j) : forall _ : list nat, Prop
+S n : nat
+@pair nat (list nat) x _UNBOUND_REL_1 : prod nat (list nat)
+@pair nat (list nat) _UNBOUND_REL_2 _UNBOUND_REL_1 : prod nat (list nat)
+n0 : nat
+@cons nat x (selsort x0 (@list_length nat al)) : list nat
+
+* Functions:
+sorted  : forall _ : list nat, Prop
+selsort  : forall (_ : list nat) (_ : nat), list nat
+prod  : forall (_ : Type) (_ : Type), Type
+@list_length  : forall (T : Type) (_ : list T), nat
+@pair  : forall (A B : Type) (_ : A) (_ : B), prod A B
+select  : forall (_ : nat) (_ : list nat), prod nat (list nat)
+ex  : forall (A : Type) (_ : forall _ : A, Prop), Prop
+list  : forall _ : Type, Type
+@cons  : forall (A : Type) (_ : A) (_ : list A), list A
+S  : forall _ : nat, nat
+@eq  : forall (A : Type) (_ : A) (_ : A), Prop
+
+<---GENERALIZATION--->
+Time elapsed: 3 seconds
+Generalized Variables:
+lf3 : nat = @list_length nat al
+lf1 : list nat = @cons nat x (selsort x0 (@list_length nat al))
+lf2 : list nat = selsort x0 (@list_length nat al)
+
+Generalizations:
+Lemma conj1: forall (lf1 : list nat), sorted lf1.
+Lemma conj3: forall (lf2 : list nat) (x : nat), sorted (@cons nat x lf2).
+Lemma conj4: forall (x0 : list nat) (x : nat) (lf3 : nat), sorted (@cons nat x (selsort x0 lf3)).
+Lemma conj8: forall (x0 : list nat) (x : nat) (al : list nat), sorted (@cons nat x (selsort x0 (@list_length nat al))).
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 32 seconds
+Valid:
+
+Invalid:
+Lemma conj8: forall (x0 : list nat) (x : nat) (al : list nat), sorted (@cons nat x (selsort x0 (@list_length nat al))).
+Lemma conj4: forall (x0 : list nat) (x : nat) (lf3 : nat), sorted (@cons nat x (selsort x0 lf3)).
+Lemma conj3: forall (lf2 : list nat) (x : nat), sorted (@cons nat x lf2).
+Lemma conj1: forall (lf1 : list nat), sorted lf1.
+
+<---ADD IMPLICATIONS--->
+Time elapsed: 57 seconds
+Generalizations:
+Lemma conj8: forall (x0 : list nat) (x : nat) (al : list nat), sorted (@cons nat x (selsort x0 (@list_length nat al))).
+Lemma conj8_imp: forall (x0 : list nat) (x : nat) (al : list nat) (n : nat) (n0 : nat), @eq nat (S (@list_length nat al)) (S n) -> @eq nat (@list_length nat al) n -> @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x x0) -> sorted (@cons nat x (selsort x0 (@list_length nat al))).
+Lemma conj4: forall (x0 : list nat) (x : nat) (lf3 : nat), sorted (@cons nat x (selsort x0 lf3)).
+Lemma conj4_imp: forall (x0 : list nat) (x : nat) (al : list nat) (n : nat) (n0 : nat) (lf3 : nat), @eq nat (S lf3) (S n) -> @eq nat lf3 n -> @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x x0) -> sorted (@cons nat x (selsort x0 lf3)).
+Lemma conj3: forall (lf2 : list nat) (x : nat), sorted (@cons nat x lf2).
+Lemma conj3_imp: forall (lf2 : list nat) (x0 : list nat) (x : nat) (al : list nat) (n : nat) (n0 : nat), @eq nat (S (@list_length nat al)) (S n) -> @eq nat (@list_length nat al) n -> @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x x0) -> sorted (@cons nat x lf2).
+Lemma conj1: forall (lf1 : list nat), sorted lf1.
+Lemma conj1_imp: forall (x0 : list nat) (x : nat) (lf1 : list nat) (al : list nat) (n : nat) (n0 : nat), @eq nat (S (@list_length nat al)) (S n) -> @eq nat (@list_length nat al) n -> @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x x0) -> sorted lf1.
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 69 seconds
+Valid:
+Lemma conj1_imp: forall (x0 : list nat) (x : nat) (lf1 : list nat) (al : list nat) (n : nat) (n0 : nat), @eq nat (S (@list_length nat al)) (S n) -> @eq nat (@list_length nat al) n -> @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x x0) -> sorted lf1.
+Lemma conj3_imp: forall (lf2 : list nat) (x0 : list nat) (x : nat) (al : list nat) (n : nat) (n0 : nat), @eq nat (S (@list_length nat al)) (S n) -> @eq nat (@list_length nat al) n -> @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x x0) -> sorted (@cons nat x lf2).
+Lemma conj4_imp: forall (x0 : list nat) (x : nat) (al : list nat) (n : nat) (n0 : nat) (lf3 : nat), @eq nat (S lf3) (S n) -> @eq nat lf3 n -> @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x x0) -> sorted (@cons nat x (selsort x0 lf3)).
+Lemma conj8_imp: forall (x0 : list nat) (x : nat) (al : list nat) (n : nat) (n0 : nat), @eq nat (S (@list_length nat al)) (S n) -> @eq nat (@list_length nat al) n -> @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x x0) -> sorted (@cons nat x (selsort x0 (@list_length nat al))).
+
+Invalid:
+Lemma conj1: forall (lf1 : list nat), sorted lf1.
+Lemma conj3: forall (lf2 : list nat) (x : nat), sorted (@cons nat x lf2).
+Lemma conj4: forall (x0 : list nat) (x : nat) (lf3 : nat), sorted (@cons nat x (selsort x0 lf3)).
+Lemma conj8: forall (x0 : list nat) (x : nat) (al : list nat), sorted (@cons nat x (selsort x0 (@list_length nat al))).
+
+
+<---CREATE SKETCHES--->
+Time elapsed: 69 seconds
+Sketches:
+Sketch conj3_sketch0 : sorted (##hole##)
+Sketch conj3_term_sketch0 : @eq (list nat) (@cons nat x lf2) (##hole##)
+Sketch conj4_sketch0 : sorted (##hole##)
+Sketch conj4_sketch1 : sorted (@cons nat x (##hole##))
+Sketch conj4_term_sketch0 : @eq (list nat) (@cons nat x (selsort x0 lf3)) (##hole##)
+Sketch conj4_term_sketch1 : @eq (list nat) (selsort x0 lf3) (##hole##)
+Sketch conj8_sketch0 : sorted (@cons nat x (##hole##))
+Sketch conj8_sketch1 : sorted (@cons nat x (selsort x0 (##hole##)))
+Sketch conj8_sketch2 : sorted (##hole##)
+Sketch conj8_term_sketch0 : @eq (list nat) (selsort x0 (@list_length nat al)) (##hole##)
+Sketch conj8_term_sketch1 : @eq nat (@list_length nat al) (##hole##)
+Sketch conj8_term_sketch2 : @eq (list nat) (@cons nat x (selsort x0 (@list_length nat al))) (##hole##)
+
+
+<---CREATE SYNTHESIS PROBLEMS--->
+Time elapsed: 160 seconds
+Problems per Sketch:
+Sketch conj4_term_sketch1 --> Problem  synth_5
+Sketch conj8_term_sketch0 --> Problem  synth_7
+Sketch conj3_sketch0 --> Problem  synth_1
+Sketch conj8_sketch2 --> Problem  synth_1
+Sketch conj8_sketch0 --> Problem  synth_3
+Sketch conj3_term_sketch0 --> Problem  synth_2
+Sketch conj8_term_sketch1 --> Problem  synth_8
+Sketch conj4_term_sketch0 --> Problem  synth_4
+Sketch conj8_term_sketch2 --> Problem  synth_9
+Sketch conj8_sketch1 --> Problem  synth_6
+Sketch conj4_sketch0 --> Problem  synth_1
+Sketch conj4_sketch1 --> Problem  synth_3
+
+
+<--- SYNTHESIS PROBLEM RESULTS--->
+Time elapsed: 165 seconds
+
+Problem: synth_8
+
+Problem: synth_3
+
+Problem: synth_9
+
+Problem: synth_6
+
+Problem: synth_7
+
+Problem: synth_5
+
+Problem: synth_4
+
+Problem: synth_1
+
+Problem: synth_2
+ @cons nat x lf2
+
+<---INITIAL CANDIDATE LEMMAS--->
+Time elapsed: 165 seconds
+Lemmas:
+Lemma candidate_1: forall (n0 : nat) (n : nat) (al : list nat) (lf1 : list nat) (x : nat) (x0 : list nat), @eq nat (S (@list_length nat al)) (S n) -> @eq nat (@list_length nat al) n -> @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x x0) -> sorted lf1.
+Lemma candidate_2: forall (n0 : nat) (n : nat) (al : list nat) (x : nat) (x0 : list nat) (lf2 : list nat), @eq nat (S (@list_length nat al)) (S n) -> @eq nat (@list_length nat al) n -> @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x x0) -> sorted (@cons nat x lf2).
+Lemma candidate_3: forall (lf3 : nat) (n0 : nat) (n : nat) (al : list nat) (x : nat) (x0 : list nat), @eq nat (S lf3) (S n) -> @eq nat lf3 n -> @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x x0) -> sorted (@cons nat x (selsort x0 lf3)).
+Lemma candidate_4: forall (n0 : nat) (n : nat) (al : list nat) (x : nat) (x0 : list nat), @eq nat (S (@list_length nat al)) (S n) -> @eq nat (@list_length nat al) n -> @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x x0) -> sorted (@cons nat x (selsort x0 (@list_length nat al))).
+Lemma candidate_5: forall (x : nat) (lf2 : list nat), @eq (list nat) (@cons nat x lf2) (@cons nat x lf2).
+
+<---FILTERED CANDIDATE LEMMAS--->
+Time elapsed: 178 seconds
+Duplicates removed: 0
+Filtered by Quickchick: 0
+Filtered by script: 1
+Remaining: 4
+
+Lemmas: 
+Lemma candidate_3: forall (lf3 : nat) (n0 : nat) (n : nat) (al : list nat) (x : nat) (x0 : list nat), @eq nat (S lf3) (S n) -> @eq nat lf3 n -> @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x x0) -> sorted (@cons nat x (selsort x0 lf3)).
+Lemma candidate_1: forall (n0 : nat) (n : nat) (al : list nat) (lf1 : list nat) (x : nat) (x0 : list nat), @eq nat (S (@list_length nat al)) (S n) -> @eq nat (@list_length nat al) n -> @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x x0) -> sorted lf1.
+Lemma candidate_2: forall (n0 : nat) (n : nat) (al : list nat) (x : nat) (x0 : list nat) (lf2 : list nat), @eq nat (S (@list_length nat al)) (S n) -> @eq nat (@list_length nat al) n -> @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x x0) -> sorted (@cons nat x lf2).
+Lemma candidate_4: forall (n0 : nat) (n : nat) (al : list nat) (x : nat) (x0 : list nat), @eq nat (S (@list_length nat al)) (S n) -> @eq nat (@list_length nat al) n -> @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x x0) -> sorted (@cons nat x (selsort x0 (@list_length nat al))).

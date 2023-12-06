@@ -48,7 +48,7 @@ benches_perm = [
     "perm_lemma_iff_reflect_IN_ble_reflect"
 ]
 
-benches = [
+benches_sort = [
     "sort_lemma_sortedd_remove_cons_1_IN_insert_sortedd",
     "sort_lemma_sortedd_remove_cons_2_IN_insert_sortedd",
     "sort_lemma_sortedd_remove_cons_3_IN_insert_sortedd",
@@ -61,12 +61,82 @@ benches = [
     "sort_lemma_sortedd_nil_IN_sortedd_remove"
 ]
 
-src_sort = "/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/backward_reasoning"
+benches = [
+    "selection_lemma_Permutation_refl_IN_select_perm",
+    "selection_lemma_select_perm_IN_select_rest_length",
+    "selection_lemma_Permutation_length_IN_select_rest_length",
+    "selection_lemma_length_zero_iff_nil_IN_selsort_perm",
+    "selection_lemma_Permutation_refl_IN_selsort_perm",
+    "selection_lemma_select_perm_IN_selsort_perm",
+    "selection_lemma_select_rest_length_IN_selsort_perm",
+    "selection_lemma_selsort_perm_IN_selection_sort_perm",
+    "selection_lemma_select_exists_1_IN_select_fst_leq",
+    "selection_lemma_select_exists_2_IN_select_fst_leq",
+    "selection_lemma_lt_n_Sm_le_1_IN_select_fst_leq",
+    "selection_lemma_lt_n_Sm_le_2_IN_select_fst_leq",
+    "selection_lemma_lt_S_1_IN_select_fst_leq",
+    "selection_lemma_lt_S_2_IN_select_fst_leq",
+    "selection_lemma_le_lt_n_Sm_IN_select_fst_leq",
+    #"selection_lemma_le_trans_IN_select_fst_leq", --> error cd
+    "selection_lemma_select_exists_IN_le_all__le_one",
+    "selection_lemma_select_perm_IN_le_all__le_one",
+    "selection_lemma_in_inv_IN_le_all__le_one",
+    "selection_lemma_Forall_forall_IN_le_all__le_one",
+    "selection_lemma_select_exists_1_IN_select_smallest",
+    "selection_lemma_le_trans_IN_select_smallest",
+    "selection_lemma_select_fst_leq_1_IN_select_smallest",
+    "selection_lemma_select_exists_2_IN_select_smallest",
+    "selection_lemma_lt_n_Sm_le_IN_select_smallest",
+    "selection_lemma_lt_S_IN_select_smallest",
+    "selection_lemma_le_lt_trans_IN_select_smallest",
+    "selection_lemma_select_fst_leq_2_IN_select_smallest",
+    "selection_lemma_or_comm_1_IN_select_in",
+    "selection_lemma_or_assoc_IN_select_in",
+    "selection_lemma_or_comm_2_IN_select_in",
+    "selection_lemma_select_exists_IN_select_in",
+    "selection_lemma_select_perm_IN_select_in",
+    "selection_lemma_Permutation_in_IN_select_in",
+    "selection_lemma_Permutation_sym_IN_select_in",
+    "selection_lemma_selsort_perm_IN_cons_of_small_maintains_sort",
+    "selection_lemma_le_all__le_one_IN_cons_of_small_maintains_sort",
+    # "selection_lemma_Pemutation_in_IN_cons_of_small_maintains_sort", --> error cd
+    "selection_lemma_Permutation_sym_IN_cons_of_small_maintains_sort",
+    "selection_lemma_select_exists_IN_selsort_sorted",
+    "selection_lemma_cons_of_small_maintains_sort_IN_selsort_sorted"
+    "selection_lemma_select_rest_length_1_IN_selsort_sorted",
+    "selection_lemma_select_smallest_IN_selsort_sorted",
+    "selection_lemma_select_rest_length_2_IN_selsort_sorted",
+    "selection_lemma_selsort_sorted_IN_selection_sort_sorted",
+    "selection_lemma_selection_sort_perm_IN_selection_sort_is_correct",
+    "selection_lemma_selection_sort_sorted_IN_selection_sort_is_correct",
+    "selection_lemma_length_zero_iff_nil_IN_selsortt_perm",
+    "selection_lemma_Permutation_refl_IN_selsortt_perm",
+    "selection_lemma_select_perm_IN_selsortt_perm",
+    "selection_lemma_select_rest_length_IN_selsortt_perm",
+    "selection_lemma_list_has_length_IN_cons_of_small_maintains_sortt",
+    "selection_lemma_selsortt_perm_IN_cons_of_small_maintains_sortt",
+    "selection_lemma_le_all__le_one_IN_cons_of_small_maintains_sortt",
+    "selection_lemma_Permutation_in_IN_cons_of_small_maintains_sortt",
+    "selection_lemma_Permutation_sym_IN_cons_of_small_maintains_sortt",
+    "selection_lemma_select_exists_IN_selsortt_sorted",
+    "selection_lemma_cons_of_small_maintains_sortt_IN_selsortt_sorted",
+    "selection_lemma_select_smallest_IN_selsortt_sorted",
+    "selection_lemma_select_rest_length_IN_selsortt_sorted",
+    "selection_lemma_list_has_length_IN_selsortt_is_correct",
+    "selection_lemma_selsortt_perm_IN_selsortt_is_correct",
+    "selection_lemma_selsortt_sorted_IN_selsortt_is_correct",
+    "selection_lemma_cons_of_small_maintains_sort_IN_selsort_sorted",
+    "selection_lemma_select_rest_length_1_IN_selsort_sorted"
+]
 
-decide = "/home/anabrendel/lfind/_QUICKCHICK_PROOFS_/perm_decide.v"
-src = "/home/anabrendel/lfind/vfa-benchmarks/Perm/benchmarks/sources"
-backwards = "/home/anabrendel/lfind/vfa-benchmarks/Sort/benchmarks/sources/backward_reasoning"
+decide = "/home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_cons_of_small_maintains_sort_IN_selsort_sorted/decide.v"
+src = "/home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources"
+file = "/home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/Selection.v"
+mod_src = "/home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/modified-locations"
 
-for t in benches:
-    test = os.path.join(backwards,t)
-    make(test)
+for t in os.listdir(mod_src):
+    f = os.path.join(mod_src,t)
+    # d = os.path.join(f,"decide.v")
+    # shutil.copy(decide,d)
+    make(f)
+    # print(f)

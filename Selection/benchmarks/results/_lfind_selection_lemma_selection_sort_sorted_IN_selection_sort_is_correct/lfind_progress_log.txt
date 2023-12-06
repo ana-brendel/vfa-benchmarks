@@ -1,0 +1,99 @@
+File Information
+- File name: Selection
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_selection_sort_sorted_IN_selection_sort_is_correct
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_selection_sort_sorted_IN_selection_sort_is_correct
+- Namespace: vfa_benchmark
+- Proof name: selection_sort_is_correct
+- Theorem: Theorem selection_sort_is_correct: is_a_sorting_algorithm selection_sort.
+- Declarations: 
+From lfind Require Import LFind.
+From VFA Require Import Perm.
+
+Proof Context
+* Goal State: sorted (selection_sort al)
+
+* Hypothesis:
+al : list nat
+
+* Types:
+Set
+Prop
+nat
+list nat
+
+* Polymorphic Types:
+list nat
+
+* Variables:
+al : list nat
+
+* Terms:
+list nat : Set
+nat : Set
+selection_sort al : list nat
+al : list nat
+sorted (selection_sort al) : Prop
+
+* Functions:
+sorted  : forall _ : list nat, Prop
+selection_sort  : forall _ : list nat, list nat
+list  : forall _ : Type, Type
+
+<---GENERALIZATION--->
+Time elapsed: 3 seconds
+Generalized Variables:
+lf1 : list nat = selection_sort al
+
+Generalizations:
+Lemma conj1: forall (lf1 : list nat), sorted lf1.
+Lemma conj2: forall (al : list nat), sorted (selection_sort al).
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 17 seconds
+Valid:
+Lemma conj2: forall (al : list nat), sorted (selection_sort al).
+
+Invalid:
+Lemma conj1: forall (lf1 : list nat), sorted lf1.
+
+<---ADD IMPLICATIONS--->
+Time elapsed: 17 seconds
+Generalizations:
+Lemma conj1: forall (lf1 : list nat), sorted lf1.
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 19 seconds
+Valid:
+
+Invalid:
+Lemma conj1: forall (lf1 : list nat), sorted lf1.
+
+
+<---CREATE SKETCHES--->
+Time elapsed: 19 seconds
+Sketches:
+
+
+<---CREATE SYNTHESIS PROBLEMS--->
+Time elapsed: 20 seconds
+Problems per Sketch:
+
+
+<--- SYNTHESIS PROBLEM RESULTS--->
+Time elapsed: 20 seconds
+
+<---INITIAL CANDIDATE LEMMAS--->
+Time elapsed: 20 seconds
+Lemmas:
+Lemma candidate_1: forall (al : list nat), sorted (selection_sort al).
+
+<---FILTERED CANDIDATE LEMMAS--->
+Time elapsed: 21 seconds
+Duplicates removed: 1
+Filtered by Quickchick: 0
+Filtered by script: 0
+Remaining: 0
+
+Lemmas: 

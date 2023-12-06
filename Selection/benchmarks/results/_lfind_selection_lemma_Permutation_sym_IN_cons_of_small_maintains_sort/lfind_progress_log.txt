@@ -1,0 +1,68 @@
+File Information
+- File name: Selection
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_Permutation_sym_IN_cons_of_small_maintains_sort
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_Permutation_sym_IN_cons_of_small_maintains_sort
+- Namespace: vfa_benchmark
+- Proof name: cons_of_small_maintains_sort
+- Theorem: Theorem cons_of_small_maintains_sort: forall (bl0 : list nat) (y0 n0 : nat) (_ : @eq nat n0 (@list_length nat bl0))
+  (_ : le_all y0 bl0) (_ : sorted (selsort bl0 n0)),
+sorted (@cons nat y0 (selsort bl0 n0)).
+- Declarations: 
+From lfind Require Import LFind.
+From VFA Require Import Perm.
+
+Proof Context
+* Goal State: @Permutation nat ?l bl
+
+* Hypothesis:
+H0 : le_all y bl
+H1 : sorted (@cons nat a l)
+bl : list nat
+H : @Permutation nat bl (@cons nat a l)
+IHl : forall (_ : @Permutation nat bl l) (_ : sorted l), sorted (@cons nat y l)
+y : nat
+l : list nat
+n : nat
+a : nat
+
+* Types:
+Set
+Prop
+nat
+list nat
+
+* Polymorphic Types:
+list nat
+
+* Variables:
+bl : list nat
+y : nat
+l : list nat
+a : nat
+
+* Terms:
+list nat : Set
+@cons nat a l : list nat
+le_all y bl : Prop
+@Permutation nat ?l bl : Prop
+sorted (@cons nat y l) : Prop
+bl : list nat
+@Permutation nat bl (@cons nat a l) : Prop
+forall (_ : @Permutation nat bl l) (_ : sorted l), sorted (@cons nat y l) : Prop
+y : nat
+l : list nat
+forall _ : sorted l, sorted (@cons nat y l) : Prop
+nat : Set
+?l : list nat
+sorted (@cons nat a l) : Prop
+@cons nat y l : list nat
+sorted l : Prop
+@Permutation nat bl l : Prop
+a : nat
+
+* Functions:
+sorted  : forall _ : list nat, Prop
+le_all  : forall (_ : nat) (_ : list nat), Prop
+list  : forall _ : Type, Type
+@cons  : forall (A : Type) (_ : A) (_ : list A), list A
+Permutation  : forall (A : Type) (_ : list A) (_ : list A), Prop

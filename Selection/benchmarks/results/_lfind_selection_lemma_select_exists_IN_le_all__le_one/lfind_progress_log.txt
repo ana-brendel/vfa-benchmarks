@@ -1,0 +1,182 @@
+File Information
+- File name: Selection
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_select_exists_IN_le_all__le_one
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_select_exists_IN_le_all__le_one
+- Namespace: vfa_benchmark
+- Proof name: le_all__le_one
+- Theorem: Theorem le_all__le_one: forall (lst : list nat) (y0 n0 : nat) (_ : le_all y0 lst)
+  (_ : @In nat n0 lst), le y0 n0.
+- Declarations: 
+From lfind Require Import LFind.
+From VFA Require Import Perm.
+
+Proof Context
+* Goal State: le y n
+
+* Hypothesis:
+H0 : @In nat n (@cons nat x l)
+H1 : @Forall nat (fun y0 : nat => le y y0) l
+x : nat
+H : le y x
+y : nat
+p : forall (y0 : nat) (r : list nat)
+  (_ : @eq (prod nat (list nat)) (select n (@cons nat x l))
+         (@pair nat (list nat) y0 r)),
+@Permutation nat (@cons nat n (@cons nat x l)) (@cons nat y0 r)
+l : list nat
+n : nat
+
+* Types:
+Set
+Prop
+nat
+forall _ : nat, Prop
+prod nat (list nat)
+list nat
+
+* Polymorphic Types:
+list nat
+prod nat (list nat)
+
+* Variables:
+x : nat
+y : nat
+n : nat
+l : list nat
+
+* Terms:
+list nat : Set
+prod nat (list nat) : Set
+forall
+  _ : @eq (prod nat (list nat)) (select n (@cons nat x l))
+        (@pair nat (list nat) _UNBOUND_REL_2 _UNBOUND_REL_1),
+@Permutation nat (@cons nat n (@cons nat x l))
+  (@cons nat _UNBOUND_REL_3 _UNBOUND_REL_2) : Prop
+@cons nat x l : list nat
+@eq (prod nat (list nat)) (select n (@cons nat x l))
+  (@pair nat (list nat) _UNBOUND_REL_2 _UNBOUND_REL_1) : Prop
+x : nat
+@cons nat _UNBOUND_REL_3 _UNBOUND_REL_2 : list nat
+le y _UNBOUND_REL_1 : Prop
+@Permutation nat (@cons nat n (@cons nat x l))
+  (@cons nat _UNBOUND_REL_3 _UNBOUND_REL_2) : Prop
+y : nat
+forall (y0 : nat) (r : list nat)
+  (_ : @eq (prod nat (list nat)) (select n (@cons nat x l))
+         (@pair nat (list nat) y0 r)),
+@Permutation nat (@cons nat n (@cons nat x l)) (@cons nat y0 r) : Prop
+l : list nat
+le y x : Prop
+fun y0 : nat => le y y0 : forall _ : nat, Prop
+forall (r : list nat)
+  (_ : @eq (prod nat (list nat)) (select n (@cons nat x l))
+         (@pair nat (list nat) _UNBOUND_REL_2 r)),
+@Permutation nat (@cons nat n (@cons nat x l)) (@cons nat _UNBOUND_REL_3 r) : Prop
+@In nat n (@cons nat x l) : Prop
+nat : Set
+le y n : Prop
+@Forall nat (fun y0 : nat => le y y0) l : Prop
+n : nat
+select n (@cons nat x l) : prod nat (list nat)
+@cons nat n (@cons nat x l) : list nat
+@pair nat (list nat) _UNBOUND_REL_2 _UNBOUND_REL_1 : prod nat (list nat)
+
+* Functions:
+Forall  : forall (A : Type) (_ : forall _ : A, Prop) (_ : list A), Prop
+prod  : forall (_ : Type) (_ : Type), Type
+@pair  : forall (A B : Type) (_ : A) (_ : B), prod A B
+select  : forall (_ : nat) (_ : list nat), prod nat (list nat)
+In  : forall (A : Type) (_ : A) (_ : list A), Prop
+le  : forall (_ : nat) (_ : nat), Prop
+list  : forall _ : Type, Type
+@cons  : forall (A : Type) (_ : A) (_ : list A), list A
+Permutation  : forall (A : Type) (_ : list A) (_ : list A), Prop
+@eq  : forall (A : Type) (_ : A) (_ : A), Prop
+
+<---GENERALIZATION--->
+Time elapsed: 3 seconds
+Generalized Variables:
+
+Generalizations:
+Lemma conj1: forall (y : nat) (n : nat), le y n.
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 5 seconds
+Valid:
+
+Invalid:
+Lemma conj1: forall (y : nat) (n : nat), le y n.
+
+<---ADD IMPLICATIONS--->
+Time elapsed: 11 seconds
+Generalizations:
+Lemma conj1: forall (y : nat) (n : nat), le y n.
+Lemma conj1_imp: forall (x : nat) (y : nat) (n : nat) (l : list nat), le y x -> @In nat n (@cons nat x l) -> le y n.
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 14 seconds
+Valid:
+
+Invalid:
+Lemma conj1_imp: forall (x : nat) (y : nat) (n : nat) (l : list nat), le y x -> @In nat n (@cons nat x l) -> le y n.
+Lemma conj1: forall (y : nat) (n : nat), le y n.
+
+
+<---CREATE SKETCHES--->
+Time elapsed: 14 seconds
+Sketches:
+Sketch conj1_imp_sketch0 : forall _ : forall _ : le y x, @In nat n (##hole##), le y n
+Sketch conj1_imp_term_sketch0 : @eq (list nat) (@cons nat x l) (##hole##)
+
+
+<---CREATE SYNTHESIS PROBLEMS--->
+Time elapsed: 15 seconds
+Problems per Sketch:
+Sketch conj1_imp_term_sketch0 --> Problem  synth_2
+Sketch conj1_imp_sketch0 --> Problem  synth_1
+
+
+<--- SYNTHESIS PROBLEM RESULTS--->
+Time elapsed: 16 seconds
+
+Problem: synth_1
+ @cons nat n (@nil nat)
+ @cons nat y (@nil nat)
+ @cons nat x (@nil nat)
+ @cons nat O (@nil nat)
+ @nil nat
+
+Problem: synth_2
+ @cons nat O l
+ @cons nat x (@nil nat)
+ @cons nat O (@nil nat)
+ l
+ @nil nat
+
+<---INITIAL CANDIDATE LEMMAS--->
+Time elapsed: 16 seconds
+Lemmas:
+Lemma candidate_1: forall (n : nat) (y : nat) (x : nat), le y x -> @In nat n (@cons nat n (@nil nat)) -> le y n.
+Lemma candidate_2: forall (n : nat) (y : nat) (x : nat), le y x -> @In nat n (@cons nat y (@nil nat)) -> le y n.
+Lemma candidate_3: forall (n : nat) (y : nat) (x : nat), le y x -> @In nat n (@cons nat x (@nil nat)) -> le y n.
+Lemma candidate_4: forall (n : nat) (y : nat) (x : nat), le y x -> @In nat n (@cons nat O (@nil nat)) -> le y n.
+Lemma candidate_5: forall (n : nat) (y : nat) (x : nat), le y x -> @In nat n (@nil nat) -> le y n.
+Lemma candidate_6: forall (l : list nat) (x : nat), @eq (list nat) (@cons nat x l) (@cons nat O l).
+Lemma candidate_7: forall (l : list nat) (x : nat), @eq (list nat) (@cons nat x l) (@cons nat x (@nil nat)).
+Lemma candidate_8: forall (l : list nat) (x : nat), @eq (list nat) (@cons nat x l) (@cons nat O (@nil nat)).
+Lemma candidate_9: forall (l : list nat) (x : nat), @eq (list nat) (@cons nat x l) (l).
+Lemma candidate_10: forall (l : list nat) (x : nat), @eq (list nat) (@cons nat x l) (@nil nat).
+
+<---FILTERED CANDIDATE LEMMAS--->
+Time elapsed: 38 seconds
+Duplicates removed: 0
+Filtered by Quickchick: 7
+Filtered by script: 0
+Remaining: 3
+
+Lemmas: 
+Lemma candidate_5: forall (n : nat) (y : nat) (x : nat), le y x -> @In nat n (@nil nat) -> le y n.
+Lemma candidate_3: forall (n : nat) (y : nat) (x : nat), le y x -> @In nat n (@cons nat x (@nil nat)) -> le y n.
+Lemma candidate_2: forall (n : nat) (y : nat) (x : nat), le y x -> @In nat n (@cons nat y (@nil nat)) -> le y n.

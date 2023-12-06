@@ -1,0 +1,56 @@
+File Information
+- File name: Selection
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_list_has_length_IN_cons_of_small_maintains_sortt
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_list_has_length_IN_cons_of_small_maintains_sortt
+- Namespace: vfa_benchmark
+- Proof name: cons_of_small_maintains_sortt
+- Theorem: Theorem cons_of_small_maintains_sortt: forall (bl0 : list nat) (y0 : nat) (_ : le_all y0 bl0)
+  (_ : sorted (selsortt bl0)), sorted (@cons nat y0 (selsortt bl0)).
+- Declarations: 
+From lfind Require Import LFind.
+From VFA Require Import Perm.
+
+Proof Context
+* Goal State: @ex nat (fun x : nat => @eq nat (@list_length nat bl) x)
+
+* Hypothesis:
+H0 : sorted (selsortt bl)
+bl : list nat
+H : le_all y bl
+y : nat
+
+* Types:
+Set
+Prop
+nat
+forall _ : nat, Prop
+list nat
+
+* Polymorphic Types:
+list nat
+
+* Variables:
+bl : list nat
+y : nat
+
+* Terms:
+le_all y bl : Prop
+list nat : Set
+@eq nat (@list_length nat bl) _UNBOUND_REL_1 : Prop
+nat : Set
+@list_length nat bl : nat
+@ex nat (fun x : nat => @eq nat (@list_length nat bl) x) : Prop
+bl : list nat
+sorted (selsortt bl) : Prop
+fun x : nat => @eq nat (@list_length nat bl) x : forall _ : nat, Prop
+y : nat
+selsortt bl : list nat
+
+* Functions:
+sorted  : forall _ : list nat, Prop
+@list_length  : forall (T : Type) (_ : list T), nat
+ex  : forall (A : Type) (_ : forall _ : A, Prop), Prop
+le_all  : forall (_ : nat) (_ : list nat), Prop
+selsortt  : forall _ : list nat, list nat
+list  : forall _ : Type, Type
+@eq  : forall (A : Type) (_ : A) (_ : A), Prop

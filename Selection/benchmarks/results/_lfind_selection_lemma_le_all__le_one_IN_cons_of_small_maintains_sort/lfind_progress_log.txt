@@ -1,0 +1,127 @@
+File Information
+- File name: Selection
+- Original Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/selection_lemma_le_all__le_one_IN_cons_of_small_maintains_sort
+- LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_le_all__le_one_IN_cons_of_small_maintains_sort
+- Namespace: vfa_benchmark
+- Proof name: cons_of_small_maintains_sort
+- Theorem: Theorem cons_of_small_maintains_sort: forall (bl0 : list nat) (y0 n0 : nat) (_ : @eq nat n0 (@list_length nat bl0))
+  (_ : le_all y0 bl0) (_ : sorted (selsort bl0 n0)),
+sorted (@cons nat y0 (selsort bl0 n0)).
+- Declarations: 
+From lfind Require Import LFind.
+From VFA Require Import Perm.
+
+Proof Context
+* Goal State: le y a
+
+* Hypothesis:
+H0 : le_all y bl
+H1 : sorted (@cons nat a l)
+bl : list nat
+H : @Permutation nat bl (@cons nat a l)
+IHl : forall (_ : @Permutation nat bl l) (_ : sorted l), sorted (@cons nat y l)
+y : nat
+l : list nat
+n : nat
+a : nat
+
+* Types:
+Set
+Prop
+nat
+list nat
+
+* Polymorphic Types:
+list nat
+
+* Variables:
+bl : list nat
+y : nat
+l : list nat
+a : nat
+
+* Terms:
+list nat : Set
+@cons nat a l : list nat
+le_all y bl : Prop
+sorted (@cons nat y l) : Prop
+bl : list nat
+@Permutation nat bl (@cons nat a l) : Prop
+forall (_ : @Permutation nat bl l) (_ : sorted l), sorted (@cons nat y l) : Prop
+y : nat
+l : list nat
+le y a : Prop
+forall _ : sorted l, sorted (@cons nat y l) : Prop
+nat : Set
+sorted (@cons nat a l) : Prop
+@cons nat y l : list nat
+sorted l : Prop
+@Permutation nat bl l : Prop
+a : nat
+
+* Functions:
+sorted  : forall _ : list nat, Prop
+le_all  : forall (_ : nat) (_ : list nat), Prop
+le  : forall (_ : nat) (_ : nat), Prop
+list  : forall _ : Type, Type
+@cons  : forall (A : Type) (_ : A) (_ : list A), list A
+Permutation  : forall (A : Type) (_ : list A) (_ : list A), Prop
+
+<---GENERALIZATION--->
+Time elapsed: 3 seconds
+Generalized Variables:
+
+Generalizations:
+Lemma conj1: forall (y : nat) (a : nat), le y a.
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 5 seconds
+Valid:
+
+Invalid:
+Lemma conj1: forall (y : nat) (a : nat), le y a.
+
+<---ADD IMPLICATIONS--->
+Time elapsed: 11 seconds
+Generalizations:
+Lemma conj1: forall (y : nat) (a : nat), le y a.
+Lemma conj1_imp: forall (bl : list nat) (y : nat) (l : list nat) (a : nat), @Permutation nat bl (@cons nat a l) -> sorted (@cons nat a l) -> le y a.
+
+
+<---VALIDITY CHECKS--->
+Time elapsed: 14 seconds
+Valid:
+Lemma conj1_imp: forall (bl : list nat) (y : nat) (l : list nat) (a : nat), @Permutation nat bl (@cons nat a l) -> sorted (@cons nat a l) -> le y a.
+
+Invalid:
+Lemma conj1: forall (y : nat) (a : nat), le y a.
+
+
+<---CREATE SKETCHES--->
+Time elapsed: 14 seconds
+Sketches:
+
+
+<---CREATE SYNTHESIS PROBLEMS--->
+Time elapsed: 15 seconds
+Problems per Sketch:
+
+
+<--- SYNTHESIS PROBLEM RESULTS--->
+Time elapsed: 15 seconds
+
+<---INITIAL CANDIDATE LEMMAS--->
+Time elapsed: 15 seconds
+Lemmas:
+Lemma candidate_1: forall (a : nat) (l : list nat) (y : nat) (bl : list nat), @Permutation nat bl (@cons nat a l) -> sorted (@cons nat a l) -> le y a.
+
+<---FILTERED CANDIDATE LEMMAS--->
+Time elapsed: 21 seconds
+Duplicates removed: 0
+Filtered by Quickchick: 0
+Filtered by script: 0
+Remaining: 1
+
+Lemmas: 
+Lemma candidate_1: forall (a : nat) (l : list nat) (y : nat) (bl : list nat), @Permutation nat bl (@cons nat a l) -> sorted (@cons nat a l) -> le y a.

@@ -1,0 +1,36 @@
+LFind Results
+LFind Directory: /home/anabrendel/lfind/vfa-benchmarks/Selection/benchmarks/sources/_lfind_selection_lemma_cons_of_small_maintains_sort_IN_selsort_sorted
+
+
+Number of Lemmas: 5
+Number of Lemmas (after duplicates removed): 5
+Number of Lemmas (after QuickChick used to filter): 5
+* Number of Candidate Lemmas: 4
+
+Time until ranking: 178
+Time to complete: 178
+
+Stuck state true independent of hypotheses: false
+
+Category 1:
+Count = 0
+
+
+Category 2:
+Count = 0
+
+
+Category 3 (provable):
+Count = 0
+
+
+
+All lemmas here because ranking is turned off right now...
+
+Category 3 (not provable):
+Count = 4
+
+Lemma candidate_3: forall (lf3 : nat) (n0 : nat) (n : nat) (al : list nat) (x : nat) (x0 : list nat), @eq nat (S lf3) (S n) -> @eq nat lf3 n -> @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x x0) -> sorted (@cons nat x (selsort x0 lf3)).
+Lemma candidate_1: forall (n0 : nat) (n : nat) (al : list nat) (lf1 : list nat) (x : nat) (x0 : list nat), @eq nat (S (@list_length nat al)) (S n) -> @eq nat (@list_length nat al) n -> @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x x0) -> sorted lf1.
+Lemma candidate_2: forall (n0 : nat) (n : nat) (al : list nat) (x : nat) (x0 : list nat) (lf2 : list nat), @eq nat (S (@list_length nat al)) (S n) -> @eq nat (@list_length nat al) n -> @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x x0) -> sorted (@cons nat x lf2).
+Lemma candidate_4: forall (n0 : nat) (n : nat) (al : list nat) (x : nat) (x0 : list nat), @eq nat (S (@list_length nat al)) (S n) -> @eq nat (@list_length nat al) n -> @eq (prod nat (list nat)) (select n0 al) (@pair nat (list nat) x x0) -> sorted (@cons nat x (selsort x0 (@list_length nat al))).
